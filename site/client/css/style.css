@@ -1,12 +1,12 @@
 /* BASE */
 body {
-    max-width: 100vw;
+    max-width: 1520px;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
     background-image: url('./../img/bg/bgPpt.jpg');
-    background-size: 100vw auto;
+    background-size: 1520px auto;
     background-repeat: no-repeat;
     background-color: #F7CE9D;
     overflow-y: auto;
@@ -22,18 +22,18 @@ body {
     display: none;
 }
 
+
 /* HEADER NAV*/
 
 .nav {
     width: 100%;
-    height: 40px;
-    padding: 30px 0;
-    background-color: blue;
+    height: 30px;
+    padding: 25px 0;
 }
 
 .nav-wrapper {
     justify-content: space-between;
-    padding: 0 15px;
+    padding: 0 60px;
     align-items: center;
 }
 
@@ -59,35 +59,80 @@ body {
 }
 
 .nav a {
-    color: rgb(41, 12, 8);
+    color: rgb(189, 88, 44);
     text-decoration: none;
     transition: color 0.3s ease-in-out;
 }
 
 .nav a:hover {
-    color: rgb(189, 88, 44);
+    color: rgb(169, 93, 93);
 }
 
 .account a{
     font-weight: 700;
     font-size: 16px;
-    color: rgb(41, 12, 8);
+    color: rgb(189, 88, 44);
     text-decoration: none;
     transition: color 0.3s ease-in-out;
 }
 
 .account a:hover {
-    color: rgb(189, 88, 44);
+    color: rgb(169, 93, 93);
+}
+
+.btn-burger {
+    display: none;
+    border: none;
+    padding: 0;
+    height: 25px;
+    cursor: pointer;
+    background: transparent;
+}
+
+.nav-burger {
+    display: block;
+    background-color: rgb(189, 88, 44);
+    width: 38px;
+    height: 5px;
+    border: none;
+    position: relative;
+}
+
+.nav-burger::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: -10px;
+    display: block;
+    background-color: rgb(189, 88, 44);
+    width: 38px;
+    height: 5px;
+    border: none;
+}
+
+.nav-burger::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 10px;
+    display: block;
+    background-color: rgb(189, 88, 44);
+    width: 38px;
+    height: 5px;
+    border: none;
 }
 
 /* HEADER INDEX*/
-
+.index {
+    height: 800px;
+}
 .header-index {
     display: block; /* тк это ссылка - задаём ей блок */
-    max-width: 980px;
+    max-width: 830px;
     margin-left: auto;
     margin-right: auto;
-    padding: 200px 15px 0px;
+    margin-bottom: 160px;
+    padding: 180px 15px 0px;
     text-decoration: none;
     transition: transform 0.6s cubic-bezier(0.660, 0.215, 0.295, 1.640);
 }
@@ -97,12 +142,12 @@ body {
 }
 
 .header-index__title {
-    margin-bottom: 32px;
+    margin-bottom: 24px;
     position: relative;
     padding-left: 104px;
     color:#F7CE9D;
     font-weight: 800;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.222;
     letter-spacing: 6px;
     text-transform: uppercase;
@@ -122,11 +167,12 @@ body {
 
 
 .header-index__desc {
-    margin-bottom: 32px;
+    margin-bottom: 24px;
+    margin-top: 24px;
     font-family: 'Playfair Display', sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 68px;
+    font-size: 60px;
     line-height: 1.136;
     text-transform: capitalize;
     color: #FFFFFF;
@@ -154,6 +200,174 @@ body {
     background-image: url('./../img/icons/down.svg');
 }
 
+/* MAIN ARTICLE */
+
+.article {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.article-container {
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.article-container:nth-child(even){
+    flex-direction: row-reverse;
+}
+
+
+.article-text {
+    padding-left: 100px;
+    padding-right: 50px;
+    position: relative;
+}
+
+.article-text p{
+    margin-bottom: 27px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.78;
+    color: rgb(41, 12, 8);
+} 
+
+.article-text__title {
+    margin-bottom: 32px;
+    position: relative;
+    padding-left: 104px;
+    color:rgb(189, 88, 44);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.222;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+}
+
+.article-text__title::before {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);    
+    display: block; /* чтобы отображалось ставим контент пустая строка и блок */
+    content: "";
+    width: 72px;
+    height: 2px;
+    background-color:rgb(189, 88, 44); 
+}
+
+.article-text__desc {
+    margin-bottom: 27px;
+    max-width: 500px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 60px;
+    line-height: 1.2;
+    color: rgb(41, 12, 8);
+}
+
+.article-text__more {
+    position: relative;
+    padding-right: 32px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.222;
+    color: rgb(189, 88, 44); 
+    display: inline-block;
+}
+
+.article-text__more::after {
+    display: block;
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 16px;
+    color: rgb(189, 88, 44); 
+    background-image: url('./../img/icons/right.svg');
+}
+
+.article-img img {
+    display: block;
+    max-width: 450px;
+}
+
+.bg-img {
+    max-width: 1520px;
+}
+.bg-img img {
+    width: 100%;
+}
+
+
+.card-item__btn {
+    color: #253421;
+    font-size: 20px;
+    line-height: 1.18;
+    font-weight: 600;
+    border-width: 1px;
+    border-radius: 40px;
+    background-color: rgb(255, 188, 45);
+    background-position: center center;
+    border-color: transparent;
+    border-style: solid;
+    width: 200px;
+    height: 60px;
+}
+
+.card-carousel {
+    color: #FFFFFF;
+    width: 100%;
+    column-gap: 10px;
+    justify-content: center;
+}
+.card-item {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    width: 300px !important;
+    height: 400px;
+    background-position: center center;
+    background-size: cover;
+}
+.card-text {
+    text-align: center;
+}
+.card-btn {
+    text-align: center;
+    padding: 15px;
+}
+
+.slider {
+    position: relative;
+    max-width: 1200px;
+    width: 100%;
+    padding: 40px 0;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.btn-slider-prev {
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+    left: 20px;
+    font-size: 20px;
+} 
+
+.btn-slider-next {
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+    right: 20px;
+    font-size: 20px;
+}
+
 @media(max-width: 1300px) {
     .header-index {
         padding: 150px 15px 0px;
@@ -164,12 +378,23 @@ body {
     }
 }
 
+/* FOOTER */
+footer {
+    height: 50px;
+    padding: 20px;
+    background-color: rgb(189,88,44);
+    color: #FFFFFF;
+}
+
 @media(max-width: 1200px) {
     .nav {
         background-color: red;
     }
     .nav-items, .account {
         display: none;
+    }
+    .btn-burger {
+        display: block;
     }
     .header-index {
         padding: 130px 15px 0px;
