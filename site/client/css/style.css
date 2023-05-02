@@ -310,7 +310,7 @@ body {
 }
 
 .bg-img {
-    max-width: 1520px;
+    max-width: 100vw;
 }
 .bg-img img {
     width: 100%;
