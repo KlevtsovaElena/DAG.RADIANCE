@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DAG.RADIANCE</title>
-
+    <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/style.css">
 
     <link rel="stylesheet" href="./fonts/PlayFairDisplay/stylefonts.css">
@@ -85,7 +85,7 @@
         <div class="bg-img"><img src="./img/bg/panorama1.jpg" alt=""></div>
 
         <hr/>
-        <div class="card-contaner">
+        <!-- <div class="card-contaner">
             <div class="card-text"><h2>Туры</h2></div>
             
             <div class="card-carousel d-flex">
@@ -119,54 +119,81 @@
             </div>
 
             <div class="card-btn"><button class="card-item__btn">Смотреть все</button></div>
-        </div>
+        </div> -->
 
-        <hr/>
 
-        <div class="card-contaner">
+        <!-- БЛОК Достопримечательности -->
+        <div class="places card-contaner">
+
+            <!-- Заголовок -->
             <div class="card-text"><h2>Достопримечательности</h2></div>
-            
-            <div class="card-carousel d-flex">
-                <div class="card-item" style="background-image: url('./img/place/2.jpg');">
-                    <div class="card-item__title">
-                        <h3>Достопримечательность</h3>
+
+            <!-- Слайдер -->
+            <div class="slider ">
+                <div class="card-carousel d-flex slider-wrapper slick-slide">
+                    <div class="d-flex card-item slide" style="background-image: url('./img/place/2.jpg');">
+                        <div class="card-item__title">
+                            <h3>Достопримечательность0</h3>
+                        </div>
+                        <div class="card-item__desc">
+                            Здесь будет тезисное описание
+                        </div>
+                        <button class="card-item__btn">Подробнее</button>
                     </div>
-                    <div class="card-item__desc">
-                        Здесь будет тезисное описание 
+                    <div class="d-flex card-item slide" style="background-image: url('./img/place/2.jpg');">
+                        <div class="card-item__title">
+                            <h3>Достопримечательность1</h3>
+                        </div>
+                        <div class="card-item__desc">
+                            Здесь будет тезисное описание
+                        </div>
+                        <button class="card-item__btn">Подробнее</button>
                     </div>
-                    <button class="card-item__btn">Подробнее</button>
+                    <div class="d-flex card-item slide" style="background-image: url('./img/place/2.jpg');">
+                        <div class="card-item__title">
+                            <h3>Достопримечательность2</h3>
+                        </div>
+                        <div class="card-item__desc">
+                            Здесь будет тезисное описание
+                        </div>
+                        <button class="card-item__btn">Подробнее</button>
+                    </div> 
+                    <div class="d-flex card-item slide" style="background-image: url('./img/place/2.jpg');">
+                        <div class="card-item__title">
+                            <h3>Достопримечательность3</h3>
+                        </div>
+                        <div class="card-item__desc">
+                            Здесь будет тезисное описание
+                        </div>
+                        <button class="card-item__btn">Подробнее</button>
+                    </div> 
+                    <div class="d-flex card-item slide" style="background-image: url('./img/place/2.jpg');">
+                        <div class="card-item__title">
+                            <h3>Достопримечательность4</h3>
+                        </div>
+                        <div class="card-item__desc">
+                            Здесь будет тезисное описание
+                        </div>
+                        <button class="card-item__btn">Подробнее</button>
+                    </div> 
                 </div>
-                <div class="card-item" style="background-image: url('./img/place/2.jpg');">
-                    <div class="card-item__title">
-                        <h3>Достопримечательность</h3>
-                    </div>
-                    <div class="card-item__desc">
-                        Здесь будет тезисное описание 
-                    </div>
-                    <button class="card-item__btn">Подробнее</button>
-                </div>
-                <div class="card-item" style="background-image: url('./img/place/2.jpg');">
-                    <div class="card-item__title">
-                        <h3>Достопримечательность</h3>
-                    </div>
-                    <div class="card-item__desc">
-                        Здесь будет тезисное описание 
-                    </div>
-                    <button class="card-item__btn">Подробнее</button>
-                </div>                    
             </div>
 
+            <!-- Кнопка Смотреть всё -->
             <div class="card-btn"><button class="card-item__btn">Смотреть все</button></div>
+
         </div>
 
+        <hr>
+        <!-- БЛОК ТУРЫ -->
+        <div class="tours card-contaner">
 
-        <div class="card-contaner">
+            <!-- Заголовок -->
             <div class="card-text"><h2>Туры</h2></div>
 
             <!-- Слайдер -->
             <div class="slider ">
-
-                <div class="card-carousel d-flex slider-wrapper">
+                <div class="card-carousel d-flex slider-wrapper slick-slide">
                     <div class="d-flex card-item slide" style="background-image: url('./img/place/sea01.jpg');">
                         <div class="card-item__title">
                             <h3>Название Тура0</h3>
@@ -212,24 +239,26 @@
                         </div>
                         <button class="card-item__btn">Подробнее</button>
                     </div> 
-                </div>  
-               
-                <div class="btn-slider-prev">&#10094</div>
-                <div class="btn-slider-next">&#10095</div>
-                
+                </div>
             </div>
 
+            <!-- Кнопка Смотреть всё -->
             <div class="card-btn"><button class="card-item__btn">Смотреть все</button></div>
+
         </div>
 
 
+
     </main>
-    <footer>FOOTER
-
-    </footer>
 
 
 
+    <footer>FOOTER</footer>
+
+
+
+    <script src="./js/jquery-3.6.4.min.js"></script>
+    <script src="./js/slick.min.js"></script>
     <script src="js/main.js"></script>
 
 </body>

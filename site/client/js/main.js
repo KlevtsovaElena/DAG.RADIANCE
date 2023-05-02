@@ -1,5 +1,17 @@
 //слайдер
+$('.slick-slide').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    dots: true,
+    speed: 800,
+    autoplaySpeed: 4000,
+    prevArrow: '<div class="btn-slider-prev">&#10094</div>',
+    nextArrow: '<div class="btn-slider-next">&#10095</div>',
 
+    
+     
+  });
 // console.log("hdgshjdgjk");
 // // Найдём контейнер со слайдами
 // const sliderWrapper = document.querySelector('.slide-wrapper');
