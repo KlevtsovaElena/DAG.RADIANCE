@@ -662,6 +662,9 @@ footer {
     .card-item {
         height: 285px;
     }
+    iframe {
+        height: 300px;
+    }
 
 }
 @media(max-width: 650px) {
@@ -707,6 +710,9 @@ footer {
     .card-item {
         height: 385px;
     }
+    iframe {
+        height: 240px;
+    }
 }
 
 @media(max-width: 450px) {
@@ -715,6 +721,9 @@ footer {
     }
     .card-item {
         height: 290px;
+    }
+    iframe {
+        height: 200px;
     }
 }
 @media(max-width: 300px) {
