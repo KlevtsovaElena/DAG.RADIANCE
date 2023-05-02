@@ -338,6 +338,10 @@ body {
     column-gap: 10px;
     justify-content: center;
     margin-bottom: 50px;
+
+    margin-left: auto;
+    margin-right: auto;
+
 }
 .card-item {
     display: flex;
@@ -416,10 +420,7 @@ body {
     font-size: 20px;
     color:rgb(189, 88, 44);
 }
-.slick-slide {
-    margin-left: 15px;
-    margin-right: 15px;
-}
+
 @media(max-width: 1300px) {
     .header-index {
         padding: 150px 15px 0px;
