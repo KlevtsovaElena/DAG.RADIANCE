@@ -1,17 +1,28 @@
 /* BASE */
+
 body {
-    max-width: 1520px;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
+    background-color: #F7CE9D;
+    color: rgb(189, 88, 44);  
+}
+
+.body-index {
     background-image: url('./../img/bg/bgPpt.jpg');
     background-size: 100% auto;
     background-repeat: no-repeat;
-    background-color: #F7CE9D;
     overflow-y: auto;
-    color: rgb(189, 88, 44);
-    
+}
+
+.container-page {
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.container-page main {
+    flex: 1;
 }
 
 .d-flex {
