@@ -5,13 +5,37 @@ $('.slick-slide').slick({
     autoplay: true,
     dots: true,
     speed: 800,
-    autoplaySpeed: 4000,
+    autoplaySpeed: 6000,
     prevArrow: '<div class="btn-slider-prev">&#10094</div>',
     nextArrow: '<div class="btn-slider-next">&#10095</div>',
 
-    
+     // the magic
+  responsive: [{
+
+    breakpoint: 1000,
+    settings: {
+      slidesToShow: 2,
+      infinite: true
+    }
+
+  }, {
+
+    breakpoint: 650,
+    settings: {
+      slidesToShow: 1,
+      dots: true
+    }
+
+  }, {
+
+    breakpoint: 300,
+    settings: "unslick" // destroys slick
+
+  }]
      
   });
+
+ 
 // console.log("hdgshjdgjk");
 // // Найдём контейнер со слайдами
 // const sliderWrapper = document.querySelector('.slide-wrapper');
