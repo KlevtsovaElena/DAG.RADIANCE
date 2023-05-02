@@ -6,7 +6,7 @@ body {
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
     background-image: url('./../img/bg/bgPpt.jpg');
-    background-size: 1520px auto;
+    background-size: 100% auto;
     background-repeat: no-repeat;
     background-color: #F7CE9D;
     overflow-y: auto;
@@ -198,6 +198,7 @@ body {
     width: 16px;
     height: 24px;
     background-image: url('./../img/icons/down.svg');
+    background-size: cover;
 }
 
 /* MAIN ARTICLE */
@@ -406,6 +407,10 @@ footer {
     .header-index__scroll {
         font-size: 14px;
     }
+    .header-index__scroll::after {
+        width: 14px;
+        height: 22px;
+    }
     .header-index__desc {
         font-size: 50px;
     }
@@ -426,6 +431,10 @@ footer {
     }
     .header-index__scroll {
         font-size: 12px;
+    }
+    .header-index__scroll::after {
+        width: 12px;
+        height: 20px;
     }
     .header-index__desc {
         font-size: 40px;
@@ -458,14 +467,67 @@ footer {
     .logo {
         font-size: 18px;
     }
+    .nav-wrapper {
+        padding: 0 30px;
+    }
+    .btn-burger {
+        height: 19px; 
+    }
+    .nav-burger {
+        width: 30px;
+        height: 3px;
+    }
+    .nav-burger::before{
+        width: 30px;
+        height: 3px;
+        top: 8px;
+    }
+    .nav-burger::after {
+        width: 30px;
+        height: 3px;
+        top:-8px;
+    }
+}
+
+@media(max-width: 800px) {
+
+    .nav {
+        background-color:#F7CE9D;
+        height: 30px;
+        padding: 15px 0;
+    }
+    .header-index {
+        padding: 60px 15px 0;
+        max-width: 500px;
+    }
+    .header-index__title {
+        font-size: 12px;
+        margin-bottom: 22px;
+    }
+    .header-index__scroll {
+        font-size: 10px;
+    }
+    .header-index__scroll::after {
+        width: 10px;
+        height: 18px;
+    }
+    .header-index__desc {
+        font-size: 36px;
+    }
+    .logo {
+        font-size: 16px;
+    }
+
+
 }
 @media(max-width: 650px) {
 
     .nav {
         background-color: black;
         height: 30px;
-        padding: 10px 0;
+        padding: 15px 0 5px 0;
     }
+
     .header-index {
         padding: 50px 10px 0;
         max-width: 300px;
@@ -481,7 +543,11 @@ footer {
     }
 
     .header-index__scroll {
-        font-size: 11px;
+        font-size: 10px;
+    }
+    .header-index__scroll::after {
+        width: 10px;
+        height: 16px;
     }
     .header-index__desc {
         font-size: 22px;
@@ -489,6 +555,6 @@ footer {
         margin-bottom: 5px;
     }
     .logo {
-        font-size: 16px;
+        font-size: 14px;
     }
 }
