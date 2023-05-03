@@ -36,15 +36,11 @@ $('.slick-slide').slick({
  
 // *********  СЛАЙДЕР НА ЧИСТОМ JS, ПО 1 ЭЛЕМЕНТУ ******************//
 
-
-// слайдер на чистом js по одному элемент
-
 // Найдём контейнер со слайдами
 const carouselPanorama = document.querySelector('.carousel-panorama');
 
 // Теперь запишем в переменную все слайды этого слайдера
 const slideItems = Array.from(carouselPanorama.children);
-
 
 // Работаем с коллекцией слайдов
 // Пройдёмся по каждому слайду из коллекции
@@ -73,14 +69,13 @@ slideItems.forEach(function (slide, index) {
     } else {
       nextIndex = index + 1;
     }
-    console.log(nextIndex);
+ 
     // Найдём сам следующий слайд
     const nextSlide = carouselPanorama.querySelector(`[data-index="${nextIndex}"]`);
 
-    console.log(nextSlide);
-
-    // Уберём класс d-none, чтобы показать этот слайд. и добавим атрибут data-active
+    // Уберём класс d-none, чтобы показать этот слайд.
     nextSlide.classList.remove('d-none');
 
   });
 })
+// ***************************//
