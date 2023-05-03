@@ -46,21 +46,20 @@ abstract class Unit implements \Interfaces\UnitActiveInterface
              return $this->data;
          }
          $pdo = \Connection::getConnection();
-         \Mylib\Connection::getConnection();
 
         //отправить запрос в БД
          $rezult = $pdo->query("SELECT * FROM `" . static::TABLE . "` WHERE `id` =  " . $this->id);
  
-         $user = $rezult->fetch();
+         $rows = $rezult->fetch();
  
          //сохраняем в кэш
-         $this->data = $user ;
+         $this->data = $rows ;
  
-         return $user;
+         return $rows;
  
      } 
 
-    //метод для получения одного поля из строки юзера
+    //метод для получения одного поля из строки
     protected function getField(string $field) : mixed
     {        
         return $this->getLine()[$field];
@@ -84,27 +83,27 @@ abstract class Unit implements \Interfaces\UnitActiveInterface
         $strFields = '';
         $strValues = '';
 
-        if ((isset($_GET['search']) && $_GET['search'] !== '')) {
-            $filterStr .= " AND product_name LIKE '%" . $_GET['search'] . "%' OR product_description LIKE '%" . $_GET['search'] . "%' ";
-        }
+        // if ((isset($_GET['search']) && $_GET['search'] !== '')) {
+        //     $filterStr .= " AND product_name LIKE '%" . $_GET['search'] . "%' OR product_description LIKE '%" . $_GET['search'] . "%' ";
+        // }
 
-        foreach ($_GET as $key => $value) {
-            if ($key !== 'search' && $key !== 'orderBy' && $key !== 'limit' && $key !== 'field' && $key !== 'price1' && $key !== 'price2') {
-                $filterStr .= ' AND ' . $key . ' IN (' . $value . ')';  
-            }
-        }
+        // foreach ($_GET as $key => $value) {
+        //     if ($key !== 'search' && $key !== 'orderBy' && $key !== 'limit' && $key !== 'field' && $key !== 'price1' && $key !== 'price2') {
+        //         $filterStr .= ' AND ' . $key . ' IN (' . $value . ')';  
+        //     }
+        // }
 
-        if ((isset($_GET['price1']) && $_GET['price1'] !== '') && (isset($_GET['price2']) && $_GET['price2'] !== '')) {
-            $filterStr .= ' AND price BETWEEN ' . $_GET['price1']  . ' AND ' .  $_GET['price2'];
-        }
+        // if ((isset($_GET['price1']) && $_GET['price1'] !== '') && (isset($_GET['price2']) && $_GET['price2'] !== '')) {
+        //     $filterStr .= ' AND price BETWEEN ' . $_GET['price1']  . ' AND ' .  $_GET['price2'];
+        // }
 
-        if (isset($_GET['orderBy']) && $_GET['orderBy'] !== '') {
-            $filterStr .= ' ORDER BY '  . $_GET['field'] . ' '. $_GET['orderBy'];
-        }
+        // if (isset($_GET['orderBy']) && $_GET['orderBy'] !== '') {
+        //     $filterStr .= ' ORDER BY '  . $_GET['field'] . ' '. $_GET['orderBy'];
+        // }
 
-        if (isset($_GET['limit']) && $_GET['limit'] !== '') {
-            $filterStr .=  ' LIMIT ' . $_GET['limit'];
-        }
+        // if (isset($_GET['limit']) && $_GET['limit'] !== '') {
+        //     $filterStr .=  ' LIMIT ' . $_GET['limit'];
+        // }
 
         $sqlText = 'SELECT * FROM `' . static::TABLE . '` WHERE 1 ' . $filterStr . ';';
 

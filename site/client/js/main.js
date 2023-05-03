@@ -1,4 +1,50 @@
-// *********  СЛАЙДЕР JQUERY/SLICK, ПО 3 ЭЛЕМЕНТА ******************//
+//функция для отправки запросов GET
+function sendRequestGET(url){
+
+  let requestObj = new XMLHttpRequest();
+  requestObj.open('GET', url, false);
+  requestObj.send();
+  return requestObj.responseText;
+
+}
+
+
+
+// * ********  ПРИМЕР GET ЗАПРОСА ***************** *//
+// Адрес для отправки запроса http://localhost/api/get/tours/
+let dataJson = sendRequestGET('http://localhost/api/get/tours/index.php');
+console.log(dataJson);
+//раскодируем
+let data = JSON.parse(dataJson);
+console.log(data);
+
+
+
+
+
+//функция для отправки запросов POST
+function sendRequestPOST(url, params){
+
+  let requestObj = new XMLHttpRequest();
+  requestObj.open('POST', url, false);
+  requestObj.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+  requestObj.send(params);
+  return requestObj.responseText;
+
+}
+
+//функция сохранения в ls
+function save(keyData, saveData){
+
+  //кодируем data в json и сохраняем в localStorage
+  let dataJson = JSON.stringify(saveData);
+  //сохраняем в localStorage
+  localStorage.setItem(keyData, dataJson);
+
+}
+
+
+// * ********  СЛАЙДЕР JQUERY/SLICK, ПО 3 ЭЛЕМЕНТА ***************** *//
 
 $('.slick-slide').slick({
   slidesToShow: 3,      //по сколько элементов показывать
