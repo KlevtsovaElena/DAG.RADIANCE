@@ -8,20 +8,6 @@ function sendRequestGET(url){
 
 }
 
-
-
-// * ********  ПРИМЕР GET ЗАПРОСА ***************** *//
-// Адрес для отправки запроса http://localhost/api/get/tours/
-let dataJson = sendRequestGET('http://localhost/api/get/tours/index.php');
-console.log(dataJson);
-//раскодируем
-let data = JSON.parse(dataJson);
-console.log(data);
-
-
-
-
-
 //функция для отправки запросов POST
 function sendRequestPOST(url, params){
 
@@ -32,6 +18,19 @@ function sendRequestPOST(url, params){
   return requestObj.responseText;
 
 }
+
+
+
+
+// * ********  ПРИМЕР GET ЗАПРОСА ***************** *//
+// Адрес для отправки запроса http://localhost/api/get/tours/
+// let dataJson = sendRequestGET('http://localhost/api/get/tours/index.php');
+// console.log(dataJson);
+// //раскодируем
+// let data = JSON.parse(dataJson);
+// console.log(data);
+
+
 
 //функция сохранения в ls
 function save(keyData, saveData){
