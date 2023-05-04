@@ -40,7 +40,6 @@ a {
     display: none;
 }
 
-
 /* HEADER */
 
 /* HEADER NAV*/
@@ -192,7 +191,6 @@ a {
     max-width: 830px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 160px;
     padding: 180px 15px 0px;
     transition: transform 0.6s cubic-bezier(0.660, 0.215, 0.295, 1.640);
 }
@@ -236,7 +234,7 @@ a {
     text-transform: capitalize;
     color: #FFFFFF;
 } 
- 
+
 .header-index__scroll {
     display: inline-block;
     position: relative;
@@ -359,6 +357,7 @@ a {
 .bg-img img {
     width: 100%;
 }
+
 
 /* КАРТОЧКИ ТУРОВ-МЕСТ НА ГЛАВНОЙ */
 
@@ -491,6 +490,10 @@ a {
     width: 100%;
 }
 
+.footer-nav .logo {
+    font-size: 20px;
+}
+
 .footer-links {
     display: flex;
     column-gap: 15px;
@@ -514,15 +517,12 @@ a {
         padding: 150px 15px 0px;
         max-width: 800px;
     }
-    .header-index__desc {
-        font-size: 66px;
-    }
 }
 
-
-
 @media(max-width: 1200px) {
-
+    .logo {
+        font-size: 24px;
+    }
     .nav-items, .account {
         display: none;
     }
@@ -567,6 +567,7 @@ a {
         width: 50px;
         height: 1px;
     }
+
     .article-text__desc {
         margin-bottom: 20px;
         max-width: 450px;
@@ -607,6 +608,9 @@ a {
     .header-index__desc {
         font-size: 40px;
     }
+    .article-text__desc {
+        font-size: 34px;
+    }
     .logo {
         font-size: 20px;
     }
@@ -627,18 +631,14 @@ a {
         padding: 60px 15px 0;
         max-width: 500px;
     }
-    .header-index__title {
-        font-size: 12px;
-        margin-bottom: 22px;
-    }
-    .header-index__scroll {
-        font-size: 12px;
-    }
-    .header-index__desc {
-        font-size: 36px;
-    }
     .logo {
         font-size: 18px;
+    }
+    .footer-nav .logo{
+        font-size: 16px;
+    }
+    .footer-nav {
+        font-size: 14px;
     }
     .nav-wrapper {
         padding: 0 30px;
@@ -673,7 +673,7 @@ a {
     .article-text__title {
         margin-bottom: 20px;
         padding-left: 60px;
-        font-size: 12px;
+        font-size: 14px;
         letter-spacing: 3px;
     }
 
@@ -684,11 +684,11 @@ a {
     .article-text__desc {
         margin-bottom: 20px;
         max-width: 400px;
-        font-size: 38px;
+        font-size: 34px;
     }
 
     .article-text__more {
-        font-size: 12px;
+        font-size: 14px;
     }
     .article-img img {
         max-width: 320px;
@@ -697,14 +697,6 @@ a {
 
 @media(max-width: 800px) {
 
-    .nav {
-        height: 30px;
-        padding: 15px 0;
-    }
-    .header-index {
-        padding: 60px 15px 0;
-        max-width: 500px;
-    }
     .header-index__title {
         font-size: 12px;
         margin-bottom: 22px;
@@ -803,6 +795,10 @@ a {
     iframe {
         height: 240px;
     }
+    .footer-nav {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 @media(max-width: 450px) {
@@ -815,15 +811,50 @@ a {
     .article-img img {
         max-width: 300px;
     } 
+    .article-text p{
+        font-size: 12px;
+    } 
+
+    .article-text__title {
+        font-size: 12px;
+    }
+
+    .article-text__desc {
+        max-width: 200px;
+        font-size: 24px;
+    }
+
+    .article-text__more {
+        font-size: 12px;
+    }
+
+    .header-index {
+        padding: 0;
+
+    }
+
+    .header-index__desc {
+        max-width: 250px;
+        font-size: 20px;
+    }
+    .header-title {
+        font-size: 8px; 
+    }
     iframe {
         height: 200px;
     }
 }
-@media(max-width: 300px) {
+@media(max-width: 350px) {
+    .article-img img {
+        max-width: 250px;
+    }
     .slider {
         max-width: 200px;
     }
     .card-item {
         height: 185px;
     }
+    .header-index__desc {
+        font-size: 18px;
+        }
 }
