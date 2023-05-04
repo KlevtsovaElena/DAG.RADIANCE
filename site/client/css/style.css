@@ -102,6 +102,8 @@ a {
     height: 25px;
     cursor: pointer;
     background: transparent;
+    position: relative;
+    z-index: 10;
 }
 
 .nav-burger {
@@ -135,6 +137,50 @@ a {
     top: 10px;
     background-color: rgb(189, 88, 44);
     border: none;
+}
+
+.mobile-nav {
+    position: fixed;
+    top:0;
+    right: -320px;
+    width: 290px;
+    height: 100%;
+    padding: 70px 15px;
+    background-color: rgb(41, 12, 8, 0.9);
+    transition: all 0.5s;
+    z-index: 9;
+}
+
+.mobile-nav a {
+    color: #F7CE9D;
+}
+.mobile-nav ul{
+    list-style-type: none;
+}
+
+.mobile-nav li {
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.mobile-nav-active {
+    right: 0px !important;
+}
+
+.mobile-nav-close .nav-burger {
+    background-color: transparent;
+}
+
+.mobile-nav-close .nav-burger::after {
+    background-color: #F7CE9D;
+    transform: rotate(45deg);
+    top: 0;
+}
+
+.mobile-nav-close .nav-burger::before {
+    background-color: #F7CE9D;
+    transform: rotate(-45deg);
+    top: 0;
 }
 
 /* HEADER INDEX*/

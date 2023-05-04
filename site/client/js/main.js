@@ -43,7 +43,7 @@ function save(keyData, saveData){
 }
 
 
-// * ********  СЛАЙДЕР JQUERY/SLICK, ПО 3 ЭЛЕМЕНТА ***************** *//
+// * ********  СЛАЙДЕР JQUERY/SLICK, ПО 3 ЭЛЕМЕНТА ******** *//
 
 $('.slick-slide').slick({
   slidesToShow: 3,      //по сколько элементов показывать
@@ -79,7 +79,7 @@ $('.slick-slide').slick({
 });
 
  
-// *********  СЛАЙДЕР НА ЧИСТОМ JS, ПО 1 ЭЛЕМЕНТУ ******************//
+// * ********  СЛАЙДЕР НА ЧИСТОМ JS, ПО 1 ЭЛЕМЕНТУ ******** *//
 
 // Найдём контейнер со слайдами
 const carouselPanorama = document.querySelector('.carousel-panorama');
@@ -123,4 +123,24 @@ slideItems.forEach(function (slide, index) {
 
   });
 })
-// ***************************//
+
+
+// * ********  СКРЫТЬ/ПОКАЗАТЬ Mobile Menu  ******** *//
+
+// По кнопке бургера будем показывать и скрывать мобльное меню
+// С помощью toggle
+
+// Найдём кнопку бургера на странице и div с мобилным меню
+const btnBurger = document.querySelector('.btn-burger');
+const mobileNav = document.querySelector('.mobile-nav');
+
+// Будем отслеживать клик по кнопке бургера
+btnBurger.addEventListener('click', function() {
+
+  // в случае клика - добавляем/убираем активный класс 
+  mobileNav.classList.toggle('mobile-nav-active');
+  btnBurger.classList.toggle('mobile-nav-close');
+
+})
+
+// * **************** *//
