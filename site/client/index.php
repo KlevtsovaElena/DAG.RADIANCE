@@ -1,3 +1,6 @@
+<?php require_once('../classes/autoload.php'); ?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -53,14 +56,15 @@
 
     <main>
 
-        <!-- 3 заглавных темы вариант1-->
-        <section class="article">
+        <!-- 3 заглавных темы вариант1 СКРЫТО-->
+
+        <section class="article d-none">
             <div class="article-container">
                 <div class="article-text">
                     <div class="article-text__title">Горный Дагестан</div>
                     <div class="article-text__desc">Вы готовы к восхождению?</div>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse iure, debitis repudiandae cum saepe corrupti facilis. Explicabo omnis fugit exercitationem rem, eligendi quo incidunt neque vitae corrupti amet sunt aliquid.</p>
-                    <a href="#" class="article-text__more"> подробнее</a>
+                    <a href="1.php" class="article-text__more"> подробнее</a>
                 </div>
                 <div class="article-img">
                     <img class="small-img" src="./img/place/Горы-small.jpg" alt="">
@@ -73,7 +77,7 @@
                     <div class="article-text__title">Золотые пески Дагестана</div>
                     <div class="article-text__desc">Настоящий бархан у подножия предгорий!</div>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse iure, debitis repudiandae cum saepe corrupti facilis. Explicabo omnis fugit exercitationem rem, eligendi quo incidunt neque vitae corrupti amet sunt aliquid.</p>
-                    <a href="#" class="article-text__more"> подробнее</a>
+                    <a href="2.php" class="article-text__more"> подробнее</a>
                 </div>
                 <div class="article-img">
                     <img class="small-img" src="./img/place/Бархан-small.jpg" alt="">
@@ -86,7 +90,7 @@
                     <div class="article-text__title">Море Дагестана</div>
                     <div class="article-text__desc">Окунитесь в тёплое Каспийсое море!</div>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse iure, debitis repudiandae cum saepe corrupti facilis. Explicabo omnis fugit exercitationem rem, eligendi quo incidunt neque vitae corrupti amet sunt aliquid.</p>
-                    <a href="#" class="article-text__more"> подробнее</a>
+                    <a href="3.php" class="article-text__more"> подробнее</a>
                 </div>
                 <div class="article-img">
                     <img class="small-img" src="./img/place/море-small.jpg" alt="">
@@ -104,7 +108,7 @@
                     <div class="article-text__title">Уникальная природа</div>
                     <div class="article-text__desc">Горы, море и бархан!</div>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse iure, debitis repudiandae cum saepe corrupti facilis. Explicabo omnis fugit exercitationem rem, eligendi quo incidunt neque vitae corrupti amet sunt aliquid.</p>
-                    <a href="#" class="article-text__more"> подробнее</a>
+                    <a href="1.php" class="article-text__more"> подробнее</a>
                 </div>
                 <div class="article-img">
                     <img class="small-img" src="./img/place/Горы-small.jpg" alt="">
@@ -117,7 +121,7 @@
                     <div class="article-text__title">Кавказский Вавилон</div>
                     <div class="article-text__desc">Самый колоритный регион России!</div>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse iure, debitis repudiandae cum saepe corrupti facilis. Explicabo omnis fugit exercitationem rem, eligendi quo incidunt neque vitae corrupti amet sunt aliquid.</p>
-                    <a href="#" class="article-text__more"> подробнее</a>
+                    <a href="2.php" class="article-text__more"> подробнее</a>
                 </div>
                 <div class="article-img">
                     <img class="small-img" src="./img/place/кавказский-вавилон2-small.jpg" alt="">
@@ -130,7 +134,7 @@
                     <div class="article-text__title">Чтение традиций</div>
                     <div class="article-text__desc">Гостеприимство, праздники и танцы!</div>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse iure, debitis repudiandae cum saepe corrupti facilis. Explicabo omnis fugit exercitationem rem, eligendi quo incidunt neque vitae corrupti amet sunt aliquid.</p>
-                    <a href="#" class="article-text__more"> подробнее</a>
+                    <a href="3.php" class="article-text__more"> подробнее</a>
                 </div>
                 <div class="article-img">
                     <img class="small-img" src="./img/place/Танец-small.jpg" alt="">
@@ -140,6 +144,8 @@
 
         </section>
         <!--/ 3 заглавных темы -->
+
+        
         <!-- Панорамные каринки -->
         <section class="panorama">
             <div class="carousel-panorama">
@@ -166,51 +172,22 @@
             <!-- Слайдер -->
             <div class="slider ">
                 <div class="card-carousel d-flex slider-wrapper slick-slide">
-                    <div class="d-flex card-item slide" style="background-image: url('./img/place/каньон-small.jpg');">
-                        <div class="card-item__title">
-                            <h3>Достопримечательность0</h3>
+
+                    <?php $data=Place::getLines();
+                    foreach ($data as $place) { ?>
+
+                        <div class="d-flex card-item slide" style="background-image: url('./<?php echo $place['img-title'];?>');">
+                            <div class="card-item__title">
+                                <h3><?php echo $place['title'];?></h3>
+                            </div>
+                            <div class="card-item__desc">
+                                <?php echo $place['short-desc'];?>
+                            </div>
+                            <button class="card-item__btn">Подробнее</button>
                         </div>
-                        <div class="card-item__desc">
-                            Здесь будет тезисное описание
-                        </div>
-                        <button class="card-item__btn">Подробнее</button>
-                    </div>
-                    <div class="d-flex card-item slide" style="background-image: url('./img/place/каньон-small.jpg');">
-                        <div class="card-item__title">
-                            <h3>Достопримечательность1</h3>
-                        </div>
-                        <div class="card-item__desc">
-                            Здесь будет тезисное описание
-                        </div>
-                        <button class="card-item__btn">Подробнее</button>
-                    </div>
-                    <div class="d-flex card-item slide" style="background-image: url('./img/place/каньон-small.jpg');">
-                        <div class="card-item__title">
-                            <h3>Достопримечательность2</h3>
-                        </div>
-                        <div class="card-item__desc">
-                            Здесь будет тезисное описание
-                        </div>
-                        <button class="card-item__btn">Подробнее</button>
-                    </div> 
-                    <div class="d-flex card-item slide" style="background-image: url('./img/place/каньон-small.jpg');">
-                        <div class="card-item__title">
-                            <h3>Достопримечательность3</h3>
-                        </div>
-                        <div class="card-item__desc">
-                            Здесь будет тезисное описание
-                        </div>
-                        <button class="card-item__btn">Подробнее</button>
-                    </div> 
-                    <div class="d-flex card-item slide" style="background-image: url('./img/place/каньон-small.jpg');">
-                        <div class="card-item__title">
-                            <h3>Достопримечательность4</h3>
-                        </div>
-                        <div class="card-item__desc">
-                            Здесь будет тезисное описание
-                        </div>
-                        <button class="card-item__btn">Подробнее</button>
-                    </div> 
+
+                    <?php };?>
+
                 </div>
             </div>
 
@@ -231,51 +208,22 @@
             <!-- Слайдер -->
             <div class="slider ">
                 <div class="card-carousel d-flex slider-wrapper slick-slide">
-                    <div class="d-flex card-item slide" style="background-image: url('./img/place/море2-small.jpg');">
-                        <div class="card-item__title">
-                            <h3>Название Тура0</h3>
+
+                    <?php $data=Tour::getLines();
+                    foreach ($data as $tour) { ?>
+
+                        <div class="d-flex card-item slide" style="background-image: url('./<?php echo $tour['img-title'];?>');">
+                            <div class="card-item__title">
+                                <h3><?php echo $tour['title'];?></h3>
+                            </div>
+                            <div class="card-item__desc">
+                                <?php echo $tour['short-desc'];?>
+                            </div>
+                            <button class="card-item__btn">Подробнее</button>
                         </div>
-                        <div class="card-item__desc">
-                            Здесь будет тезисное описание тура
-                        </div>
-                        <button class="card-item__btn">Подробнее</button>
-                    </div>
-                    <div class="d-flex card-item slide" style="background-image: url('./img/place/море2-small.jpg');">
-                        <div class="card-item__title">
-                            <h3>Название Тура1</h3>
-                        </div>
-                        <div class="card-item__desc">
-                            Здесь будет тезисное описание тура
-                        </div>
-                        <button class="card-item__btn">Подробнее</button>
-                    </div>
-                    <div class="d-flex card-item slide" style="background-image: url('./img/place/море2-small.jpg');">
-                        <div class="card-item__title">
-                            <h3>Название Тура2</h3>
-                        </div>
-                        <div class="card-item__desc">
-                            Здесь будет тезисное описание тура
-                        </div>
-                        <button class="card-item__btn">Подробнее</button>
-                    </div> 
-                    <div class="d-flex card-item slide" style="background-image: url('./img/place/море2-small.jpg');">
-                        <div class="card-item__title">
-                            <h3>Название Тура3</h3>
-                        </div>
-                        <div class="card-item__desc">
-                            Здесь будет тезисное описание тура
-                        </div>
-                        <button class="card-item__btn">Подробнее</button>
-                    </div> 
-                    <div class="d-flex card-item slide" style="background-image: url('./img/place/море2-small.jpg');">
-                        <div class="card-item__title">
-                            <h3>Название Тура4</h3>
-                        </div>
-                        <div class="card-item__desc">
-                            Здесь будет тезисное описание тура
-                        </div>
-                        <button class="card-item__btn">Подробнее</button>
-                    </div> 
+
+                    <?php };?>
+
                 </div>
             </div>
 
@@ -289,7 +237,11 @@
     </main>
 
     <iframe class="video-card" width="100%" height="400" src="https://www.youtube.com/embed/M10qSqWxsgU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    <footer >
+    
+    
+    <!-- FOOTER  -->
+    <footer>
+
         <div class="footer-container">
             <div class="footer-nav">
                 <div class="logo">DAG.RADIANCE</div>
@@ -320,7 +272,7 @@
             </div>
         </div>
     </footer>
-
+    <!-- /FOOTER  -->
 
 
     <script src="./js/jquery-3.6.4.min.js"></script>
