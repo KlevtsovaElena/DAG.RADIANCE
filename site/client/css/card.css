@@ -14,6 +14,10 @@ p {
     gap: 20px;
 }
 
+.card-container__text {
+    min-width: 500px;
+}
+
 .card-container:nth-child(even){
     flex-direction: row-reverse;
 }
@@ -44,20 +48,6 @@ p {
     letter-spacing: 6px;
     text-transform: uppercase;
 }
-
-/*
-.card-text__title::before {
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);    
-    display: block; /* чтобы отображалось ставим контент пустая строка и блок */ /*
-    content: "";
-    width: 72px;
-    height: 2px;
-    background-color:rgb(189, 88, 44); 
-}
-*/
 
 .card-text__desc {
     margin-bottom: 27px;
@@ -91,6 +81,49 @@ p {
     background-size: cover;
     text-align: center;
     cursor: pointer;
+}
+
+@media(max-width: 1350px) {
+    .card-container {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .card-text__title {
+        text-align: center;
+    }
+
+    .card-text__desc {
+        max-width: none;
+    }
+}
+
+@media(max-width: 815px) {
+    .card-container__text {
+        min-width: unset;
+        margin: 0 10px;
+    }
+}
+
+@media(max-width: 660px) {
+    .card-item {
+        height: 220px;
+    }
+}
+
+@media(max-width: 450px) {
+    .card-item {
+        height: 150px;
+    }
+    .card-item_small {
+        height: 55px;
+    }
+}
+
+@media(max-width: 350px) {
+    .double-slider_container {
+        display: none;
+    }
 }
 
 
