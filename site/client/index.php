@@ -173,7 +173,10 @@
             <div class="slider ">
                 <div class="card-carousel d-flex slider-wrapper slick-slide">
 
-                    <?php $data=Place::getLines();
+                    <?php 
+                    $_GET['limit'] = '4';
+                    $data = Place::getLines();
+                    $GET = [];
                     foreach ($data as $place) { ?>
 
                         <div class="d-flex card-item slide" style="background-image: url('./<?php echo $place['img-title'];?>');">
@@ -183,7 +186,7 @@
                             <div class="card-item__desc">
                                 <?php echo $place['short-desc'];?>
                             </div>
-                            <button class="card-item__btn">Подробнее</button>
+                            <button class="card-item__btn" onclick="renderCard(<?php echo "'" . Place::TABLE . "', " .  $place['id'];?>)">Подробнее</button>
                         </div>
 
                     <?php };?>
@@ -209,17 +212,21 @@
             <div class="slider ">
                 <div class="card-carousel d-flex slider-wrapper slick-slide">
 
-                    <?php $data=Tour::getLines();
+                    <?php 
+                    $_GET['limit'] = '4';
+                    $data = Tour::getLines();
+                    $GET = [];
+
                     foreach ($data as $tour) { ?>
 
                         <div class="d-flex card-item slide" style="background-image: url('./<?php echo $tour['img-title'];?>');">
                             <div class="card-item__title">
-                                <h3><?php echo $tour['title'];?></h3>
+                                <h3><?php echo $tour['title'];?> </h3>
                             </div>
                             <div class="card-item__desc">
                                 <?php echo $tour['short-desc'];?>
                             </div>
-                            <button class="card-item__btn">Подробнее</button>
+                            <button class="card-item__btn" onclick="renderCard(<?php echo "'" . Tour::TABLE . "', " .  $tour['id'];?>)">Подробнее</button>
                         </div>
 
                     <?php };?>

@@ -144,3 +144,7 @@ btnBurger.addEventListener('click', function() {
 })
 
 // * **************** *//
+
+function renderCard(table, i) {
+ console.log(sendRequestGET('http://localhost/api/get/' + table + '/index.php?id=' + i));
+}

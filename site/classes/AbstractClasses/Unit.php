@@ -24,7 +24,7 @@ abstract class Unit implements \Interfaces\UnitActiveInterface
     }
 
 
-    //получение всех записей таблицы
+    //получение всех записей таблицы или по условию
     public static function getLines() : array
     {
         $filterStr = '';
@@ -33,16 +33,27 @@ abstract class Unit implements \Interfaces\UnitActiveInterface
         $strValues = '';
 
 
+        // if ((isset($_GET['search']) && $_GET['search'] !== '')) {
+        //     $filterStr .= " AND product_name LIKE '%" . $_GET['search'] . "%' OR product_description LIKE '%" . $_GET['search'] . "%' ";
+        // }
 
         foreach ($_GET as $key => $value) {
-            if ($key !== '') {
+            if ($key !== 'search' && $key !== 'orderBy' && $key !== 'limit') {
                 $filterStr .= ' AND ' . $key . ' IN (' . $value . ')';  
             }
         }
 
 
 
-        $sqlText = 'SELECT * FROM `' . static::TABLE .'`';
+        if (isset($_GET['orderBy']) && $_GET['orderBy'] !== '') {
+            $filterStr .= ' ORDER BY '  . $_GET['field'] . ' '. $_GET['orderBy'];
+        }
+
+        if (isset($_GET['limit']) && $_GET['limit'] !== '') {
+            $filterStr .=  ' LIMIT ' . $_GET['limit'];
+        }
+
+        $sqlText = 'SELECT * FROM `' . static::TABLE . '` WHERE 1 ' . $filterStr;
 
         $pdo = \Connection::getConnection();
         $result = $pdo->query($sqlText);
@@ -58,6 +69,15 @@ abstract class Unit implements \Interfaces\UnitActiveInterface
     }
 
 }
+
+
+
+
+
+
+
+
+
     //сделать запись в любую таблицу
 //     public static function createLine() : bool
 //     {
