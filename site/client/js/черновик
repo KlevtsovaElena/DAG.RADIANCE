@@ -1,0 +1,90 @@
+$('.slick-slide').slick({
+    slidesToShow: 1,      //по сколько элементов показывать
+    slidesToScroll: 1,    //сколько элементов прокрутить
+    autoplay: true,       //включить автопрокрутку?
+    dots: true,           //добавить прокрутку внизу (точки)?
+    speed: 800,           //скорость прокрутки по кнопкам
+    autoplaySpeed: 6000,  //скорость автопрокрутки
+    //rows: 2,              //количество этажей слайдера
+    prevArrow: '<div class="btn-slider-prev">&#10094</div>',  //стрелка назад
+    nextArrow: '<div class="btn-slider-next">&#10095</div>',  //стрелка вперёд
+  
+    //Мини-галерея
+
+
+    // Адаптивность
+    responsive: [
+      {
+        breakpoint: 1000,
+        settings: {
+          slidesToShow: 2,
+          infinite: true
+        }
+    }, 
+    {
+      breakpoint: 650,
+      settings: {
+        slidesToShow: 1,
+        dots: true
+      }
+    }, 
+    {
+      breakpoint: 300,
+      settings: "unslick" // destroys slick
+    }]
+  
+  });
+
+
+
+  <!-- Слайдер -->
+                    <div class="slider ">
+                        <div class="card-carousel d-flex slider-wrapper slick-slide">
+                            <div class="d-flex card-item slide" style="background-image: url('./img/place/sea01.jpg');">
+                            </div>
+                            <div class="d-flex card-item slide" style="background-image: url('./img/place/sea01.jpg');">
+                            </div>
+                            <div class="d-flex card-item slide" style="background-image: url('./img/place/sea01.jpg');">
+                            </div> 
+                            <div class="d-flex card-item slide" style="background-image: url('./img/place/sea01.jpg');">
+                            </div> 
+                            <div class="d-flex card-item slide" style="background-image: url('./img/place/sea01.jpg');">
+                            </div> 
+
+                            <!-- Мини-галерея под слайдером -->
+                            <div class="image-mini-slider swiper-container">
+                                <div class="image-mini-slider__wrapper swiper-wrapper">
+                                    <div class="image-mini-slider __slide swiper-slide">
+                                        <div class="image-mini-slider__image">
+                                            <img src="./img/place/sea01.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="image-mini-slider __slide swiper-slide">
+                                        <div class="image-mini-slider__image">
+                                            <img src="./img/place/sea01.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="image-mini-slider __slide swiper-slide">
+                                        <div class="image-mini-slider__image">
+                                            <img src="./img/place/sea01.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="image-mini-slider __slide swiper-slide">
+                                        <div class="image-mini-slider__image">
+                                            <img src="./img/place/sea01.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="image-mini-slider __slide swiper-slide">
+                                        <div class="image-mini-slider__image">
+                                            <img src="./img/place/sea01.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            
+        
+                        </div>
+    
+                    </div>
+                </div>

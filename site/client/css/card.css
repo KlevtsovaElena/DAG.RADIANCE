@@ -1,0 +1,97 @@
+p {
+    margin: 0;
+}
+.card {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.card-container {
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.card-container:nth-child(even){
+    flex-direction: row-reverse;
+}
+
+
+.card-text {
+    padding-left: 100px;
+    padding-right: 50px;
+    position: relative;
+}
+
+.card-text p{
+    margin-bottom: 27px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.78;
+    color: rgb(41, 12, 8);
+} 
+
+.card-text__title {
+    margin-bottom: 32px;
+    position: relative;
+    color:rgb(189, 88, 44);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.222;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+}
+
+/*
+.card-text__title::before {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);    
+    display: block; /* чтобы отображалось ставим контент пустая строка и блок */ /*
+    content: "";
+    width: 72px;
+    height: 2px;
+    background-color:rgb(189, 88, 44); 
+}
+*/
+
+.card-text__desc {
+    margin-bottom: 27px;
+    max-width: 500px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 1.2;
+    color: rgb(41, 12, 8);
+}
+
+.double-slider_container {
+    flex-direction: column;
+    max-width: 700px;
+}
+
+.big-slider {
+    width: 680px;
+}
+
+/* Мини-галерея под слайдером */
+.mini-slider {
+    width: 650px;
+}
+
+.card-item_small {
+    height: 80px;
+    padding: 5px;
+    margin: 0 5px;
+    background-position: center center;
+    background-size: cover;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+
