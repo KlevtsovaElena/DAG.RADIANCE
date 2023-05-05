@@ -56,52 +56,7 @@
 
     <main>
 
-        <!-- 3 заглавных темы вариант1 СКРЫТО-->
-
-        <section class="article d-none">
-            <div class="article-container">
-                <div class="article-text">
-                    <div class="article-text__title">Горный Дагестан</div>
-                    <div class="article-text__desc">Вы готовы к восхождению?</div>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse iure, debitis repudiandae cum saepe corrupti facilis. Explicabo omnis fugit exercitationem rem, eligendi quo incidunt neque vitae corrupti amet sunt aliquid.</p>
-                    <a href="1.php" class="article-text__more"> подробнее</a>
-                </div>
-                <div class="article-img">
-                    <img class="small-img" src="./img/place/Горы-small.jpg" alt="">
-                    <img class="big-img d-none" src="./img/place/Горы2.jpg" alt="">
-                </div>
-            </div>
-
-            <div class="article-container">
-                <div class="article-text">
-                    <div class="article-text__title">Золотые пески Дагестана</div>
-                    <div class="article-text__desc">Настоящий бархан у подножия предгорий!</div>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse iure, debitis repudiandae cum saepe corrupti facilis. Explicabo omnis fugit exercitationem rem, eligendi quo incidunt neque vitae corrupti amet sunt aliquid.</p>
-                    <a href="2.php" class="article-text__more"> подробнее</a>
-                </div>
-                <div class="article-img">
-                    <img class="small-img" src="./img/place/Бархан-small.jpg" alt="">
-                    <img class="big-img d-none" src="./img/place/Бархан.jpg" alt="">
-                </div>
-            </div>
-
-            <div class="article-container">
-                <div class="article-text">
-                    <div class="article-text__title">Море Дагестана</div>
-                    <div class="article-text__desc">Окунитесь в тёплое Каспийсое море!</div>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse iure, debitis repudiandae cum saepe corrupti facilis. Explicabo omnis fugit exercitationem rem, eligendi quo incidunt neque vitae corrupti amet sunt aliquid.</p>
-                    <a href="3.php" class="article-text__more"> подробнее</a>
-                </div>
-                <div class="article-img">
-                    <img class="small-img" src="./img/place/море-small.jpg" alt="">
-                    <img class="big-img d-none" src="./img/place/Море.jpg" alt="">
-                </div>
-            </div>
-
-        </section>
-        <!--/ 3 заглавных темы -->
-
-        <!-- 3 заглавных темы вариант2 -->
+         <!-- 3 заглавных темы -->
         <section class="article">
             <div class="article-container">
                 <div class="article-text">
@@ -160,7 +115,7 @@
     <!-- /Панорамные каринки -->
 
 
-        <hr/>
+
 
 
         <!-- БЛОК Достопримечательности -->
@@ -174,19 +129,19 @@
                 <div class="card-carousel d-flex slider-wrapper slick-slide">
 
                     <?php 
-                    $_GET['limit'] = '4';
-                    $data = Place::getLines();
-                    $GET = [];
+
+                    $data = Place::getLinesApiShort(4);
+
                     foreach ($data as $place) { ?>
 
-                        <div class="d-flex card-item catalog-card slide" style="background-image: url('./<?php echo $place['img-title'];?>');">
+                        <div class="d-flex card-item catalog-card slide" style="background-image: url('./<?= $place['img-title'];?>');">
                             <div class="card-item__title">
-                                <h3><?php echo $place['title'];?></h3>
+                                <h3><?= $place['title'];?></h3>
                             </div>
                             <div class="card-item__desc">
-                                <?php echo $place['short-desc'];?>
+                                <?= $place['short-desc'];?>
                             </div>
-                            <button class="card-item__btn catalog-btn btn-yellow" onclick="renderCard(<?php echo "'" . Place::TABLE . "', " .  $place['id'];?>)">Подробнее</button>
+                            <a href="cardOnePlace.php?id= <?= $place['id']; ?>"><button class="card-item__btn catalog-btn btn-yellow">Подробнее</button></a>
                         </div>
 
                     <?php };?>
@@ -195,11 +150,12 @@
             </div>
 
             <!-- Кнопка Смотреть всё -->
+
             <div class="card-btn"><button class="card-item__btn btn-yellow">Смотреть все</button></div>
 
         </div>
-        <!-- /БЛОК Достопримечательности -->
-        <hr>
+        <!-- БЛОК Достопримечательности -->
+
 
 
         <!-- БЛОК ТУРЫ -->
@@ -213,20 +169,20 @@
                 <div class="card-carousel d-flex slider-wrapper slick-slide">
 
                     <?php 
-                    $_GET['limit'] = '4';
-                    $data = Tour::getLines();
-                    $GET = [];
+
+                    $data = Tour::getLinesApiShort(4); 
 
                     foreach ($data as $tour) { ?>
 
-                        <div class="d-flex card-item catalog-card slide" style="background-image: url('./<?php echo $tour['img-title'];?>');">
+                        <div class="d-flex card-item catalog-card slide" style="background-image: url('./<?= $tour['img-title'];?>');">
                             <div class="card-item__title">
-                                <h3><?php echo $tour['title'];?> </h3>
+                                <h3><?= $tour['title'];?> </h3>
                             </div>
                             <div class="card-item__desc">
-                                <?php echo $tour['short-desc'];?>
+                                <?= $tour['short-desc'];?>
                             </div>
-                            <button class="card-item__btn catalog-btn btn-yellow" onclick="renderCard(<?php echo "'" . Tour::TABLE . "', " .  $tour['id'];?>)">Подробнее</button>
+                            <a href="cardOneTour.php?id= <?= $tour['id']; ?>"><button class="card-item__btn catalog-btn btn-yellow">Подробнее</button></a>
+                           
                         </div>
 
                     <?php };?>
@@ -239,6 +195,10 @@
 
         </div>
         <!-- БЛОК ТУРЫ -->
+
+
+
+            
 
 
     </main>
