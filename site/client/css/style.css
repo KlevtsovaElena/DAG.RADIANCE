@@ -32,8 +32,16 @@ a {
     flex: 1;
 }
 
+.block {
+    display: block;
+}
+
 .d-flex {
     display: flex;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
 }
 
 .d-none {
@@ -378,6 +386,15 @@ a {
 
 }
 
+.btn-yellow {
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn-yellow:hover {
+    background-color: rgb(255 174 0);
+}
+
 .card-carousel {
     width: 100%;
     column-gap: 10px;
@@ -398,6 +415,13 @@ a {
     text-align: center;
 }
 
+.catalog-card {
+    position: relative;
+    flex-direction: column;
+    color: #FFFFFF;
+    margin: 15px;
+}
+
 .card-text {
     text-align: center;
 }
@@ -410,6 +434,15 @@ a {
 .card-btn .card-item__btn {
     width: 200px;
     height: 60px;
+}
+
+.catalog-btn {
+    position: absolute;
+    bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
 }
 
 

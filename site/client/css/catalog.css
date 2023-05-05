@@ -1,0 +1,38 @@
+.catalog-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.catalog-card {
+    position: relative;
+    flex-direction: column;
+    color: #FFFFFF;
+    margin: 15px;
+}
+
+.catalog-card_effect {
+    opacity: 0.85;
+    transition: all 0.3s;
+}
+
+.catalog-card_effect:hover {
+    opacity: 1;
+}
+
+.catalog-price {
+    margin-top: 10px;
+}
+
+.catalog-price > span {
+    font-weight: bold;
+}
+
+/* .catalog-btn {
+    position: absolute;
+    bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+} */

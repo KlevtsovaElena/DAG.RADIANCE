@@ -179,14 +179,14 @@
                     $GET = [];
                     foreach ($data as $place) { ?>
 
-                        <div class="d-flex card-item slide" style="background-image: url('./<?php echo $place['img-title'];?>');">
+                        <div class="d-flex card-item catalog-card slide" style="background-image: url('./<?php echo $place['img-title'];?>');">
                             <div class="card-item__title">
                                 <h3><?php echo $place['title'];?></h3>
                             </div>
                             <div class="card-item__desc">
                                 <?php echo $place['short-desc'];?>
                             </div>
-                            <button class="card-item__btn" onclick="renderCard(<?php echo "'" . Place::TABLE . "', " .  $place['id'];?>)">Подробнее</button>
+                            <button class="card-item__btn catalog-btn btn-yellow" onclick="renderCard(<?php echo "'" . Place::TABLE . "', " .  $place['id'];?>)">Подробнее</button>
                         </div>
 
                     <?php };?>
@@ -195,7 +195,7 @@
             </div>
 
             <!-- Кнопка Смотреть всё -->
-            <div class="card-btn"><button class="card-item__btn">Смотреть все</button></div>
+            <div class="card-btn"><button class="card-item__btn btn-yellow">Смотреть все</button></div>
 
         </div>
         <!-- /БЛОК Достопримечательности -->
@@ -219,14 +219,14 @@
 
                     foreach ($data as $tour) { ?>
 
-                        <div class="d-flex card-item slide" style="background-image: url('./<?php echo $tour['img-title'];?>');">
+                        <div class="d-flex card-item catalog-card slide" style="background-image: url('./<?php echo $tour['img-title'];?>');">
                             <div class="card-item__title">
                                 <h3><?php echo $tour['title'];?> </h3>
                             </div>
                             <div class="card-item__desc">
                                 <?php echo $tour['short-desc'];?>
                             </div>
-                            <button class="card-item__btn" onclick="renderCard(<?php echo "'" . Tour::TABLE . "', " .  $tour['id'];?>)">Подробнее</button>
+                            <button class="card-item__btn catalog-btn btn-yellow" onclick="renderCard(<?php echo "'" . Tour::TABLE . "', " .  $tour['id'];?>)">Подробнее</button>
                         </div>
 
                     <?php };?>
@@ -235,7 +235,7 @@
             </div>
 
             <!-- Кнопка Смотреть всё -->
-            <div class="card-btn"><button class="card-item__btn">Смотреть все</button></div>
+            <a href="tours-catalog.php" class="card-btn block"><button class="card-item__btn btn-yellow">Смотреть все</button></a>
 
         </div>
         <!-- БЛОК ТУРЫ -->
