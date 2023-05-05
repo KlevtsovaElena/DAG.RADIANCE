@@ -8,4 +8,4 @@
     //создание объекта для подключения к БД
     $pdo = Connection::getConnection();
 
-    Manager::logOut();
+   Admin::logOut();

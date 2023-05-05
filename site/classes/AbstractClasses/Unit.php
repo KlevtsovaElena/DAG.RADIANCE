@@ -24,51 +24,67 @@ abstract class Unit implements \Interfaces\UnitActiveInterface
     }
 
 
-    //получение всех записей таблицы или по условию
-    public static function getLines() : array
-    {
-        $filterStr = '';
-
-        $strFields = '';
-        $strValues = '';
-
-
-        // if ((isset($_GET['search']) && $_GET['search'] !== '')) {
-        //     $filterStr .= " AND product_name LIKE '%" . $_GET['search'] . "%' OR product_description LIKE '%" . $_GET['search'] . "%' ";
-        // }
-
-        foreach ($_GET as $key => $value) {
-            if ($key !== 'search' && $key !== 'orderBy' && $key !== 'limit') {
-                $filterStr .= ' AND ' . $key . ' IN (' . $value . ')';  
-            }
-        }
-
-
-
-        if (isset($_GET['orderBy']) && $_GET['orderBy'] !== '') {
-            $filterStr .= ' ORDER BY '  . $_GET['field'] . ' '. $_GET['orderBy'];
-        }
-
-        if (isset($_GET['limit']) && $_GET['limit'] !== '') {
-            $filterStr .=  ' LIMIT ' . $_GET['limit'];
-        }
-
-        $sqlText = 'SELECT * FROM `' . static::TABLE . '` WHERE 1 ' . $filterStr;
-
-        $pdo = \Connection::getConnection();
-        $result = $pdo->query($sqlText);
-         
-        $tableItem = [];
-        while ($row = $result->fetch())
-        {
-            $tableItem[] = $row;
-        } 
-
-        return $tableItem;
-    
+    public static function getLinesApi() {
+        $data = file_get_contents("http://nginx/api/get/" . static::TABLE . "/list/index.php");
+        return json_decode($data, true);
     }
 
+    public static function getLinesApiId(int $number) {
+        $data = file_get_contents("http://nginx/api/get/" . static::TABLE . "/id/index.php?id=" . $number);
+        return json_decode($data, true);
+    }
+    
+    public static function getLinesApiShort(int $number) {
+        $data = file_get_contents("http://nginx/api/get/" . static::TABLE . "/limit/index.php?limit=" . $number);
+        return json_decode($data, true);
+    }
 }
+    //получение всех записей таблицы или по условию
+    // public static function getLines(int $number=null) : array
+//     public static function getLines() : array
+//     {
+//         $filterStr = '';
+
+//         $strFields = '';
+//         $strValues = '';
+
+
+//         // if ((isset($_GET['search']) && $_GET['search'] !== '')) {
+//         //     $filterStr .= " AND product_name LIKE '%" . $_GET['search'] . "%' OR product_description LIKE '%" . $_GET['search'] . "%' ";
+//         // }
+
+//         foreach ($_GET as $key => $value) {
+//             if ($key !== 'search' && $key !== 'orderBy' && $key !== 'limit') {
+//                 $filterStr .= ' AND ' . $key . ' IN (' . $value . ')';  
+//             }
+//         }
+
+
+
+//         if (isset($_GET['orderBy']) && $_GET['orderBy'] !== '') {
+//             $filterStr .= ' ORDER BY '  . $_GET['field'] . ' '. $_GET['orderBy'];
+//         }
+
+//         if (isset($_GET['limit']) && $_GET['limit'] !== '') {
+//             $filterStr .=  ' LIMIT ' . $_GET['limit'];
+//         }
+
+//         $sqlText = 'SELECT * FROM `' . static::TABLE . '` WHERE 1 ' . $filterStr;
+
+//         $pdo = \Connection::getConnection();
+//         $result = $pdo->query($sqlText);
+         
+//         $tableItem = [];
+//         while ($row = $result->fetch())
+//         {
+//             $tableItem[] = $row;
+//         } 
+
+//         return $tableItem;
+    
+//     }
+
+// }
 
 
 
