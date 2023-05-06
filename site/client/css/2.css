@@ -1,0 +1,72 @@
+
+.img-regular {
+    display: block;
+    margin: 15px auto;
+    max-width: 1000px;
+}
+
+.img-peak {
+    margin-left: 0;
+}
+
+.img-church {
+    margin-right: 0;
+}
+
+.img-column {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.img-row {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.img-water {
+    max-width: 600px;
+}
+
+.img-fortress {
+    max-width: 600px;
+}
+
+
+@media(max-width: 1550px) {
+    .img-row {
+        flex-direction: column;
+    }
+    .img-water {
+        max-width: 100%;
+    }
+    .img-fortress {
+        max-width: 100%;
+    }
+}
+
+@media(max-width: 1320px) {
+    .img-section {
+        width: 70%;
+    }
+}
+
+@media(max-width: 1200px) {
+    .img-regular {
+        max-width: 600px;
+    }
+}
+
+@media(max-width: 950px) {
+    .img-section2 {
+        max-width: 100%;
+    }
+}
+
+@media(max-width: 370px) {
+    .img-section2 {
+        max-width: 250px;
+    }
+}
+

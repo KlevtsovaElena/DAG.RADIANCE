@@ -1,0 +1,94 @@
+.inner_section {
+    align-items: flex-start;
+}
+
+.img-section {
+    width: 520px;
+    float: right;
+    margin: 20px 0px 40px 40px;
+}
+
+.section-header {
+    margin-bottom: 75px;
+}
+
+.img-double {
+    height: 350px;
+    position: relative;
+}
+
+.img-smaller {
+    margin: 0;
+    width: 441px;
+    position: absolute;
+    top: 50px;
+    right: 449px;
+    z-index: 3;
+}
+
+.img-bigger {
+    margin: 0;
+    height: 100%;
+    position: absolute;
+    right: 25px;
+}
+
+.welcome {
+    text-align: center;
+    font-style: italic;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+
+@media(max-width: 1280px) {
+    .section-first {
+        display: flex;
+        flex-direction: column;
+    }
+    .img-section {
+        margin: 50px auto;
+    }
+    .img-sun-in-mountains {
+        width: 100%;
+    }
+}
+
+@media(max-width: 1060px) {
+    .section-header {
+        margin: 0;
+    }
+    .img-smaller {
+        margin: 15px auto;
+        position: relative;
+        top: unset;
+        right: unset;
+    }
+    .img-bigger {
+        margin: 0 auto;
+        height: 100%;
+        position: relative;
+        right: unset;
+    }
+}
+
+@media(max-width: 670px) {
+    .img-double {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .img-smaller {
+        width: 100%;
+    }
+    .img-bigger {
+        width: 100%;
+    }
+}
+
+@media(max-width: 550px) {
+    .welcome {
+        font-size: 14px;
+    }
+}
+
