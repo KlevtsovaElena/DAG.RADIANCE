@@ -148,7 +148,7 @@ function check() {
     
     //получаем ответ 'success': false/true, admin
     let data = JSON.parse(json);
-
+console.log("data" + data)
     renderCabinet(data);
     return data;
 

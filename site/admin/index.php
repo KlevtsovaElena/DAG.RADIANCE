@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AdminPannel</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
     <link rel="stylesheet" href="css/admin.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,6 +14,14 @@
 </head>
 <body>
     
+    <div id="containerPage">
+
+
+
+    </div>
+
+
+<template id="tmpl-login">   
     <div class="mainBlock">
         <article class="container">
             <!-- Внутренний блок -->
@@ -43,7 +52,7 @@
                     <div class="info-form"></div>
                 </form>
                 <!-- Форма регистрации -->
-                <div action="#" class="form form_signup">
+                <form action="#" class="form form_signup">
                     <h3 class="form__title">Смена временного пароля</h3>
                     <p>
                         <input type="text" class="form__input user-name" placeholder="Логин">
@@ -58,13 +67,56 @@
                         <input type="password" class="form__input user-pass2" placeholder="Подтвердите пароль">
                     </p>
                     <p>
-                        <button class="form__btn form__btn_signup" onclick="userRegistration()">Сменить пароль</button>
+                        <button class="form__btn form__btn_signup" onclick="changePass()">Сменить пароль</button>
                     </p>
                     <div class="info-form "></div>
-                </div>
+                </form>
             </div>
         </article>
     </div>
+</template>
+<template id="tmpl-cabinet">
+    <div class="cabinet">
+        <div class="menu-left">
+            <div class="profile-name">
+                <h3>${first_name}</h3>
+                <h3>${last_name}</h3>
+                <h3>${role}</h3>
+            </div>
+            <div class="menu-left__items">
+                <ul>
+                    <li><a href="addAccount.php">Добавить учётную запись</a></li>
+                    <li><a href="tours.php">ТУРЫ</a></li>
+                    <li><a href="places.php">ДОСТОПРИМЕЧАТЕЛЬНОСТИ</a></li>
+                    <li><a href="contacts.ph">КОНТАКТЫ</a></li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="menu-right">
+            <div>DAG.RADIANCE</div>
+            <button onclick="logOut()">ВЫЙТИ</button>
+        </div>
+        <div class="work-area">
+            <h1>ВОТ И АДМИНКА!</h1>
+
+            
+            <form>
+                <input type="text"  placeholder="first_name">
+                <input type="text"  placeholder="last_name">
+                <input type="text"  placeholder="login">
+                <input type="text"  placeholder="role">
+                <button onclick="addAccount()">Добавить учётную запись</button>
+        
+            </form>
+        </div>
+
+    </div>
+
+    
+
+
+</template>
     <script src="js/main.js"></script>
 </body>
 </html>

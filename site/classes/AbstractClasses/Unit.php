@@ -38,6 +38,57 @@ abstract class Unit implements \Interfaces\UnitActiveInterface
         $data = file_get_contents("http://nginx/api/get/" . static::TABLE . "/limit/index.php?limit=" . $number);
         return json_decode($data, true);
     }
+
+    //сделать запись в любую таблицу
+    public static function createLine() : bool
+    {
+        $strFields = '';
+        $strValues = '';
+
+        foreach ($_POST as $key => $value) {
+                $strFields .= "`$key`,"; 
+                $strValues .= "'$value',";
+
+        }
+
+        $strFields = trim($strFields, ',');
+        $strValues = trim($strValues, ',');
+
+
+        $sqlText = "INSERT INTO ". static::TABLE ."($strFields) VALUES($strValues)";
+
+        $pdo = \Connection::getConnection();
+
+        $pdo->query($sqlText);
+
+        return true;
+       
+    }
+
+    // public static function createLine() : bool
+    // {
+    //     $strFields = '';
+    //     $strValues = '';
+
+    //     foreach ($_POST as $key => $value) {
+    //             $strFields .= "`$key`,"; 
+    //             $strValues .= "'$value',";
+
+    //     }
+
+    //     $strFields = trim($strFields, ',');
+    //     $strValues = trim($strValues, ',');
+
+
+    //     $sqlText = "INSERT INTO ". static::TABLE ."($strFields) VALUES($strValues)";
+
+    //     $pdo = \Connection::getConnection();
+
+    //     $pdo->query($sqlText);
+
+    //     return true;
+       
+    // }
 }
     //получение всех записей таблицы или по условию
     // public static function getLines(int $number=null) : array

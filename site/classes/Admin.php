@@ -144,4 +144,26 @@ final class Admin extends AbstractClasses\Unit
 
         return $token;
     }
+
+
+
+    
+    public static function createAccount() : bool
+    {
+        $first_name = $_POST['first_name'];
+        $last_name = $_POST['last_name'];
+        $login = $_POST['login'];
+        $role = $_POST['role'];
+        $temp_password = $_POST['temp_password'];
+
+        $sqlText = "INSERT INTO `admin` (`first_name`, `last_name`, `login`, `role`, `temp_password`, `date_registr`) VALUES('$first_name', '$last_name', '$login', '$role', '$temp_password', now())";
+
+        $pdo = \Connection::getConnection();
+
+        $pdo->query($sqlText);
+
+        return true;
+       
+    }
+
 }
