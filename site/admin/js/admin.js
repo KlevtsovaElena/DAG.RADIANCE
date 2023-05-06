@@ -56,9 +56,6 @@ function renderLogin() {
 
 }
 
-
-
-
 function managerAuthorization() {
     //предотвратить дефолтные действия, отмена отправки формы
     event.preventDefault(); 
@@ -122,8 +119,7 @@ console.log(password.value);
 
     data = check();
     console.log(data);
-    //рисуем личный кабинет
-    renderCabinet(data);
+
 }
 
 
@@ -322,4 +318,21 @@ function changePass() {
 
 
 //tj5pfq6e ivanov-ii
+}
+
+function deleteCard() {
+    const deleteCardBlock = event.target.closest('.card-item').querySelector('.delete-card');
+
+    deleteCardBlock.classList.remove('d-none');
+}
+
+function hiddenDeleteBlock() {
+    const deleteCardBlock = event.target.closest('.card-item').querySelector('.delete-card');
+alert('нажали удалить')
+    deleteCardBlock.classList.add('d-none');
+}
+function hiddenDeleteBlock2() {
+    const deleteCardBlock = event.target.closest('.card-item').querySelector('.delete-card');
+    alert('нажали отмена')
+    deleteCardBlock.classList.add('d-none');
 }

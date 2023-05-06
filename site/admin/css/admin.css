@@ -2,12 +2,15 @@ body {
     margin: 0;
     padding: 0;
 }
+.d-block {
+    display: block;
+}
 
 #containerPage{
     height: 100vh;
     background-image: url('../../../client/img/bg/bgPpt.jpg');
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-color: #F7CE9D;
     color: rgb(189, 88, 44);  
 }
@@ -171,6 +174,12 @@ body {
     height: 100vh;
     background-color: #F7CE9D;
 }
+
+.menu-left__items {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
 .menu-right {
     position: absolute;
     display: flex;
@@ -183,7 +192,56 @@ body {
     position: relative;
 }
 .work-area {
+    padding-top: 60px;
+    display: flex;
     margin-left: 320px;
-    margin-top: 60px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* карточки */
+.card-item {
+    width: 200px;
+    height: 266px;
+}
+
+.catalog-card_effect {
+    opacity: 1;
+}
+
+.btn-black {
+    width: 150px;
+    margin: 5px 0;
+    background-color: black;
+    color: #ffffff;
+    border-radius: 10px;
+
+}
+.catalog-card_effect:hover .edit-card{
+    display: flex;
+}
+.edit-card {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255,255,255,0.5);
+}
+
+.delete-card {
+    position: absolute;
+    top: 35%;
+    z-index: 9;
+    width: 80%;
+    height: 30%;
+    background-color: #ffffff;
+    color: black;
 
 }

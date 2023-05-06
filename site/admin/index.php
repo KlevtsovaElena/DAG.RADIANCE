@@ -77,26 +77,7 @@
 </template>
 <template id="tmpl-cabinet">
     <div class="cabinet">
-        <div class="menu-left">
-            <div class="profile-name">
-                <h3>${first_name}</h3>
-                <h3>${last_name}</h3>
-                <h3>${role}</h3>
-            </div>
-            <div class="menu-left__items">
-                <ul>
-                    <li><a href="addAccount.php">Добавить учётную запись</a></li>
-                    <li><a href="tours.php">ТУРЫ</a></li>
-                    <li><a href="places.php">ДОСТОПРИМЕЧАТЕЛЬНОСТИ</a></li>
-                    <li><a href="contacts.ph">КОНТАКТЫ</a></li>
-
-                </ul>
-            </div>
-        </div>
-        <div class="menu-right">
-            <div>DAG.RADIANCE</div>
-            <button onclick="logOut()">ВЫЙТИ</button>
-        </div>
+    <?php include "cabinet-menu.php";?>
         <div class="work-area">
             <h1>ВОТ И АДМИНКА!</h1>
 
@@ -117,6 +98,6 @@
 
 
 </template>
-    <script src="js/main.js"></script>
+    <script src="js/admin.js"></script>
 </body>
 </html>
