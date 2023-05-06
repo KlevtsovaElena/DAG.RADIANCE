@@ -31,7 +31,7 @@
     $_POST['date_registr'] = date('Y-m-d H:i:s');
     
     //создаём запись в БД
-    Admin::createLine();
+    Admin::createAccount();
 
 
     $response = [
