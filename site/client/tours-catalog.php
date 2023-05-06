@@ -42,7 +42,7 @@
     
         <main>
             <div class="catalog-container">
-            <?php $data = Tour::getLines();
+            <?php $data = Tour::getLinesApi();
             foreach ($data as $tour) { ?>
                 <div class="d-flex card-item catalog-card catalog-card_effect" style="background-image: url('./<?php echo $tour['img-title'] ?>');">
                     <div class="card-item__title">

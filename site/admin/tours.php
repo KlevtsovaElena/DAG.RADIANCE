@@ -46,12 +46,12 @@
 
                         <div class="edit-card">
                             <a href="edit-tour.php?id= <?= $tour['id']; ?>" class="d-block"><button class="btn-black">Изменить</button></a>
-                            <!-- <a href="delete-tour.php?id= <?= $tour['id']; ?>" class="d-block"></a> -->
+
                             <button class="btn-black" onclick="deleteCard()">Удалить</button>
                         
                         </div>
                         <div class="delete-card d-none">
-                            <div  onclick="hiddenDeleteBlock()">Удалить</div>
+                            <a href="delete-tour.php?id= <?= $tour['id']; ?>"><div  onclick="hiddenDeleteBlock()">Удалить</div></a>
                             <div  onclick="hiddenDeleteBlock2()">Отмена</div>
                         </div>
                         
