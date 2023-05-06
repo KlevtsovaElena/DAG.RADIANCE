@@ -1,3 +1,5 @@
+<?php require_once('../classes/autoload.php'); ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,6 +24,36 @@
             <div class="work-area">
                 <div class="work-area__title">
                     <h1>КОНТАКТЫ</h1>
+                </div>
+
+
+                <div class="edit-contacts">
+
+                <?php 
+                $data = Contacts::getLinesApi();
+                $contact = (object)$data[0]; 
+                ?>
+                    <form action="works/edit-contacts.php" method="post" class="edit-contacts__form">
+                        <label for="phone"> ТЕЛЕФОН
+                            <input type="text" id="phone" name="phone" value="<?= $contact->phone;?>"> 
+                        </label>
+                        <label for="mail"> ЭЛЕКТРОННАЯ ПОЧТА
+                            <input type="text" id="mail" name="mail" value="<?= $contact->mail;?>"> 
+                        </label>
+                        <label for="telegram"> TELEGRAM
+                            <input type="text" id="telegram" name="telegram" value="<?= $contact->telegram;?>"> 
+                        </label>
+                        <label for="whatsapp"> WHATSAPP
+                            <input type="text" id="whatsapp" name="whatsapp" value="<?= $contact->whatsapp;?>"> 
+                        </label>
+                        <label for="vk"> VK
+                            <input type="text" id="vk" name="vk" value="<?= $contact->vk;?>"> 
+                        </label>
+
+
+                        <button type="submit">Сохранить</button>
+
+                    </form>
                 </div>
 
 
