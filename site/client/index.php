@@ -141,7 +141,7 @@
                             <div class="card-item__desc">
                                 <?= $place['short-desc'];?>
                             </div>
-                            <a href="cardOnePlace.php?id= <?= $place['id']; ?>"><button class="card-item__btn catalog-btn btn-yellow">Подробнее</button></a>
+                            <a href="cardOnePlace.php?id= <?= $place['id']; ?>"><button class="card-btn card-item__btn catalog-btn btn-yellow">Подробнее</button></a>
                         </div>
 
                     <?php };?>
@@ -151,7 +151,7 @@
 
             <!-- Кнопка Смотреть всё -->
 
-            <div class="card-btn"><button class="card-item__btn btn-yellow">Смотреть все</button></div>
+            <a href="places-catalog.php" class="card-btn block"><button class="card-item__btn btn-yellow">Смотреть все</button></a>
 
         </div>
         <!-- БЛОК Достопримечательности -->
@@ -181,7 +181,7 @@
                             <div class="card-item__desc">
                                 <?= $tour['short-desc'];?>
                             </div>
-                            <a href="cardOneTour.php?id= <?= $tour['id']; ?>"><button class="card-item__btn catalog-btn btn-yellow">Подробнее</button></a>
+                            <a href="cardOneTour.php?id= <?= $tour['id']; ?>"><button class="card-btn card-item__btn catalog-btn btn-yellow">Подробнее</button></a>
                            
                         </div>
 
@@ -207,39 +207,38 @@
     
     
     <!-- FOOTER  -->
-    <footer>
-
-        <div class="footer-container">
-            <div class="footer-nav">
-                <div class="logo">DAG.RADIANCE</div>
-
-                <div class="footer-nav__item">
-                    <h4 class="footer-nav__title">Меню</h4>
-                    <ul>
-                        <li>Достопримечательности</li>
-                        <li>Туры</li>
-                        <li>Контакты</li>
-                    </ul>
+    
+    <footer >
+            <div class="footer-container">
+                <div class="footer-nav">
+                    <div class="logo">DAG.RADIANCE</div>
+                    <div class="footer-menu_container">
+                        <div class="footer-nav__item">
+                            <h4 class="footer-nav__title">Меню</h4>
+                            <div class="footer-nav__links">
+                                <a href="places-catalog.html">Достопримечательности</a>
+                                <a href="tours-catalog.html">Туры</a>
+                                <a href="contacts.html">Контакты</a>
+                            </div>
+                        </div>
+                        <div class="footer-nav__item">
+                            <h4 class="footer-nav__title">О регионе</h4>
+                            <div class="footer-nav__links">
+                                <a href="1.html">География и климат</a>
+                                <a href="2.html">Колорит</a>
+                                <a href="3.html">Праздники и традиции</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="footer-nav__item">
-                    <h4 class="footer-nav__title">О регионе</h4>
-                    <ul>
-                        <li>География</li>
-                        <li>Климат</li>
-                        <li>Колорит</li>
-                        <li>Праздники и традиции</li>
-                    </ul>
+                <div class="footer-links">
+                    <img src="img/icons/fb.png" alt="" class="linkPic">
+                    <img src="img/icons/tg.png" alt="" class="linkPic">
+                    <img src="img/icons/inst.png" alt="" class="linkPic">
+                    <img src="img/icons/wtsp.png" alt="" class="linkPic">
                 </div>
             </div>
-            <div class="footer-links">
-                <img src="img/icons/fb.png" alt="" class="linkPic">
-                <img src="img/icons/tg.png" alt="" class="linkPic">
-                <img src="img/icons/inst.png" alt="" class="linkPic">
-                <img src="img/icons/wtsp.png" alt="" class="linkPic">
-            </div>
-        </div>
-    </footer>
-    <!-- /FOOTER  -->
+        </footer>
 
 
     <script src="./js/jquery-3.6.4.min.js"></script>

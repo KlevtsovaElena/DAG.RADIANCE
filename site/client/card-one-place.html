@@ -1,12 +1,3 @@
-<?php
-require_once('../classes/autoload.php');
-// получим данные именно по этой карточке
-$data = Tour::getLinesApiId($_GET['id']);
-
-// var_dump($data);
-// echo "Получили данные по карточке" . $data[0]['id'];
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -52,46 +43,54 @@ $data = Tour::getLinesApiId($_GET['id']);
                 <div class="card-container">
                     <div class="card-container__text">
                         <div class="card-text__title">
-                            <h3><?= $data[0]['title'] ?></h3>
+                            <h3>Название Достопримечательности</h3>
                         </div>
                         <div class="card-text__desc">
-                            <p> <?= $data[0]['full-desc'] ?> </p>
+                            <p>Здесь будет развернутое описание достопримечательности. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elit ullamcorper dignissim cras tincidunt. A arcu cursus vitae congue mauris rhoncus aenean vel. Eleifend quam adipiscing vitae proin sagittis nisl rhoncus mattis. Adipiscing commodo elit at imperdiet. Ornare suspendisse sed nisi lacus sed viverra tellus in hac. Elit eget gravida cum sociis natoque penatibus et magnis. Lectus urna duis convallis convallis tellus id interdum velit. Euismod nisi porta lorem mollis. Vitae sapien pellentesque habitant morbi. Tincidunt nunc pulvinar sapien et ligula. Fermentum iaculis eu non diam phasellus vestibulum lorem sed risus. Neque viverra justo nec ultrices dui sapien. Turpis nunc eget lorem dolor sed viverra ipsum. Tristique magna sit amet purus gravida quis blandit turpis. Sit amet purus gravida quis blandit turpis cursus. Scelerisque in dictum non consectetur a erat nam at. Eget egestas purus viverra accumsan in. Feugiat nisl pretium fusce id velit ut.
+
+                                Senectus et netus et malesuada fames ac turpis. Nunc sed velit dignissim sodales. Nibh praesent tristique magna sit amet. Lorem dolor sed viverra ipsum nunc aliquet bibendum enim facilisis. Vitae congue eu consequat ac felis donec et odio pellentesque. Vitae suscipit tellus mauris a diam maecenas. Netus et malesuada fames ac turpis egestas sed tempus. Tempus urna et pharetra pharetra massa massa. Proin sagittis nisl rhoncus mattis rhoncus urna neque. Nulla malesuada pellentesque elit eget gravida cum sociis natoque. Curabitur gravida arcu ac tortor dignissim convallis aenean.
+                                
+                                At risus viverra adipiscing at in tellus integer feugiat scelerisque. Diam sollicitudin tempor id eu nisl nunc mi ipsum faucibus. Metus aliquam eleifend mi in nulla posuere. Varius sit amet mattis vulputate enim nulla. A condimentum vitae sapien pellentesque habitant morbi tristique senectus. Nibh nisl condimentum id venenatis a condimentum. Tincidunt praesent semper feugiat nibh sed pulvinar proin. Nec ultrices dui sapien eget. Mattis pellentesque id nibh tortor id. Nulla porttitor massa id neque aliquam vestibulum.</p>
                         </div>
                     </div>
 
-                    <?php $imgCarousel = json_decode($data[0]['img-carousel'], true); ?>
-
-                    
-                    
                     <!-- Слайдер с нижней мини-галереей -->
                     <div class="double-slider_container">
                         <div class="slider big-slider">
-                        
                             <div class="card-carousel d-flex slider-wrapper slick-slide slider-for">
-                            <?php for ($i = 0; $i < count($imgCarousel); $i++) { ?>
-                                <div class="d-flex card-item slide" style="background-image: url('./<?= $imgCarousel[$i]; ?>');">
+                                <div class="d-flex card-item slide" style="background-image: url('./img/place/sulakskiy-kanion-big.jpg');">
                                 </div>
-                                <?php }; ?>
-                            </div>
-                              
+                                <div class="d-flex card-item slide" style="background-image: url('./img/place/кавказский-вавилон.jpeg');">
+                                </div>
+                                <div class="d-flex card-item slide" style="background-image: url('./img/place/Море.jpg');">
+                                </div> 
+                                <div class="d-flex card-item slide" style="background-image: url('./img/place/Дербент.jpg');">
+                                </div> 
+                                <div class="d-flex card-item slide" style="background-image: url('./img/place/Горы2.jpg');">
+                                </div> 
+                            </div>      
                         </div>
                         
                         <!-- Нижняя мини-галерея слайдера -->
                         <div class="slider mini-slider">
                             <div class="card-carousel d-flex slider-wrapper slick-slide slider-nav">
-                            <?php for ($i = 0; $i < count($imgCarousel); $i++) { ?>
-                                <div class="d-flex card-item_small slide" style="background-image: url('./<?= $imgCarousel[$i]; ?>');">
+                                <div class="d-flex card-item_small slide" style="background-image: url('./img/place/sulakskiy-kanion-big.jpg');">
                                 </div>
-                                <?php }; ?>
-                            </div>
-                                   
+                                <div class="d-flex card-item_small slide" style="background-image: url('./img/place/кавказский-вавилон.jpeg');">
+                                </div>
+                                <div class="d-flex card-item_small slide" style="background-image: url('./img/place/Море.jpg');">
+                                </div> 
+                                <div class="d-flex card-item_small slide" style="background-image: url('./img/place/Дербент.jpg');">
+                                </div> 
+                                <div class="d-flex card-item_small slide" style="background-image: url('./img/place/Горы2.jpg');">
+                                </div> 
+                            </div>       
                         </div>
                     </div>
                 
-                
             </section>
 
-            <a href="tours-catalog.php" class="card-btn block"><button class="card-item__btn btn-yellow">Смотреть все</button></a>
+            <a href="places-catalog.html" class="card-btn block"><button class="card-item__btn btn-yellow">Смотреть все</button></a>
             </div>
     
         </main>

@@ -42,19 +42,16 @@
     
         <main>
             <div class="catalog-container">
-            <?php $data = Tour::getLinesApi();
-            foreach ($data as $tour) { ?>
-                <div class="d-flex card-item catalog-card catalog-card_effect" style="background-image: url('./<?php echo $tour['img-title'] ?>');">
+            <?php $data = Place::getLinesApi();
+            foreach ($data as $place) { ?>
+                <div class="d-flex card-item catalog-card catalog-card_effect" style="background-image: url('./<?php echo $place['img-title'] ?>');">
                     <div class="card-item__title">
-                        <h3><?php echo $tour['title']; ?></h3>
+                        <h3><?php echo $place['title']; ?></h3>
                     </div>
                     <div class="card-item__desc">
-                        <?php echo $tour['short-desc']; ?>
+                        <?php echo $place['short-desc']; ?>
                     </div>
-                    <div class="card-item__desc catalog-price">
-                        Стоимость: <span><?php echo $tour['price']; ?> руб.</span>
-                    </div>
-                    <a href="cardOneTour.php?id= <?= $tour['id'] ?> " class="block"><button class="card-item__btn catalog-btn btn-yellow">Подробнее</button></a>
+                    <a href="cardOnePlace.php?id= <?= $place['id'] ?> " class="block"><button class="card-item__btn catalog-btn btn-yellow">Подробнее</button></a>
                 </div>
                 <?php } ?>
             </div>

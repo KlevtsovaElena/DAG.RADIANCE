@@ -2,13 +2,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-}
-
-.catalog-card {
-    position: relative;
-    flex-direction: column;
-    color: #FFFFFF;
-    margin: 15px;
+    margin: 50px auto;
 }
 
 .catalog-card_effect {
