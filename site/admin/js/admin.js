@@ -336,3 +336,19 @@ function hiddenDeleteBlock2() {
     alert('нажали отмена')
     deleteCardBlock.classList.add('d-none');
 }
+
+function hiddenDeleteImgCarousel() {
+
+    const deleteImg = event.target.closest('.img-carousel-item').querySelector('.delete-img-carousel');
+    deleteImg.classList.remove('d-none');
+}
+
+function notDeleteImgCarousel() {
+    const deleteImg = event.target.closest('.img-carousel-item').querySelector('.delete-img-carousel');
+    deleteImg.classList.add('d-none');
+}
+
+function deleteImgCarousel() {
+    const deleteImg = event.target.closest('.img-carousel-item');
+    deleteImg.remove();
+}

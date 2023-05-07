@@ -5,7 +5,9 @@ body {
 .d-block {
     display: block;
 }
-
+.d-inline-block {
+    display: inline-block;
+}
 #containerPage{
     height: 100vh;
     background-image: url('../../../client/img/bg/bgPpt.jpg');
@@ -252,3 +254,39 @@ body {
     background-color: #F7CE9D;
     
 }
+
+.edit-tour {
+    background-color: #F7CE9D;
+    width: 90%;
+    height: 800px;
+}
+
+.edit-tour form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#img-carousel_ {
+    width: 500px;
+}
+
+.img-carousel-item {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.delete-img-carousel {
+
+    position: absolute;
+    top: 0;
+    left:100px;
+    width: 300px;
+    height: 70px;
+    background-color: #ffffff;
+    color: black;
+}
+.delete-true {
+    color: red;
+}
+

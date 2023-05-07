@@ -50,14 +50,34 @@ require_once('../classes/autoload.php');
                             <input type="text" id="full-desc" name="full-desc" value="<?= $tour->{'full-desc'};?>"> 
                         </label>
                         <label for="price"> СТОИМОСТЬ
-                            <input type="text" id="price" name="price" value="<?= $tour->price;?>"> 
+                        
+                           <input type="text" id="price" name="price" value="<?= $tour->price;?>"> 
                         </label>
+
                         <label for="img-title"> ФОТО ДЛЯ КАРТОЧКИ
                             <input type="text" id="img-title" name="img-title" value="<?= $tour->{'img-title'};?>"> 
                         </label>
-                        <label for="img-carousel"> ФОТО ДЛЯ ГАЛЕРЕИ
+                        <!-- <label for="img-carousel"> ФОТО ДЛЯ ГАЛЕРЕИ
                             <input type="text" id="img-carousel" name="img-carousel" value="<?= $tour->{'img-carousel'};?>"> 
-                        </label>
+                        </label> -->
+                         ФОТО ДЛЯ ГАЛЕРЕИ json
+                        <div id="img-carousel_">
+                            <?php 
+                                $imgCarousel = json_decode($data[0]['img-carousel'], true);
+                                for ($i = 0; $i < count($imgCarousel); $i++) { ?>
+                                    <div >
+                                        <img style="width: 100px" src="<?= '../client/' . $imgCarousel[$i]; ?>">
+                                        <a href="#">X удалить</a>
+                                    </div> 
+                                    <br>
+
+                                <?php }
+                            ?>
+                            <button>+ Добавить ещё из ГАЛЕРЕИ</button>
+                            <button>+ Загрузить файлы</button>
+                            
+                        </div>
+                        
 
 
                         <button type="submit">Сохранить</button>
