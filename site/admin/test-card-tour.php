@@ -39,7 +39,8 @@ require_once('../classes/autoload.php');
                     $tour = (object)$data[0];
                     
                 ?>
-                    <form action="works/test-edit-tour.php" method="post" class="edit-tour__form">
+                    <!-- <form action="works/test-edit-tour.php" method="post" class="edit-tour__form"> -->
+                    <form action="1.php" method="post" class="edit-tour__form">
 
 
 
@@ -64,7 +65,11 @@ require_once('../classes/autoload.php');
                                 }
                             ?>
                             <button>+ Добавить ещё из ГАЛЕРЕИ</button>
-                            <button>+ Загрузить файлы</button>
+                            
+                            <form action="2.php" method="post">
+                                <input name="test" value="картинки">
+                                <input type="submit"> + Загрузить файлы</input>
+                            </form>
                             
                         </div>
                         

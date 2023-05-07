@@ -1,6 +1,5 @@
 <?php
 require_once('../classes/autoload.php');
-
 ?>
 
 
@@ -13,19 +12,19 @@ require_once('../classes/autoload.php');
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AdminPannel</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="../client/css/style.css">  
     <link rel="stylesheet" href="css/admin.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
 
 </head>
+
 <body>
-    
     <div id="containerPage">
         <div class="cabinet">
-        <?php include "cabinet-menu.php";?>
-
+            <!-- рисуем меню кабинета из файла cabinet-menu.php -->
+            <?php include "cabinet-menu.php";?>
 
             <div class="work-area">
                 <div class="work-area__title">
@@ -38,62 +37,59 @@ require_once('../classes/autoload.php');
                     $data = Tour::getLinesApiId($_GET['id']);
                     $tour = (object)$data[0];
                 ?>
-                    <form action="works/edit-tour.php" method="post" class="edit-tour__form">
-                        <input type="hidden" name="id" value="<?= $tour->id;?>"> 
-                        <label for="title"> НАЗВАНИЕ ТУРА
-                            <input type="text" id="title" name="title" value="<?= $tour->title;?>"> 
-                        </label>
-                        <label for="short-desc"> КРАТКОЕ ОПИСАНИЕ
-                            <input type="text" id="short-desc" name="short-desc" value="<?= $tour->{'short-desc'};?>"> 
-                        </label>
-                        <label for="full-desc"> ПОЛНОЕ ОПИСАНИЕ
-                            <input type="text" id="full-desc" name="full-desc" value="<?= $tour->{'full-desc'};?>"> 
-                        </label>
-                        <label for="price"> СТОИМОСТЬ
-                        
-                           <input type="text" id="price" name="price" value="<?= $tour->price;?>"> 
-                        </label>
 
-                        <label for="img-title"> ФОТО ДЛЯ КАРТОЧКИ
-                            <input type="text" id="img-title" name="img-title" value="<?= $tour->{'img-title'};?>"> 
-                        </label>
-                        <!-- <label for="img-carousel"> ФОТО ДЛЯ ГАЛЕРЕИ
-                            <input type="text" id="img-carousel" name="img-carousel" value="<?= $tour->{'img-carousel'};?>"> 
-                        </label> -->
-                         ФОТО ДЛЯ ГАЛЕРЕИ json
-                        <div id="img-carousel_">
-                            <?php 
+                    <!-- Собираем данные одного тура для таблицы туров -->
+                    <form action="works/edit-tour.php" method="post" class="edit-tour__form" enctype="multipart/form-data">
+
+                        <input type="hidden" name="id" value="<?= $tour->id;?>"> 
+                        <p>НАЗВАНИЕ ТУРА<input type="text" id="title" name="title" value="<?= $tour->title;?>"></p>
+                        <p>КРАТКОЕ ОПИСАНИЕ<input type="text" id="short-desc" name="short-desc" value="<?= $tour->{'short-desc'};?>"></p>
+                        <p>ПОЛНОЕ ОПИСАНИЕ<input type="text" id="full-desc" name="full-desc" value="<?= $tour->{'full-desc'};?>"></p>
+                        <p>СТОИМОСТЬ<input type="text" id="price" name="price" value="<?= $tour->price;?>"></p>                      
+
+                        <!-- картинка для маленькой карточки -->
+                        ИЗОБРАЖЕНИЕ ДЛЯ КАРТОЧКИ ТУРА
+                        <div class="img-title-form">
+                            <div class="img-title-prew d-inline-block"><img src="<?= '../client/' . $tour->{'img-title'};?>" /></div>
+                            <input type="hidden" name="img-title" value="<?= $tour->{'img-title'};?>">  
+                            <input type="file"  id="new-img-title" name="new-img-title">                               
+                        </div> 
+
+                        <!-- галерея КАРУСЕЛИ-->
+                        ИЗОБРАЖЕНИЯ ДЛЯ КАРУСЕЛИ ТУРА
+                        <div class="img-carousel">
+                            <?php if ($data[0]['img-carousel'] !== "[]" && $data[0]['img-carousel'] !== NULL) {
                                 $imgCarousel = json_decode($data[0]['img-carousel'], true);
                                 for ($i = 0; $i < count($imgCarousel); $i++) { ?>
-                                    <div >
+                                    <div class="img-carousel-item">
                                         <img style="width: 100px" src="<?= '../client/' . $imgCarousel[$i]; ?>">
-                                        <a href="#">X удалить</a>
+                                        <input type=hidden name="img-carousel[<?= $i; ?>]" value="<?= $imgCarousel[$i]; ?>">
+                                        <div class="d-inline-block" onclick="hiddenDeleteImgCarousel()">X удалить</div>
+                                        <div class="d-none delete-img-carousel">
+                                            <h6>Удалить это изображение?<h6>
+                                            <div class="d-inline-block delete-true" onclick="deleteImgCarousel()">ДА</div>
+                                            <div class="d-inline-block delete-false" onclick="notDeleteImgCarousel()">ОТМЕНА</div>
+                                        </div>
                                     </div> 
-                                    <br>
-
-                                <?php }
-                            ?>
-                            <button>+ Добавить ещё из ГАЛЕРЕИ</button>
-                            <button>+ Загрузить файлы</button>
+                                <?php }   
+                            }?>
                             
+                            <input type="file"  id="new-img-carousel" name="new-img-carousel[]" multiple>  
+                            <div class="img-carousel-prew"></div>        
                         </div>
-                        
 
 
+                        <a href="card-tour.php?id=<?= $tour->id;?>"><div>Не сохранять</div></a>
                         <button type="submit">Сохранить</button>
 
                     </form>
                 </div>
-                
-
-
-
             </div>
-
         </div>
     </div>
 
-
     <script src="js/admin.js"></script>
+    <script src="js/prewImg.js"></script> 
+
 </body>
 </html>

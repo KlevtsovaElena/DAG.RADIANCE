@@ -352,3 +352,5 @@ function deleteImgCarousel() {
     const deleteImg = event.target.closest('.img-carousel-item');
     deleteImg.remove();
 }
+
+

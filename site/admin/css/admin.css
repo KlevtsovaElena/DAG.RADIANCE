@@ -267,7 +267,7 @@ body {
     width: 100%;
 }
 
-#img-carousel_ {
+.img-carousel {
     width: 500px;
 }
 
@@ -290,3 +290,14 @@ body {
     color: red;
 }
 
+.img-title-prew img{
+    width: 150px; 
+    height: 200px;
+}
+
+.img-carousel-prew img {
+    width: 100px;
+    display: block;
+    margin: 10px 0;
+
+}
