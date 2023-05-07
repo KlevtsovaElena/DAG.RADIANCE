@@ -45,7 +45,7 @@
                         <a href="" class="d-block"><button class="card-item__btn catalog-btn btn-yellow">Подробнее</button></a>
 
                         <div class="edit-card">
-                            <a href="edit-tour.php?id= <?= $tour['id']; ?>" class="d-block"><button class="btn-black">Изменить</button></a>
+                            <a href="card-tour.php?id= <?= $tour['id']; ?>" class="d-block"><button class="btn-black">Изменить</button></a>
 
                             <button class="btn-black" onclick="deleteCard()">Удалить</button>
                         

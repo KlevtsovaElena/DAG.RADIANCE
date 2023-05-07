@@ -245,3 +245,10 @@ body {
     color: black;
 
 }
+
+.edit-contacts__form {
+    display: flex;
+    flex-direction: column;
+    background-color: #F7CE9D;
+    
+}
