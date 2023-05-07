@@ -18,15 +18,25 @@ CREATE TABLE `admin` (
   `date_update` datetime DEFAULT NULL,
   `token` varchar(80) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb3;
 
 INSERT INTO `admin` (`id`, `first_name`, `last_name`, `login`, `role`, `password`, `temp_password`, `date_registr`, `date_update`, `token`) VALUES
-(1,	'Елена',	'Клевцова',	'klevtsova-ev',	'admin',	'ingP3pI3LX91.',	'',	'2023-02-21 17:55:33',	NULL,	'inae9e21M2C8g'),
-(2,	'Марк',	'Таратынов',	'taratynov',	'admin',	'ingP3pI3LX91.',	'',	'2023-02-21 17:55:59',	NULL,	''),
-(3,	'Вася',	'Пупкин',	'manager1',	'manager',	'ingP3pI3LX91.',	'',	'2023-02-21 18:08:02',	NULL,	''),
-(4,	'awsedfg',	'awsedf',	'ivanov-ii',	'qwe',	'inZtY5NaGmYb.',	'',	'2023-02-27 09:46:18',	'2023-02-27 12:11:28',	'injlFq8ohTAaE'),
-(5,	'роман',	'романов',	'romanov-rr',	'manager',	'injY8GPhDQhbc',	'',	'2023-02-27 12:17:07',	'2023-02-27 12:17:57',	'inolYPzg05wTA'),
-(6,	'roma',	'roma',	'rrr',	'admin',	'injY8GPhDQhbc',	'',	'2023-02-27 12:28:25',	'2023-02-27 12:29:40',	'in/cLAu/gYQIE');
+(1,	'Елена',	'Клевцова',	'klevtsova-ev',	'admin',	'ingP3pI3LX91.',	'',	'2023-02-21 17:55:33',	NULL,	''),
+(9,	'admin',	'admin',	'dagradiance',	'admin',	'inS4UGgjBAP.I',	'',	'2023-05-06 19:09:44',	'2023-05-06 19:10:25',	'');
+
+DROP TABLE IF EXISTS `contacts`;
+CREATE TABLE `contacts` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `phone` varchar(13) DEFAULT NULL,
+  `mail` varchar(100) DEFAULT NULL,
+  `telegram` varchar(100) DEFAULT NULL,
+  `whatsapp` varchar(100) DEFAULT NULL,
+  `vk` varchar(100) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb3;
+
+INSERT INTO `contacts` (`id`, `phone`, `mail`, `telegram`, `whatsapp`, `vk`) VALUES
+(1,	'79060685310',	'dagradiance@dagradiance.ru',	'KlevtsovaEV',	'79060685310',	'chemezova_elena');
 
 SET NAMES utf8mb4;
 
@@ -41,7 +51,7 @@ CREATE TABLE `places` (
   `price` int NOT NULL,
   `link` varchar(100) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 INSERT INTO `places` (`id`, `title`, `short-desc`, `full-desc`, `img-title`, `img-carousel`, `price`, `link`) VALUES
 (1,	'Сулакский каньон',	'Коротенькое описание для места 1',	'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse iure, debitis repudiandae cum saepe corrupti facilis. Explicabo omnis fugit exercitationem rem, eligendi quo incidunt neque vitae corrupti amet sunt aliquid.',	'img/place/sulakskiy-kanion-big.jpg',	'[\"img/place/sulakskiy-kanion-big.jpg\", \"img/place/кавказский-вавилон.jpeg\", \"img/place/Море.jpg\", \"img/place/Дербент.jpg\", \"img/place/Горы2.jpg\"]',	500,	'ваыв'),
@@ -68,7 +78,7 @@ CREATE TABLE `tours` (
   `price` int NOT NULL,
   `link` varchar(100) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 INSERT INTO `tours` (`id`, `title`, `short-desc`, `full-desc`, `img-title`, `img-carousel`, `price`, `link`) VALUES
 (1,	'ТУР 1',	'Коротенькое описание для нашего тура 1',	'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse iure, debitis repudiandae cum saepe corrupti facilis. Explicabo omnis fugit exercitationem rem, eligendi quo incidunt neque vitae corrupti amet sunt aliquid.',	'img/place/sea01.jpg',	'[\"img/place/sea01.jpg\", \"img/card/plain.jpg\", \"img/card/reserve.jpg\", \"img/card/hills.jpg\", \"img/card/nature.jpeg\"]',	500,	'ваыв'),
@@ -84,4 +94,4 @@ INSERT INTO `tours` (`id`, `title`, `short-desc`, `full-desc`, `img-title`, `img
 (11,	'ТУР 11',	'Коротенькое описание для нашего тура 11',	'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse iure, debitis repudiandae cum saepe corrupti facilis. Explicabo omnis fugit exercitationem rem, eligendi quo incidunt neque vitae corrupti amet sunt aliquid.',	'img/tours-catalog/tarki-tau.jpg',	'[\"img/tours-catalog/tarki-tau.jpg\", \"img/card/plain.jpg\", \"img/card/reserve.jpg\", \"img/card/hills.jpg\", \"img/card/nature.jpeg\"]',	700,	'ваыв'),
 (12,	'ТУР12',	'Коротенькое описание для нашего тура 12',	'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse iure, debitis repudiandae cum saepe corrupti facilis. Explicabo omnis fugit exercitationem rem, eligendi quo incidunt neque vitae corrupti amet sunt aliquid.',	'img/tours-catalog/sulak.jpg',	'[\"img/tours-catalog/sulak.jpg\", \"img/card/plain.jpg\", \"img/card/reserve.jpg\", \"img/card/hills.jpg\", \"img/card/nature.jpeg\"]',	700,	'ваыв');
 
--- 2023-05-07 02:29:08
+-- 2023-05-07 08:05:09
