@@ -51,7 +51,7 @@
                         </label>
 
 
-                        <button type="submit">Сохранить</button>
+                        <button class="btn-admin" type="submit">Сохранить</button>
 
                     </form>
                 </div>

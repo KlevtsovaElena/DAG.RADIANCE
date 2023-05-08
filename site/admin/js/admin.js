@@ -191,26 +191,54 @@ function addAccount() {
 
      //найти все инпуты и получить данные из каждого
      let inputs = event.target.closest('form').querySelectorAll('input');
-
- 
+     const info = document.querySelector(".info");
+     const newLogin = document.querySelector(".new-login");
+     let text = document.createElement('textarea');
+     let div = document.createElement('div');
      let first_name = inputs[0];
      let last_name = inputs[1];
      let login = inputs[2];
      let role = inputs[3];
      let password = Math.random().toString(36).slice(-8);
-    
- 
- console.log(first_name.value);
- console.log(last_name.value);
- console.log(login.value);
- console.log(role.value);
- console.log(password);
 
- let params =  "first_name=" + first_name.value + "&last_name=" + last_name.value + "&login=" + login.value + "&role=" + role.value + "&temp_password=" + password;
+    //если пустые поля , то не добавляем
+    if (first_name.value == "" || last_name.value == "" || login.value == "" || role.value == ""){
+        console.log(info);
+        info.innerText = "Заполните все данные";
+        return;
+    }
+ 
+    console.log(first_name.value);
+    console.log(last_name.value);
+    console.log(login.value);
+    console.log(role.value);
+    console.log(password);
+
+    let params =  "first_name=" + first_name.value + "&last_name=" + last_name.value + "&login=" + login.value + "&role=" + role.value + "&temp_password=" + password;
 
     //отправляем запрос на сервер
-    sendRequestPOST("http://localhost/authadmin/account/", params);
-//tj5pfq6e ivanov-ii
+    let json = sendRequestPOST("http://localhost/authadmin/account/", params);
+
+    //получаем ответ 'success': false/true, admin
+    let data = JSON.parse(json);
+
+    if (data['success'] == false) {
+        text.innerText += data['error'];
+    } else {
+        text.innerText += "Ваши данные для входа в админ панель:   ";
+        text.innerText += "login: " + login.value + "  ";
+        text.innerText += "ВРЕМЕННЫЙ пароль: " + password + "  ";
+        text.innerText += "При первом входе измените временный пароль на постоянный!"
+
+        div.innerText = "Аккаунт создан. Скопируйте и отправьте пользователю:"
+    }
+    console.log(data['error'])
+    info.innerText = "";
+    newLogin.innerHTML = "";
+
+    newLogin.appendChild(div);
+    newLogin.appendChild(text);
+
 }
 
 

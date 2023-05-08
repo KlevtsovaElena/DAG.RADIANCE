@@ -2,6 +2,14 @@ body {
     margin: 0;
     padding: 0;
 }
+input, textarea {
+    box-sizing: border-box;
+    padding: 3px;
+    margin: 8px 8px 0 8px;
+}
+input {
+    min-width: 250px;
+}
 .d-block {
     display: block;
 }
@@ -14,7 +22,15 @@ body {
     background-size: cover;
     background-repeat: repeat;
     background-color: #F7CE9D;
-    color: rgb(189, 88, 44);  
+    color: black;  
+    overflow: auto;
+    margin-left: 280px;
+}
+.index {
+    margin: 0!important;
+}
+.index .cabinet {
+    margin-left: 280px;
 }
 /* ---------------------- LOGIN ------------------------ */
 
@@ -77,7 +93,7 @@ body {
 
 .form-box {
     background-color: #F7CE9D;
-    color: rgb(189, 88, 44); 
+    color: black;
     height: 100%;
     width: 50%;
     box-shadow: 0 5px 45px rgba (0, 0, 0, 0.25);
@@ -169,12 +185,13 @@ body {
 }
 
 .menu-left {
-    position: absolute;
+    position: fixed;
     left: 0;
     top: 0;
-    width: 300px;
+    width: 280px;
     height: 100vh;
     background-color: #F7CE9D;
+    padding: 30px 10px;
 }
 
 .menu-left__items {
@@ -182,21 +199,13 @@ body {
     justify-content: space-between;
     flex-direction: column;
 }
-.menu-right {
-    position: absolute;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    height: 50px;
-    background-color: #F7CE9D;
-}
+
 .cabinet {
     position: relative;
 }
 .work-area {
-    padding-top: 60px;
+    padding: 30px;
     display: flex;
-    margin-left: 320px;
     justify-content: center;
     flex-direction: column;
     align-items: center;
@@ -207,18 +216,33 @@ body {
 .card-item {
     width: 200px;
     height: 266px;
-}
+    font-size: 11px;
 
+}
+.card-item h3{
+    font-size: 14px;
+}
 .catalog-card_effect {
     opacity: 1;
 }
 
 .btn-black {
     width: 150px;
+    height: 35px;
+    font-size: 16px;
     margin: 5px 0;
     background-color: black;
     color: #ffffff;
     border-radius: 10px;
+    transition: all 0.3s;
+}
+.btn-black:hover {
+    background-color: #ffffff;
+    color: black;
+}
+.btn-yellow {
+    width: 150px;
+    font-size: 16px;
 
 }
 .catalog-card_effect:hover .edit-card{
@@ -257,8 +281,7 @@ body {
 
 .edit-tour {
     background-color: #F7CE9D;
-    width: 90%;
-    height: 800px;
+    width: 800px;
 }
 
 .edit-tour form {
@@ -300,4 +323,77 @@ body {
     display: block;
     margin: 10px 0;
 
+}
+.logo {
+    font-size: 20px;
+    color: rgb(189, 88, 44); 
+    font-weight: 700;
+
+}
+.profile-name {
+    margin: 20px 0;
+    font-size: 12px;
+}
+.profile-name h3 {
+    font-size: 16px;
+}
+.menu-left ul {
+    list-style: none;
+    margin: 30px 0 15px 0;
+    padding: 10px;
+}
+.menu-left ul li{
+    padding-bottom: 10px;
+}
+.menu-left ul li a:hover{
+    color:rgb(189, 88, 44);
+}
+.btn-admin {
+    border-radius: 5px;
+    background-color: rgb(255, 188, 45);
+    color: black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transition: all 0.3s;
+}
+.btn-admin:hover {
+    background-color:rgb(250, 244, 77);
+    color: black;
+}
+.btn-reset {
+    display: inline-block;
+    padding: 1px 6px;
+    border: solid black 2px;
+    box-sizing: border-box;
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.work-area form{
+    padding:10px;
+    background-color: #F7CE9D;
+}
+.work-area__title{
+    margin-bottom: 20px;
+}
+#short-desc {
+    width: 300px;
+    height: 150px;
+}
+#full-desc {
+    width: 500px;
+    min-width: 400px;
+    height: 200px;
+}
+
+.new-login {
+    background-color: #F7CE9D;
+    margin-top: 20px;
+}
+.new-login textarea {
+    width: 500px;
+    height: 300px;
+    white-space: pre-wrap;
 }

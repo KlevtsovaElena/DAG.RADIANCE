@@ -15,10 +15,10 @@ const handle_file_preview = (e) => {
 
   image_preview.querySelector('img').remove();
 
-      let image = document.createElement('img');
-      // use the DOMstring for source
-      image.src = window.URL.createObjectURL(files[0]);
-      image_preview.appendChild(image);
+  let image = document.createElement('img');
+  // use the DOMstring for source
+  image.src = window.URL.createObjectURL(files[0]);
+  image_preview.appendChild(image);
 
 
 }

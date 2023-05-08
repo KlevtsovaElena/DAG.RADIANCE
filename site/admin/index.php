@@ -14,7 +14,7 @@
 </head>
 <body>
     
-    <div id="containerPage">
+    <div id="containerPage" class="index">
 
 
 
@@ -79,17 +79,14 @@
     <div class="cabinet">
     <?php include "cabinet-menu.php";?>
         <div class="work-area">
-            <h1>ВОТ И АДМИНКА!</h1>
+            <h1>АДМИНКА</h1>
+
+            <h3>Добро пожаловать в Админку сайта DAG.RADIANCE</h3>
+            
 
             
-            <form>
-                <input type="text"  placeholder="first_name">
-                <input type="text"  placeholder="last_name">
-                <input type="text"  placeholder="login">
-                <input type="text"  placeholder="role">
-                <button onclick="addAccount()">Добавить учётную запись</button>
         
-            </form>
+
         </div>
 
     </div>

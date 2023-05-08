@@ -1,3 +1,5 @@
+<?php require_once('../classes/autoload.php'); ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,14 +29,17 @@
 
                 <div class="form-add-account">
                 <form>
-                    <input type="text"  name="first_name" placeholder="first_name">
+                    <input type="text"  name="first_name" placeholder="first_name" required>
                     <input type="text"  name="last_name" placeholder="last_name">
                     <input type="text"  name="login" placeholder="login">
                     <input type="text"  name="role" placeholder="role">
-                    <button onclick="addAccount()">Добавить учётную запись</button>
-            
+                    <button class="btn-admin" onclick="addAccount()">Добавить учётную запись</button>
+                    <div class="info"></div>
                 </form>
+                </div>
 
+                <div class="new-login">
+                    
                 </div>
 
             </div>

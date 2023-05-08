@@ -1,5 +1,6 @@
 <?php require_once('../classes/autoload.php'); ?>
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,8 +28,10 @@
                     <h1>ТУРЫ</h1>
                 </div>
 
-               <div class="work-area__contaner">
-               <div class="catalog-container">
+                <a href="card-tour.php"><button class="btn-admin">+ ДОБАВИТЬ НОВЫЙ ТУР</button></a>
+
+                <div class="work-area__contaner">
+                <div class="catalog-container">
                 <?php $data = Tour::getLinesApi();
                     foreach ($data as $tour) { ?>
                     <div class="d-flex card-item catalog-card catalog-card_effect" style="background-image: url('../client/<?= $tour['img-title'] ?>');">
