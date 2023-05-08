@@ -98,7 +98,7 @@ $imgCarousel = array_merge($imgCarousel, $urlsImgCarousel);
 
 // Полученный массив кодируем в json-формат 
 // который будем записывать в базу
-$json = json_encode($imgCarousel);
+$json = json_encode($imgCarousel, JSON_UNESCAPED_UNICODE);
 
 //подключение к базе
 $pdo = \Connection::getConnection();
