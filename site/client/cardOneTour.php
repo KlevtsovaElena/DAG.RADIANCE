@@ -91,8 +91,12 @@ $data = Tour::getLinesApiId($_GET['id']);
                 
             </section>
 
-            <a href="tours-catalog.php" class="card-btn block"><button class="card-item__btn btn-yellow">Смотреть все</button></a>
+            <div class="two-buttons">
+                <a href="tours-catalog.php" class="card-btn"><button class="card-item__btn btn-big btn-yellow">Смотреть все</button></a>
+                <a href="index.php" class="card-btn"><button class="card-item__btn btn-big btn-yellow">На главную</button></a>
             </div>
+            
+        </div>
     
         </main>
         
