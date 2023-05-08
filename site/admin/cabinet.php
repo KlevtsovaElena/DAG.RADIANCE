@@ -1,5 +1,5 @@
 <?php require_once('../classes/autoload.php'); ?>
-<?php require('check.php');?>
+<?php require('works/check.php');?>
 
 <!DOCTYPE html>
 <html lang="en">
