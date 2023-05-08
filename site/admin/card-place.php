@@ -23,45 +23,43 @@
             <!-- рисуем меню кабинета из файла cabinet-menu.php -->
             <?php include "cabinet-menu.php";?>
 
-
-
         <!-- Проверка наличия переданного id -->
         <?php 
         if (isset($_GET["id"])) { ?>
 
             <div class="work-area">
                 <div class="work-area__title">
-                    <h1>РЕДАКТИРОВАТЬ ТУР</h1>
+                    <h1>РЕДАКТИРОВАТЬ ДОСТОПРИМЕЧАТЕЛЬНОСТЬ</h1>
                 </div>
 
-                <div class="edit-tour">
+                <div class="edit-place">
 
                 <?php 
-                    $data = Tour::getLinesApiId($_GET['id']);
-                    $tour = (object)$data[0];
+                    $data = Place::getLinesApiId($_GET['id']);
+                    $place = (object)$data[0];
                 ?>
 
-                    <!-- Собираем данные одного тура для таблицы туров -->
-                    <form action="works/edit-tour.php" method="post" class="edit-tour__form" enctype="multipart/form-data">
+                    <!-- Собираем данные одного элемента для таблицы достоприм -->
+                    <form action="works/edit-place.php" method="post" class="edit-place" enctype="multipart/form-data">
 
-                        <input type="hidden" name="id" value="<?= $tour->id;?>"> 
-                        <p>НАЗВАНИЕ ТУРА<input type="text" id="title" name="title" value="<?= $tour->title;?>"></p>
-                        <p>КРАТКОЕ ОПИСАНИЕ<textarea id="short-desc" name="short-desc"><?= $tour->{'short-desc'};?></textarea></p>
-                        <p>ПОЛНОЕ ОПИСАНИЕ<textarea id="full-desc" name="full-desc"><?= $tour->{'full-desc'};?></textarea></p>
-                        <p>СТОИМОСТЬ<input type="text" id="price" name="price" value="<?= $tour->price;?>"></p>                      
+                        <input type="hidden" name="id" value="<?= $place->id;?>"> 
+                        <p>НАЗВАНИЕ МЕСТА<input type="text" id="title" name="title" value="<?= $place->title;?>"></p>
+                        <p>КРАТКОЕ ОПИСАНИЕ<textarea id="short-desc" name="short-desc"><?= $place->{'short-desc'};?></textarea></p>
+                        <p>ПОЛНОЕ ОПИСАНИЕ<textarea id="full-desc" name="full-desc"><?= $place->{'full-desc'};?></textarea></p>
+                        <p>СТОИМОСТЬ<input type="text" id="price" name="price" value="<?= $place->price;?>"></p>                      
 
                         <!-- картинка для маленькой карточки -->
                         <p>
-                        <div class="img-title-form">ИЗОБРАЖЕНИЕ ДЛЯ КАРТОЧКИ ТУРА
+                        <div class="img-title-form">ИЗОБРАЖЕНИЕ ДЛЯ КАРТОЧКИ МЕСТА
                             <div>(Рекомендованные параметры 300X400)</div>
-                            <div class="img-title-prew"><img src="<?= '../client/' . $tour->{'img-title'};?>" /></div>
-                            <input type="hidden" name="img-title" value="<?= $tour->{'img-title'};?>">  
+                            <div class="img-title-prew"><img src="<?= '../client/' . $place->{'img-title'};?>" /></div>
+                            <input type="hidden" name="img-title" value="<?= $place->{'img-title'};?>">  
                             <input type="file"  id="new-img-title" name="new-img-title" accept="image/png, image/jpg, image/jpeg">                               
                         </div> 
                         </p>
                         <!-- галерея КАРУСЕЛИ-->
                         <p>
-                        <div class="img-carousel">ИЗОБРАЖЕНИЯ ДЛЯ КАРУСЕЛИ ТУРА
+                        <div class="img-carousel">ИЗОБРАЖЕНИЯ ДЛЯ КАРУСЕЛИ МЕСТА
                             <?php if ($data[0]['img-carousel'] !== "[]" && $data[0]['img-carousel'] !== NULL) {
                                 $imgCarousel = json_decode($data[0]['img-carousel'], true);
                                 for ($i = 0; $i < count($imgCarousel); $i++) { ?>
@@ -84,7 +82,7 @@
                         </p>
 
                         <div>
-                            <a href="card-tour.php?id=<?= $tour->id;?>"><div class="btn-admin btn-reset">Сбросить изменения</div></a>
+                            <a href="card-place.php?id=<?= $place->id;?>"><div class="btn-admin btn-reset">Сбросить изменения</div></a>
                             <button class="btn-admin" type="submit">Сохранить</button>
                         </div>
 
@@ -95,21 +93,21 @@
                 <?php } else { ?> 
             <div class="work-area">
                 <div class="work-area__title">
-                    <h1>ДОБАВИТЬ ТУР</h1>
+                    <h1>ДОБАВИТЬ ДОСТОПРИМЕЧАТЕЛЬНОСТЬ</h1>
                 </div>
 
-                <div class="edit-tour">
-                    <!-- Собираем данные одного тура для таблицы туров -->
-                    <form action="works/edit-tour.php" method="post" class="edit-tour__form" enctype="multipart/form-data">
+                <div class="edit-place">
+                    <!-- Собираем данные одного элемента для таблицы достоприм -->
+                    <form action="works/edit-place.php" method="post" class="edit-place__form" enctype="multipart/form-data">
 
-                        <p>НАЗВАНИЕ ТУРА<input type="text" id="title" name="title" value=""></p>
+                        <p>НАЗВАНИЕ МЕСТА<input type="text" id="title" name="title" value=""></p>
                         <p>КРАТКОЕ ОПИСАНИЕ<textarea id="short-desc" name="short-desc"></textarea></p>
                         <p>ПОЛНОЕ ОПИСАНИЕ<textarea id="full-desc" name="full-desc"></textarea></p>
                         <p>СТОИМОСТЬ<input type="text" id="price" name="price" value=""></p>                      
 
                         <!-- картинка для маленькой карточки -->
                         <p>
-                        <div class="img-title-form">ИЗОБРАЖЕНИЕ ДЛЯ КАРТОЧКИ ТУРА
+                        <div class="img-title-form">ИЗОБРАЖЕНИЕ ДЛЯ КАРТОЧКИ МЕСТА
                             <div>(Рекомендованные параметры 300X400)</div>
                             <div class="img-title-prew"><img></div>  
                             <input type="file"  id="new-img-title" name="new-img-title" accept="image/png, image/jpg, image/jpeg">                               
@@ -117,14 +115,14 @@
                         </p>
                         <!-- галерея КАРУСЕЛИ-->
                         <p>
-                        <div class="img-carousel">ИЗОБРАЖЕНИЯ ДЛЯ КАРУСЕЛИ ТУРА
+                        <div class="img-carousel">ИЗОБРАЖЕНИЯ ДЛЯ КАРУСЕЛИ МЕСТА
                             <input type="file"  id="new-img-carousel" name="new-img-carousel[]" multiple accept="image/png, image/jpg, image/jpeg">  
                             <div class="img-carousel-prew"></div>        
                         </div>
                         </p>
 
                         <div>
-                            <a href="card-tour.php"><div class="btn-admin btn-reset">Сбросить изменения</div></a>
+                            <a href="card-place.php"><div class="btn-admin btn-reset">Сбросить изменения</div></a>
                             <button class="btn-admin" type="submit">Сохранить</button>
                         </div>
                     </form>
@@ -134,9 +132,8 @@
         </div>
     </div>
 
-
-    <script src="js/prewImg.js"></script> 
-    <script src="js/main.js"></script>
+    <script src="js/prewImg.js"></script>
+    <script src="js/main.js"></script> 
 
 </body>
 </html>

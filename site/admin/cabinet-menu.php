@@ -8,7 +8,7 @@ if(isset($_COOKIE['admin'])) {
 ?> 
 
             <div class="menu-left">
-                <div class="logo">DAG.RADIANCE</div>
+                <a href="cabinet.php"><div class="logo">DAG.RADIANCE</div></a>
                 <div class="profile-name">
                 <?php if(isset($_COOKIE['admin'])) { ?>
                     <h3><?= $row['login']?></h3>

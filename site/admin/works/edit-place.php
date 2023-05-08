@@ -1,7 +1,7 @@
 <?php
 require_once('../../classes/autoload.php');
 
-// РЕДАКТИРОВАНИЕ ИЛИ СОЗДАНИЕ ЗАПИСИ ТУРА В ТАБЛИЦЕ
+// РЕДАКТИРОВАНИЕ ИЛИ СОЗДАНИЕ ЗАПИСИ ДОСТОПРИМ В ТАБЛИЦЕ
 
 // разнесём данные по переменным из массива $POST
 $title = $_POST['title'];
@@ -27,7 +27,7 @@ $urlsImgCarousel = [];
 // сначала для карусели
 if ($_FILES['new-img-carousel']['name'][0] !== "") {
     // Дирректория для загрузки файлов
-    $uploadDir = "img/tour/carousel";
+    $uploadDir = "img/place/carousel";
 
     foreach ($_FILES['new-img-carousel']['name'] as $index => $name) {
 
@@ -54,28 +54,28 @@ if ($_FILES['new-img-carousel']['name'][0] !== "") {
     }
 }
 
-// теперь для титульного изображения карточки тура
+// теперь для титульного изображения карточки места
 if ($_FILES['new-img-title']['name'] !== "") {
     // загружаем только файлы с указанным расширением
     $typeFile = $_FILES['new-img-title']['type'];
     if ($typeFile == "image/jpeg" || $typeFile == "image/jpg" || $typeFile == "image/png") {
-        // Дирректория для загрузки файлов
-        $uploadDir = "img/tour/title";
+    // Дирректория для загрузки файлов
+    $uploadDir = "img/place/title";
 
-        // Временное имя файла во временной дирректории
-        $tmpName = $_FILES['new-img-title']['tmp_name'];
+    // Временное имя файла во временной дирректории
+    $tmpName = $_FILES['new-img-title']['tmp_name'];
 
-        // Формируем имя файла
-        $fileName = $_FILES['new-img-title']['name'];
-        $fileNameParts = explode('.', $fileName);
-        $fileNameNew = $fileNameParts[0] . '_' . time() . '.' . $fileNameParts[1];
-        $path = '../../client/' . $uploadDir . '/' . $fileNameNew;
+    // Формируем имя файла
+    $fileName = $_FILES['new-img-title']['name'];
+    $fileNameParts = explode('.', $fileName);
+    $fileNameNew = $fileNameParts[0] . '_' . time() . '.' . $fileNameParts[1];
+    $path = '../../client/' . $uploadDir . '/' . $fileNameNew;
 
-        // Перезапишем адрес титульной картинки на новое значение
-        $imgTitle = $uploadDir . '/' . $fileNameNew;
+    // Перезапишем адрес титульной картинки на новое значение
+    $imgTitle = $uploadDir . '/' . $fileNameNew;
 
-        // Сохраняем файл в дирректорию
-        move_uploaded_file($tmpName, $path);
+    // Сохраняем файл в дирректорию
+    move_uploaded_file($tmpName, $path);
     }
 }
 
@@ -107,23 +107,23 @@ $pdo = \Connection::getConnection();
 // если редактируем карточку, то данные UPDATE
 // если создаём новую - то INSERT
 if (isset($_POST['id'])) {
-    $sqlText = "UPDATE `tours` SET `title`='$title', `short-desc`='$shortDesc', `full-desc`='$fullDesc', `price`='$price', `img-title`='$imgTitle', `img-carousel`='$json' WHERE `id`=$id";
+    $sqlText = "UPDATE `places` SET `title`='$title', `short-desc`='$shortDesc', `full-desc`='$fullDesc', `price`='$price', `img-title`='$imgTitle', `img-carousel`='$json' WHERE `id`=$id";
     
     //запись в базу
     $query = $pdo->query($sqlText);
 } else {
-    $sqlText = "INSERT INTO `tours` (`title`, `short-desc`, `full-desc`, `price`, `img-title`, `img-carousel`) VALUES('$title', '$shortDesc', '$fullDesc', '$price', '$imgTitle', '$json')";
+    $sqlText = "INSERT INTO `places` (`title`, `short-desc`, `full-desc`, `price`, `img-title`, `img-carousel`) VALUES('$title', '$shortDesc', '$fullDesc', '$price', '$imgTitle', '$json')";
     
     // запись в базу
     $query = $pdo->query($sqlText);
-    $sqlText = "SELECT id from `tours` ORDER BY id DESC LIMIT 1 ;";
+    $sqlText = "SELECT id from `places` ORDER BY id DESC LIMIT 1 ;";
     $row = $pdo->query($sqlText);
     $row = $row->fetch();
     $id = $row['id'];
 }
 
 // возвращаемся на страницу
-header('Location: ../card-tour.php?id=' . $id)
+header('Location: ../card-place.php?id=' . $id)
 
 ?>
 

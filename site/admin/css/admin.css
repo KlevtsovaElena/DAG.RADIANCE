@@ -16,6 +16,9 @@ input {
 .d-inline-block {
     display: inline-block;
 }
+.cursor{
+    cursor: pointer;
+}
 #containerPage{
     height: 100vh;
     background-image: url('../../../client/img/bg/bgPpt.jpg');
@@ -131,6 +134,10 @@ input {
     transition-delay: 0.25s;
 }
 
+.form_signin h3, .form_signin button,
+.form_signup h3, .form_signup button {
+    margin-left: 10px;
+}
 .form_signup {
     left: 100%;
     transition-delay: 0s;
@@ -293,12 +300,12 @@ input {
     
 }
 
-.edit-tour {
+.edit-tour, .edit-place {
     background-color: #F7CE9D;
     width: 800px;
 }
 
-.edit-tour form {
+.edit-tour form, .edit-place form{
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -322,6 +329,7 @@ input {
     height: 70px;
     background-color: #ffffff;
     color: black;
+    z-index: 9;
 }
 
 .delete-img-carousel div {

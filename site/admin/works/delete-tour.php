@@ -1,6 +1,8 @@
 <?php
 require_once('../../classes/autoload.php');
 
+// УДАЛЕНИЕ ЗАПИСИ ТУРА ИЗ ТАБЛИЦЫ
+
     $id = $_GET['id'];
 
     // запись в базу
@@ -10,7 +12,7 @@ require_once('../../classes/autoload.php');
     // выполним запрос
     $query->execute(['id'=>$id]);
     
-    // возврат на страницу редактирования контактов
+    // возврат на страницу редактирования туров
     header('Location: ../tours.php')
 
 ?>
