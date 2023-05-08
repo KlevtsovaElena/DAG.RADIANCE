@@ -12,7 +12,7 @@ final class Admin extends AbstractClasses\Unit
     //авторизация 
     final public static function logIn() 
     {
-         //получаем логин и смотрим есть ли юзер с таким логин
+        //получаем логин и смотрим есть ли юзер с таким логин
         $login = $_POST['login'];
         $password = $_POST['password'];
 
@@ -52,18 +52,15 @@ final class Admin extends AbstractClasses\Unit
         //получаем данные
         $login = $_POST['login'];
 
-
         //заходим в базу и считаем сколько у нас юзеров с таким логином и паролем
         $pdo = \Connection::getConnection();
         $result = $pdo->query("SELECT COUNT(id) as num FROM admin WHERE login ='$login';");
         $row = $result->fetch();
 
-
         //возвращаем ответ в зависимости от цифры (0 или 1).
         if($row['num'] > 0) {
             return true;
         } 
-        
 
         return false;
 
@@ -95,7 +92,6 @@ final class Admin extends AbstractClasses\Unit
         $pdo->query("UPDATE admin SET token = '' WHERE token = '" . $_POST['token'] . "'");
 
     }
-
 
     //функция смены временного пароля на новый
     public static function changeTempPass() {
@@ -147,7 +143,7 @@ final class Admin extends AbstractClasses\Unit
 
 
 
-    
+    // создание аккаунта  
     public static function createAccount() : bool
     {
         $first_name = $_POST['first_name'];

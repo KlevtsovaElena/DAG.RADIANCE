@@ -1,6 +1,5 @@
-<?php require_once('../classes/autoload.php');
-
-?>
+<?php require_once('../classes/autoload.php'); ?>
+<?php require('check.php');?>
 
 
 <!DOCTYPE html>
@@ -54,9 +53,10 @@
                         <!-- картинка для маленькой карточки -->
                         <p>
                         <div class="img-title-form">ИЗОБРАЖЕНИЕ ДЛЯ КАРТОЧКИ ТУРА
+                            <div>(Рекомендованные параметры 300X400)</div>
                             <div class="img-title-prew"><img src="<?= '../client/' . $tour->{'img-title'};?>" /></div>
                             <input type="hidden" name="img-title" value="<?= $tour->{'img-title'};?>">  
-                            <input type="file"  id="new-img-title" name="new-img-title">                               
+                            <input type="file"  id="new-img-title" name="new-img-title" accept="image/png, image/jpg, image/jpeg">                               
                         </div> 
                         </p>
                         <!-- галерея КАРУСЕЛИ-->
@@ -71,14 +71,14 @@
                                         <div class="d-inline-block" onclick="hiddenDeleteImgCarousel()">X удалить</div>
                                         <div class="d-none delete-img-carousel">
                                             <h6>Удалить это изображение?<h6>
-                                            <div class="d-inline-block delete-true" onclick="deleteImgCarousel()">ДА</div>
                                             <div class="d-inline-block delete-false" onclick="notDeleteImgCarousel()">ОТМЕНА</div>
+                                            <div class="d-inline-block delete-true" onclick="deleteImgCarousel()">ДА</div>
                                         </div>
                                     </div> 
                                 <?php }   
                             }?>
                             
-                            <input type="file"  id="new-img-carousel" name="new-img-carousel[]" multiple>  
+                            <input type="file"  id="new-img-carousel" name="new-img-carousel[]" multiple accept="image/png, image/jpg, image/jpeg">  
                             <div class="img-carousel-prew"></div>        
                         </div>
                         </p>
@@ -110,14 +110,15 @@
                         <!-- картинка для маленькой карточки -->
                         <p>
                         <div class="img-title-form">ИЗОБРАЖЕНИЕ ДЛЯ КАРТОЧКИ ТУРА
+                            <div>(Рекомендованные параметры 300X400)</div>
                             <div class="img-title-prew"><img></div>  
-                            <input type="file"  id="new-img-title" name="new-img-title">                               
+                            <input type="file"  id="new-img-title" name="new-img-title" accept="image/png, image/jpg, image/jpeg">                               
                         </div> 
                         </p>
                         <!-- галерея КАРУСЕЛИ-->
                         <p>
                         <div class="img-carousel">ИЗОБРАЖЕНИЯ ДЛЯ КАРУСЕЛИ ТУРА
-                            <input type="file"  id="new-img-carousel" name="new-img-carousel[]" multiple>  
+                            <input type="file"  id="new-img-carousel" name="new-img-carousel[]" multiple accept="image/png, image/jpg, image/jpeg">  
                             <div class="img-carousel-prew"></div>        
                         </div>
                         </p>

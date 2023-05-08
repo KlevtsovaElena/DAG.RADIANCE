@@ -3,8 +3,6 @@ const containerPage = document.getElementById('containerPage');
 const templateCabinet = document.getElementById('tmpl-cabinet').innerHTML;
 const templateLogin = document.getElementById('tmpl-login').innerHTML;
 
-
-
 //функция для отправки запросов GET
 function sendRequestGET(url){
 
@@ -13,8 +11,6 @@ function sendRequestGET(url){
     requestObj.send();
     return requestObj.responseText;
 }
-
-
 
 //функция для отправки запросов POST
 function sendRequestPOST(url, params){
@@ -27,9 +23,7 @@ function sendRequestPOST(url, params){
 
 }
 
-
 check();
-
 
 //функция отрисовки логин окна
 function renderLogin() {
@@ -51,9 +45,8 @@ function renderLogin() {
     document.querySelector('.form_signin')
             .querySelector('button')
             .onclick = function() {
-                managerAuthorization()
-            };
-
+            managerAuthorization()
+    };
 }
 
 function managerAuthorization() {
@@ -69,9 +62,6 @@ function managerAuthorization() {
 
     let login = inputs[0];
     let password = inputs[1];
-
-console.log(login.value);
-console.log(password.value);
     
     login.oninput = function(){
         login.classList.remove("input-debug");
@@ -94,7 +84,6 @@ console.log(password.value);
         return;
     }
 
-
     //подставить в запрос и отправить
     let params = "login=" + login.value + "&password=" + password.value;
     
@@ -111,11 +100,10 @@ console.log(password.value);
     }
 
     //если пользователь найден и логин/пароль верны
-    //получим токен, запишем в куки с временем жизни 1 час
+    //получим токен, запишем в куки с временем жизни 1 день
     if(data['success']) {
-        document.cookie = "admin=" + data['token'] + "; max-age=3600";
+        document.cookie = "admin=" + data['token'] + "; max-age=86400";
     }
-
 
     data = check();
     console.log(data);
@@ -128,7 +116,6 @@ function check() {
     console.log("check()");
     //берём токен из куки
     const cookie = document.cookie.match(/admin=(.+?)(;|$)/);
-
 
     //если токена нет выходим из функции и возвращаем false
     if (cookie == null || cookie == undefined || cookie == ""){
@@ -144,8 +131,8 @@ function check() {
     
     //получаем ответ 'success': false/true, admin
     let data = JSON.parse(json);
-console.log("data" + data)
-    renderCabinet(data);
+
+    document.location.href='cabinet.php';
     return data;
 
 }
@@ -330,9 +317,9 @@ function changePass() {
     }
 
     //если пароль успешно заменен на постоянный получаем токен менеджера
-    //и записываем в базу. устанавливаем срок жизни - 1 час
+    //и записываем в базу. устанавливаем срок жизни - 1 день
     if(data['success']) {
-        document.cookie = "admin=" + data['token'] + "; max-age=3600";
+        document.cookie = "admin=" + data['token'] + "; max-age=86400";
     }
 
     //теперь у нас в базе и куки есть токен
@@ -356,12 +343,10 @@ function deleteCard() {
 
 function hiddenDeleteBlock() {
     const deleteCardBlock = event.target.closest('.card-item').querySelector('.delete-card');
-alert('нажали удалить')
     deleteCardBlock.classList.add('d-none');
 }
 function hiddenDeleteBlock2() {
     const deleteCardBlock = event.target.closest('.card-item').querySelector('.delete-card');
-    alert('нажали отмена')
     deleteCardBlock.classList.add('d-none');
 }
 

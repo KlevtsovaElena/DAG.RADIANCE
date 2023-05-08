@@ -16,8 +16,6 @@
     
     <div id="containerPage" class="index">
 
-
-
     </div>
 
 
@@ -95,6 +93,7 @@
 
 
 </template>
+
     <script src="js/admin.js"></script>
 </body>
 </html>

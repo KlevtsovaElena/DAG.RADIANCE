@@ -1,5 +1,5 @@
 <?php require_once('../classes/autoload.php'); ?>
-
+<?php require('check.php');?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -48,16 +48,15 @@
                         <a href="" class="d-block"><button class="card-item__btn catalog-btn btn-yellow">Подробнее</button></a>
 
                         <div class="edit-card">
-                            <a href="card-tour.php?id= <?= $tour['id']; ?>" class="d-block"><button class="btn-black">Изменить</button></a>
+                            <a href="card-tour.php?id=<?= $tour['id']; ?>" class="d-block"><button class="btn-black">Изменить</button></a>
 
                             <button class="btn-black" onclick="deleteCard()">Удалить</button>
                         
                         </div>
                         <div class="delete-card d-none">
-                            <a href="delete-tour.php?id= <?= $tour['id']; ?>"><div  onclick="hiddenDeleteBlock()">Удалить</div></a>
+                            <a href="../admin/works/delete-tour.php?id=<?= $tour['id']; ?>"><div onclick="hiddenDeleteBlock()">Удалить</div></a>
                             <div  onclick="hiddenDeleteBlock2()">Отмена</div>
-                        </div>
-                        
+                        </div>                      
                            
                     </div>
                 <?php } ?>
