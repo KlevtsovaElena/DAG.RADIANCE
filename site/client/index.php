@@ -28,10 +28,10 @@
                 <div class="logo">DAG.RADIANCE</div>
                 <div class="nav-items">
                     <ul>
-                        <li><a href="#">О регионе</a></li>
-                        <li><a href="#">Достопримечательности</a></li>
-                        <li><a href="#">Туры</a></li>
-                        <li><a href="#">Контакты</a></li>
+                        <li><a href="1.php">О регионе</a></li>
+                        <li><a href="places-catalog.php">Достопримечательности</a></li>
+                        <li><a href="tours-catalog.php">Туры</a></li>
+                        <li><a href="contacts.php">Контакты</a></li>
                     </ul>
                 </div>
                 <div class="account"><a href="#">Аккаунт/Поиск</a></div>
@@ -40,10 +40,10 @@
         </nav>
         <div class="mobile-nav">
             <ul>
-                <li><a href="#">О регионе</a></li>
-                <li><a href="#">Достопримечательности</a></li>
-                <li><a href="#">Туры</a></li>
-                <li><a href="#">Контакты</a></li>
+                <li><a href="1.php">О регионе</a></li>
+                <li><a href="places-catalog.php">Достопримечательности</a></li>
+                <li><a href="tours-catalog.php">Туры</a></li>
+                <li><a href="contacts.php">Контакты</a></li>
             </ul>
         </div>
         <div class="header-index">
@@ -126,7 +126,8 @@
 
             <!-- Слайдер -->
             <div class="slider ">
-                <div class="card-carousel d-flex slider-wrapper slick-slide">
+                <div class="slider-container">
+                    <div class="card-carousel d-flex slider-wrapper slick-slide">
 
                     <?php 
 
@@ -146,12 +147,14 @@
 
                     <?php };?>
 
+                    </div>
                 </div>
+
+                <!-- Кнопка Смотреть всё -->
+
+                <a href="places-catalog.php" class="card-btn block"><button class="card-item__btn btn-big btn-yellow">Смотреть все</button></a>
             </div>
-
-            <!-- Кнопка Смотреть всё -->
-
-            <a href="places-catalog.php" class="card-btn block"><button class="card-item__btn btn-yellow">Смотреть все</button></a>
+                
 
         </div>
         <!-- БЛОК Достопримечательности -->
@@ -166,32 +169,34 @@
 
             <!-- Слайдер -->
             <div class="slider ">
-                <div class="card-carousel d-flex slider-wrapper slick-slide">
+                <div class="slider-container">
+                    <div class="card-carousel d-flex slider-wrapper slick-slide">
 
-                    <?php 
+                        <?php 
 
-                    $data = Tour::getLinesApiShort(4); 
+                        $data = Tour::getLinesApiShort(4); 
 
-                    foreach ($data as $tour) { ?>
+                        foreach ($data as $tour) { ?>
 
-                        <div class="d-flex card-item catalog-card slide" style="background-image: url('./<?= $tour['img-title'];?>');">
-                            <div class="card-item__title">
-                                <h3><?= $tour['title'];?> </h3>
+                            <div class="d-flex card-item catalog-card slide" style="background-image: url('./<?= $tour['img-title'];?>');">
+                                <div class="card-item__title">
+                                    <h3><?= $tour['title'];?> </h3>
+                                </div>
+                                <div class="card-item__desc">
+                                    <?= $tour['short-desc'];?>
+                                </div>
+                                <a href="cardOneTour.php?id= <?= $tour['id']; ?>"><button class="card-btn card-item__btn catalog-btn btn-yellow">Подробнее</button></a>
+                            
                             </div>
-                            <div class="card-item__desc">
-                                <?= $tour['short-desc'];?>
-                            </div>
-                            <a href="cardOneTour.php?id= <?= $tour['id']; ?>"><button class="card-btn card-item__btn catalog-btn btn-yellow">Подробнее</button></a>
-                           
-                        </div>
 
-                    <?php };?>
+                        <?php };?>
 
+                    </div>
                 </div>
             </div>
 
             <!-- Кнопка Смотреть всё -->
-            <a href="tours-catalog.php" class="card-btn block"><button class="card-item__btn btn-yellow">Смотреть все</button></a>
+            <a href="tours-catalog.php" class="card-btn block"><button class="card-item__btn btn-big btn-yellow">Смотреть все</button></a>
 
         </div>
         <!-- БЛОК ТУРЫ -->

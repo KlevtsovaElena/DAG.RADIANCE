@@ -8,14 +8,14 @@ $data = Place::getLinesApiId($_GET['id']);
 
 
 // первый вариант обращения к элементам
-echo "Получили данные по карточке" . $data[0]['id'];
+//echo "Получили данные по карточке" . $data[0]['id'];
 
 
 // второй вариант 
 $obj = (object)$data[0];
-echo "Получили данные по карточке" . $obj->id;
+//echo "Получили данные по карточке" . $obj->id;
     //если в названии поля дефис
-    echo $obj->{'short-desc'};
+    //echo $obj->{'short-desc'};
 ?>
 
 <!DOCTYPE html>
@@ -102,7 +102,10 @@ echo "Получили данные по карточке" . $obj->id;
                 
             </section>
 
-            <a href="places-catalog.php" class="card-btn block"><button class="card-item__btn btn-yellow">Смотреть все</button></a>
+                <div class="two-buttons">
+                    <a href="places-catalog.php" class="card-btn"><button class="card-item__btn btn-big btn-yellow">Смотреть все</button></a>
+                    <a href="index.html" class="card-btn"><button class="card-item__btn btn-big btn-yellow">На главную</button></a>
+                </div>
             </div>
     
         </main>
