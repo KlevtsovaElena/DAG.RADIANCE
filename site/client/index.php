@@ -28,10 +28,10 @@
                 <div class="logo">DAG.RADIANCE</div>
                 <div class="nav-items">
                     <ul>
-                        <li><a href="#">О регионе</a></li>
-                        <li><a href="#">Достопримечательности</a></li>
-                        <li><a href="#">Туры</a></li>
-                        <li><a href="#">Контакты</a></li>
+                        <li><a href="1.php">О регионе</a></li>
+                        <li><a href="places-catalog.php">Достопримечательности</a></li>
+                        <li><a href="tours-catalog.php">Туры</a></li>
+                        <li><a href="contacts.php">Контакты</a></li>
                     </ul>
                 </div>
                 <div class="account"><a href="#">Аккаунт/Поиск</a></div>
@@ -40,10 +40,10 @@
         </nav>
         <div class="mobile-nav">
             <ul>
-                <li><a href="#">О регионе</a></li>
-                <li><a href="#">Достопримечательности</a></li>
-                <li><a href="#">Туры</a></li>
-                <li><a href="#">Контакты</a></li>
+                <li><a href="1.php">О регионе</a></li>
+                <li><a href="places-catalog.php">Достопримечательности</a></li>
+                <li><a href="tours-catalog.php">Туры</a></li>
+                <li><a href="contacts.php">Контакты</a></li>
             </ul>
         </div>
         <div class="header-index">
