@@ -12,9 +12,11 @@
     <link rel="stylesheet" href="../client/css/style.css">    
     <link rel="stylesheet" href="../client/css/catalog.css">
     <link rel="stylesheet" href="css/admin.css">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
 </head>
 <body>
@@ -49,9 +51,9 @@
                         <a href="" class="d-block"><button class="card-item__btn catalog-btn btn-yellow">Подробнее</button></a>
 
                         <div class="edit-card">
-                            <a href="card-place.php?id=<?= $place['id']; ?>" class="d-block"><button class="btn-black">Изменить</button></a>
+                            <a href="card-tour.php?id=<?= $place['id']; ?>" class="d-block"><button class="btn-black">&#9998 Изменить</button></a>
 
-                            <button class="btn-black" onclick="deleteCard()">Удалить</button>
+                            <button class="btn-delete btn-black" onclick="deleteCard()">X Удалить</button>
                         
                         </div>
                         <div class="delete-card d-none">

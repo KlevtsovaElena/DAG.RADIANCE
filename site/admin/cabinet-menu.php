@@ -12,14 +12,14 @@
             <h3><?= $profile['role']?></h3>
 
         </div>
-        <a href="index.php"><button class="btn-admin" onclick="logOut()">ВЫЙТИ</button></a>
+        <a href="index.php"><button class="btn-admin" onclick="logOut()">Выйти</button></a>
         <div class="menu-left__items">
-            <ul>
-                <li><a href="add-account.php">СОЗДАТЬ УЧЁТНУЮ ЗАПИСЬ</a></li>
-                <li><a href="tours.php">ТУРЫ</a></li>
-                <li><a href="places.php">ДОСТОПРИМЕЧАТЕЛЬНОСТИ</a></li>
-                <li><a href="contacts.php">КОНТАКТЫ</a></li>
-            </ul>
+            <div class="menu-left__list">
+            <a href="add-account.php"><div>Создать учётную запись</div></a>
+            <a href="tours.php"><div>Туры</div></a>
+            <a href="places.php"><div>Достопримечательности</div></a>
+            <a href="contacts.php"><div>Контакты</div></a>
+            </div>
             <div>
                 <a href="bot.php">БОТ</a>
             </div>  
