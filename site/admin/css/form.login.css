@@ -128,7 +128,6 @@
 .form__title {
     font-size: 1.5rem;
     font-weight: 500;
-    color: rgb(80, 80, 80);
     margin-left: 8px;
 }
 
@@ -155,7 +154,4 @@
 }
 .form__btn_signup:hover, .form__btn:hover {
     background-color: #49a69e;
-}
-.form__forgot {
-    color: rgb(80, 80, 80);
 }

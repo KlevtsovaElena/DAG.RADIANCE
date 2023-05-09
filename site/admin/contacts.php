@@ -38,11 +38,13 @@
                     <form action="works/edit-contacts.php" method="post" class="edit-contacts__form">
 
 
-                        <p>Телефон</p><input type="text" id="phone" name="phone" value="<?= $contact->phone;?>">
+
+                        <div class="d-flex"><p>Telegram</p><input type="text" id="telegram" name="telegram" value="<?= $contact->telegram;?>"> 
+                        <p>Whatsapp</p><input type="text" id="whatsapp" name="whatsapp" value="<?= $contact->whatsapp;?>"> </div>
+                        <div class="d-flex"><p>Телефон</p><input type="text" id="phone" name="phone" value="<?= $contact->phone;?>">
+                        <p>VK</p><input type="text" id="vk" name="vk" value="<?= $contact->vk;?>"></div>
+                        
                         <p>Электронная почта</p><input type="text" id="mail" name="mail" value="<?= $contact->mail;?>">
-                        <p>Telegram</p><input type="text" id="telegram" name="telegram" value="<?= $contact->telegram;?>"> 
-                        <p>Whatsapp</p><input type="text" id="whatsapp" name="whatsapp" value="<?= $contact->whatsapp;?>"> 
-                        <p>VK</p><input type="text" id="vk" name="vk" value="<?= $contact->vk;?>">
 
                         <p><button class="btn-admin" type="submit">Сохранить</button></p>
 

@@ -225,5 +225,5 @@ function changePass() {
     }
 
     //отрисуем его личный кабинет
-    document.location.href('cabinet.php');
+    document.location.href='cabinet.php';
 }

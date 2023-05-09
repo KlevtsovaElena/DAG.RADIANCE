@@ -32,10 +32,10 @@
 
                 <div class="form-add-account">
                     <form>
-                        <p>Имя</p><input type="text"  name="first_name" placeholder="first_name" required>
-                        <p>Фамилия</p><input type="text"  name="last_name" placeholder="last_name">
-                        <p>Логин</p><input type="text"  name="login" placeholder="login">
-                        <p>Роль</p><input type="text"  name="role" placeholder="role">
+                        <div class="d-flex"><p>Имя</p><input type="text"  name="first_name" placeholder="first_name" required>
+                        <p>Фамилия</p><input type="text"  name="last_name" placeholder="last_name"></div>
+                        <div class="d-flex"><p>Логин</p><input type="text"  name="login" placeholder="login">
+                        <p>Роль</p><input type="text"  name="role" placeholder="role"></div>
                         <p><button onclick="addAccount()">Добавить учётную запись</button></p>
                         <div class="info"></div>
                     </form>

@@ -24,9 +24,15 @@
     <div class="cabinet">
         <?php include "cabinet-menu.php";?>
         <div class="work-area">
-            <h1>АДМИНКА</h1>
-
-            <h3>Добро пожаловать в Админку сайта DAG.RADIANCE</h3>        
+            <h1>Admin panel</h1> 
+            
+            <div class="d-flex-list">
+                <div class="list-admin-panel" style="background-color: #b48dd3;">sjhdfjsdhfkjsdhf</div>
+                <div class="list-admin-panel" style="background-color: #68e365;">sjhdfjsdhfkjsdhf</div>
+                <div class="list-admin-panel" style="background-color: #5bcfc5;">sjhdfjsdhfkjsdhf</div>
+                <div class="list-admin-panel" style="background-color: #fd7e14;">sjhdfjsdhfkjsdhf</div>
+                <div class="list-admin-panel" style="background-color: #709fba;">sjhdfjsdhfkjsdhf</div>
+            </div>
 
         </div>
 
