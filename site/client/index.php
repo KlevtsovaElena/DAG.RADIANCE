@@ -23,29 +23,7 @@
 
     <!-- HEADER -->
     <header class="header index">
-        <nav class="nav">
-            <div class="nav-wrapper d-flex">
-                <div class="logo">DAG.RADIANCE</div>
-                <div class="nav-items">
-                    <ul>
-                        <li><a href="1.php">О регионе</a></li>
-                        <li><a href="places-catalog.php">Достопримечательности</a></li>
-                        <li><a href="tours-catalog.php">Туры</a></li>
-                        <li><a href="contacts.php">Контакты</a></li>
-                    </ul>
-                </div>
-                <div class="account"><a href="#">Аккаунт/Поиск</a></div>
-                <button class="btn-burger"><span class="nav-burger"></span></button>
-            </div>
-        </nav>
-        <div class="mobile-nav">
-            <ul>
-                <li><a href="1.php">О регионе</a></li>
-                <li><a href="places-catalog.php">Достопримечательности</a></li>
-                <li><a href="tours-catalog.php">Туры</a></li>
-                <li><a href="contacts.php">Контакты</a></li>
-            </ul>
-        </div>
+        <?php include('header.php'); ?>
         <div class="header-index">
             <div class="header-index__title">Welcome to Russia</div>
             <h1 class="header-index__desc">Удивительный и уникальный Дагестан!</h1>
@@ -217,6 +195,7 @@
     <script src="./js/jquery-3.6.4.min.js"></script>
     <script src="./js/slick.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/index.slider.js"></script>
 
 </body>
 

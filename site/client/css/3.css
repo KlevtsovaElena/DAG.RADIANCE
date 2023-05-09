@@ -70,6 +70,8 @@
 .fests11 {
     background-image: url('../img/section3/jpg/24.jpg');
     background-size: cover; 
+    margin-top: inherit;
+    margin-left: 40px;
 }
 
 .left {

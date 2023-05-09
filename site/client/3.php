@@ -11,7 +11,10 @@
     <title>DAG.RADIANCE</title>
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/style.css">
-
+    <link rel="stylesheet" href="css/1.css">
+    <link rel="stylesheet" href="css/2.css">
+    <link rel="stylesheet" href="css/3.css">
+    
     <link rel="stylesheet" href="./fonts/PlayFairDisplay/stylefonts.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,29 +26,7 @@
 
     <!-- HEADER -->
     <header class="header">
-        <nav class="nav">
-            <div class="nav-wrapper d-flex">
-                <div class="logo">DAG.RADIANCE</div>
-                <div class="nav-items">
-                    <ul>
-                        <li><a href="#">О регионе</a></li>
-                        <li><a href="#">Достопримечательности</a></li>
-                        <li><a href="#">Туры</a></li>
-                        <li><a href="#">Контакты</a></li>
-                    </ul>
-                </div>
-                <div class="account"><a href="#">Аккаунт/Поиск</a></div>
-                <button class="btn-burger"><span class="nav-burger"></span></button>
-            </div>
-        </nav>
-        <div class="mobile-nav">
-            <ul>
-                <li><a href="#">О регионе</a></li>
-                <li><a href="#">Достопримечательности</a></li>
-                <li><a href="#">Туры</a></li>
-                <li><a href="#">Контакты</a></li>
-            </ul>
-        </div>
+        <?php include('header.php'); ?>
     </header>
     <!-- /HEADER -->
 

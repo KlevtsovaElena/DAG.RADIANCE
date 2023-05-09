@@ -12,11 +12,7 @@ if(!isset($_COOKIE['admin'])) {
         header('Location: index.php');
         die();
     } else {
-        $response = [
-                'success' => true,
-                'admin' => $admin
-            ];
-        return $response;
+        return $admin;
     }
 }
 ?>

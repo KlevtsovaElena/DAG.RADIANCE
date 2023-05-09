@@ -41,21 +41,7 @@ $obj = (object)$data[0];
 
     <div class="container-page d-flex">
         <header class="header">
-            <nav class="nav">
-                <div class="nav-wrapper d-flex">
-                    <div class="logo">DAG.RADIANCE</div>
-                    <div class="nav-items">
-                        <ul>
-                            <li><a href="#">О регионе</a></li>
-                            <li><a href="#">Достопримечательности</a></li>
-                            <li><a href="#">Туры</a></li>
-                            <li><a href="#">Контакты</a></li>
-                        </ul>
-                    </div>
-                    <div class="account"><a href="#">Аккаунт/Поиск</a></div>
-                    <button class="btn-burger"><span class="nav-burger"></span></button>
-                </div>
-            </nav>
+            <?php include('header.php'); ?>
         </header>
     
         <main>
