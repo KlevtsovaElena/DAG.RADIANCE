@@ -5,6 +5,7 @@ function sendRequestGET(url){
     requestObj.open('GET', url, false);
     requestObj.send();
     return requestObj.responseText;
+    
 }
 
 //функция для отправки запросов POST

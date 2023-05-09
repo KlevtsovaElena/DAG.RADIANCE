@@ -18,11 +18,10 @@ CREATE TABLE `admin` (
   `date_update` datetime DEFAULT NULL,
   `token` varchar(80) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb3;
+) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8mb3;
 
 INSERT INTO `admin` (`id`, `first_name`, `last_name`, `login`, `role`, `password`, `temp_password`, `date_registr`, `date_update`, `token`) VALUES
-(1,	'Елена',	'Клевцова',	'klevtsova-ev',	'admin',	'ingP3pI3LX91.',	'',	'2023-02-21 17:55:33',	NULL,	''),
-(9,	'admin',	'admin',	'dagradiance',	'admin',	'inS4UGgjBAP.I',	'',	'2023-05-06 19:09:44',	'2023-05-06 19:10:25',	'');
+(1,	'admin',	'admin',	'dagradiance',	'admin',	'inS4UGgjBAP.I',	'',	'2023-05-06 19:09:44',	'2023-05-06 19:10:25',	'');
 
 DROP TABLE IF EXISTS `contacts`;
 CREATE TABLE `contacts` (
@@ -36,7 +35,7 @@ CREATE TABLE `contacts` (
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb3;
 
 INSERT INTO `contacts` (`id`, `phone`, `mail`, `telegram`, `whatsapp`, `vk`) VALUES
-(1,	'79060685310',	'dagradiance@dagradiance.ru',	'KlevtsovaEV',	'79060685310',	'chemezova_elena');
+(1,	'70000000000',	'dagradiance@dagradiance.ru',	'telegram_account',	'whatsapp_account',	'vk_account');
 
 SET NAMES utf8mb4;
 
@@ -44,12 +43,12 @@ DROP TABLE IF EXISTS `places`;
 CREATE TABLE `places` (
   `id` int NOT NULL AUTO_INCREMENT,
   `title` varchar(100) NOT NULL,
-  `short-desc` varchar(250) NOT NULL,
-  `full-desc` varchar(1000) NOT NULL,
-  `img-title` varchar(500) NOT NULL,
-  `img-carousel` json NOT NULL,
-  `price` int NOT NULL,
-  `link` varchar(100) NOT NULL,
+  `short-desc` varchar(250) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
+  `full-desc` varchar(1000) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
+  `img-title` varchar(500) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
+  `img-carousel` json DEFAULT NULL,
+  `price` int DEFAULT NULL,
+  `link` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
@@ -71,14 +70,14 @@ DROP TABLE IF EXISTS `tours`;
 CREATE TABLE `tours` (
   `id` int NOT NULL AUTO_INCREMENT,
   `title` varchar(100) NOT NULL,
-  `short-desc` varchar(250) NOT NULL,
-  `full-desc` varchar(1000) NOT NULL,
-  `img-title` varchar(500) NOT NULL,
-  `img-carousel` json NOT NULL,
-  `price` int NOT NULL,
-  `link` varchar(100) NOT NULL,
+  `short-desc` varchar(250) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
+  `full-desc` varchar(1000) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
+  `img-title` varchar(500) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
+  `img-carousel` json DEFAULT NULL,
+  `price` int DEFAULT NULL,
+  `link` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 INSERT INTO `tours` (`id`, `title`, `short-desc`, `full-desc`, `img-title`, `img-carousel`, `price`, `link`) VALUES
 (1,	'ТУР 1',	'Коротенькое описание для нашего тура 1',	'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse iure, debitis repudiandae cum saepe corrupti facilis. Explicabo omnis fugit exercitationem rem, eligendi quo incidunt neque vitae corrupti amet sunt aliquid.',	'img/place/sea01.jpg',	'[\"img/place/sea01.jpg\", \"img/card/plain.jpg\", \"img/card/reserve.jpg\", \"img/card/hills.jpg\", \"img/card/nature.jpeg\"]',	500,	'ваыв'),
@@ -94,4 +93,4 @@ INSERT INTO `tours` (`id`, `title`, `short-desc`, `full-desc`, `img-title`, `img
 (11,	'ТУР 11',	'Коротенькое описание для нашего тура 11',	'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse iure, debitis repudiandae cum saepe corrupti facilis. Explicabo omnis fugit exercitationem rem, eligendi quo incidunt neque vitae corrupti amet sunt aliquid.',	'img/tours-catalog/tarki-tau.jpg',	'[\"img/tours-catalog/tarki-tau.jpg\", \"img/card/plain.jpg\", \"img/card/reserve.jpg\", \"img/card/hills.jpg\", \"img/card/nature.jpeg\"]',	700,	'ваыв'),
 (12,	'ТУР12',	'Коротенькое описание для нашего тура 12',	'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse iure, debitis repudiandae cum saepe corrupti facilis. Explicabo omnis fugit exercitationem rem, eligendi quo incidunt neque vitae corrupti amet sunt aliquid.',	'img/tours-catalog/sulak.jpg',	'[\"img/tours-catalog/sulak.jpg\", \"img/card/plain.jpg\", \"img/card/reserve.jpg\", \"img/card/hills.jpg\", \"img/card/nature.jpeg\"]',	700,	'ваыв');
 
--- 2023-05-07 08:05:09
+-- 2023-05-09 13:36:00

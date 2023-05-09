@@ -1,7 +1,10 @@
-//основной контейнер, куда будут отрисовываться все страницы.
-const containerPage = document.getElementById('containerPage');
-const templateCabinet = document.getElementById('tmpl-cabinet').innerHTML;
-const templateLogin = document.getElementById('tmpl-login').innerHTML;
+const signInBtn = document.querySelector('.signin-btn');
+const signUpBtn = document.querySelector('.signup-btn');
+const formBox = document.querySelector('.form-box');
+const mainBlock = document.querySelector('.mainBlock');
+
+
+/* ****** Функции для отправки запросов и получения апишки ****** */
 
 //функция для отправки запросов GET
 function sendRequestGET(url){
@@ -23,33 +26,43 @@ function sendRequestPOST(url, params){
 
 }
 
-check();
 
-//функция отрисовки логин окна
-function renderLogin() {
-    containerPage.innerHTML = templateLogin;
-    const signInBtn = document.querySelector('.signin-btn');
-    const signUpBtn = document.querySelector('.signup-btn');
-    const formBox = document.querySelector('.form-box');
-    const mainBlock = document.querySelector('.mainBlock');
+/* ****** Отслеживаем действия по кнопочкам Форм ****** */
 
-    signUpBtn.addEventListener('click', function(){
-        formBox.classList.add('active');
-        mainBlock.classList.add('active');
-    });
-    
-    signInBtn.addEventListener('click', function(){
-        formBox.classList.remove('active');
-        mainBlock.classList.remove('active');
-    });
-    document.querySelector('.form_signin')
-            .querySelector('button')
-            .onclick = function() {
-                managerAuthorization()
-            };
-}
+// Если перейти - показываем форму смены временного пароля
+signUpBtn.addEventListener('click', function(){
+    formBox.classList.add('active');
+    mainBlock.classList.add('active');
+});
 
-function managerAuthorization() {
+// Если перейти - показываем форму ввода логина-пароля
+signInBtn.addEventListener('click', function(){
+    formBox.classList.remove('active');
+    mainBlock.classList.remove('active');
+});
+
+// Если Войти - вызываем функцию adminAuthorization
+document.querySelector('.form_signin')
+        .querySelector('button')
+        .onclick = function() {
+            adminAuthorization()
+};
+
+// Если Сменить пароль - вызываем функцию changePass()
+document.querySelector('.form_signup')
+        .querySelector('button')
+        .onclick = function() {
+            changePass()
+};
+
+
+
+/* ****** Функции для входа в кабинет ****** */
+
+// авторизация
+function adminAuthorization() {
+    console.log('adminAuthorization()');
+
     //предотвратить дефолтные действия, отмена отправки формы
     event.preventDefault(); 
 
@@ -63,10 +76,14 @@ function managerAuthorization() {
     let login = inputs[0];
     let password = inputs[1];
     
+
+    //----------------Здесь блок всяких поверок введённых значений ДО отправки на сервер------
+
     login.oninput = function(){
         login.classList.remove("input-debug");
         info_auth.innerHTML = "";
     }
+
     password.oninput = function(){
         password.classList.remove("input-debug");
         info_auth.innerHTML = "";
@@ -84,7 +101,10 @@ function managerAuthorization() {
         return;
     }
 
-    //подставить в запрос и отправить
+    //------------------------------------
+
+    // Если все поля заполнены, то можно отправить запрос
+    // подставить в запрос и отправить
     let params = "login=" + login.value + "&password=" + password.value;
     
     //получаем ответ
@@ -105,55 +125,22 @@ function managerAuthorization() {
         document.cookie = "admin=" + data['token'] + "; max-age=86400";
     }
 
-    data = check();
-    console.log(data);
-
+    // и перейдём на страницу кабинета
+    document.location.href='cabinet.php';
 }
 
 
-
-function check() {
-    console.log("check()");
-    //берём токен из куки
-    const cookie = document.cookie.match(/admin=(.+?)(;|$)/);
-
-    //если токена нет выходим из функции и возвращаем false
-    if (cookie == null || cookie == undefined || cookie == ""){
-        renderLogin();
-        return {'success' : false};
-    }
-
-    //если токен есть , то передаём его на сервер
-    let params = "token=" + cookie[1];
-
-    //подставить в запрос и отправить
-    let json = sendRequestPOST("http://localhost/authadmin/check/", params);
-    
-    //получаем ответ 'success': false/true, admin
-    let data = JSON.parse(json);
-console.log("data" + data)
-    document.location.href = 'cabinet.php';
-    return data;
-
-}
-
-function renderCabinet(data) {
-
-    containerPage.innerHTML = "";
-
-    containerPage.innerHTML += templateCabinet.replace('${first_name}', data['admin']['first_name'])
-                                    .replace('${last_name}', data['admin']['last_name'])
-                                    .replace('${role}', data['admin']['role']);   
-
-}
-
-
+// Смена пароля с авторизацией
 function changePass() {
+
+    console.log('changePass()');
+
     //предотвратить дефолтные действия, отмена отправки формы
     event.preventDefault(); 
 
     //найти все инпуты и получить данные из каждого
     let inputs = event.target.closest('form').querySelectorAll('input');
+
     //контейнер для инфы пользователю
     let info_reg = event.target.closest('form').querySelector(".info-form");
  
@@ -162,12 +149,7 @@ function changePass() {
     let pass1 = inputs[2];
     let pass2 = inputs[3];
 
-    console.log(login.value);
-    console.log(temp_password.value);
-    console.log(pass1.value);
-    console.log(pass2.value);
-    
-
+    //----------------Здесь блок всяких поверок введённых значений ДО отправки на сервер------
 
     login.oninput = function(){
         login.classList.remove("input-debug");
@@ -219,6 +201,7 @@ function changePass() {
         return;
     }
 
+    //------------------------------------
 
    //подставить в запрос и отправить
     let params = "login=" + login.value + "&password=" + pass1.value + "&temp_password=" + temp_password.value;
@@ -235,17 +218,12 @@ function changePass() {
         return;
     }
 
-    //если пароль успешно заменен на постоянный получаем токен менеджера
+    //если пароль успешно заменен на постоянный получаем токен админа
     //и записываем в базу. устанавливаем срок жизни - 1 день
     if(data['success']) {
         document.cookie = "admin=" + data['token'] + "; max-age=86400";
     }
 
-    //теперь у нас в базе и куки есть токен
-    //получим данные этого юзера
-    data = check();
-    console.log(data);
     //отрисуем его личный кабинет
-    renderCabinet(data);
-
+    document.location.href('cabinet.php');
 }

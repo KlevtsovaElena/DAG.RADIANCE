@@ -74,12 +74,6 @@ final class Admin extends AbstractClasses\Unit
         $pdo = \Connection::getConnection();
         $result = $pdo->query("SELECT id, first_name, last_name, login, role FROM admin WHERE token = '" . $_POST['token'] . "'");
         $row = $result->fetch();
-
-        // //возвращаем ответ в зависимости от цифры (0 или 1).
-        // if(count($row) == 0) {
-        //     return false;
-        // } 
-
         return $row;
     }
 
