@@ -1,14 +1,14 @@
-
 <?php require_once('../classes/autoload.php'); ?>
-<?php 
+
+<?php
 if(isset($_COOKIE['admin'])) {
     $pdo = \Connection::getConnection();
     $result = $pdo->query("SELECT id, first_name, last_name, login, role FROM admin WHERE token = '" . $_COOKIE['admin'] . "'");
     $row = $result->fetch();
-?> 
+?>
 
             <div class="menu-left">
-                <div class="logo">DAG.RADIANCE</div>
+                <a href="cabinet.php"><div class="logo">DAG.RADIANCE</div></a>
                 <div class="profile-name">
                 <?php if(isset($_COOKIE['admin'])) { ?>
                     <h3><?= $row['login']?></h3>

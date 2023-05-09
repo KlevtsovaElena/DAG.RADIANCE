@@ -1,5 +1,6 @@
 <?php require_once('../classes/autoload.php'); ?>
-<?php require('check.php');?>
+<?php require('works/check.php');?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -69,6 +70,7 @@
     </div>
 
 
-    <script src="js/admin.js"></script>
+    <script src="js/main.js"></script>
+
 </body>
 </html>

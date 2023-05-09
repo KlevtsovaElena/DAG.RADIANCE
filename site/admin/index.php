@@ -78,20 +78,10 @@
     <?php include "cabinet-menu.php";?>
         <div class="work-area">
             <h1>АДМИНКА</h1>
-
             <h3>Добро пожаловать в Админку сайта DAG.RADIANCE</h3>
-            
-
-            
-        
-
         </div>
 
     </div>
-
-    
-
-
 </template>
 
     <script src="js/admin.js"></script>

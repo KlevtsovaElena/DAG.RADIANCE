@@ -1,6 +1,8 @@
 <?php
 require_once('../../classes/autoload.php');
 
+// РЕДАКТИРОВАНИЕ КОНТАКТОВ В ТАБЛИЦЕ
+
     // разнесём данные по переменным из массива $POST
     $phone = $_POST['phone'];
     $mail = $_POST['mail'];
