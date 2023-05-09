@@ -8,17 +8,17 @@
                     <div class="footer-nav__item">
                         <h4 class="footer-nav__title">Меню</h4>
                         <div class="footer-nav__links">
-                            <a href="places-catalog.html">Достопримечательности</a>
-                            <a href="tours-catalog.html">Туры</a>
-                            <a href="contacts.html">Контакты</a>
+                            <a href="places-catalog.php">Достопримечательности</a>
+                            <a href="tours-catalog.php">Туры</a>
+                            <a href="contacts.php">Контакты</a>
                         </div>
                     </div>
                     <div class="footer-nav__item">
                         <h4 class="footer-nav__title">О регионе</h4>
                         <div class="footer-nav__links">
-                            <a href="1.html">География и климат</a>
-                            <a href="2.html">Колорит</a>
-                            <a href="3.html">Праздники и традиции</a>
+                            <a href="1.php">География и климат</a>
+                            <a href="2.php">Колорит</a>
+                            <a href="3.php">Праздники и традиции</a>
                         </div>
                     </div>
                 </div>

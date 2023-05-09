@@ -157,9 +157,9 @@
         </section>
 
         <div class="two-buttons plus-one-btn">
-            <a href="1.html" class="card-btn"><button class="card-item__btn btn-big btn-yellow">Предыдущая</button></a>
-            <a href="index.html" class="card-btn"><button class="card-item__btn btn-big btn-yellow">На главную</button></a>
-            <a href="3.html" class="card-btn"><button class="card-item__btn btn-big btn-yellow">Далее</button></a>
+            <a href="1.php" class="card-btn"><button class="card-item__btn btn-big btn-yellow">Предыдущая</button></a>
+            <a href="index.php" class="card-btn"><button class="card-item__btn btn-big btn-yellow">На главную</button></a>
+            <a href="3.php" class="card-btn"><button class="card-item__btn btn-big btn-yellow">Далее</button></a>
         </div>
 
     </main>

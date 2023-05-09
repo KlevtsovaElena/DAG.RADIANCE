@@ -51,10 +51,10 @@ $data = Tour::getLinesApiId($_GET['id']);
             <div class="breadcrumbs-container">
                 <ul class="breadcrumbs-list">
                     <li>
-                        <a href="index.html">Главная</a>
+                        <a href="index.php">Главная</a>
                     </li>
                     <li>
-                        <a href="1.html">Все туры</a>
+                        <a href="1.php">Все туры</a>
                     </li>
                     <li>
                         <p><?= $data[0]['title'] ?></p>
@@ -115,7 +115,7 @@ $data = Tour::getLinesApiId($_GET['id']);
         </main>
         
         <?php include "footer.php";?>
-        
+
     </div>
  
 

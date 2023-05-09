@@ -62,10 +62,10 @@ $obj = (object)$data[0];
             <div class="breadcrumbs-container">
                 <ul class="breadcrumbs-list">
                     <li>
-                        <a href="index.html">Главная</a>
+                        <a href="index.php">Главная</a>
                     </li>
                     <li>
-                        <a href="1.html">Все достопримечательности</a>
+                        <a href="1.php">Все достопримечательности</a>
                     </li>
                     <li>
                         <p><?= $data[0]['title'] ?></p>
@@ -118,7 +118,7 @@ $obj = (object)$data[0];
 
                 <div class="two-buttons">
                     <a href="places-catalog.php" class="card-btn"><button class="card-item__btn btn-big btn-yellow">Смотреть все</button></a>
-                    <a href="index.html" class="card-btn"><button class="card-item__btn btn-big btn-yellow">На главную</button></a>
+                    <a href="index.php" class="card-btn"><button class="card-item__btn btn-big btn-yellow">На главную</button></a>
                 </div>
             </div>
     

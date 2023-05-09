@@ -44,7 +44,7 @@
             <div class="breadcrumbs-container">
                 <ul class="breadcrumbs-list">
                     <li>
-                        <a href="index.html">Главная</a>
+                        <a href="index.php">Главная</a>
                     </li>
                         <p>Все достопримечательности</p>
                     </li>

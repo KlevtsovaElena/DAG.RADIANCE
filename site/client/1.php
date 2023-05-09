@@ -88,8 +88,8 @@
             </div>
 
             <div class="two-buttons">
-                <a href="index.html" class="card-btn"><button class="card-item__btn btn-big btn-yellow">На главную</button></a>
-                <a href="2.html" class="card-btn"><button class="card-item__btn btn-big btn-yellow">Далее</button></a>
+                <a href="index.php" class="card-btn"><button class="card-item__btn btn-big btn-yellow">На главную</button></a>
+                <a href="2.php" class="card-btn"><button class="card-item__btn btn-big btn-yellow">Далее</button></a>
             </div>
 
         </section>
