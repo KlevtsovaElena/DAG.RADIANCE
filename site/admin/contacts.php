@@ -36,24 +36,15 @@
                 $contact = (object)$data[0]; 
                 ?>
                     <form action="works/edit-contacts.php" method="post" class="edit-contacts__form">
-                        <label for="phone"> ТЕЛЕФОН
-                            <input type="text" id="phone" name="phone" value="<?= $contact->phone;?>"> 
-                        </label>
-                        <label for="mail"> ЭЛЕКТРОННАЯ ПОЧТА
-                            <input type="text" id="mail" name="mail" value="<?= $contact->mail;?>"> 
-                        </label>
-                        <label for="telegram"> TELEGRAM
-                            <input type="text" id="telegram" name="telegram" value="<?= $contact->telegram;?>"> 
-                        </label>
-                        <label for="whatsapp"> WHATSAPP
-                            <input type="text" id="whatsapp" name="whatsapp" value="<?= $contact->whatsapp;?>"> 
-                        </label>
-                        <label for="vk"> VK
-                            <input type="text" id="vk" name="vk" value="<?= $contact->vk;?>"> 
-                        </label>
 
 
-                        <button class="btn-admin" type="submit">Сохранить</button>
+                        <p>Телефон</p><input type="text" id="phone" name="phone" value="<?= $contact->phone;?>">
+                        <p>Электронная почта</p><input type="text" id="mail" name="mail" value="<?= $contact->mail;?>">
+                        <p>Telegram</p><input type="text" id="telegram" name="telegram" value="<?= $contact->telegram;?>"> 
+                        <p>Whatsapp</p><input type="text" id="whatsapp" name="whatsapp" value="<?= $contact->whatsapp;?>"> 
+                        <p>VK</p><input type="text" id="vk" name="vk" value="<?= $contact->vk;?>">
+
+                        <p><button class="btn-admin" type="submit">Сохранить</button></p>
 
                     </form>
                 </div>

@@ -10,7 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 
     <link rel="stylesheet" href="css/admin.css">
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
@@ -31,14 +31,14 @@
 
 
                 <div class="form-add-account">
-                <form>
-                    <input type="text"  name="first_name" placeholder="first_name" required>
-                    <input type="text"  name="last_name" placeholder="last_name">
-                    <input type="text"  name="login" placeholder="login">
-                    <input type="text"  name="role" placeholder="role">
-                    <button class="btn-admin" onclick="addAccount()">Добавить учётную запись</button>
-                    <div class="info"></div>
-                </form>
+                    <form>
+                        <p>Имя</p><input type="text"  name="first_name" placeholder="first_name" required>
+                        <p>Фамилия</p><input type="text"  name="last_name" placeholder="last_name">
+                        <p>Логин</p><input type="text"  name="login" placeholder="login">
+                        <p>Роль</p><input type="text"  name="role" placeholder="role">
+                        <p><button onclick="addAccount()">Добавить учётную запись</button></p>
+                        <div class="info"></div>
+                    </form>
                 </div>
 
 

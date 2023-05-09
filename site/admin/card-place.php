@@ -68,11 +68,11 @@
                                     <div class="img-carousel-item">
                                         <img style="width: 100px" src="<?= '../client/' . $imgCarousel[$i]; ?>">
                                         <input type=hidden name="img-carousel[<?= $i; ?>]" value="<?= $imgCarousel[$i]; ?>">
-                                        <div class="d-inline-block cursor" onclick="hiddenDeleteImgCarousel()">X удалить</div>
+                                        <div class="d-inline-block cursor btn-admin btn-delete " onclick="hiddenDeleteImgCarousel()">X удалить</div>
                                         <div class="d-none delete-img-carousel">
                                             <h6>Удалить это изображение?<h6>
-                                            <div class="d-inline-block delete-false" onclick="notDeleteImgCarousel()">ОТМЕНА</div>
-                                            <div class="d-inline-block delete-true" onclick="deleteImgCarousel()">ДА</div>
+                                            <div class="d-inline-block btn-admin btn-reset" onclick="notDeleteImgCarousel()">ОТМЕНА</div>
+                                            <div class="d-inline-block btn-admin btn-delete" onclick="deleteImgCarousel()">ДА</div>
                                         </div>
                                     </div> 
                                 <?php }   
@@ -105,7 +105,7 @@
                         <p>НАЗВАНИЕ МЕСТА<input type="text" id="title" name="title" value=""></p>
                         <p>КРАТКОЕ ОПИСАНИЕ<textarea id="short-desc" name="short-desc"></textarea></p>
                         <p>ПОЛНОЕ ОПИСАНИЕ<textarea id="full-desc" name="full-desc"></textarea></p>
-                        <p>СТОИМОСТЬ<input type="text" id="price" name="price" value=""></p>                      
+                        <p>СТОИМОСТЬ<input type="text" id="price" name="price" value="0"></p>                      
 
                         <!-- картинка для маленькой карточки -->
                         <p>

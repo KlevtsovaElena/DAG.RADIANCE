@@ -51,14 +51,14 @@
                         <a href="" class="d-block"><button class="card-item__btn catalog-btn btn-yellow">Подробнее</button></a>
 
                         <div class="edit-card">
-                            <a href="card-tour.php?id=<?= $place['id']; ?>" class="d-block"><button class="btn-black">&#9998 Изменить</button></a>
+                            <a href="card-place.php?id=<?= $place['id']; ?>" class="d-block"><button class="btn-black">&#9998 Изменить</button></a>
 
                             <button class="btn-delete btn-black" onclick="deleteCard()">X Удалить</button>
                         
                         </div>
                         <div class="delete-card d-none">
-                            <a href="../admin/works/delete-place.php?id=<?= $place['id']; ?>"><div onclick="hiddenDeleteBlock()">Удалить</div></a>
-                            <div  onclick="hiddenDeleteBlock2()">Отмена</div>
+                            <a href="../admin/works/delete-place.php?id=<?= $place['id']; ?>" ><div onclick="hiddenDeleteBlock()" class="btn-admin btn-delete">Удалить</div></a>
+                            <div  onclick="hiddenDeleteBlock2()" class="btn-admin btn-reset">Отмена</div>
                         </div>                      
                            
                     </div>

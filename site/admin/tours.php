@@ -57,8 +57,8 @@
                         
                         </div>
                         <div class="delete-card d-none">
-                            <a href="../admin/works/delete-tour.php?id=<?= $tour['id']; ?>"><div onclick="hiddenDeleteBlock()">Удалить</div></a>
-                            <div  onclick="hiddenDeleteBlock2()">Отмена</div>
+                            <a href="../admin/works/delete-tour.php?id=<?= $tour['id']; ?>"><div onclick="hiddenDeleteBlock()" class="btn-admin btn-delete">Удалить</div></a>
+                            <div  onclick="hiddenDeleteBlock2()" "btn-admin btn-reset">Отмена</div>
                         </div>                      
                            
                     </div>

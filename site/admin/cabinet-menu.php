@@ -5,7 +5,7 @@
 
 
     <div class="menu-left">
-        <a href="cabinet.php"><div class="logo">DAG.RADIANCE</div></a>
+        <a href="../client/index.php" target="_blank"><div class="logo">DAG.RADIANCE</div></a>
         <div class="profile-name">
         
             <h3><?= $profile['login']?></h3>

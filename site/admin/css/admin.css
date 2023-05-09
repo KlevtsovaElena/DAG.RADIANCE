@@ -3,6 +3,7 @@ body {
     padding: 0;
     background-color: #F6f6f6;
     color: #6e6e6e;
+    font-family: 'Roboto', sans-serif;
 }
 input, textarea {
     box-sizing: border-box;
@@ -14,10 +15,13 @@ input, textarea {
     color: #6e6e6e;
     min-width: 250px;
 }
+input::placeholder {
+    opacity: 0.5;
+}
 input:focus, textarea:focus {
     border-color: #ade7e2;;
 }
-button {
+button, .btn-admin {
     border-radius: 10px;
     border-color: #ade7e2;
     background-color: #5bcfc5;
@@ -28,11 +32,12 @@ button {
     padding: 8px 15px;
     min-width: 80px;
 }
-button:hover {
+button:hover, .btn-admin:hover {
     background-color: #49a69e;
 }
 form {
-    border-radius: 5px;
+    border-radius: 10px;
+    padding: 25px;
 }
 
 .d-block {
@@ -90,7 +95,6 @@ form {
     align-items: center;
 }
 .work-area form{
-    padding:10px;
     background-color: #FFFFFF;
 }
 .work-area__title{
@@ -129,13 +133,6 @@ form {
     font-size: 16px;
 
 }
-.btn-reset {
-    background-color: #969ba0; 
-}
-.btn-reset:hover {
-    background-color: #c8c8c8;
-    color: rgb(80, 80, 80);
-}
 .btn-delete {
     background-color: #fee6ea;
     color: #f72b50;
@@ -173,28 +170,24 @@ form {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    border-radius: 10px;
 
 }
 .delete-card a {
     color: red;
-}
-.delete-card div {
-    padding: 5px;
-    border: solid black 1px;
-    border-radius: 5px;
-    cursor: pointer;
 }
 
 .edit-contacts__form {
     display: flex;
     flex-direction: column;
     background-color: #FFFFFF;
-    
+    width: 500px;
 }
 
 .edit-tour, .edit-place {
     background-color: #FFFFFF;
     width: 800px;
+    border-radius: 10px;
 }
 
 .edit-tour form, .edit-place form{
@@ -213,24 +206,19 @@ form {
 }
 
 .delete-img-carousel {
-
     position: absolute;
     top: 0;
     left:100px;
     width: 300px;
     height: 70px;
+    padding-left: 10px;
     background-color: #ffffff;
-    color: black;
     z-index: 9;
 }
-
-.delete-img-carousel div {
-    cursor: pointer;
-    border-radius: 5px;
-    border: solid black 1px;
-    padding: 5px;
-    margin: 0 15px;
+.delete-img-carousel .btn-delete {
+    text-align: center;
 }
+
 .delete-true {
     color: red;
 }
@@ -267,14 +255,15 @@ form {
 .menu-left ul li{
     padding-bottom: 10px;
 }
-.btn-admin {
-    transition: all 0.3s;
-}
 .btn-reset {
     display: inline-block;
-    padding: 1px 6px;
-    border: solid black 2px;
-    box-sizing: border-box;
+    color: #6e6e6e;
+    background-color: #eeeeee;
+
+}
+.btn-reset:hover {
+    background-color: #6e6e6e;
+    color: #FFFFFF;
 }
 a {
     color: #6e6e6e;
@@ -285,7 +274,7 @@ a:hover {
 }
 
 #short-desc {
-    width: 300px;
+    width: 500px;
     height: 150px;
 }
 #full-desc {
@@ -309,4 +298,27 @@ a:hover {
 }
 .menu-left__list div:hover a{
     color: #5bcfc5;
+}
+.form-add-account {
+    width: 500px;
+}
+.form-add-account p,
+.edit-contacts__form p,
+.edit-tour__form p,
+.edit-place__form p {
+    margin-bottom:0;
+    margin-top:20px;
+    margin-left: 10px;
+}
+.edit-contacts__form p{
+    margin-bottom:0;
+    margin-top:20px;
+    margin-left: 10px;
+}
+
+
+
+.info {
+    margin-top: 10px;
+    padding-left: 10px;
 }
