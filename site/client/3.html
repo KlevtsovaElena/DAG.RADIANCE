@@ -1,6 +1,3 @@
-<?php require_once('../classes/autoload.php'); ?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,8 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DAG.RADIANCE</title>
-    <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/1.css">
+    <link rel="stylesheet" href="css/2.css">
+    <link rel="stylesheet" href="css/3.css">
 
     <link rel="stylesheet" href="./fonts/PlayFairDisplay/stylefonts.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -163,11 +162,41 @@
         
     </main>
 
-    <?php include "footer.php";?>
+    <!-- FOOTER  -->
+    <footer>
 
+        <div class="footer-container">
+            <div class="footer-nav">
+                <div class="logo">DAG.RADIANCE</div>
 
-    <script src="./js/jquery-3.6.4.min.js"></script>
-    <script src="./js/slick.min.js"></script>
+                <div class="footer-nav__item">
+                    <h4 class="footer-nav__title">Меню</h4>
+                    <ul>
+                        <li>Достопримечательности</li>
+                        <li>Туры</li>
+                        <li>Контакты</li>
+                    </ul>
+                </div>
+                <div class="footer-nav__item">
+                    <h4 class="footer-nav__title">О регионе</h4>
+                    <ul>
+                        <li>География</li>
+                        <li>Климат</li>
+                        <li>Колорит</li>
+                        <li>Праздники и традиции</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-links">
+                <img src="img/icons/fb.png" alt="" class="linkPic">
+                <img src="img/icons/tg.png" alt="" class="linkPic">
+                <img src="img/icons/inst.png" alt="" class="linkPic">
+                <img src="img/icons/wtsp.png" alt="" class="linkPic">
+            </div>
+        </div>
+    </footer>
+    <!-- /FOOTER  -->
+
     <script src="js/main.js"></script>
 
 </body>

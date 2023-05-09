@@ -1,0 +1,89 @@
+.fests1 {
+        background-image: url('../img/section3/jpg/14.jpg');
+        background-size: cover; 
+        float: right;
+}
+
+.fests2 {
+    background-image: url('../img/section3/jpg/15.jpg');
+    background-size: cover; 
+}
+
+.fests3 {
+    background-image: url('../img/section3/jpg/16.jpg');
+    background-size: cover; 
+}
+
+.fests4 {
+    background-image: url('../img/section3/jpg/17.jpg');
+    background-size: cover; 
+}
+
+.fests5 {
+    background-image: url('../img/section3/jpg/18.jpg');
+    background-size: cover; 
+}
+
+.fests6 {
+    background-image: url('../img/section3/jpg/19.jpg');
+    background-size: cover; 
+}
+
+.fests7 {
+    background-image: url('../img/section3/jpg/20.jpg');
+    background-size: cover; 
+}
+
+.fests8 {
+    background-image: url('../img/section3/jpg/21.jpg');
+    background-size: cover; 
+}
+
+.right {
+    text-align: right;
+    font-style: italic !important;
+    font-weight: 500 !important;
+}
+
+.verse {
+    font-size: 14px !important;
+    font-weight: 400 !important;
+    font-style: italic !important;
+    text-align: end;
+    margin-right: 20px;
+}
+
+.fests9 {
+    background-image: url('../img/section3/jpg/22.jpg');
+    background-size: cover; 
+}
+
+.fests10 {
+    background-image: url('../img/section3/jpg/23.jpg');
+    background-size: cover; 
+}
+
+.float-right-with-small {
+    margin-top: 30px;
+}
+
+.fests11 {
+    background-image: url('../img/section3/jpg/24.jpg');
+    background-size: cover; 
+}
+
+.left {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.img-left {
+    float: left;
+    margin: 20px 40px 40px 0px;
+}
+
+.fests12 {
+    background-image: url('../img/section3/jpg/25.jpg');
+    background-size: cover; 
+}

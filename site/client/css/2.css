@@ -17,12 +17,18 @@
     margin-bottom: 20px;
     display: flex;
     flex-direction: column;
+    gap: 20px;
 }
 
 .img-row {
     display: flex;
     flex-direction: row;
     gap: 15px;
+}
+
+.img-right {
+    display: flex;
+    align-self: flex-end;
 }
 
 .img-water {
@@ -33,6 +39,145 @@
     max-width: 600px;
 }
 
+.chess-container {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 60px;
+}
+
+.img-with-caption {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.chess {
+    flex-basis: 100%;
+    flex: 1;
+    height: 48%;
+}
+
+.chess + .chess {
+    margin-left: 4%;
+}
+
+.caption {
+    display: inline;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;   
+    margin-bottom: 40px;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.img-small {
+    width: 300px;
+    height: 230px;
+    float: right;
+}
+
+.pecularities1 {
+    background-image: url('../img/section2/map.png');
+    background-size: cover;
+}
+
+.pecularities2 {
+    background-image: url('../img/new/5.jpg');
+    background-size: cover;
+    width: 100% !important;
+}
+
+.pecularities3 {
+    background-image: url('../img/new/6.jpg');
+    background-size: cover;
+}
+
+.pecularities4 {
+    background-image: url('../img/new/7.jpg');
+    background-size: cover;
+}
+
+.pecularities5 {
+    background-image: url('../img/new/8.jpg');
+    background-size: cover;
+}
+
+.pecularities6 {
+    background-image: url('../img/new/9.jpg');
+    background-size: cover;
+}
+
+.pecularities7 {
+    background-image: url('../img/new/10.jpg');
+    background-size: cover;
+    width: 100%;
+}
+
+.nations1 {
+    background-image: url('../img/section3/jpg/2.jpg');
+    background-size: cover;
+}
+
+.nations2 {
+    background-image: url('../img/section3/jpg/3.jpg');
+    background-size: cover;
+}
+
+.nations3 {
+    background-image: url('../img/section3/jpg/1.jpg');
+    background-size: cover;
+}
+.nations4 {
+    background-image: url('../img/section3/jpg/4.jpg');
+    background-size: cover;
+}
+.nations5 {
+    background-image: url('../img/section3/jpg/5.jpg');
+    background-size: cover;
+}
+.nations6 {
+    background-image: url('../img/section3/jpg/6.jpg');
+    background-size: cover;
+}
+.nations7 {
+    background-image: url('../img/section3/jpg/7.jpg');
+    background-size: cover;
+}
+.nations8 {
+    background-image: url('../img/section3/jpg/8.jpg');
+    background-size: cover;
+}
+.nations9 {
+    background-image: url('../img/section3/jpg/9.jpg');
+    background-size: cover;
+}
+.nations10 {
+    background-image: url('../img/section3/jpg/10.jpg');
+    background-size: cover;
+}
+.nations11 {
+    background-image: url('../img/section3/jpg/11.jpg');
+    background-size: cover;
+}
+.nations12 {
+    background-image: url('../img/section3/jpg/12.jpg');
+    background-size: cover;
+}
+.nations13 {
+    background-image: url('../img/section3/jpg/13.jpg');
+    background-size: cover;
+}
 
 @media(max-width: 1550px) {
     .img-row {
@@ -46,11 +191,12 @@
     }
 }
 
-@media(max-width: 1320px) {
+/* @media(max-width: 1320px) {
     .img-section {
-        width: 70%;
+        width: 100%;
+        height: 300px;
     }
-}
+} */
 
 @media(max-width: 1200px) {
     .img-regular {
@@ -58,14 +204,32 @@
     }
 }
 
-@media(max-width: 950px) {
-    .img-section2 {
+/* @media(max-width: 950px) {
+    .img-section {
+        max-width: 100%;
+    }
+} */
+
+@media(max-width: 650px) {
+    .img-section {
+        max-width: 100%;
+    }
+    .img-nations {
         max-width: 100%;
     }
 }
 
+@media(max-width: 520px) {
+    .img-section {
+        max-width: 60%;
+    }
+    .img-nations {
+        max-width: 90%;
+    }
+}
+
 @media(max-width: 370px) {
-    .img-section2 {
+    .img-section {
         max-width: 250px;
     }
 }

@@ -41,6 +41,16 @@
         </header>
     
         <main>
+            <div class="breadcrumbs-container">
+                <ul class="breadcrumbs-list">
+                    <li>
+                        <a href="index.html">Главная</a>
+                    </li>
+                        <p>Все достопримечательности</p>
+                    </li>
+                </ul>
+            </div>
+
             <div class="catalog-container">
             <?php $data = Place::getLinesApi();
             foreach ($data as $place) { ?>
@@ -57,44 +67,13 @@
             </div>
 
             <a href="index.php" class="card-btn block"><button class="card-item__btn btn-big btn-yellow">На главную</button></a>
-            
+        
     
     
         </main>
         
-        <!-- FOOTER  -->
-    
-        <footer >
-            <div class="footer-container">
-                <div class="footer-nav">
-                    <div class="logo">DAG.RADIANCE</div>
-                    <div class="footer-menu_container">
-                        <div class="footer-nav__item">
-                            <h4 class="footer-nav__title">Меню</h4>
-                            <div class="footer-nav__links">
-                                <a href="places-catalog.html">Достопримечательности</a>
-                                <a href="tours-catalog.html">Туры</a>
-                                <a href="contacts.html">Контакты</a>
-                            </div>
-                        </div>
-                        <div class="footer-nav__item">
-                            <h4 class="footer-nav__title">О регионе</h4>
-                            <div class="footer-nav__links">
-                                <a href="1.html">География и климат</a>
-                                <a href="2.html">Колорит</a>
-                                <a href="3.html">Праздники и традиции</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="footer-links">
-                    <img src="img/icons/fb.png" alt="" class="linkPic">
-                    <img src="img/icons/tg.png" alt="" class="linkPic">
-                    <img src="img/icons/inst.png" alt="" class="linkPic">
-                    <img src="img/icons/wtsp.png" alt="" class="linkPic">
-                </div>
-            </div>
-        </footer>
+        <?php include "footer.php";?>
+        
     </div>
     
     <script src="./js/jquery-3.6.4.min.js"></script>
