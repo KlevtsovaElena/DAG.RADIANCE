@@ -51,7 +51,7 @@ $obj = (object)$data[0];
                         <a href="index.php">Главная</a>
                     </li>
                     <li>
-                        <a href="1.php">Все достопримечательности</a>
+                        <a href="places-catalog.php">Все достопримечательности</a>
                     </li>
                     <li>
                         <p><?= $data[0]['title'] ?></p>
@@ -119,6 +119,7 @@ $obj = (object)$data[0];
     <script src="./js/jquery-3.6.4.min.js"></script>
     <script src="./js/slick.min.js"></script>
     <script src="js/card.slider.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

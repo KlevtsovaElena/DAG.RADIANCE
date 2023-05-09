@@ -194,8 +194,9 @@
 
     <script src="./js/jquery-3.6.4.min.js"></script>
     <script src="./js/slick.min.js"></script>
-    <script src="js/main.js"></script>
     <script src="js/index.slider.js"></script>
+    <script src="js/main.js"></script>
+
 
 </body>
 

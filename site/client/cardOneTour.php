@@ -29,7 +29,7 @@ $data = Tour::getLinesApiId($_GET['id']);
 <body>
 
     <div class="container-page d-flex">
-        
+
     <header class="header">
         <?php include('header.php'); ?>
     </header>
@@ -41,7 +41,7 @@ $data = Tour::getLinesApiId($_GET['id']);
                         <a href="index.php">Главная</a>
                     </li>
                     <li>
-                        <a href="1.php">Все туры</a>
+                        <a href="tours-catalog.php">Все туры</a>
                     </li>
                     <li>
                         <p><?= $data[0]['title'] ?></p>
@@ -110,6 +110,8 @@ $data = Tour::getLinesApiId($_GET['id']);
     <script src="./js/jquery-3.6.4.min.js"></script>
     <script src="./js/slick.min.js"></script>
     <script src="js/card.slider.js"></script>
+    <script src="js/main.js"></script>
+    
 </body>
 
 </html>

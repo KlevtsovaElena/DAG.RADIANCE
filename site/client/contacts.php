@@ -22,32 +22,45 @@
 </head>
 
 <body>
+    <div class="container-page d-flex">
+        <!-- HEADER -->
+        <header class="header">
+            <?php include('header.php'); ?>
+        </header>
+        <!-- /HEADER -->
 
-    <!-- HEADER -->
-    <header class="header">
-        <?php include('header.php'); ?>
-    </header>
-    <!-- /HEADER -->
+        <main>
 
-    <main>
-
-    <div class="contacts-container">  
-            <div class="contacts">  
-                          
-                <h2>Наши контакты:</h2>
-                <div class="line"><p>Телефон:</p> <a href="tel:+" target="_blank">+7(999)-999-99-99</a></div>  
-                <div class="line"><p>Электронная почта:</p> <a href="mailto:" target="_blank">email@gmail.com</a></div>
-                <div class="line"><p>Вконтакте:</p>   <a href="https://vk.com/" target="_blank">vk.com</a></div>
-                <div class="line"><p>Телеграм:</p> <a href="tg://resolve?domain=" target="_blank">telegram.me</a></div> 
-                <div class="line"><p>Whatsapp:</p> <a href="whatsapp://send?phone=" target="_blank">whatsapp.me</a></div>
+                <div class="breadcrumbs-container">
+                            <ul class="breadcrumbs-list">
+                                <li>
+                                    <a href="index.php">Главная</a>
+                                </li>
+                                    <p>Контакты</p>
+                                </li>
+                            </ul>
+                        </div>
+                <div class="contacts-container">  
+                <div class="contacts">  
+                        
+                <?php 
+                    $data = Contacts::getLinesApi(); 
+                    $contact = (object)$data[0];
+                ?>
+                    <h2>Наши контакты:</h2>
+                    <div class="line"><p>Телефон:</p><a href="tel:+<?= $contact->phone;?>" target="_blank">+<?= $contact->phone;?></a></div>  
+                    <div class="line"><p>Электронная почта:</p><a href="mailto:<?= $contact->mail;?>" target="_blank"><?= $contact->mail;?></a></div>
+                    <div class="line"><p>Вконтакте:</p><a href="https://vk.com/<?= $contact->vk;?>" target="_blank">vk.com</a></div>
+                    <div class="line"><p>Телеграм:</p><a href="tg://resolve?domain=<?= $contact->telegram;?>" target="_blank">telegram.me</a></div> 
+                    <div class="line"><p>Whatsapp:</p><a href="whatsapp://send?phone=<?= $contact->whatsapp;?>" target="_blank">whatsapp.me</a></div>
+                </div>
             </div>
-        </div>
 
-    </main>
-    
-    
-    <?php include "footer.php";?>
-
+        </main>
+        
+        
+        <?php include "footer.php";?>
+    </div>
 
     <script src="./js/jquery-3.6.4.min.js"></script>
     <script src="./js/slick.min.js"></script>
