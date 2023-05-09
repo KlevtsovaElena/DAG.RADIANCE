@@ -52,7 +52,6 @@ function addAccount() {
      let inputs = event.target.closest('form').querySelectorAll('input');
      const info = document.querySelector(".info");
      const newLogin = document.querySelector(".new-login");
-     let text = document.createElement('textarea');
      let div = document.createElement('div');
      let first_name = inputs[0];
      let last_name = inputs[1];
@@ -75,27 +74,24 @@ function addAccount() {
     let data = JSON.parse(json);
 
     if (data['success'] == false) {
-        text.innerText += data['error'];
+        info.innerText = data['error'];
     } else {
-        text.innerText += "Ваши данные для входа в админ панель:   ";
-        text.innerText += "login: " + login.value + "  ";
-        text.innerText += "ВРЕМЕННЫЙ пароль: " + password + "  ";
-        text.innerText += "При первом входе измените временный пароль на постоянный!"
-
-        div.innerText = "Аккаунт создан. Скопируйте и отправьте пользователю:"
+        info.innerHTML = `  <p> Аккаун создан! Скопируйте и отправьте пользователю: </p>
+                            <p>Ваши данные для входа в админ панель:   <br>
+                               login: ${login.value}   <br>
+                               ВРЕМЕННЫЙ пароль: ${password} <br>
+                               При первом входе измените временный пароль на постоянный!</p>
+                        `
     }
-
-    info.innerText = "";
-    newLogin.innerHTML = "";
-
-    newLogin.appendChild(div);
-    newLogin.appendChild(text);
 
 }
 
+
+
+
+
 function deleteCard() {
     const deleteCardBlock = event.target.closest('.card-item').querySelector('.delete-card');
-
     deleteCardBlock.classList.remove('d-none');
 }
 

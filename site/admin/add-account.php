@@ -1,5 +1,6 @@
 <?php require_once('../classes/autoload.php'); ?>
 <?php $profile = require('works/check.php');?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -38,9 +39,6 @@
                 </form>
                 </div>
 
-                <div class="new-login">
-                    
-                </div>
 
             </div>
 
