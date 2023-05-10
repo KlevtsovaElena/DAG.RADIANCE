@@ -32,8 +32,7 @@
     </header>
     <!-- /HEADER -->
 
-    <main>
-
+    <main class="home-color">
          <!-- 3 заглавных темы -->
         <section class="article">
             <div class="article-container">

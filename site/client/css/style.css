@@ -44,6 +44,10 @@ a {
     flex: 1;
 }
 
+.home-color {
+    background-color: #000;
+}
+
 .block {
     display: block;
     text-align: center;
