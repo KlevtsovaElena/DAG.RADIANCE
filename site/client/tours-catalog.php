@@ -51,7 +51,7 @@
                     <div class="card-item__desc catalog-price">
                         Стоимость: <span><?php echo $tour['price']; ?> руб.</span>
                     </div>
-                    <a href="cardOneTour.php?id= <?= $tour['id'] ?> " class="block"><button class="card-item__btn catalog-btn btn-yellow">Подробнее</button></a>
+                    <a href="cardOneTour.php?id=<?= $tour['id'] ?> " class="block"><button class="card-item__btn catalog-btn btn-yellow">Подробнее</button></a>
                 </div>
                 <?php } ?>
             </div>

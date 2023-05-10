@@ -1,7 +1,7 @@
-/* ********  СЛАЙДЕР JQUERY/SLICK, ПО 3 ЭЛЕМЕНТА ******** */
+/* ********  СЛАЙДЕР JQUERY/SLICK, ПО 4 ЭЛЕМЕНТА ******** */
 
 $('.slick-slide').slick({
-  slidesToShow: 3,      //по сколько элементов показывать
+  slidesToShow: 4,      //по сколько элементов показывать
   slidesToScroll: 1,    //сколько элементов прокрутить
   autoplay: true,       //включить автопрокрутку?
   dots: true,           //добавить прокрутку внизу (точки)?
@@ -12,6 +12,13 @@ $('.slick-slide').slick({
 
   // Адаптивность
   responsive: [
+    {
+      breakpoint: 1300,
+      settings: {
+        slidesToShow: 3,
+        infinite: true
+      }
+  }, 
     {
       breakpoint: 1000,
       settings: {

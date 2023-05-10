@@ -48,7 +48,7 @@
                     <div class="card-item__desc">
                         <?php echo $place['short-desc']; ?>
                     </div>
-                    <a href="cardOnePlace.php?id= <?= $place['id'] ?> " class="block"><button class="card-item__btn catalog-btn btn-yellow">Подробнее</button></a>
+                    <a href="cardOnePlace.php?id=<?= $place['id'] ?> " class="block"><button class="card-item__btn catalog-btn btn-yellow">Подробнее</button></a>
                 </div>
                 <?php } ?>
             </div>

@@ -44,8 +44,10 @@
                     <a href="1.php" class="article-text__more"> подробнее</a>
                 </div>
                 <div class="article-img">
-                    <img class="small-img" src="./img/place/Горы-small.jpg" alt="">
-                    <img class="big-img d-none" src="./img/place/Горы2.jpg" alt="">
+                    <a href="1.php">
+                        <img class="small-img" src="./img/place/Горы-small.jpg" alt="">
+                        <img class="big-img d-none" src="./img/place/Горы2.jpg" alt="">
+                    </a>
                 </div>
             </div>
 
@@ -57,8 +59,10 @@
                     <a href="2.php" class="article-text__more"> подробнее</a>
                 </div>
                 <div class="article-img">
-                    <img class="small-img" src="./img/place/кавказский-вавилон2-small.jpg" alt="">
-                    <img class="big-img d-none" src="./img/place/кавказский-вавилон.jpeg" alt="">
+                    <a href="2.php">
+                        <img class="small-img" src="./img/place/кавказский-вавилон2-small.jpg" alt="">
+                        <img class="big-img d-none" src="./img/place/кавказский-вавилон.jpeg" alt="">
+                    </a>
                 </div>
             </div>
 
@@ -70,8 +74,10 @@
                     <a href="3.php" class="article-text__more"> подробнее</a>
                 </div>
                 <div class="article-img">
-                    <img class="small-img" src="./img/place/Танец-small.jpg" alt="">
-                    <img class="big-img d-none" src="./img/place/Танец.jpg" alt="">
+                    <a href="3.php">
+                        <img class="small-img" src="./img/place/Танец-small.jpg" alt="">
+                        <img class="big-img d-none" src="./img/place/Танец.jpg" alt="">
+                    </a>
                 </div>
             </div>
 
@@ -109,7 +115,7 @@
 
                     <?php 
 
-                    $data = Place::getLinesApiShort(4);
+                    $data = Place::getLinesApiShort(6);
 
                     foreach ($data as $place) { ?>
 
@@ -152,7 +158,7 @@
 
                         <?php 
 
-                        $data = Tour::getLinesApiShort(4); 
+                        $data = Tour::getLinesApiShort(6); 
 
                         foreach ($data as $tour) { ?>
 
