@@ -1,5 +1,8 @@
 <?php require_once('../classes/autoload.php'); ?>
 <?php $profile = require('works/check.php');?>
+<?php if ($profile['role'] !== 'admin') { 
+    header('Location: cabinet.php');
+} ?>
 
 <!DOCTYPE html>
 <html lang="en">

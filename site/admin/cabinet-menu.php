@@ -20,7 +20,9 @@
                 <a href="cabinet.php"><div><img src="../client/img/icons/house-svgrepo-com.svg"></div></a>  
             </div> 
             <div class="menu-left__list">
-                <a href="add-account.php"><div>Создать учётную запись</div></a>
+                <?php if($profile['role']=='admin') { ?>
+                    <a href="add-account.php"><div>Создать учётную запись</div></a>
+                <?php } ?>
                 <a href="tours.php"><div>Туры</div></a>
                 <a href="places.php"><div>Достопримечательности</div></a>
                 <a href="contacts.php"><div>Контакты</div></a>

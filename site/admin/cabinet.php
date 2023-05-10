@@ -27,16 +27,52 @@
             <h1>Admin panel</h1> 
             
             <div class="d-flex-list">
-                <div class="list-admin-panel" style="background-color: #b48dd3;">sjhdfjsdhfkjsdhf</div>
-                <div class="list-admin-panel" style="background-color: #68e365;">sjhdfjsdhfkjsdhf</div>
-                <div class="list-admin-panel" style="background-color: #5bcfc5;">sjhdfjsdhfkjsdhf</div>
-                <div class="list-admin-panel" style="background-color: #fd7e14;">sjhdfjsdhfkjsdhf</div>
-                <div class="list-admin-panel" style="background-color: #709fba;">sjhdfjsdhfkjsdhf</div>
-            </div>
+                <div class="list-admin-panel" style="background-color: #b48dd3;">
+                    <div class="list-ap-title">Туры</div>
+                    <div class="list-ap-img">
+                        <img src="../client/img/icons/adventure-backpack-svgrepo-com.svg" >
+                        <div style="font-size: 18px">&#9998 К редактированию</div>
+                    </div>
+                </div>
+                <div class="list-admin-panel" style="background-color: #68e365;">
+                    <div class="list-ap-title">Достопримечательности</div>
+                    <div class="list-ap-img">
+                        <img src="../client/img/icons/binoculars-svgrepo-com.svg" >
+                        <div style="font-size: 18px">&#9998 К редактированию</div>
+                    </div>
+                </div>
+                <div class="list-admin-panel" style="background-color: #5bcfc5;">
+                    <div class="list-ap-title">Контакты</div>
+                    <div class="list-ap-img">
+                        <img src="../client/img/icons/contacts-svgrepo-com.svg" >
+                        <div style="font-size: 18px">&#9998 К редактированию</div>
+                    </div>
+                </div>
+                <?php if($profile['role']=='admin') { ?>
+                <div class="list-admin-panel" style="background-color: #fd7e14;">
+                    <div class="list-ap-title">Создать аккаунт</div>
+                    <div class="list-ap-img">
+                        <img src="../client/img/icons/account-avatar-person-svgrepo-com.svg" >
+                        <div style="font-size: 18px">&#9998 К редактированию</div>
+                    </div>
+                </div>
+                <?php } ?>
+                <div class="list-admin-panel" style="background-color: #709fba;">
+                    <div class="list-ap-title">Мониторинг бота</div>
+                    <div class="list-ap-img">
+                        <img src="../client/img/icons/robot-svgrepo-com.svg" >
+                        <div style="font-size: 18px">&#9993 Перейти к сообщениям</div>
+                    </div>
+                </div>
 
+
+            </div>
         </div>
 
-    </div>    
+    </div>
+
+</div>  
+
     <script src="js/main.js"></script>
 </body>
 </html>
