@@ -7,6 +7,9 @@ body {
     font-family: 'Raleway', sans-serif;
     background-color: #F7CE9D;
     color: rgb(189, 88, 44);  
+    max-width: 1700px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 main {
