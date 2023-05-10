@@ -19,14 +19,14 @@ function sendRequestPOST(url, params){
 
 }
 
-
+// Функция разлогинивания
 function logOut() {
     //берём токен из куки
     const cookie = document.cookie.match(/admin=(.+?)(;|$)/);
 
     //если токена нет, то рисуем форму Авторизации и выходим из функции
     if (cookie == null || cookie == undefined || cookie == ""){
-        renderLogin();
+        window.location.href = 'http://localhost/admin/login.php';
         return;
     }
 
@@ -40,7 +40,8 @@ function logOut() {
     document.cookie = "admin=''; max-age=-1";
 
     //рисуем форму авторизации
-    renderLogin();
+    window.location.href = 'http://localhost/admin/login.php';
+
 }
 
 
@@ -76,7 +77,7 @@ function addAccount() {
     if (data['success'] == false) {
         info.innerText = data['error'];
     } else {
-        info.innerHTML = `  <p> Аккаун создан! Скопируйте и отправьте пользователю: </p>
+        info.innerHTML = `  <p> Аккаунт создан! Скопируйте и отправьте пользователю: </p>
                             <p>Ваши данные для входа в админ панель:   <br>
                                login: ${login.value}   <br>
                                ВРЕМЕННЫЙ пароль: ${password} <br>
@@ -85,10 +86,6 @@ function addAccount() {
     }
 
 }
-
-
-
-
 
 function deleteCard() {
     const deleteCardBlock = event.target.closest('.card-item').querySelector('.delete-card');
@@ -119,5 +116,3 @@ function deleteImgCarousel() {
     const deleteImg = event.target.closest('.img-carousel-item');
     deleteImg.remove();
 }
-
-

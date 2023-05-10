@@ -42,17 +42,17 @@
                 ?>
 
                     <!-- Собираем данные одного элемента для таблицы достоприм -->
-                    <form action="works/edit-place.php" method="post" class="edit-place" enctype="multipart/form-data">
+                    <form action="works/edit-place.php" method="post" class="edit-place__form" enctype="multipart/form-data">
 
                         <input type="hidden" name="id" value="<?= $place->id;?>"> 
-                        <p>НАЗВАНИЕ МЕСТА<input type="text" id="title" name="title" value="<?= $place->title;?>"></p>
-                        <p>КРАТКОЕ ОПИСАНИЕ<textarea id="short-desc" name="short-desc"><?= $place->{'short-desc'};?></textarea></p>
-                        <p>ПОЛНОЕ ОПИСАНИЕ<textarea id="full-desc" name="full-desc"><?= $place->{'full-desc'};?></textarea></p>
-                        <p>СТОИМОСТЬ<input type="text" id="price" name="price" value="<?= $place->price;?>"></p>                      
+                        <p>Название места</p><input type="text" id="title" name="title" value="<?= $place->title;?>">
+                        <p>Краткое описание</p><textarea id="short-desc" name="short-desc"><?= $place->{'short-desc'};?></textarea>
+                        <p>Полное описание</p><textarea id="full-desc" name="full-desc"><?= $place->{'full-desc'};?></textarea>
+                        <p>Стоимость</p><input type="text" id="price" name="price" value="<?= $place->price;?>">                    
 
                         <!-- картинка для маленькой карточки -->
                         <p>
-                        <div class="img-title-form">ИЗОБРАЖЕНИЕ ДЛЯ КАРТОЧКИ МЕСТА
+                        <div class="img-title-form">Изображениe для карточки места
                             <div>(Рекомендованные параметры 300X400)</div>
                             <div class="img-title-prew"><img src="<?= '../client/' . $place->{'img-title'};?>" /></div>
                             <input type="hidden" name="img-title" value="<?= $place->{'img-title'};?>">  
@@ -102,10 +102,10 @@
                     <!-- Собираем данные одного элемента для таблицы достоприм -->
                     <form action="works/edit-place.php" method="post" class="edit-place__form" enctype="multipart/form-data">
 
-                        <p>НАЗВАНИЕ МЕСТА<input type="text" id="title" name="title" value=""></p>
-                        <p>КРАТКОЕ ОПИСАНИЕ<textarea id="short-desc" name="short-desc"></textarea></p>
-                        <p>ПОЛНОЕ ОПИСАНИЕ<textarea id="full-desc" name="full-desc"></textarea></p>
-                        <p>СТОИМОСТЬ<input type="text" id="price" name="price" value="0"></p>                      
+                        <p>Название места</p><input type="text" id="title" name="title" value="">
+                        <p>Краткое описание</p><textarea id="short-desc" name="short-desc"></textarea>
+                        <p>Полное описание</p><textarea id="full-desc" name="full-desc"></textarea>
+                        <p>Стоимость</p><input type="text" id="price" name="price" value="0">                      
 
                         <!-- картинка для маленькой карточки -->
                         <p>

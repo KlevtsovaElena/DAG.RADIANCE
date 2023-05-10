@@ -61,7 +61,6 @@ document.querySelector('.form_signup')
 
 // авторизация
 function adminAuthorization() {
-    console.log('adminAuthorization()');
 
     //предотвратить дефолтные действия, отмена отправки формы
     event.preventDefault(); 
@@ -71,7 +70,6 @@ function adminAuthorization() {
 
     //найти все инпуты и получить данные из каждого
     let inputs = event.target.closest('form').querySelectorAll('input');
-    console.log(inputs);
 
     let login = inputs[0];
     let password = inputs[1];
@@ -126,14 +124,12 @@ function adminAuthorization() {
     }
 
     // и перейдём на страницу кабинета
-    document.location.href='cabinet.php';
+    window.location.href = 'http://localhost/admin/cabinet.php';
 }
 
 
 // Смена пароля с авторизацией
 function changePass() {
-
-    console.log('changePass()');
 
     //предотвратить дефолтные действия, отмена отправки формы
     event.preventDefault(); 
@@ -225,5 +221,5 @@ function changePass() {
     }
 
     //отрисуем его личный кабинет
-    document.location.href='cabinet.php';
+    window.location.href = 'http://localhost/admin/cabinet.php';
 }

@@ -25,7 +25,6 @@
         <?php include "cabinet-menu.php";?>
         <div class="work-area">
             <h1>Admin panel</h1> 
-            
             <div class="d-flex-list">
                 <a href="tours.php"><div class="list-admin-panel" style="background-color: #b48dd3;">
                     <div class="list-ap-title">Туры</div>
