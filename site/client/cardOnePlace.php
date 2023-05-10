@@ -29,6 +29,7 @@ $obj = (object)$data[0];
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/card.css">
+    <link rel="stylesheet" href="css/lightbox.css">
 
     <link rel="stylesheet" href="./fonts/PlayFairDisplay/stylefonts.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -80,7 +81,7 @@ $obj = (object)$data[0];
                         
                             <div class="card-carousel d-flex slider-wrapper slick-slide slider-for">
                             <?php for ($i = 0; $i < count($imgCarousel); $i++) { ?>
-                                <div class="d-flex card-item slide" style="background-image: url('./<?= $imgCarousel[$i]; ?>');">
+                                <div class="d-flex card-item slide gallery-item" data-index="<?= $i+1 ?>" img-src="<?= $imgCarousel[$i]; ?>" style="background-image: url('./<?= $imgCarousel[$i]; ?>');">
                                 </div>
                                 <?php }; ?>
                             </div>
@@ -118,7 +119,8 @@ $obj = (object)$data[0];
 
     <script src="./js/jquery-3.6.4.min.js"></script>
     <script src="./js/slick.min.js"></script>
-    <script src="js/card.slider.js"></script>
+    <script src="js/card.slider.fix.js"></script>
+    <script src="js/lightbox.slider.js"></script>
     <script src="js/main.js"></script>
 </body>
 

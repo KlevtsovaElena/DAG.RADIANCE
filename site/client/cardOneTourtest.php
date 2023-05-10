@@ -20,6 +20,7 @@ $data = Tour::getLinesApiId($_GET['id']);
     <link rel="stylesheet" href="css/card.css">
     <link rel="stylesheet" href="css/lightbox.css">
 
+
     <link rel="stylesheet" href="./fonts/PlayFairDisplay/stylefonts.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -105,14 +106,26 @@ $data = Tour::getLinesApiId($_GET['id']);
         <?php include "footer.php";?>
 
     </div>
- 
+
+ <div class="lightbox">
+    <div class="">
+                        
+        <div class="lightbox-item">
+            <?php for ($i = 0; $i < 1; $i++) { ?>
+                <div class="lightbox-item" style="background-image: url('./<?= $imgCarousel[$i]; ?>');">
+                </div>
+            <?php }; ?>
+        </div>
+                          
+    </div>
+ </div>
 
 
     <script src="./js/jquery-3.6.4.min.js"></script>
     <script src="./js/slick.min.js"></script>
     <script src="js/card.slider.fix.js"></script>
-    <script src="js/lightbox.slider.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/lightbox.slider.js"></script>
     
 </body>
 
