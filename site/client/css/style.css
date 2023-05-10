@@ -45,7 +45,7 @@ a {
 }
 
 .home-color {
-    background-color: #000;
+    background: linear-gradient(120deg, black, #125751);
 }
 
 .block {
