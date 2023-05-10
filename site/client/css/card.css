@@ -35,13 +35,11 @@ p {
     font-weight: 700;
     font-size: 18px;
     line-height: 1.78;
-    color: rgb(41, 12, 8);
 } 
 
 .card-text__title {
     margin-bottom: 32px;
     position: relative;
-    color:rgb(189, 88, 44);
     font-weight: 700;
     font-size: 18px;
     line-height: 1.222;
@@ -56,7 +54,6 @@ p {
     font-weight: 500;
     font-size: 15px;
     line-height: 1.2;
-    color: rgb(41, 12, 8);
 }
 
 .double-slider_container {

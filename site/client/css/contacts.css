@@ -3,7 +3,7 @@
 }
 
 .contacts-container {
-    width: 400px;
+    width: 450px;
     margin: 30px auto;
 }
 
@@ -20,11 +20,11 @@
 .line > a {
     color: black;
     font-weight: 700;  
-    transition: all 0.3s; 
+    transition: all 0.5s; 
 }
 
 .line > a:hover {
-    color: rgb(76, 76, 76);
+    color: #ffffffc4;
 }
 
 @media(max-width: 650px) {

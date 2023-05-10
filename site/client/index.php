@@ -97,7 +97,7 @@
 
 
         <!-- БЛОК Достопримечательности -->
-        <div class="places card-contaner">
+        <div class="places card-container">
 
             <!-- Заголовок -->
             <div class="card-text"><h2>Достопримечательности</h2></div>
@@ -140,7 +140,7 @@
 
 
         <!-- БЛОК ТУРЫ -->
-        <div class="tours card-contaner">
+        <div class="tours card-container">
 
             <!-- Заголовок -->
             <div class="card-text"><h2>Туры</h2></div>
