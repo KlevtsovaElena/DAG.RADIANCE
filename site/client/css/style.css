@@ -13,7 +13,7 @@ body {
 }
 
 main {
-    background-color: #125751;
+    background: linear-gradient(180deg, black, #125751);
     padding: 30px 0;
 }
 
@@ -44,9 +44,9 @@ a {
     flex: 1;
 }
 
-.home-color {
+/* .home-color {
     background: linear-gradient(120deg, black, #125751);
-}
+} */
 
 .block {
     display: block;
@@ -500,11 +500,7 @@ a {
     flex-direction: column;
     color: #000;
     margin: 15px;
-    border-radius: 0 30px;
-}
-
-.card-text {
-    
+    border-radius: 20px 0;
 }
 
 .card-text > h2 {
