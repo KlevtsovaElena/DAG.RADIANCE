@@ -109,7 +109,7 @@ $data = Tour::getLinesApiId($_GET['id']);
 
     <script src="./js/jquery-3.6.4.min.js"></script>
     <script src="./js/slick.min.js"></script>
-    <script src="js/card.slider.js"></script>
+    <script src="js/card.slider.fix.js"></script>
     <script src="js/main.js"></script>
     
 </body>
