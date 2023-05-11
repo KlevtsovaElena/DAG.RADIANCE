@@ -34,9 +34,19 @@ $('.slick-slide').slick({
     }
   }, 
   {
-    breakpoint: 300,
-    settings: "unslick" // destroys slick
-  }]
+    breakpoint: 350,
+    settings: {
+      slidesToShow: 1,
+      dots: true,
+      arrows: false
+    }
+  },
+
+  // {
+  //   breakpoint: 300,
+  //   settings: "unslick" // destroys slick
+  // }
+]
 
 });
 

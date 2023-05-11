@@ -35,7 +35,7 @@
                 <div class="article-text">
                     <div class="section-first">
                         <div class="article-text__title">Колорит Дагестана, многонациональность: история, традиции, культура</div>
-                        <div class="pecularities1 img-section img-margin"></div>
+                        <img class="pecularities1" src="./img/section2/map.png" alt="">
                         <p>
                             Республика представляет собой динамично развивающийся регион, который бережно хранит и передает свою культуру и самобытность. Древние крепости и современные здания, степная местность и пустынный бархан, горы и море, мечети и церкви, различные языки и культуры – на протяжении многих лет все вышеперечисленное можно найти на территории одного уникального региона России – Дагестана.
                             Равным стране гор (именно так с персидского и тюркского языков переводится название республики) нет ни одного места в мире. Колорит Дагестана поражает: здесь компактно проживают представители более, чем 60 народностей, говорящих на языках нахской и дагестанской ветвей нахско-дагестанской языковой семьи, иранской группы индоевропейской языковой семьи, тюркской группы алтайской языковой семьи. Сотни лет они живут бок о бок в мире и согласии: история сплотила многонациональный народ Дагестана.<br><br>
@@ -68,7 +68,7 @@
         </section>
 
         <section class="article">
-            <div class="article-container inner_section nationalities">
+            <div class="article-container inner_section">
                 <div class="article-text">
                     <div class="section-first">
                         <div class="article-text__title">Национальный колорит и буйство красок народного творчества</div>
@@ -86,21 +86,21 @@
                         </div>
                         <div class="row">
                             <div class="img-with-caption">
-                                <div class="nations4 img-nations img-section one-of"></div>
+                                <div class="nations4 img-nations img-section"></div>
                                 <p>Национальная одежда - цахуры</p>
                             </div>
                             <div class="img-with-caption">
-                                <div class="nations5 img-nations img-section one-of"></div>
+                                <div class="nations5 img-nations img-section"></div>
                             <p>Национальная одежда - кумыки</p>
                             </div>
                         </div>
                         <div class="row">
                             <div class="img-with-caption">
-                                <div class="nations6 img-nations img-section one-of"></div>
+                                <div class="nations6 img-nations img-section"></div>
                                 <p>Национальная одежда - лезгины</p>
                             </div>
                             <div class="img-with-caption">
-                                <div class="nations7 img-nations img-section one-of"></div>
+                                <div class="nations7 img-nations img-section"></div>
                                 <p>Национальная одежда - лакцы</p>
                             </div>
                         </div>

@@ -37,10 +37,13 @@
 .fests8 {
     background-image: url('../img/section3/jpg/21.jpg');
     background-size: cover; 
+    background-position: center;
+    height: 600px;
 }
 
 .right {
     text-align: right;
+    margin-right: 15px;
     font-style: italic !important;
     font-weight: 500 !important;
 }
@@ -50,7 +53,9 @@
     font-weight: 400 !important;
     font-style: italic !important;
     text-align: end;
-    margin-right: 20px;
+    margin: 0;
+    padding: 20px 20px 0 0;
+    color: #000 !important;
 }
 
 .fests9 {
@@ -88,4 +93,102 @@
 .fests12 {
     background-image: url('../img/section3/jpg/25.jpg');
     background-size: cover; 
+}
+
+@media(max-width: 1000px) {
+    .text-left {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media(max-width: 950px) {
+    .float-right-with-small {
+        display: flex;
+        flex-direction: column;
+    }
+    .float-right-with-small .img-small {
+        all: unset;
+    }
+}
+
+@media(max-width: 750px) {
+    .fests8 {
+        width: 95%;
+        height: 200px;
+    }
+    .verse {
+        padding: 15px 15px 0 0;
+    }
+    .fests12 {
+        width: 350px;
+    }
+}
+
+@media(max-width: 680px) {
+    .verse {
+        font-size: 10px !important;
+    }
+}
+
+@media(max-width: 550px) {
+    .fests8 {
+        width: 375px;
+        height: 250px;
+    }
+    .fests9, .fests10 {
+        width: 375px;
+        height: 250px;
+    }
+}
+
+@media(max-width: 500px) {
+    .fests8 {
+        width: 300px;
+        height: 150px;
+    }
+    .fests9, .fests10 {
+        width: 300px;
+        height: 150px;
+    }
+    .img-left {
+        margin: unset;
+    }
+    .verse {
+        font-size: 8px !important;
+        padding: 5px 5px 0 0;
+        line-height: 1.1em !important;
+    }
+}
+
+@media(max-width: 450px) {
+    .fests12 {
+        width: 300px;
+        height: 150px;
+    }
+}
+
+@media(max-width: 400px) {
+    .fests8 {
+        width: 250px;
+        height: 100px;
+    }
+}
+
+@media(max-width: 350px) {
+    .fests2 {
+        background-position: unset !important;
+    }
+    .fests8 {
+        width: 200px;
+        height: 100px;
+    }
+    .fests9, .fests10 {
+        width: 200px;
+        height: 100px;
+    }
+    .fests12 {
+        width: 200px;
+        height: 100px;
+    }
 }

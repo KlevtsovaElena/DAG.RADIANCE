@@ -7,7 +7,8 @@
 Теперь:
 Фон: черный
 Цвет кнопки: #2dffe2; hover #FFFFFF;
-Цвет текста: белый; #FBD784;
+Цвет текста: белый; #FBD784?;
+Цвет ссылок #FFC178 --> #FFD1A0
 Фон слайдеров на главной? #27423e #125751
 Хороший сайт о достопримечательностях:
 https://www.tourister.ru/world/europe/russia/region/dagestan/placeofinterest

@@ -3,21 +3,22 @@
 }
 
 .img-section {
-    background-position: center;
+    background-position: center center;
     width: 575px;
     height: 375px;
-    /* float: right; */
 }
 
 
 .img-nations {
     width: 500px;
     height: 350px;
+    background-position: center;
 }
 
 .one-of {
     width: 500px;
     height: 320px;
+    background-position: center;
 }
 
 .img-margin {
@@ -60,6 +61,7 @@
 
 .one {
     width: 100%;
+    background-position: center;
 }
 
 .geography {
@@ -112,6 +114,9 @@
     .section-header {
         margin: 0;
     }
+    .article-text__title {
+        margin: 30px auto 15px 0;
+    }
 }
 
 @media(max-width: 750px) {
@@ -150,16 +155,26 @@
 
 @media(max-width: 520px) {
     .img-section {
-        max-width: 250px;
+        max-width: 400px;
     }
     .one {
-        max-width: 250px;
+        max-width: 400px;
     }
     .img-nations {
         max-width: 250px;
     }
-    .img-small {
-        max-width: 100px !important;
-        max-height: 50px !important;
+}
+
+@media(max-width: 350px) {
+    .one {
+        width: 200px !important;
+        height: 100px !important;
+    }
+    .img-section {
+        height: 100px;
+    }
+    .one-of {
+        width: 200px;
+        height: 100px;
     }
 }

@@ -32,7 +32,7 @@
     </header>
     <!-- /HEADER -->
 
-    <main class="home-color">
+    <main>
          <!-- 3 заглавных темы -->
         <section class="article">
             <div class="article-container">
@@ -100,7 +100,8 @@
 
 
 
-
+    <section class="article">
+    </section>
         <!-- БЛОК Достопримечательности -->
         <div class="places card-container">
 
@@ -183,6 +184,9 @@
 
         </div>
         <!-- БЛОК ТУРЫ -->
+    </section>
+        
+    
 
 
 

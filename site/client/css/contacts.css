@@ -1,26 +1,27 @@
-.body {
-    height: 49vh;
-}
-
 .contacts-container {
     width: 450px;
     margin: 30px auto;
+    color: #FFD1A0;
 }
 
 .line {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    transition: all 0.3s; 
+    transition: all 0.3s ease-in-out; 
 }
 .contacts {
     font-weight: 600;
 }
 
+.contacts > h2 {
+    margin-bottom: 15px;
+}
+
 .line > a {
-    color: black;
+    color: #FFFFFF;
     font-weight: 700;  
-    transition: all 0.5s; 
+    transition: all 0.5s ease-in-out; 
 }
 
 .line > a:hover {
@@ -32,11 +33,12 @@
         flex-direction: column;
         width: fit-content;
     }
-    .contacts > p > a {
-        float: none;
-    }
     .line {
         flex-direction: column;
+        margin-bottom: 10px;
+    }
+    .line > p {
+        margin-bottom: 5px;
     }
     .contacts > h2 {
         text-align: center;

@@ -100,7 +100,7 @@
                         <p class="right">
                             Переплетение современного и исторически священного
                         </p>
-                        <div class="fests8 img-section one img-margin">
+                        <div class="fests8">
                             <p class="verse">
                                 Желаю счастья выше гор,<br> 
                                 любви, которая как сказка!<br> 
@@ -138,7 +138,7 @@
         </section>
 
         <div class="two-buttons">
-            <a href="1.php" class="card-btn"><button class="card-item__btn btn-big btn-yellow">Предыдущая</button></a>
+            <a href="2.php" class="card-btn"><button class="card-item__btn btn-big btn-yellow">Предыдущая</button></a>
             <a href="index.php" class="card-btn"><button class="card-item__btn btn-big btn-yellow">На главную</button></a>
         </div>
         
