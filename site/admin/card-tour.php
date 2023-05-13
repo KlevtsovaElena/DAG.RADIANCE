@@ -64,6 +64,7 @@
                         <!-- галерея КАРУСЕЛИ-->
                         <p>
                         <div class="img-carousel">Изображения для карусели тура
+                            <div>(Рекомендованное количество от 3 изображений)</div>
                             <?php if ($data[0]['img-carousel'] !== "[]" && $data[0]['img-carousel'] !== NULL) {
                                 $imgCarousel = json_decode($data[0]['img-carousel'], true);
                                 for ($i = 0; $i < count($imgCarousel); $i++) { ?>
@@ -121,6 +122,7 @@
                         <!-- галерея КАРУСЕЛИ-->
                         <p>
                         <div class="img-carousel">Изображения для карусели тура
+                        <div>(Рекомендованное количество от 3 изображений)</div>
                             <input type="file"  id="new-img-carousel" name="new-img-carousel[]" multiple accept="image/png, image/jpg, image/jpeg">  
                             <div class="img-carousel-prew"></div>        
                         </div>

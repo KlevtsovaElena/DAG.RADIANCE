@@ -62,6 +62,7 @@
                         <!-- галерея КАРУСЕЛИ-->
                         <p>
                         <div class="img-carousel">ИЗОБРАЖЕНИЯ ДЛЯ КАРУСЕЛИ МЕСТА
+                            <div>(Рекомендованное количество от 3 изображений)</div>
                             <?php if ($data[0]['img-carousel'] !== "[]" && $data[0]['img-carousel'] !== NULL) {
                                 $imgCarousel = json_decode($data[0]['img-carousel'], true);
                                 for ($i = 0; $i < count($imgCarousel); $i++) { ?>
@@ -110,6 +111,7 @@
                         <!-- картинка для маленькой карточки -->
                         <p>
                         <div class="img-title-form">ИЗОБРАЖЕНИЕ ДЛЯ КАРТОЧКИ МЕСТА
+                            <div>(Рекомендованное количество от 3 изображений)</div>
                             <div>(Рекомендованные параметры 300X400)</div>
                             <div class="img-title-prew"><img></div>  
                             <input type="file"  id="new-img-title" name="new-img-title" accept="image/png, image/jpg, image/jpeg">                               
