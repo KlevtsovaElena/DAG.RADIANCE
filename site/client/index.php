@@ -126,7 +126,7 @@
                             <div class="card-item__desc height-card-item__desc">
                                 <?= $place['short-desc'];?>
                             </div>
-                            <a href="cardOnePlace.php?id=<?= $place['id']; ?>"><button class="card-btn card-item__btn catalog-btn btn-yellow">Подробнее</button></a>
+                            <a href="cardOnePlace.php?id=<?= $place['id']; ?>"><button class="card-btn card-item__btn catalog-btn btn-yellow height-card-item_btn">Подробнее</button></a>
                         </div>
 
                     <?php };?>
@@ -136,7 +136,7 @@
 
                 <!-- Кнопка Смотреть всё -->
 
-                <a href="places-catalog.php" class="card-btn block"><button class="card-item__btn btn-big btn-yellow height-card-item_btn">Смотреть все</button></a>
+                <a href="places-catalog.php" class="card-btn block"><button class="card-item__btn btn-big btn-yellow">Смотреть все</button></a>
             </div>
                 
 
@@ -169,7 +169,7 @@
                                 <div class="card-item__desc height-card-item_title">
                                     <?= $tour['short-desc'];?>
                                 </div>
-                                <a href="cardOneTour.php?id= <?=$tour['id']; ?>"><button class="card-btn card-item__btn catalog-btn btn-yellow height-card-item_btn">Подробнее</button></a>
+                                <a href="cardOneTour.php?id=<?=$tour['id']; ?>"><button class="card-btn card-item__btn catalog-btn btn-yellow height-card-item_btn">Подробнее</button></a>
                             
                             </div>
 
