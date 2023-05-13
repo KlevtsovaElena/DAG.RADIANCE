@@ -27,7 +27,7 @@
         <div class="header-index">
             <div class="header-index__title">Welcome to Russia</div>
             <h1 class="header-index__desc">Удивительный и уникальный Дагестан!</h1>
-            <p class="header-index__scroll">scroll down</p>
+            <p class="header-index__scroll"><a href="#videovisit">scroll down</a></p>
         </div>
     </header>
     <!-- /HEADER -->
@@ -119,14 +119,14 @@
 
                     foreach ($data as $place) { ?>
 
-                        <div class="d-flex card-item catalog-card slide" style="background-image: url('./<?= $place['img-title'];?>');">
-                            <div class="card-item__title">
+                        <div class="d-flex card-item catalog-card slide height-card-item" style="background-image: url('./<?= $place['img-title'];?>');">
+                            <div class="card-item__title height-card-item_title">
                                 <h3><?= $place['title'];?></h3>
                             </div>
-                            <div class="card-item__desc">
+                            <div class="card-item__desc height-card-item__desc">
                                 <?= $place['short-desc'];?>
                             </div>
-                            <a href="cardOnePlace.php?id= <?= $place['id']; ?>"><button class="card-btn card-item__btn catalog-btn btn-yellow">Подробнее</button></a>
+                            <a href="cardOnePlace.php?id=<?= $place['id']; ?>"><button class="card-btn card-item__btn catalog-btn btn-yellow">Подробнее</button></a>
                         </div>
 
                     <?php };?>
@@ -136,7 +136,7 @@
 
                 <!-- Кнопка Смотреть всё -->
 
-                <a href="places-catalog.php" class="card-btn block"><button class="card-item__btn btn-big btn-yellow">Смотреть все</button></a>
+                <a href="places-catalog.php" class="card-btn block"><button class="card-item__btn btn-big btn-yellow height-card-item_btn">Смотреть все</button></a>
             </div>
                 
 
@@ -162,14 +162,14 @@
 
                         foreach ($data as $tour) { ?>
 
-                            <div class="d-flex card-item catalog-card slide" style="background-image: url('./<?= $tour['img-title'];?>');">
-                                <div class="card-item__title">
+                            <div class="d-flex card-item  catalog-card slide height-card-item" style="background-image: url('./<?= $tour['img-title'];?>');">
+                                <div class="card-item__title height-card-item_title">
                                     <h3><?= $tour['title'];?> </h3>
                                 </div>
-                                <div class="card-item__desc">
+                                <div class="card-item__desc height-card-item_title">
                                     <?= $tour['short-desc'];?>
                                 </div>
-                                <a href="cardOneTour.php?id= <?= $tour['id']; ?>"><button class="card-btn card-item__btn catalog-btn btn-yellow">Подробнее</button></a>
+                                <a href="cardOneTour.php?id= <?=$tour['id']; ?>"><button class="card-btn card-item__btn catalog-btn btn-yellow height-card-item_btn">Подробнее</button></a>
                             
                             </div>
 
@@ -195,7 +195,7 @@
 
     </main>
 
-    <iframe class="video-card" width="100%" height="400" src="https://www.youtube.com/embed/M10qSqWxsgU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe id="videovisit" class="video-card" width="100%" height="400" src="https://www.youtube.com/embed/M10qSqWxsgU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     
     
     <?php include "footer.php";?>

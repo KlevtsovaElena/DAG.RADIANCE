@@ -39,7 +39,6 @@ console.log(showImgSmall);
     // }]
   });
 
-  let i = 1;
 
 if (countImgSmall > 1) {
   $('.slider-nav').slick({
@@ -69,10 +68,14 @@ if (countImgSmall > 1) {
         dots: true
       }
     }, 
-    // {
-    //   breakpoint: 450,
-    //   settings: "unslick" // destroys slick
-    // }, 
+    {
+      breakpoint: 400,
+      settings: {
+        slidesToShow: showImgSmall650,
+        dots: true,
+        arrows: false
+      }
+    }, 
     ]
 
   });
