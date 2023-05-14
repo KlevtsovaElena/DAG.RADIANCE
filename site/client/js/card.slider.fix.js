@@ -69,9 +69,9 @@ if (countImgSmall > 1) {
       }
     }, 
     {
-      breakpoint: 400,
+      breakpoint: 450,
       settings: {
-        slidesToShow: showImgSmall650,
+        slidesToShow: 1,
         dots: true,
         arrows: false
       }
