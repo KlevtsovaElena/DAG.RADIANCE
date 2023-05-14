@@ -38,15 +38,16 @@
         <div class="header-index">
             <div class="header-index__title">Welcome to Russia</div>
             <h1 class="header-index__desc">Удивительный и уникальный Дагестан!</h1>
-            <p class="header-index__scroll"><a href="#videovisit">scroll down</a></p>
+            <a href="#geography-and-climate"><p class="header-index__scroll">Начать путешествие</p></a>
         </div>
     </header>
     <!-- /HEADER -->
 
     <main>
+
          <!-- 3 заглавных темы -->
         <section class="article">
-            <div class="article-container">
+            <div id="geography-and-climate" class="article-container">
                 <div class="article-text">
                     <div class="article-text__title">Уникальная природа</div>
                     <div class="article-text__desc">Горы, море и бархан!</div>
@@ -94,27 +95,8 @@
         </section>
         <!--/ 3 заглавных темы -->
 
-        
-        <!-- Панорамные каринки -->
-        <section class="panorama">
-            <div class="carousel-panorama">
-                <div class="bg-img"><img src="./img/bg/panorama1.jpg" alt=""></div>
-                <div class="bg-img"><img src="./img/bg/panorama2.jpg" alt=""></div>
-                <div class="bg-img"><img src="./img/bg/panorama3.jpg" alt=""></div>
-                <div class="bg-img"><img src="./img/bg/panorama4.jpeg" alt=""></div>
-                <div class="bg-img"><img src="./img/bg/panorama5.jpg" alt=""></div>
-                <div class="bg-img"><img src="./img/bg/panorama6.jpg" alt=""></div>
-            </div>
-        </section>
-    <!-- /Панорамные каринки -->
-
-
-
-
-    <section class="article">
-    </section>
         <!-- БЛОК Достопримечательности -->
-        <div class="places card-container">
+        <section class="places card-container">
 
             <!-- Заголовок -->
             <div class="card-text"><h2>Достопримечательности</h2></div>
@@ -151,13 +133,23 @@
             </div>
                 
 
-        </div>
-        <!-- БЛОК Достопримечательности -->
-
-
+        </section>
+        <!-- БЛОК Достопримечательности --> 
+        
+        <!-- Панорамные картинки -->
+        <section class="panorama">            
+                <div class="bg-img">
+                <div class="bg-gost-white">
+                    <a href="#videovisit"><button class="card-item__btn btn-panorama btn-yellow">Смотреть видео</button></a>
+                </div> 
+                </div>
+   
+                
+        </section>
+        <!-- /Панорамные картинки -->
 
         <!-- БЛОК ТУРЫ -->
-        <div class="tours card-container">
+        <section class="tours card-container">
 
             <!-- Заголовок -->
             <div class="card-text"><h2>Туры</h2></div>
@@ -193,16 +185,8 @@
             <!-- Кнопка Смотреть всё -->
             <a href="tours-catalog.php" class="card-btn block"><button class="card-item__btn btn-big btn-yellow">Смотреть все</button></a>
 
-        </div>
+        </section>
         <!-- БЛОК ТУРЫ -->
-    </section>
-        
-    
-
-
-
-            
-
 
     </main>
 

@@ -53,48 +53,48 @@ $('.slick-slide').slick({
  
 /* ********  СЛАЙДЕР НА ЧИСТОМ JS, ПО 1 ЭЛЕМЕНТУ ******** */
 
-// Найдём контейнер со слайдами
-const carouselPanorama = document.querySelector('.carousel-panorama');
+// // Найдём контейнер со слайдами
+// const carouselPanorama = document.querySelector('.carousel-panorama');
 
-// Теперь запишем в переменную все слайды этого слайдера
-const slideItems = Array.from(carouselPanorama.children);
+// // Теперь запишем в переменную все слайды этого слайдера
+// const slideItems = Array.from(carouselPanorama.children);
 
-// Работаем с коллекцией слайдов
-// Пройдёмся по каждому слайду из коллекции
-slideItems.forEach(function (slide, index) {
+// // Работаем с коллекцией слайдов
+// // Пройдёмся по каждому слайду из коллекции
+// slideItems.forEach(function (slide, index) {
 
-  // скрываем все слайды, кроме первого
-  if (index !== 0) {
-      slide.classList.add('d-none');
-  }
+//   // скрываем все слайды, кроме первого
+//   if (index !== 0) {
+//       slide.classList.add('d-none');
+//   }
 
-  // для каждого слайда добавляем data-атрибут с его индексом 
-  slide.dataset.index = index;
+//   // для каждого слайда добавляем data-атрибут с его индексом 
+//   slide.dataset.index = index;
 
 
-  // теперь будем отслеживать клик по слайду
-  slide.addEventListener('click', function() {
+//   // теперь будем отслеживать клик по слайду
+//   slide.addEventListener('click', function() {
 
-    // скроем текущий слайд
-    slide.classList.add('d-none');
+//     // скроем текущий слайд
+//     slide.classList.add('d-none');
 
-    // найдём индекс следующего слайда
-    let nextIndex;
+//     // найдём индекс следующего слайда
+//     let nextIndex;
 
-    if (index + 1 === slideItems.length) {
-      nextIndex = 0;
-    } else {
-      nextIndex = index + 1;
-    }
+//     if (index + 1 === slideItems.length) {
+//       nextIndex = 0;
+//     } else {
+//       nextIndex = index + 1;
+//     }
  
-    // Найдём сам следующий слайд
-    const nextSlide = carouselPanorama.querySelector(`[data-index="${nextIndex}"]`);
+//     // Найдём сам следующий слайд
+//     const nextSlide = carouselPanorama.querySelector(`[data-index="${nextIndex}"]`);
 
-    // Уберём класс d-none, чтобы показать этот слайд.
-    nextSlide.classList.remove('d-none');
+//     // Уберём класс d-none, чтобы показать этот слайд.
+//     nextSlide.classList.remove('d-none');
 
-  });
-})
+//   });
+// })
 
 
 
