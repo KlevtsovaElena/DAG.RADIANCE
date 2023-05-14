@@ -708,15 +708,6 @@ header .footer-links {
     .nav-items, .account {
         display: none;
     }
-    .mobile-nav ul .footer-links{
-        display: flex;
-        position: inherit;
-        flex-direction: row;
-        gap: 7px;
-        top: unset;
-        left: unset;
-        flex-wrap: wrap;
-    }
     .btn-burger {
         display: block;
     }
@@ -1043,6 +1034,15 @@ header .footer-links {
 @media(max-width: 520px) {
     header .footer-links {
         display: none;
+    }
+    .mobile-nav ul .footer-links{
+        display: flex;
+        position: inherit;
+        flex-direction: row;
+        gap: 7px;
+        top: unset;
+        left: unset;
+        flex-wrap: wrap;
     }
     .two-buttons {
         flex-direction: column;
