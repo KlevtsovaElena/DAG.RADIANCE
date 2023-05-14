@@ -25,8 +25,8 @@
                 <li><a href="contacts.php">Контакты</a></li>
                 <div class="footer-links">
                 <?php 
-                    $data = Contacts::getLinesApi(); 
-                    $contact = (object)$data[0];
+                    $data2 = Contacts::getLinesApi(); 
+                    $contact = (object)$data2[0];
                 ?>
                     <a href="tel:+<?= $contact->phone;?>" class="linkPic" target="_blank"><img src="img/icons/tel.png" alt="Позвонить" class="linkPic"></a>  
                     <a href="mailto:<?= $contact->mail;?>" class="linkPic" target="_blank"><img src="img/icons/mail.jpg" alt="Написать" class="linkPic"></a>
