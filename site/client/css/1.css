@@ -124,13 +124,13 @@
         width: 500px !important;
         height: 300px !important;
     }
+    .img-bigger {
+        width: 100%;
+    }
 }
 
 @media(max-width: 670px) {
     .img-smaller {
-        width: 100%;
-    }
-    .img-bigger {
         width: 100%;
     }
 
@@ -163,9 +163,17 @@
     .img-nations {
         max-width: 250px;
     }
+    .geography {
+        max-height: 150px;
+        max-width: 260px;
+    }
 }
 
 @media(max-width: 350px) {
+    .article-text {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
     .one {
         width: 200px !important;
         height: 100px !important;
@@ -176,5 +184,9 @@
     .one-of {
         width: 200px;
         height: 100px;
+    }
+    .geography {
+        max-height: 150px;
+        max-width: 200px;
     }
 }

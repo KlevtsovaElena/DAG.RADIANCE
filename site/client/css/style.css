@@ -1092,6 +1092,10 @@ header .footer-links {
     .two-buttons {
         flex-direction: column;
         align-items: center;
+        gap: 0;
+    }
+    .plus-one-btn {
+        gap: 15px;
     }
     .btn-big {
         width: 150px;

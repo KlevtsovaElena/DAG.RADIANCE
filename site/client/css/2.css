@@ -242,6 +242,17 @@
     }
 }
 
+@media(max-width: 400px) {
+    .img-nations {
+        max-width: 250px;
+        max-height: 150px;
+    }
+    .nations2 {
+        max-width: 250px;
+        max-height: 150px;
+    }
+}
+
 @media(max-width: 370px) {
     .img-section {
         max-width: 250px;

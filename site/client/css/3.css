@@ -7,6 +7,7 @@
 .fests2 {
     background-image: url('../img/section3/jpg/15.jpg');
     background-size: cover; 
+    background-position: top;
 }
 
 .fests3 {
@@ -22,6 +23,7 @@
 .fests5 {
     background-image: url('../img/section3/jpg/18.jpg');
     background-size: cover; 
+    background-position: top;
 }
 
 .fests6 {
@@ -113,6 +115,15 @@
 }
 
 @media(max-width: 750px) {
+    .fests1 {
+        max-width: 525px;
+    }
+    .fests2 {
+        max-width: 5250px;
+    }
+    .fests3 {
+        max-width: 525px;
+    }
     .fests8 {
         width: 95%;
         height: 200px;
