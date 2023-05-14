@@ -489,7 +489,8 @@ header .footer-links {
     padding: 15px;
     margin: 0 15px;
     text-align: center;
-
+    cursor:pointer;
+    overflow: hidden;
 }
 
 .card-item__title > h3 {
