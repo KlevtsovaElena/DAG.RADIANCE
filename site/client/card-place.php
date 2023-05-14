@@ -141,7 +141,7 @@ $obj = (object)$data[0];
         height: 10px;
         width: 10px;
         border-radius: 50%;
-        background-color: rgb(18, 17, 17);
+        background-color: #ffffff;
         padding: 0;
         margin: 0;
         cursor: pointer;
@@ -149,11 +149,15 @@ $obj = (object)$data[0];
     }
 
     .slick-dots .slick-active button {
-        background-color: coral;
+        background-color: #FFD1A0;
     }
 
     .slick-dots li{
         display: inline-block;
+    }
+    
+    .btn-slider-next, .btn-slider-prev {
+        top: 35%;
     }
 
 </style>
