@@ -7,7 +7,7 @@ let showImgSmall = 0;
 let showImgSmall1000 = 0;
 let showImgSmall650 = 0;
 
-console.log(countImgSmall);
+
 // по сколько показывать в минигалерее
 if (countImgSmall > 4) {
   showImgSmall = 3;
@@ -22,7 +22,7 @@ if (countImgSmall > 4) {
   showImgSmall1000 = 1;
   showImgSmall650 = 1;
 }
-console.log(showImgSmall);
+
 
   $('.slider-for').slick({
     slidesToShow: 1,
@@ -30,13 +30,7 @@ console.log(showImgSmall);
     arrows: false,
     fade: true,
     asNavFor: '.slider-nav',
-    // Адаптивность
-    // responsive: [
-       
-    // {
-    //   breakpoint: 300,
-    //   settings: "unslick" // destroys slick
-    // }]
+
   });
 
 

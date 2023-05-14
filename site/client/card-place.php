@@ -3,19 +3,7 @@ require_once('../classes/autoload.php');
 // получим данные именно по этой карточке
 $data = Place::getLinesApiId($_GET['id']);
 
-
-
-
-
-// первый вариант обращения к элементам
-//echo "Получили данные по карточке" . $data[0]['id'];
-
-
-// второй вариант 
 $obj = (object)$data[0];
-//echo "Получили данные по карточке" . $obj->id;
-    //если в названии поля дефис
-    //echo $obj->{'short-desc'};
 ?>
 
 <!DOCTYPE html>
@@ -31,7 +19,6 @@ $obj = (object)$data[0];
     <link rel="stylesheet" href="css/card.css">
     <link rel="stylesheet" href="css/lightbox.css">
 
-    <link rel="stylesheet" href="./fonts/PlayFairDisplay/stylefonts.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
