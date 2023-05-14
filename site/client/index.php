@@ -112,7 +112,8 @@
 
                     foreach ($data as $place) { ?>
 
-                        <div class="d-flex card-item catalog-card slide height-card-item" style="background-image: url('./<?= $place['img-title'];?>');">
+                        <div class="d-flex card-item catalog-card slide height-card-item">
+                            <div class="card-item__img" style="background-image: url('./<?= $place['img-title'];?>');"> </div>
                             <div class="card-item__title height-card-item_title">
                                 <h3><?= $place['title'];?></h3>
                             </div>
@@ -137,14 +138,14 @@
         <!-- БЛОК Достопримечательности --> 
         
         <!-- Панорамные картинки -->
-        <section class="panorama">            
+        <section class="panorama">
+
                 <div class="bg-img">
                 <div class="bg-gost-white">
                     <a href="#videovisit"><button class="card-item__btn btn-panorama btn-yellow">Смотреть видео</button></a>
                 </div> 
                 </div>
-   
-                
+      
         </section>
         <!-- /Панорамные картинки -->
 
@@ -165,16 +166,17 @@
 
                         foreach ($data as $tour) { ?>
 
-                            <div class="d-flex card-item  catalog-card slide height-card-item" style="background-image: url('./<?= $tour['img-title'];?>');">
+                            <div class="d-flex card-item  catalog-card slide height-card-item">
+                                <div class="card-item__img" style="background-image: url('./<?= $tour['img-title'];?>');"> </div>
                                 <div class="card-item__title height-card-item_title">
-                                    <h3><?= $tour['title'];?> </h3>
+                                        <h3><?= $tour['title'];?> </h3>
+                                    </div>
+                                    <div class="card-item__desc height-card-item_title">
+                                        <?= $tour['short-desc'];?>
+                                    </div>
+                                    <a href="card-tour.php?id=<?=$tour['id']; ?>"><button class="card-btn card-item__btn catalog-btn btn-yellow height-card-item_btn">Подробнее</button></a>
+                                
                                 </div>
-                                <div class="card-item__desc height-card-item_title">
-                                    <?= $tour['short-desc'];?>
-                                </div>
-                                <a href="card-tour.php?id=<?=$tour['id']; ?>"><button class="card-btn card-item__btn catalog-btn btn-yellow height-card-item_btn">Подробнее</button></a>
-                            
-                            </div>
 
                         <?php };?>
 

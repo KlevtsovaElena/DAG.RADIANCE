@@ -42,7 +42,8 @@
             <?php $data = Place::getLinesApi();
             foreach ($data as $place) { ?>
             <div class="card-container"></div>
-                <div class="d-flex card-item catalog-card catalog-card_effect" style="background-image: url('./<?php echo $place['img-title'] ?>');">
+                <div class="d-flex card-item catalog-card catalog-card_effect" >
+                    <div class="card-item__img" style="background-image: url('./<?php echo $place['img-title'] ?>');"> </div>
                     <div class="card-item__title">
                         <h3><?php echo $place['title']; ?></h3>
                     </div>
