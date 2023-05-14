@@ -1053,7 +1053,9 @@ header .footer-links {
         height: 40px;
         margin: 0;
     }
-
+    .breadcrumbs-container {
+        display: none;
+    }
 }
 
 @media(max-width: 450px) {
