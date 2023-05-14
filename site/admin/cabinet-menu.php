@@ -4,7 +4,7 @@
 } ?>
 
     <div class="menu-top">
-        <a href="../client/index.php" target="_blank"><div class="logo">DAG.RADIANCE</div></a>
+        <a href="../index.php" target="_blank"><div class="logo">DAG.RADIANCE</div></a>
         <div class="d-flex">
             <div class="profile-name">        
                 <h3><?= $profile['login']?></h3>
