@@ -2,28 +2,8 @@
 
 namespace AbstractClasses;
 
-abstract class Unit implements \Interfaces\UnitActiveInterface
+abstract class Unit 
 {
-    public $id;
-
-
-    public function deleteLine() : bool
-    {
-
-    }
-    public function updateLine() : bool
-    {
-        
-    }
-
-
-    /*construct срабатывает автоматом при создании объекта */
-    public function __construct(int $id)
-    {
-        $this->id = $id;
-    }
-
-
     public static function getLinesApi() {
         $data = file_get_contents("http://nginx/api/get/" . static::TABLE . "/list/index.php");
         return json_decode($data, true);
