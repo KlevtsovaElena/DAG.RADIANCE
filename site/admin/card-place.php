@@ -111,7 +111,6 @@
                         <!-- картинка для маленькой карточки -->
                         <p>
                         <div class="img-title-form">ИЗОБРАЖЕНИЕ ДЛЯ КАРТОЧКИ МЕСТА
-                            <div>(Рекомендованное количество от 3 изображений)</div>
                             <div>(Рекомендованные параметры 300X400)</div>
                             <div class="img-title-prew"><img></div>  
                             <input type="file"  id="new-img-title" name="new-img-title" accept="image/png, image/jpg, image/jpeg">                               
@@ -120,6 +119,7 @@
                         <!-- галерея КАРУСЕЛИ-->
                         <p>
                         <div class="img-carousel">ИЗОБРАЖЕНИЯ ДЛЯ КАРУСЕЛИ МЕСТА
+                            <div>(Рекомендованное количество от 3 изображений)</div>
                             <input type="file"  id="new-img-carousel" name="new-img-carousel[]" multiple accept="image/png, image/jpg, image/jpeg">  
                             <div class="img-carousel-prew"></div>        
                         </div>

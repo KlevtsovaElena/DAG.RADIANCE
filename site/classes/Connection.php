@@ -30,7 +30,5 @@ class Connection
         $pdo = new PDO($dsn, $user, $pass, $opt);
 
         return static::$pdo = $pdo; 
-
-        // return $pdo;
     }
 }

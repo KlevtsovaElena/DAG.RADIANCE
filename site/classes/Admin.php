@@ -1,13 +1,9 @@
 <?php
 
-
-
 final class Admin extends AbstractClasses\Unit
 {
 
-
     const TABLE = 'admin';
-
 
     //авторизация 
     final public static function logIn() 

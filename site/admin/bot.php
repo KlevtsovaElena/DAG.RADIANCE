@@ -27,19 +27,6 @@
                 <div class="work-area__title">
                     <h1>СООБЩЕНИЯ БОТА</h1>
                 </div>
-
-
-                
-
-
-                <!-- <form>
-                    <input type="text"  placeholder="first_name">
-                    <input type="text"  placeholder="last_name">
-                    <input type="text"  placeholder="login">
-                    <input type="text"  placeholder="role">
-                    <button onclick="addAccount()">Добавить учётную запись</button>
-            
-                </form> -->
             </div>
 
         </div>
