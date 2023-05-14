@@ -31,7 +31,7 @@
             <div class="breadcrumbs-container">
                 <ul class="breadcrumbs-list">
                     <li>
-                        <a href="index.php">Главная</a>
+                        <a href="../index.php">Главная</a>
                     </li>
                         <p>Все достопримечательности</p>
                     </li>
@@ -55,7 +55,7 @@
                 <?php } ?>
             </div>
 
-            <a href="index.php" class="card-btn block"><button class="card-item__btn btn-big btn-yellow">На главную</button></a>
+            <a href="../index.php" class="card-btn block"><button class="card-item__btn btn-big btn-yellow">На главную</button></a>
         
     
     

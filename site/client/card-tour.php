@@ -39,7 +39,7 @@ $data = Tour::getLinesApiId($_GET['id']);
             <div class="breadcrumbs-container">
                 <ul class="breadcrumbs-list">
                     <li>
-                        <a href="index.php">Главная</a>
+                        <a href="../index.php">Главная</a>
                     </li>
                     <li>
                         <a href="tours-catalog.php">Все туры</a>
@@ -95,7 +95,7 @@ $data = Tour::getLinesApiId($_GET['id']);
 
             <div class="two-buttons">
                 <a href="tours-catalog.php" class="card-btn"><button class="card-item__btn btn-big btn-yellow">Смотреть все</button></a>
-                <a href="index.php" class="card-btn"><button class="card-item__btn btn-big btn-yellow">На главную</button></a>
+                <a href="../index.php" class="card-btn"><button class="card-item__btn btn-big btn-yellow">На главную</button></a>
             </div>
             
         </div>

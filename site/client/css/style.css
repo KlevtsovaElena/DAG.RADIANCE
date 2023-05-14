@@ -188,10 +188,15 @@ a {
     list-style-type: none;
 }
 
-.mobile-nav ul .footer-links{
+.index .mobile-nav ul .footer-links{
     display: none;
 }
-
+.burger-links {
+    display: flex;
+    flex-direction: row;
+    gap: 7px;
+    flex-wrap: wrap;
+}
 .mobile-nav li {
     margin-bottom: 10px;
     font-weight: 700;
@@ -1082,7 +1087,7 @@ header .footer-links {
     header .footer-links {
         display: none;
     }
-    .mobile-nav ul .footer-links{
+    .index .mobile-nav ul .footer-links{
         display: flex;
         position: inherit;
         flex-direction: row;

@@ -34,7 +34,7 @@
                 <div class="breadcrumbs-container">
                             <ul class="breadcrumbs-list">
                                 <li>
-                                    <a href="index.php">Главная</a>
+                                    <a href="../index.php">Главная</a>
                                 </li>
                                     <p>Контакты</p>
                                 </li>

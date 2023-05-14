@@ -138,7 +138,7 @@
 
         <div class="two-buttons plus-one-btn">
             <a href="geography-and-climate.php" class="card-btn"><button class="card-item__btn btn-big btn-yellow">Предыдущая</button></a>
-            <a href="index.php" class="card-btn"><button class="card-item__btn btn-big btn-yellow">На главную</button></a>
+            <a href="../index.php" class="card-btn"><button class="card-item__btn btn-big btn-yellow">На главную</button></a>
             <a href="fests-and-traditions.php" class="card-btn"><button class="card-item__btn btn-big btn-yellow">Далее</button></a>
         </div>
 

@@ -2,10 +2,10 @@
 
         <nav class="nav">
             <div class="nav-wrapper d-flex">
-                <a href="index.php"><div class="logo">DAG.RADIANCE</div></a>
+                <a href="../index.php"><div class="logo">DAG.RADIANCE</div></a>
                 <div class="nav-items">
                     <ul>
-                        <li><a href="index.php">Главная</a></li>
+                        <li><a href="../index.php">Главная</a></li>
                         <li><a href="geography-and-climate.php">О регионе</a></li>
                         <li><a href="places-catalog.php">Достопримечательности</a></li>
                         <li><a href="tours-catalog.php">Туры</a></li>
@@ -18,12 +18,12 @@
         </nav>
         <div class="mobile-nav">
             <ul>
-                <li><a href="index.php">Главная</a></li>
+                <li><a href="../index.php">Главная</a></li>
                 <li><a href="geography-and-climate.php">О регионе</a></li>
                 <li><a href="places-catalog.php">Достопримечательности</a></li>
                 <li><a href="tours-catalog.php">Туры</a></li>
                 <li><a href="contacts.php">Контакты</a></li>
-                <div class="footer-links">
+                <div class="burger-links">
                 <?php 
                     $data2 = Contacts::getLinesApi(); 
                     $contact = (object)$data2[0];
