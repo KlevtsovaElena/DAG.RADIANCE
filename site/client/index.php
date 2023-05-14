@@ -23,6 +23,17 @@
 
     <!-- HEADER -->
     <header class="header index">
+        <div class="footer-links">
+            <?php 
+                $data = Contacts::getLinesApi(); 
+                $contact = (object)$data[0];
+            ?>
+                <a href="tel:+<?= $contact->phone;?>" class="linkPic" target="_blank"><img src="img/icons/tel.png" alt="Позвонить" class="linkPic"></a>  
+                <a href="mailto:<?= $contact->mail;?>" class="linkPic" target="_blank"><img src="img/icons/mail.jpg" alt="Написать" class="linkPic"></a>
+                <a href="https://vk.com/<?= $contact->vk;?>" target="_blank"><img src="img/icons/vk.jpg" alt="Написать в VK" class="linkPic"></a>  
+                <a href="tg://resolve?domain=<?= $contact->telegram;?>" target="_blank"><img src="img/icons/tg.png" alt="Написать в телеграмм" class="linkPic"></a> 
+                <a href="whatsapp://send?phone=<?= $contact->whatsapp;?>" target="_blank"><img src="img/icons/wtsp.png" alt="Написать в whatsapp" class="linkPic"></a>               
+            </div>
         <?php include('header.php'); ?>
         <div class="header-index">
             <div class="header-index__title">Welcome to Russia</div>
@@ -40,10 +51,10 @@
                     <div class="article-text__title">Уникальная природа</div>
                     <div class="article-text__desc">Горы, море и бархан!</div>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse iure, debitis repudiandae cum saepe corrupti facilis. Explicabo omnis fugit exercitationem rem, eligendi quo incidunt neque vitae corrupti amet sunt aliquid.</p>
-                    <a href="1.php" class="article-text__more"> подробнее</a>
+                    <a href="geography-and-climate.php" class="article-text__more"> подробнее</a>
                 </div>
                 <div class="article-img">
-                    <a href="1.php">
+                    <a href="geography-and-climate.php">
                         <img class="small-img" src="./img/place/Горы-small.jpg" alt="">
                         <img class="big-img d-none" src="./img/place/Горы2.jpg" alt="">
                     </a>
@@ -55,10 +66,10 @@
                     <div class="article-text__title">Кавказский Вавилон</div>
                     <div class="article-text__desc">Самый колоритный регион России!</div>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse iure, debitis repudiandae cum saepe corrupti facilis. Explicabo omnis fugit exercitationem rem, eligendi quo incidunt neque vitae corrupti amet sunt aliquid.</p>
-                    <a href="2.php" class="article-text__more"> подробнее</a>
+                    <a href="national-pecularities.php" class="article-text__more"> подробнее</a>
                 </div>
                 <div class="article-img">
-                    <a href="2.php">
+                    <a href="national-pecularities.php">
                         <img class="small-img" src="./img/place/кавказский-вавилон2-small.jpg" alt="">
                         <img class="big-img d-none" src="./img/place/кавказский-вавилон.jpeg" alt="">
                     </a>
@@ -70,10 +81,10 @@
                     <div class="article-text__title">Чтение традиций</div>
                     <div class="article-text__desc">Гостеприимство, праздники и танцы!</div>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse iure, debitis repudiandae cum saepe corrupti facilis. Explicabo omnis fugit exercitationem rem, eligendi quo incidunt neque vitae corrupti amet sunt aliquid.</p>
-                    <a href="3.php" class="article-text__more"> подробнее</a>
+                    <a href="fests-and-traditions.php" class="article-text__more"> подробнее</a>
                 </div>
                 <div class="article-img">
-                    <a href="3.php">
+                    <a href="fests-and-traditions.php">
                         <img class="small-img" src="./img/place/Танец-small.jpg" alt="">
                         <img class="big-img d-none" src="./img/place/Танец.jpg" alt="">
                     </a>
@@ -126,7 +137,7 @@
                             <div class="card-item__desc height-card-item__desc">
                                 <?= $place['short-desc'];?>
                             </div>
-                            <a href="cardOnePlace.php?id=<?= $place['id']; ?>"><button class="card-btn card-item__btn catalog-btn btn-yellow height-card-item_btn">Подробнее</button></a>
+                            <a href="card-place.php?id=<?= $place['id']; ?>"><button class="card-btn card-item__btn catalog-btn btn-yellow height-card-item_btn">Подробнее</button></a>
                         </div>
 
                     <?php };?>
@@ -169,7 +180,7 @@
                                 <div class="card-item__desc height-card-item_title">
                                     <?= $tour['short-desc'];?>
                                 </div>
-                                <a href="cardOneTour.php?id=<?=$tour['id']; ?>"><button class="card-btn card-item__btn catalog-btn btn-yellow height-card-item_btn">Подробнее</button></a>
+                                <a href="card-tour.php?id=<?=$tour['id']; ?>"><button class="card-btn card-item__btn catalog-btn btn-yellow height-card-item_btn">Подробнее</button></a>
                             
                             </div>
 

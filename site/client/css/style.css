@@ -13,7 +13,6 @@ body {
 }
 
 main {
-    background: linear-gradient(180deg, black, #125751);
     padding: 30px 0;
 }
 
@@ -189,6 +188,10 @@ a {
     list-style-type: none;
 }
 
+.mobile-nav ul .footer-links{
+    display: none;
+}
+
 .mobile-nav li {
     margin-bottom: 10px;
     font-weight: 700;
@@ -220,6 +223,7 @@ a {
 }
 
 .header-index {
+    position: relative;
     max-width: 830px;
     margin-left: auto;
     margin-right: auto;
@@ -235,7 +239,7 @@ a {
     position: relative;
     margin-bottom: 24px;
     padding-left: 104px;
-    color:#FFC178;
+    color:#FFFFFF;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.222;
@@ -252,7 +256,7 @@ a {
     left: 0;
     top: 50%;
     transform: translateY(-50%);    
-    background-color:#FFC178;
+    background-color:#FFFFFF;
 }
 
 .header-index__desc {
@@ -265,6 +269,26 @@ a {
     line-height: 1.136;
     color: #FFFFFF;
 } 
+
+header .footer-links {
+    position: absolute;
+    top: 300px;
+    left: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.linkPic {
+    width: 22px;
+    border-radius: 20%;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.linkPic:hover {
+    scale: 1.1;
+}
 
 .header-index__scroll {
     display: inline-block;
@@ -279,13 +303,15 @@ a {
 .header-index__scroll::after {
     position: absolute;
     display: block;
-    content: "";
+    content: "\2193";
+    font-size: 24px;
     width: 16px;
     height: 24px;
     right: 0;
     top: 50%;
     transform: translateY(-50%);
-    background-image: url('./../img/icons/down.svg');
+    color: #FFD1A0;
+    /* background-image: url('./../img/icons/down.svg'); */
     background-size: cover;
 }
 
@@ -498,7 +524,7 @@ a {
     flex-direction: column;
     color: #000;
     margin: 15px;
-    border-radius: 20px 0;
+    border-radius: 20px;
 }
 
 .card-text > h2 {
@@ -610,6 +636,7 @@ a {
     padding: 30px 5%;
     align-items: center;
     color:#FFFFFF;
+    box-shadow: 0px 0px 1px 1px white;
 }
 
 .footer-nav {
@@ -632,22 +659,6 @@ a {
     margin-bottom: 20px;
 }
 
-.footer-links {
-    display: flex;
-    column-gap: 15px;
-}
-
-.linkPic {
-    width: 30px;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-}
-
-.linkPic:hover {
-    scale: 1.2;
-}
-
 .footer-nav__title {
     margin: 0;
     color: #FFD1A0;
@@ -668,6 +679,12 @@ a {
     color: #ffffffc4;
 }
 
+.credits {
+    font-size: 14px;
+    color: #FFD1A0;
+    font-weight: 600;
+}
+
 .height-card-item {
     height: 385px;
 }
@@ -679,6 +696,9 @@ a {
     .height-card-item {
         height: calc(100vw/3.05); 
     }
+    header .footer-links {
+        top: 286px;
+    }
 }
 
 @media(max-width: 1200px) {
@@ -687,6 +707,15 @@ a {
     }
     .nav-items, .account {
         display: none;
+    }
+    .mobile-nav ul .footer-links{
+        display: flex;
+        position: inherit;
+        flex-direction: row;
+        gap: 7px;
+        top: unset;
+        left: unset;
+        flex-wrap: wrap;
     }
     .btn-burger {
         display: block;
@@ -700,6 +729,9 @@ a {
     .header-index {
         padding: 130px 15px 0px;
         max-width: 700px;
+    }
+    header .footer-links {
+        top: 240px;
     }
     .header-index__title {
         font-size: 14px;
@@ -762,6 +794,9 @@ a {
         padding: 80px 15px 0;
         max-width: 500px;
     }
+    header .footer-links {
+        top: 175px;
+    }
     .header-index__title {
         font-size: 12px;
         margin-bottom: 22px;
@@ -797,6 +832,10 @@ a {
     .header-index {
         padding: 60px 15px 0;
         max-width: 500px;
+    }
+    header .footer-links {
+        top: 135px;
+        left: 30px;
     }
     .logo {
         font-size: 18px;
@@ -864,6 +903,9 @@ a {
 
 @media(max-width: 800px) {
 
+    .linkPic {
+        width: 18px;
+    }
     .header-index__title {
         font-size: 12px;
         margin-bottom: 22px;
@@ -915,6 +957,9 @@ a {
 
 }
 @media(max-width: 650px) {
+    header .footer-links {
+        top: 80px;
+    }
     .height-card-item {
         margin-left: 15px;
         margin-right: 15px;
@@ -996,6 +1041,9 @@ a {
 }
 
 @media(max-width: 520px) {
+    header .footer-links {
+        display: none;
+    }
     .two-buttons {
         flex-direction: column;
         align-items: center;

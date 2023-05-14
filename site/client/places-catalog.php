@@ -41,6 +41,7 @@
             <div class="catalog-container">
             <?php $data = Place::getLinesApi();
             foreach ($data as $place) { ?>
+            <div class="card-container"></div>
                 <div class="d-flex card-item catalog-card catalog-card_effect" style="background-image: url('./<?php echo $place['img-title'] ?>');">
                     <div class="card-item__title">
                         <h3><?php echo $place['title']; ?></h3>
@@ -48,7 +49,7 @@
                     <div class="card-item__desc">
                         <?php echo $place['short-desc']; ?>
                     </div>
-                    <a href="cardOnePlace.php?id=<?= $place['id'] ?> " class="block"><button class="card-item__btn catalog-btn btn-yellow">Подробнее</button></a>
+                    <a href="card-place.php?id=<?= $place['id'] ?> " class="block"><button class="card-item__btn catalog-btn btn-yellow">Подробнее</button></a>
                 </div>
                 <?php } ?>
             </div>
