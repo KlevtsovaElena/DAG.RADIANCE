@@ -90,8 +90,8 @@ $data = Tour::getLinesApiId($_GET['id']);
             </section>
 
             <div class="two-buttons">
-                <a href="tours-catalog.php" class="card-btn"><button class="card-item__btn btn-big btn-yellow">Смотреть все</button></a>
-                <a href="../index.php" class="card-btn"><button class="card-item__btn btn-big btn-yellow">На главную</button></a>
+                <a href="tours-catalog.php" class="card-btn"><button class="card-item__btn btn-big btn-theme">Смотреть все</button></a>
+                <a href="../index.php" class="card-btn"><button class="card-item__btn btn-big btn-theme">На главную</button></a>
             </div>
             
         </div>
@@ -113,38 +113,3 @@ $data = Tour::getLinesApiId($_GET['id']);
 </body>
 
 </html>
-
-<style>
-    .slick-dots {
-        position: absolute;
-        bottom: -40px;
-        padding: 0;
-    }
-
-    .slick-dots li + li{
-        margin-left: 3px;
-    }
-    .slick-dots li button{
-        font-size: 0;
-        height: 10px;
-        width: 10px;
-        border-radius: 50%;
-        background-color: #ffffff
-        padding: 0;
-        margin: 0;
-        cursor: pointer;
-        border: none;
-    }
-
-    .slick-dots .slick-active button {
-        background-color: #FFD1A0;
-    }
-
-    .slick-dots li{
-        display: inline-block;
-    }
-
-    .btn-slider-next, .btn-slider-prev {
-        top: 35%;
-    }
-</style>

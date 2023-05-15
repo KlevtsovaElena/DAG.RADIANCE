@@ -22,18 +22,6 @@
 
     <!-- HEADER -->
     <header class="header index">
-        <div class="footer-links">
-            <?php 
-                $data = Contacts::getLinesApi(); 
-                $contact = (object)$data[0];
-            ?>
-                <a href="tel:+<?= $contact->phone;?>" class="linkPic" target="_blank"><img src="client/img/icons/tel.png" alt="Позвонить" class="linkPic"></a>  
-                <a href="mailto:<?= $contact->mail;?>" class="linkPic" target="_blank"><img src="client/img/icons/mail.jpg" alt="Написать" class="linkPic"></a>
-                <a href="https://vk.com/<?= $contact->vk;?>" target="_blank"><img src="client/img/icons/vk.jpg" alt="Написать в VK" class="linkPic"></a>  
-                <a href="tg://resolve?domain=<?= $contact->telegram;?>" target="_blank"><img src="client/img/icons/tg.png" alt="Написать в телеграмм" class="linkPic"></a> 
-                <a href="whatsapp://send?phone=<?= $contact->whatsapp;?>" target="_blank"><img src="client/img/icons/wtsp.png" alt="Написать в whatsapp" class="linkPic"></a>               
-        </div>
-
         <nav class="nav">
             <div class="nav-wrapper d-flex">
                 <a href="index.php"><div class="logo">DAG.RADIANCE</div></a>
@@ -70,15 +58,26 @@
             </div>
             </ul>
         </div>
-
-
-
+        <div class="wrap-with-social-icons">
+        <div class="footer-links">
+            <?php 
+                $data = Contacts::getLinesApi(); 
+                $contact = (object)$data[0];
+            ?>
+                <a href="tel:+<?= $contact->phone;?>" class="linkPic" target="_blank"><img src="client/img/icons/tel.png" alt="Позвонить" class="linkPic"></a>  
+                <a href="mailto:<?= $contact->mail;?>" class="linkPic" target="_blank"><img src="client/img/icons/mail.jpg" alt="Написать" class="linkPic"></a>
+                <a href="https://vk.com/<?= $contact->vk;?>" target="_blank"><img src="client/img/icons/vk.jpg" alt="Написать в VK" class="linkPic"></a>  
+                <a href="tg://resolve?domain=<?= $contact->telegram;?>" target="_blank"><img src="client/img/icons/tg.png" alt="Написать в телеграмм" class="linkPic"></a> 
+                <a href="whatsapp://send?phone=<?= $contact->whatsapp;?>" target="_blank"><img src="client/img/icons/wtsp.png" alt="Написать в whatsapp" class="linkPic"></a>               
+        </div>
 
         <div class="header-index">
             <div class="header-index__title">Welcome to Russia</div>
             <h1 class="header-index__desc">Удивительный и уникальный Дагестан!</h1>
             <a href="#geography-and-climate"><p class="header-index__scroll">Начать путешествие</p></a>
         </div>
+        </div>
+        
     </header>
     <!-- /HEADER -->
 
@@ -159,7 +158,7 @@
                             <div class="card-item__desc height-card-item__desc">
                                 <?= $place['short-desc'];?>
                             </div>
-                            <a href="client/card-place.php?id=<?= $place['id']; ?>"><button class="card-btn card-item__btn catalog-btn btn-yellow height-card-item_btn">Подробнее</button></a>
+                            <a href="client/card-place.php?id=<?= $place['id']; ?>"><button class="card-btn card-item__btn catalog-btn btn-theme height-card-item_btn">Подробнее</button></a>
                         </div>
 
                     <?php };?>
@@ -169,7 +168,7 @@
 
                 <!-- Кнопка Смотреть всё -->
 
-                <a href="client/places-catalog.php" class="card-btn block"><button class="card-item__btn btn-big btn-yellow">Смотреть все</button></a>
+                <a href="client/places-catalog.php" class="card-btn block"><button class="card-item__btn btn-big btn-theme">Смотреть все</button></a>
             </div>
                 
 
@@ -181,7 +180,7 @@
 
                 <div class="bg-img">
                 <div class="bg-gost-white">
-                    <a href="#videovisit"><button class="card-item__btn btn-panorama btn-yellow">Смотреть видео</button></a>
+                    <a href="#videovisit"><button class="card-item__btn btn-panorama btn-theme">Смотреть видео</button></a>
                 </div> 
                 </div>
       
@@ -213,7 +212,7 @@
                                     <div class="card-item__desc height-card-item_title">
                                         <?= $tour['short-desc'];?>
                                     </div>
-                                    <a href="client/card-tour.php?id=<?=$tour['id']; ?>"><button class="card-btn card-item__btn catalog-btn btn-yellow height-card-item_btn">Подробнее</button></a>
+                                    <a href="client/card-tour.php?id=<?=$tour['id']; ?>"><button class="card-btn card-item__btn catalog-btn btn-theme height-card-item_btn">Подробнее</button></a>
                                 
                                 </div>
 
@@ -224,7 +223,7 @@
             </div>
 
             <!-- Кнопка Смотреть всё -->
-            <a href="client/tours-catalog.php" class="card-btn block"><button class="card-item__btn btn-big btn-yellow">Смотреть все</button></a>
+            <a href="client/tours-catalog.php" class="card-btn block"><button class="card-item__btn btn-big btn-theme">Смотреть все</button></a>
 
         </section>
         <!-- БЛОК ТУРЫ -->
