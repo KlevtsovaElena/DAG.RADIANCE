@@ -316,6 +316,13 @@ header .footer-links {
 
 /* MAIN ARTICLE */
 
+.title-catalog-page {
+    display: none;
+    margin: 0;
+    text-align: center;
+    font-weight: 600;
+    font-size: 18px;
+}
 /* breadcrumbs */
 .breadcrumbs-container {
     margin: 20px 0;
@@ -600,7 +607,7 @@ header .footer-links {
 
 .btn-slider-prev {
     position: absolute;
-    top: 35%;
+    top: 47%;
     cursor: pointer;
     left: -20px;
     font-size: 20px;
@@ -609,7 +616,7 @@ header .footer-links {
 
 .btn-slider-next {
     position: absolute;
-    top: 35%;
+    top: 47%;
     cursor: pointer;
     right: -20px;
     font-size: 20px;
@@ -1084,6 +1091,9 @@ header .footer-links {
     }
     .breadcrumbs-container {
         display: none;
+    }
+    .title-catalog-page {
+        display: block;
     }
 }
 

@@ -84,7 +84,13 @@ p {
     text-align: center;
     cursor: pointer;
 }
+.btn-slider-prev {
+    top: 35%;
+} 
 
+.btn-slider-next {
+    top: 35%;
+}
 @media(max-width: 1350px) {
     .card-container {
         flex-direction: column-reverse;

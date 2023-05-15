@@ -32,6 +32,7 @@ $data = Tour::getLinesApiId($_GET['id']);
     </header>
     
         <main>
+            
             <div class="breadcrumbs-container">
                 <ul class="breadcrumbs-list">
                     <li>

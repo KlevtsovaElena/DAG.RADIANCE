@@ -27,6 +27,7 @@
         </header>
     
         <main>
+            <div class="title-catalog-page">Достопримечательности</div>
             <div class="breadcrumbs-container">
                 <ul class="breadcrumbs-list">
                     <li>
