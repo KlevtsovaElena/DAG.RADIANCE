@@ -1156,6 +1156,9 @@ header .footer-links {
     .index .mobile-nav ul .footer-links {
         justify-content: center;
     }
+    .burger-links {
+        justify-content: center;
+    }
     .article-img img {
         max-width: 250px;
     }
