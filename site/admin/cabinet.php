@@ -47,6 +47,13 @@
                         <div style="font-size: 18px">&#9998 К редактированию</div>
                     </div>
                 </div></a>
+                <a href="hotels.php"><div class="list-admin-panel" style="background-color: #ff9871;">
+                    <div class="list-ap-title">Гостиницы и домики</div>
+                    <div class="list-ap-img">
+                        <img src="../client/img/icons/hotel-svgrepo-com.svg" >
+                        <div style="font-size: 18px">&#9998 К редактированию</div>
+                    </div>
+                </div></a>
                 <?php if($profile['role']=='admin') { ?>
                 <a href="add-account.php"><div class="list-admin-panel" style="background-color: #fd7e14;">
                     <div class="list-ap-title">Создать аккаунт</div>
