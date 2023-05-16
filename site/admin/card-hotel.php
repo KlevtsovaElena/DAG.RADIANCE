@@ -37,8 +37,8 @@
                 <div class="edit-place">
 
                 <?php 
-                    $hotelsJSON = Hotels::getLinesApiId($_GET['id']);
-                    $hotel = (object)$hotelsJSON[0];
+                    $hotels = Hotels::getLinesApiId($_GET['id']);
+                    $hotel = (object)$hotels[0];
                 ?>
 
                     <!-- Собираем данные одного элемента для таблицы гостиниц -->

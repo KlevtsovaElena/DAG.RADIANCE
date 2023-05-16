@@ -30,41 +30,122 @@
 
         <main>
 
-                <div class="breadcrumbs-container">
-                            <ul class="breadcrumbs-list">
-                                <li>
-                                    <a href="../index.php">Главная</a>
-                                </li>
-                                    <p>Контакты</p>
-                                </li>
-                            </ul>
-                        </div>
-                <div class="contacts-container">  
-                <div class="contacts">  
-                        
-                <?php 
-                    $hotelsJSON = Hotels::getLinesApi(); 
-                    $hotels = (object)$hotelsJSON[0];
-                ?>
-                    <h2>Наши гостишки:</h2>
-                    
-<img src="<?= $hotels->image ?>">
-<div> <?= $hotels->location ?> </div>
-<div><a href="<?= $hotels->link ?>" > ССылка </div>
-
-
-
-<?php 
-                    $housesJSON = Guesthouses::getLinesApi(); 
-                    $houses = (object)$housesJSON[0];
-                ?>
-                    <h2>Наши гостишки:</h2>
-                    
-<img src="<?= $houses->image ?>">
-<div> <?= $houses->location ?> </div>
-<div><a href="<?= $houses->link ?>" target="_blank"> ССылка </div>
-                </div>
+            <div class="breadcrumbs-container">
+                <ul class="breadcrumbs-list">
+                    <li>
+                        <a href="../index.php">Главная</a>
+                    </li>
+                        <p>Контакты</p>
+                    </li>
+                </ul>
             </div>
+
+ 
+                <div class="hotels">  
+                    <div class="">Лучшие видовые отели!!!!</div>    
+                    <div class="hotels-container d-flex">
+                        
+                        <?php 
+                            $hotels = Hotels::getLinesApi(); 
+                            foreach ($hotels as $hotel) {
+                        ?>
+
+                            <div class="hotel-item" >
+                                <div class="hotel-item__img-container">
+                                    <div class="hotel-item__img" style="background-image: url('./<?= $hotel['image'] ?>');"> </div>
+                                </div>
+                                <div class="hotel-item__title">
+                                    <h3><?= $hotel['name']; ?></h3>
+                                </div>
+                                <div class="hotel-item__location">
+                                    <?= $hotel['location']; ?>
+                                </div>
+                                <a href="<?= $hotel['link'] ?> " class="block"><button class="card-item__btn hotel-btn">На сайт</button></a>
+                            </div>
+                            <?php } ?>
+                    </div>
+
+
+                    <style>
+                        .hotel-btn {
+                            position: absolute;
+                            bottom: 20px;
+                            margin-left: auto;
+                            margin-right: auto;
+                            left: 0;
+                            right: 0;
+                            cursor: pointer;
+                        }
+                        .hotel-btn:hover {
+                            background-color: gainsboro;
+                        }
+                        .hotels-container {
+                            display: flex;
+                            justify-content: center;
+                            flex-wrap: wrap;
+                        }
+                        .hotel-item {
+                            display: flex;
+                            flex-direction: column;
+                            position: relative;
+                            flex-wrap: wrap;
+                            width:315px;
+                            height: 415px;
+                            background-color: #ffffff;
+                            color: #000;
+                            overflow: hidden;
+                            margin: 50px 20px;
+                            border-radius: 20px;
+                        }
+                        .hotel-item__img-container {
+                            width: 100%;
+                            height: 50%; 
+                            overflow: hidden;
+                        }
+                        .hotel-item__img{
+                            width: 100%;
+                            height: 100%;
+                            background-position: center center;
+                            background-size: cover;
+                            transition: all 0.5s;
+                        }
+                        .hotel-item__img-container:hover .hotel-item__img {
+                            transform: scale(1.1);
+                        }
+                        .hotel-item__title {
+                            height: 20%;
+                            padding: 10px 15px;
+                            text-align: center;
+                        }
+                        .hotel-item__location {
+                            padding: 0 15px;
+                            text-align: center;
+                        }
+                    </style>
+                    <div class="">Гостевые домики</div>
+                    <div class="hotels-container d-flex">
+                        
+                        <?php 
+                            $houses = Guesthouses::getLinesApi(); 
+                            foreach ($houses as $house) {
+                        ?>
+
+                            <div class="d-flex card-item catalog-card catalog-card_effect" >
+                                <div class="card-item__img" style="background-image: url('./<?= $house['image'] ?>');"> </div>
+                                <div class="card-item__title">
+                                    <h3><?= $house['name']; ?></h3>
+                                </div>
+                                <div class="card-item__desc">
+                                    <?= $house['location']; ?>
+                                </div>
+                                <a href="<?= $house['link'] ?> " class="block"><button class="card-item__btn catalog-btn btn-theme">На сайт</button></a>
+                            </div>
+                            <?php } ?>
+                    </div>
+                
+                </div>
+
+
 
         </main>
         

@@ -37,8 +37,8 @@
                 <div class="edit-place">
 
                 <?php 
-                    $housesJSON = Guesthouses::getLinesApiId($_GET['id']);
-                    $house = (object)$housesJSON[0];
+                    $houses = Guesthouses::getLinesApiId($_GET['id']);
+                    $house = (object)$houses[0];
                 ?>
 
                     <!-- Собираем данные одного элемента для таблицы  -->
