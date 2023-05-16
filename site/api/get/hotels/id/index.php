@@ -5,9 +5,9 @@ header('Access-Control-Allow-Origin: *');
 require_once('../../../../classes/autoload.php');
 
 if (isset($_GET['id']) && $_GET['id'] !== '') {
-    $sqlText = 'SELECT * FROM `' . Place::TABLE . '` WHERE id =  ' . $_GET['id'];
+    $sqlText = 'SELECT * FROM `' . Hotels::TABLE . '` WHERE id =  ' . $_GET['id'];
 } else {
-    $sqlText = 'SELECT * FROM `' . Place::TABLE . '` WHERE id =  1';
+    $sqlText = 'SELECT * FROM `' . Hotels::TABLE . '` WHERE id =  1';
 }
 
 
