@@ -124,21 +124,29 @@ form {
 
 
 /* карточки */
-.card-item {
+.card-item, .hotel-item {
     width: 200px;
     height: 266px;
     font-size: 11px;
     border-radius:10px;
 
 }
-.card-item h3{
+.card-item h3, .hotel-item h3{
     font-size: 14px;
 }
 .catalog-card_effect {
     opacity: 1;
 }
-
- .btn-black {
+.hotel-item__img-container {
+    height: 50%;
+}
+.hotel-item__title {
+    height: 20%;
+}
+.hotel-item .delete-card {
+    margin-left: 15px;
+}
+.btn-black {
     width: 150px;
     font-size: 16px;
     margin: 5px 0;
@@ -244,7 +252,10 @@ form {
     width: 150px; 
     height: 200px;
 }
-
+.img-title-prew-hotel img{
+    width: 300px; 
+    height: 180px;
+}
 .img-carousel-prew img {
     width: 100px;
     display: block;

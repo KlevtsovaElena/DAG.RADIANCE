@@ -562,6 +562,62 @@ header .footer-links {
     right: 0;
 }
 
+/* Карточки гостиниц */
+
+.hotel-btn {
+    position: absolute;
+    bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    cursor: pointer;
+}
+.hotel-btn:hover {
+    background-color: gainsboro;
+}
+.hotels-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.hotel-item {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    flex-wrap: wrap;
+    width:315px;
+    height: 415px;
+    background-color: #ffffff;
+    color: #000;
+    overflow: hidden;
+    margin: 50px 20px;
+    border-radius: 20px;
+}
+.hotel-item__img-container {
+    width: 100%;
+    height: 60%; 
+    overflow: hidden;
+}
+.hotel-item__img{
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-size: cover;
+    transition: all 0.5s;
+}
+.hotel-item__img-container:hover .hotel-item__img {
+    transform: scale(1.1);
+}
+.hotel-item__title {
+    height: 12%;
+    padding: 10px 15px;
+    text-align: center;
+}
+.hotel-item__location {
+    padding: 0 15px;
+    text-align: center;
+}
 
 /* SLIDER */
 .slider {

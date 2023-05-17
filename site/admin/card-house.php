@@ -53,7 +53,7 @@
                         <!-- картинка для карточки -->
                         <p>
                         <div class="img-title-form">Изображениe для карточки
-                            <div class="img-title-prew"><img src="<?= '../client/' . $house->image;?>" /></div>
+                            <div class="img-title-prew-hotel"><img src="<?= '../client/' . $house->image;?>" /></div>
                             <input type="hidden" name="image" value="<?= $house->image;?>">  
                             <input type="file"  id="new-img-title" name="new-img-title" accept="image/png, image/jpg, image/jpeg">                               
                         </div> 
@@ -88,7 +88,7 @@
                         <!-- картинка для карточки -->
                         <p>
                         <div class="img-title-form">Изображениe для карточки
-                            <div class="img-title-prew"><img></div>  
+                            <div class="img-title-prew-hotel"><img></div>  
                             <input type="file"  id="new-img-title" name="new-img-title" accept="image/png, image/jpg, image/jpeg">                               
                         </div> 
                         </p>

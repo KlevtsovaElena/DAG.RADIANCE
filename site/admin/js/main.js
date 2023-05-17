@@ -88,16 +88,16 @@ function addAccount() {
 }
 
 function deleteCard() {
-    const deleteCardBlock = event.target.closest('.card-item').querySelector('.delete-card');
+    const deleteCardBlock = event.target.closest('.catalog-card_effect').querySelector('.delete-card');
     deleteCardBlock.classList.remove('d-none');
 }
 
 function hiddenDeleteBlock() {
-    const deleteCardBlock = event.target.closest('.card-item').querySelector('.delete-card');
+    const deleteCardBlock = event.target.closest('.catalog-card_effect').querySelector('.delete-card');
     deleteCardBlock.classList.add('d-none');
 }
 function hiddenDeleteBlock2() {
-    const deleteCardBlock = event.target.closest('.card-item').querySelector('.delete-card');
+    const deleteCardBlock = event.target.closest('.catalog-card_effect').querySelector('.delete-card');
     deleteCardBlock.classList.add('d-none');
 }
 
