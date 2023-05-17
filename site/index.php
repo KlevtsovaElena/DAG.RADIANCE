@@ -11,6 +11,7 @@
     <title>DAG.RADIANCE</title>
     <link rel="stylesheet" href="client/css/slick.css">
     <link rel="stylesheet" href="client/css/style.css">
+    <link rel="stylesheet" href="client/css/fonts.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,17 +25,6 @@
     <header class="header index">
         <nav class="nav">
             <div class="nav-wrapper d-flex">
-                <a href="index.php"><div class="logo">DAG.RADIANCE</div></a>
-                <div class="nav-items">
-                    <ul>
-                        <li><a href="index.php">Главная</a></li>
-                        <li><a href="client/geography-and-climate.php">О регионе</a></li>
-                        <li><a href="client/places-catalog.php">Достопримечательности</a></li>
-                        <li><a href="client/tours-catalog.php">Туры</a></li>
-                        <li><a href="client/contacts.php">Контакты</a></li>
-                    </ul>
-                </div>
-                <div class="account"><a href="#">Заказать звонок</a></div>
                 <button class="btn-burger"><span class="nav-burger"></span></button>
             </div>
         </nav>
@@ -42,8 +32,10 @@
             <ul>
                 <li><a href="index.php">Главная</a></li>
                 <li><a href="client/geography-and-climate.php">О регионе</a></li>
-                <li><a href="client/places-catalog.php">Достопримечательности</a></li>
-                <li><a href="client/tours-catalog.php">Туры</a></li>
+                <li><a href="#">Помощь в организации отдыха</a></li>
+                <li><a href="client/housing.php">Где остановиться</a></li>
+                <li><a href="client/tours-catalog.php">Как отдохнуть</a></li>
+                <li><a href="#">Отзывы</a></li>
                 <li><a href="client/contacts.php">Контакты</a></li>
                 <div class="footer-links">
                 <?php 
@@ -72,9 +64,8 @@
         </div>
 
         <div class="header-index">
-            <div class="header-index__title">Welcome to Russia</div>
-            <h1 class="header-index__desc">Удивительный и уникальный Дагестан!</h1>
-            <a href="#geography-and-climate"><p class="header-index__scroll">Начать путешествие</p></a>
+            <p class="header-index__desc">DAG.RADIANCE</p>
+            <div class="header-index__title">welcome to Russia</div>
         </div>
         </div>
         

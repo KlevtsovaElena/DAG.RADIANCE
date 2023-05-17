@@ -1,0 +1,12 @@
+@font-face {
+	font-family: 'CascadiaExtraLight';
+	src: url('../fonts/cascadia_mono_extralight.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/cascadia_mono_extralight.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/cascadia_mono_extralight.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/cascadia_mono_extralight.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/cascadia_mono_extralight.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/cascadia_mono_extralight.svg#cascadia_mono_extralight') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+.logo-test {
+    font-family: 'CascadiaExtraLight', sans-serif;
+}

@@ -5,14 +5,14 @@
                 <a href="../index.php"><div class="logo">DAG.RADIANCE</div></a>
                 <div class="nav-items">
                     <ul>
-                        <li><a href="../index.php">Главная</a></li>
                         <li><a href="geography-and-climate.php">О регионе</a></li>
-                        <li><a href="places-catalog.php">Достопримечательности</a></li>
-                        <li><a href="tours-catalog.php">Туры</a></li>
+                        <li><a href="#">Помощь в организации отдыха</a></li>
+                        <li><a href="housing.php">Где остановиться</a></li>
+                        <li><a href="tours-catalog.php">Как отдохнуть</a></li>
+                        <li><a href="#">Отзывы</a></li>
                         <li><a href="contacts.php">Контакты</a></li>
                     </ul>
                 </div>
-                <div class="account"><a href="#">Заказать звонок</a></div>
                 <button class="btn-burger"><span class="nav-burger"></span></button>
             </div>
         </nav>
@@ -20,8 +20,10 @@
             <ul>
                 <li><a href="../index.php">Главная</a></li>
                 <li><a href="geography-and-climate.php">О регионе</a></li>
-                <li><a href="places-catalog.php">Достопримечательности</a></li>
-                <li><a href="tours-catalog.php">Туры</a></li>
+                <li><a href="#">Помощь в организации отдыха</a></li>
+                <li><a href="housing.php">Где остановиться</a></li>
+                <li><a href="tours-catalog.php">Как отдохнуть</a></li>
+                <li><a href="#">Отзывы</a></li>
                 <li><a href="contacts.php">Контакты</a></li>
                 <div class="burger-links">
                 <?php 
