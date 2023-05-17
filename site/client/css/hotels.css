@@ -6,6 +6,14 @@
     height: calc(100vw/4.5);
     margin: 30px 100px;
 }
+.hotels {
+    max-width: 90%;
+    margin: 0 auto;
+    padding-right: 50px;
+}
+.hotels-all-btn {
+    text-align: center;
+}
 .hotels-section, .booking-section {
     display: flex;
     flex-wrap: wrap;
@@ -28,10 +36,21 @@
 }
 .article-text p {
     margin-bottom: 10px;
+    text-align: justify;
+}
+.hotels-title {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+    margin-top: 50px;
+    margin-bottom: 30px;
 }
 @media (max-width: 1200px)  {
     .view-img {
         margin-left: 50px;
+    }
+    .hotel {
+        padding-right: 0; 
     }
 }
 @media (max-width: 900px)  {
@@ -49,6 +68,10 @@
         width: 150px;
         height: 35px;
     }
+}
+
+@media {
+
 }
 @media (max-width: 720px) {
     .booking-icons {

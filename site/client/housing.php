@@ -87,7 +87,7 @@
 
  
                 <div class="hotels">  
-                    <div class="">Лучшие видовые отели</div>    
+                    <div class="hotels-title">Лучшие видовые отели</div>    
                     <div class="hotels-container d-flex">
                         
                         <?php 
@@ -109,8 +109,14 @@
                             </div>
                             <?php } ?>
                     </div>
+                    <div class="hotels-all-btn">
+                        <a href="https://ex-terior.ru/land/rossiya/dagestan/feature/view-hotel/" target="_blank">
+                            <button class="card-item__btn btn-big btn-theme">Смотреть ещё</button>
+                        </a>
+                    </div>
 
-                    <div class="">Гостевые домики</div>    
+
+                    <div class="hotels-title">Гостевые домики</div>    
                     <div class="hotels-container d-flex">
                         
                         <?php 
@@ -131,8 +137,13 @@
                                 <a href="<?= $house['link'] ?> " class="block"><button class="card-item__btn hotel-btn">На сайт</button></a>
                             </div>
                             <?php } ?>
+                            
                     </div>
-               
+                    <div class="hotels-all-btn">
+                        <a href="https://ex-terior.ru/land/rossiya/dagestan/feature/view-hotel/" target="_blank">
+                            <button class="card-item__btn btn-big btn-theme">Смотреть ещё</button>
+                        </a>
+                    </div>
                 </div>
 
 

@@ -21,7 +21,7 @@ CREATE TABLE `admin` (
 ) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8mb3;
 
 INSERT INTO `admin` (`id`, `first_name`, `last_name`, `login`, `role`, `password`, `temp_password`, `date_registr`, `date_update`, `token`) VALUES
-(1,	'admin',	'admin',	'dagradiance',	'admin',	'inS4UGgjBAP.I',	'',	'2023-05-06 19:09:44',	'2023-05-06 19:10:25',	'');
+(1,	'admin',	'admin',	'dagradiance',	'admin',	'inS4UGgjBAP.I',	'',	'2023-05-06 19:09:44',	'2023-05-06 19:10:25',	'in8CZN4snSZHc');
 
 DROP TABLE IF EXISTS `contacts`;
 CREATE TABLE `contacts` (
@@ -46,12 +46,13 @@ CREATE TABLE `guest-houses` (
   `location` varchar(250) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NOT NULL,
   `link` varchar(1000) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb3;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb3;
 
 INSERT INTO `guest-houses` (`id`, `name`, `short-desc`, `image`, `location`, `link`) VALUES
-(1,	'Загородный комплекс <b>Домик в горах Дагестана</b>',	NULL,	'img/hotels/domik.jpg',	'Гергебильский район, с. Чалда',	'https://домик-в-горах-дагестана.рф/'),
-(2,	'Дома у моря <b>Ethno Villa</b>',	NULL,	'img/hotels/ethno-villa.jpg',	'г. Избербаш / г. Махачкала',	'https://ethnovilla.ru/'),
-(3,	'Глэмпинг <b>Аул мастеров</b>',	NULL,	'img/hotels/aul-masterov.jpg',	'Казбековский район, п. Пионерный',	'https://tripinglamp.ru/glampings/aul-masterov/');
+(1,	'Загородный комплекс Домик в горах Дагестана',	NULL,	'img/hotels/domik.jpg',	'Гергебильский район, с. Чалда',	'https://домик-в-горах-дагестана.рф/'),
+(2,	'Дома у моря Ethno Villa',	NULL,	'img/hotels/ethno-villa.jpg',	'г. Избербаш / г. Махачкала',	'https://ethnovilla.ru/'),
+(3,	'Глэмпинг Аул мастеров',	'',	'img/hotels/aul-masterov.jpg',	'Казбековский район, п. Пионерный',	'https://tripinglamp.ru/glampings/aul-masterov/'),
+(6,	'Гостевой дом Глобал',	'',	'img/hotels/global.jpg',	'Гергебильский район, с. Чалда',	'https://глобал-чалда.рф/');
 
 DROP TABLE IF EXISTS `hotels`;
 CREATE TABLE `hotels` (
@@ -62,12 +63,13 @@ CREATE TABLE `hotels` (
   `location` varchar(250) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NOT NULL,
   `link` varchar(1000) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb3;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb3;
 
 INSERT INTO `hotels` (`id`, `name`, `short-desc`, `image`, `location`, `link`) VALUES
-(1,	'Гостиничный комплекс <b>«Джами»</b>',	NULL,	'img/hotels/djamihotel.jpg',	'г. Махачкала',	'https://djamihotel.ru/'),
-(2,	'Гостиница <b>Андалусия</b>',	NULL,	'img/hotels/andalusiya.jpg',	'г. Махачкала',	'https://m.travelata.ru/russia/makhachkala/hotels/andalusiya-andalusiya-gostinica-3ca2cf3.html#?fromCity=2&dateFrom=29.05.2023&dateTo=29.05.2023&nightFrom=7&nightTo=10&adults=2&priceFrom=100&priceTo=50000000&meal=all&productType=all&hsid=l08rr1alj1'),
-(3,	'Отель <b>Ассорти</b>',	NULL,	'img/hotels/assorty-hotel.jpg',	'г. Дербент, Сухая Речка',	'https://assorty-hotel.ru/');
+(1,	'Гостиничный комплекс «Джами»',	NULL,	'img/hotels/djamihotel.jpg',	'г. Махачкала',	'https://djamihotel.ru/'),
+(2,	'Гостиница Андалусия',	'',	'img/hotels/andalusiya.jpg',	'г. Махачкала',	'https://m.travelata.ru/russia/makhachkala/hotels/andalusiya-andalusiya-gostinica-3ca2cf3.html#?fromCity=2&dateFrom=29.05.2023&dateTo=29.05.2023&nightFrom=7&nightTo=10&adults=2&priceFrom=100&priceTo=50000000&meal=all&productType=all&hsid=l08rr1alj1'),
+(3,	'Отель Ассорти',	NULL,	'img/hotels/assorty-hotel.jpg',	'г. Дербент, Сухая Речка',	'https://assorty-hotel.ru/'),
+(5,	'Отель Рояль',	NULL,	'img/hotels/otel-royal.jpg',	'г. Дербент',	'https://travel.yandex.ru/hotels/derbent/roial/');
 
 SET NAMES utf8mb4;
 
@@ -82,7 +84,7 @@ CREATE TABLE `places` (
   `price` int DEFAULT NULL,
   `link` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 INSERT INTO `places` (`id`, `title`, `short-desc`, `full-desc`, `img-title`, `img-carousel`, `price`, `link`) VALUES
 (1,	'Сулакский каньон',	'Коротенькое описание для места 1',	'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse iure, debitis repudiandae cum saepe corrupti facilis. Explicabo omnis fugit exercitationem rem, eligendi quo incidunt neque vitae corrupti amet sunt aliquid.',	'img/place/sulakskiy-kanion-big.jpg',	'[\"img/place/sulakskiy-kanion-big.jpg\", \"img/place/кавказский-вавилон.jpeg\", \"img/place/Море.jpg\", \"img/place/Дербент.jpg\", \"img/place/Горы2.jpg\"]',	500,	'ваыв'),
@@ -109,7 +111,7 @@ CREATE TABLE `tours` (
   `price` int DEFAULT NULL,
   `link` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 INSERT INTO `tours` (`id`, `title`, `short-desc`, `full-desc`, `img-title`, `img-carousel`, `price`, `link`) VALUES
 (1,	'ТУР 1',	'Коротенькое описание для нашего тура 1',	'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse iure, debitis repudiandae cum saepe corrupti facilis. Explicabo omnis fugit exercitationem rem, eligendi quo incidunt neque vitae corrupti amet sunt aliquid.',	'img/place/sea01.jpg',	'[\"img/place/sea01.jpg\", \"img/card/plain.jpg\", \"img/card/reserve.jpg\", \"img/card/hills.jpg\", \"img/card/nature.jpeg\"]',	500,	'ваыв'),
@@ -125,4 +127,4 @@ INSERT INTO `tours` (`id`, `title`, `short-desc`, `full-desc`, `img-title`, `img
 (11,	'ТУР 11',	'Коротенькое описание для нашего тура 11',	'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse iure, debitis repudiandae cum saepe corrupti facilis. Explicabo omnis fugit exercitationem rem, eligendi quo incidunt neque vitae corrupti amet sunt aliquid.',	'img/tours-catalog/tarki-tau.jpg',	'[\"img/tours-catalog/tarki-tau.jpg\", \"img/card/plain.jpg\", \"img/card/reserve.jpg\", \"img/card/hills.jpg\", \"img/card/nature.jpeg\"]',	700,	'ваыв'),
 (12,	'ТУР12',	'Коротенькое описание для нашего тура 12',	'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse iure, debitis repudiandae cum saepe corrupti facilis. Explicabo omnis fugit exercitationem rem, eligendi quo incidunt neque vitae corrupti amet sunt aliquid.',	'img/tours-catalog/sulak.jpg',	'[\"img/tours-catalog/sulak.jpg\", \"img/card/plain.jpg\", \"img/card/reserve.jpg\", \"img/card/hills.jpg\", \"img/card/nature.jpeg\"]',	700,	'ваыв');
 
--- 2023-05-16 14:42:29
+-- 2023-05-17 13:13:51
