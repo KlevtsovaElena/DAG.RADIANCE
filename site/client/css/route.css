@@ -1,0 +1,7 @@
+.photo-back {
+    background-image: url('../img/route/6.jpg');
+    background-size: cover;
+    height: 600px;
+    padding: 30px;
+    margin: 100px auto;
+}

@@ -136,8 +136,8 @@
         </section>
 
         <div class="two-buttons">
-            <a href="national-pecularities.php" class="card-btn"><button class="card-item__btn btn-big btn-yellow">Предыдущая</button></a>
-            <a href="../index.php" class="card-btn"><button class="card-item__btn btn-big btn-yellow">На главную</button></a>
+            <a href="national-pecularities.php" class="card-btn"><button class="card-item__btn btn-big btn-theme">Предыдущая</button></a>
+            <a href="../index.php" class="card-btn"><button class="card-item__btn btn-big btn-theme">На главную</button></a>
         </div>
         
     </main>
