@@ -23,19 +23,58 @@
 
     <!-- HEADER -->
     <header class="header index">
+        <div class="right-menu">
+            <div class="nav-items-right">
+                <h3>Меню</h3>
+                <ul>
+                    <li><a href="client/geography-and-climate.php">О регионе</a></li>
+                        <ul>
+                            <li><a href="client/geography-and-climate.php#geography">География и климат</a></li>
+                            <li><a href="client/national-pecularities.php">Особенности</a></li>
+                            <li><a href="client/fests-and-traditions.php">Праздники и традиции</a></li>
+                        </ul>
+                    <li><a href="client/route.php">Помощь в организации отдыха</a></li>
+                        <ul>
+                            <li><a href="client/route.php#plane">Авиаперелет</a></li>
+                            <li><a href="client/route.php#train">Ж/д проезд</a></li>
+                            <li><a href="client/route.php#car">Авто</a></li>
+                        </ul>
+                    <li><a href="client/housing.php">Где остановиться</a></li>
+                        <ul>
+                            <li><a href="client/housing.php#hotels">Отели</a></li>
+                            <li><a href="client/housing.php#guesthouses">Гостевые домики</a></li>
+                        </ul>
+                    <li><a href="#tours">Как отдохнуть</a></li>
+                        <ul>
+                            <li><a href="client/tours-catalog.php">Туры</a></li>
+                        </ul>
+                    <!-- <li><a href="#">Где поесть</a></li>
+                        <ul>
+                            <li><a href="#">Рестораны</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">Кафе</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">Отзывы</a></li>
+                        </ul> -->
+                    <li><a href="client/contacts.php">Контакты</a></li>
+                </ul>
+            </div>
+        </div>
         <nav class="nav">
             <div class="nav-wrapper d-flex">
                 <button class="btn-burger"><span class="nav-burger"></span></button>
-            </div>
+            </div>            
         </nav>
         <div class="mobile-nav">
             <ul>
                 <li><a href="index.php">Главная</a></li>
                 <li><a href="client/geography-and-climate.php">О регионе</a></li>
-                <li><a href="#">Помощь в организации отдыха</a></li>
+                <li><a href="client/route.php">Помощь в организации отдыха</a></li>
                 <li><a href="client/housing.php">Где остановиться</a></li>
                 <li><a href="client/tours-catalog.php">Как отдохнуть</a></li>
-                <li><a href="#">Отзывы</a></li>
+                <!-- <li><a href="#">Отзывы</a></li> -->
                 <li><a href="client/contacts.php">Контакты</a></li>
                 <div class="footer-links">
                 <?php 
@@ -50,7 +89,7 @@
             </div>
             </ul>
         </div>
-        <div class="wrap-with-social-icons">
+        <!-- <div class="wrap-with-social-icons">
         <div class="footer-links">
             <?php 
                 $data = Contacts::getLinesApi(); 
@@ -61,13 +100,18 @@
                 <a href="https://vk.com/<?= $contact->vk;?>" target="_blank"><img src="client/img/icons/vk.jpg" alt="Написать в VK" class="linkPic"></a>  
                 <a href="tg://resolve?domain=<?= $contact->telegram;?>" target="_blank"><img src="client/img/icons/tg.png" alt="Написать в телеграмм" class="linkPic"></a> 
                 <a href="whatsapp://send?phone=<?= $contact->whatsapp;?>" target="_blank"><img src="client/img/icons/wtsp.png" alt="Написать в whatsapp" class="linkPic"></a>               
-        </div>
+        </div> -->
 
         <div class="header-index">
             <p class="header-index__desc">DAG.RADIANCE</p>
             <div class="header-index__title">welcome to Russia</div>
+            <div class="triangles-wrap">
+                <div class="triangle"><a href="#about">Про Дагестан</a></div>
+                <div class="triangle"><a href="/client/route.php">Как добраться</a></div>
+                <div class="triangle"><a href="/client/housing.php">Где остановиться</a></div>
+            </div>
         </div>
-        </div>
+        <!-- </div> -->
         
     </header>
     <!-- /HEADER -->
@@ -78,7 +122,7 @@
         <section class="article">
             <div id="geography-and-climate" class="article-container">
                 <div class="article-text">
-                    <div class="article-text__title">Уникальная природа</div>
+                    <div id="about" class="article-text__title">Уникальная природа</div>
                     <div class="article-text__desc">Горы, море и бархан!</div>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse iure, debitis repudiandae cum saepe corrupti facilis. Explicabo omnis fugit exercitationem rem, eligendi quo incidunt neque vitae corrupti amet sunt aliquid.</p>
                     <a href="client/geography-and-climate.php" class="article-text__more"> подробнее</a>
@@ -179,7 +223,7 @@
         <!-- /Панорамные картинки -->
 
         <!-- БЛОК ТУРЫ -->
-        <section class="tours card-container">
+        <section class="tours card-container" id="tours">
 
             <!-- Заголовок -->
             <div class="card-text"><h2>Туры</h2></div>
@@ -241,7 +285,7 @@
                         <h4 class="footer-nav__title">О регионе</h4>
                         <div class="footer-nav__links">
                             <a href="client/geography-and-climate.php">География и климат</a>
-                            <a href="client/national-pecularities.php">Колорит</a>
+                            <a href="client/national-pecularities.php">Особенности</a>
                             <a href="client/fests-and-traditions.php">Праздники и традиции</a>
                         </div>
                     </div>

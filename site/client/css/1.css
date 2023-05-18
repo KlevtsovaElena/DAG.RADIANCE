@@ -2,12 +2,15 @@
     align-items: flex-start;
 }
 
+.gap .article-text__title {
+    margin-top: 30px;
+}
+
 .img-section {
     background-position: center center;
     width: 575px;
     height: 375px;
 }
-
 
 .img-nations {
     width: 500px;

@@ -86,7 +86,7 @@
 
 
  
-                <div class="hotels">  
+                <div class="hotels" id="hotels">  
                     <div class="hotels-title">Лучшие видовые отели</div>    
                     <div class="hotels-container d-flex">
                         
@@ -116,7 +116,7 @@
                     </div>
 
 
-                    <div class="hotels-title">Гостевые домики</div>    
+                    <div class="hotels-title" id="guesthouses">Гостевые домики</div>    
                     <div class="hotels-container d-flex">
                         
                         <?php 

@@ -9,7 +9,7 @@
                         <li><a href="#">Помощь в организации отдыха</a></li>
                         <li><a href="housing.php">Где остановиться</a></li>
                         <li><a href="tours-catalog.php">Как отдохнуть</a></li>
-                        <li><a href="#">Отзывы</a></li>
+                        <!-- <li><a href="#">Отзывы</a></li> -->
                         <li><a href="contacts.php">Контакты</a></li>
                     </ul>
                 </div>
@@ -23,7 +23,7 @@
                 <li><a href="#">Помощь в организации отдыха</a></li>
                 <li><a href="housing.php">Где остановиться</a></li>
                 <li><a href="tours-catalog.php">Как отдохнуть</a></li>
-                <li><a href="#">Отзывы</a></li>
+                <!-- <li><a href="#">Отзывы</a></li> -->
                 <li><a href="contacts.php">Контакты</a></li>
                 <div class="burger-links">
                 <?php 

@@ -17,7 +17,7 @@
                         <h4 class="footer-nav__title">О регионе</h4>
                         <div class="footer-nav__links">
                             <a href="geography-and-climate.php">География и климат</a>
-                            <a href="national-pecularities.php">Колорит</a>
+                            <a href="national-pecularities.php">Особенности</a>
                             <a href="fests-and-traditions.php">Праздники и традиции</a>
                         </div>
                     </div>
