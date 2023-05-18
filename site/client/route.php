@@ -33,7 +33,7 @@
                 <li>
                     <a href="../index.php">Главная</a>
                 </li>
-                    <p>Выбор транспорта</p>
+                    <p>Помощь в организации отдыха</p>
                 </li>
             </ul>
         </div>
@@ -63,7 +63,7 @@
                                 Международный аэропорт Махачкалы принимает рейсы из Москвы (Внуково, Шереметьево, Домодедово), Санкт-Петербурга, Ростова-на-Дону, Сургута, Сочи, Казани, Новосибирска, Екатеринбурга. Имейте в виду: некоторые рейсы выполняются с пересадками. Например, во время перелета из Екатеринбурга и Новосибирска вам придется сделать не менее одной пересадки. При желании сюда можно прилететь даже из Стамбула, правда, такие полеты выполняются не ежедневно. Перелет из Москвы займет от 2 часов, из Санкт-Петербурга – 3 часа 30 минут, из Новосибирска – около 9 часов (с учетом пересадок).<br>
                                 Аэропорт Махачкалы расположен в 20 км от города, доехать в центр можно за полчаса, но на общественном транспорте добираться неудобно: маршрутка № 105 ходит редко, автобус — 4 раза в день (в 10:30, 12:15, 14:10 и 15:00) и только до ТРЦ «Пирамида», расположенного на южной окраине Махачкалы.
                             </p>
-                            <a href="https://www.aeroflot.ru/ru-ru" target="_blank" class="card-btn block"><button class="card-item__btn btn-big btn-theme">К авиабилетам</button></a>
+                            <a href="https://www.aeroflot.ru/ru-ru" target="_blank" class="card-btn block"><button class="card-item__btn btn-big btn-theme">Авиабилеты</button></a>
                         </div>
                     </div>
                 </div>
@@ -74,14 +74,14 @@
             <div class="article-container">
                 <div class="article-text">
                     <div class="section-first d-flex">
-                        <img src="./img/route/5.jpg" alt="">
+                        <img class="train" src="./img/route/5.jpg" alt="">
                         <div class="article-text gap">
                             <div class="article-text__title">На поезде</div>
                             <p>
                                 Еще один вариант – поездка в Махачкалу по железной дороге. Добраться в столицу Республики Дагестан на поезде можно из Москвы, Санкт-Петербурга, Ростова-на-Дону, Тюмени. Из Москвы регулярно курсирует поезд в Дербент.
                                 Путешествовать по Дагестану можно на авто, рейсовых автобусах, микроавтобусах, такси, попутках. Из Махачкалы можно добраться на электричках в Дербент, Хасавюрт, Кизилюрт, Избербаш, Манас.
                             </p>
-                            <a href="https://www.rzd.ru/" target="_blank" class="card-btn block"><button class="card-item__btn btn-big btn-theme">К ж/д билетам</button></a>
+                            <a href="https://www.rzd.ru/" target="_blank" class="card-btn block"><button class="card-item__btn btn-big btn-theme">Ж/д билеты</button></a>
                         </div>
                     </div>
                 </div>
@@ -111,7 +111,7 @@
         <div class="article-container">
             <div class="article-text">
                 <div class="section-first d-flex">
-                    <img src="./img/route/7.jpg" alt="">
+                    <img class="bus" src="./img/route/7.jpg" alt="">
                     <div class="article-text gap">
                         <div class="article-text__title">На автобусе</div>
                         <p>
@@ -128,7 +128,7 @@
         <div class="article-container">
             <div class="article-text">
                 <div class="section-first d-flex">
-                    <img src="./img/route/8.jpg" alt="" style="max-height: 500px">
+                    <img class="rental" src="./img/route/8.jpg" alt="" style="max-height: 500px">
                     <div class="article-text gap">
                         <div class="article-text__title">Прокат автомобилей</div>
                         <p>
