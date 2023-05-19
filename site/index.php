@@ -23,7 +23,13 @@
 
     <!-- HEADER -->
     <header class="header index">
-        <div class="right-menu">
+
+        <div class="right-menu d-flex">
+            <div class="triangles-wrap">
+                <div class="triangle"><a href="#about">Про Дагестан</a></div>
+                <div class="triangle"><a href="/client/route.php">Как добраться</a></div>
+                <div class="triangle"><a href="/client/housing.php">Где остановиться</a></div>
+            </div>
             <div class="nav-items-right">
                 <h3>Меню</h3>
                 <ul>
@@ -47,6 +53,8 @@
                     <li><a href="#tours">Как отдохнуть</a></li>
                         <ul>
                             <li><a href="client/tours-catalog.php">Туры</a></li>
+                            <li><a href="client/tours-catalog.php">Достопримечательности</a></li>
+                            <li><a href="client/tours-catalog.php">Рестораны</a></li>
                         </ul>
                     <!-- <li><a href="#">Где поесть</a></li>
                         <ul>
@@ -60,6 +68,7 @@
                         </ul> -->
                     <li><a href="client/contacts.php">Контакты</a></li>
                 </ul>
+
             </div>
         </div>
         <nav class="nav">
@@ -89,7 +98,7 @@
             </div>
             </ul>
         </div>
-        <!-- <div class="wrap-with-social-icons">
+        <div class="wrap-with-social-icons">
         <div class="footer-links">
             <?php 
                 $data = Contacts::getLinesApi(); 
@@ -100,16 +109,12 @@
                 <a href="https://vk.com/<?= $contact->vk;?>" target="_blank"><img src="client/img/icons/vk.jpg" alt="Написать в VK" class="linkPic"></a>  
                 <a href="tg://resolve?domain=<?= $contact->telegram;?>" target="_blank"><img src="client/img/icons/tg.png" alt="Написать в телеграмм" class="linkPic"></a> 
                 <a href="whatsapp://send?phone=<?= $contact->whatsapp;?>" target="_blank"><img src="client/img/icons/wtsp.png" alt="Написать в whatsapp" class="linkPic"></a>               
-        </div> -->
+        </div>
 
         <div class="header-index">
             <p class="header-index__desc">DAG.RADIANCE</p>
             <div class="header-index__title">welcome to Russia</div>
-            <div class="triangles-wrap">
-                <div class="triangle"><a href="#about">Про Дагестан</a></div>
-                <div class="triangle"><a href="/client/route.php">Как добраться</a></div>
-                <div class="triangle"><a href="/client/housing.php">Где остановиться</a></div>
-            </div>
+
         </div>
         <!-- </div> -->
         

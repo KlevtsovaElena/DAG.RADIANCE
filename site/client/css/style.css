@@ -90,15 +90,22 @@ a {
 
 .right-menu {
     position: absolute;
-    width: 200px;
-    top: -10px;
-    right: 0px;
-    background-color: rgba(12,12,12);
-    border-radius: 0 0 0 20px;
-    padding: 30px;
+    align-items: end;
+    justify-content: space-between;
+    width:90%;
+    /* top: 8%; */
+    right: 20px;
+    bottom: 15%;
+    background-color: transparent;
+    /* border-radius: 0 0 0 20px; */
+    padding: 30px 20px;
     z-index: 2;
 }
 
+.nav-items-right {
+    background-color: rgba(0,0,0,0.5);
+    padding: inherit;
+}
 .nav-items-right > h3 {
     text-align: center;
     margin-bottom: 10px;
@@ -271,7 +278,7 @@ a {
 /* HEADER INDEX*/
 
 .index {
-    /* height: calc(0.5*100vw); */
+    height: calc(0.5625*100vw);
     position: relative;
 }
 
@@ -316,10 +323,11 @@ a {
 
 .triangles-wrap {
     display: flex;
+    flex:1;
     justify-content: center;
     flex-wrap: wrap;
     gap: 30px;
-    margin: 50px 50px 100px 50px;
+    margin: 50px 50px 0px 50px;
 }
 
 .triangle {
@@ -848,7 +856,7 @@ header .footer-links {
     .nav-items, .account {
         display: none;
     }
-    .right-menu {
+    .nav-items-right {
         display: none;
     }
     .btn-burger {
