@@ -98,8 +98,8 @@
                     <li><a href="#tours">Как отдохнуть</a></li>
                         <ul>
                             <li><a href="client/tours-catalog.php">Туры</a></li>
-                            <li><a href="client/tours-catalog.php">Достопримечательности</a></li>
-                            <li><a href="client/tours-catalog.php">Рестораны</a></li>
+                            <li><a href="client/places-catalog.php">Достопримечательности</a></li>
+                            <li><a href="#">Рестораны</a></li>
                         </ul>
                     <!-- <li><a href="#">Где поесть</a></li>
                         <ul>
@@ -276,11 +276,13 @@
       <footer >
         <div class="footer-container">
             <div class="footer-nav">
-                <div class="logo">DAG.RADIANCE</div>
+                <a href="#"><div class="logo">DAG.RADIANCE</div></a>
                 <div class="footer-menu_container">
                     <div class="footer-nav__item">
                         <h4 class="footer-nav__title">Меню</h4>
                         <div class="footer-nav__links">
+                            <a href="client/route.php">Как добраться</a>
+                            <a href="client/housing.php">Где остановиться</a>
                             <a href="client/places-catalog.php">Достопримечательности</a>
                             <a href="client/tours-catalog.php">Туры</a>
                             <a href="client/contacts.php">Контакты</a>

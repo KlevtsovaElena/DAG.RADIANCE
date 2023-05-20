@@ -9,7 +9,7 @@
 .hotels {
     max-width: 90%;
     margin: 0 auto;
-    padding-right: 50px;
+    padding-right: 0;
 }
 .hotels-all-btn {
     text-align: center;

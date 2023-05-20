@@ -105,7 +105,7 @@
                                 <div class="hotel-item__location">
                                     <?= $hotel['location']; ?>
                                 </div>
-                                <a href="<?= $hotel['link'] ?> " class="block"><button class="card-item__btn hotel-btn">На сайт</button></a>
+                                <a href="<?= $hotel['link'] ?> " class="block" target="_blank"><button class="card-item__btn hotel-btn">На сайт</button></a>
                             </div>
                             <?php } ?>
                     </div>
@@ -134,7 +134,7 @@
                                 <div class="hotel-item__location">
                                     <?= $house['location']; ?>
                                 </div>
-                                <a href="<?= $house['link'] ?> " class="block"><button class="card-item__btn hotel-btn">На сайт</button></a>
+                                <a href="<?= $house['link'] ?> " class="block" target="_blank"><button class="card-item__btn hotel-btn">На сайт</button></a>
                             </div>
                             <?php } ?>
                             

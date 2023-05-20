@@ -3,11 +3,13 @@
     <footer >
         <div class="footer-container">
             <div class="footer-nav">
-                <div class="logo">DAG.RADIANCE</div>
+                <a href="../index.php"><div class="logo">DAG.RADIANCE</div></a>
                 <div class="footer-menu_container">
                     <div class="footer-nav__item">
                         <h4 class="footer-nav__title">Меню</h4>
                         <div class="footer-nav__links">
+                            <a href="route.php">Как добраться</a>
+                            <a href="housing.php">Где остановиться</a>
                             <a href="places-catalog.php">Достопримечательности</a>
                             <a href="tours-catalog.php">Туры</a>
                             <a href="contacts.php">Контакты</a>
