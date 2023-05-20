@@ -13,7 +13,10 @@ abstract class Unit
         $data = file_get_contents("http://nginx/api/get/" . static::TABLE . "/id/index.php?id=" . $number);
         return json_decode($data, true);
     }
-    
+    public static function getLinesApiCategory(string $str) {
+        $data = file_get_contents("http://nginx/api/get/" . static::TABLE . "/category/index.php?category=" . $str);
+        return json_decode($data, true);
+    }  
     public static function getLinesApiShort(int $number) {
         $data = file_get_contents("http://nginx/api/get/" . static::TABLE . "/limit/index.php?limit=" . $number);
         return json_decode($data, true);

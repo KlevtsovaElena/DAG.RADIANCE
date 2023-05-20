@@ -5,19 +5,15 @@
     margin: 50px auto;
 }
 
-.catalog-card_effect {
-    opacity: 0.85;
-    transition: all 0.3s ease-in-out;
-}
-
-.catalog-card_effect:hover {
-    opacity: 1;
-}
-
 .catalog-price {
     margin-top: 10px;
 }
 
 .catalog-price > span {
     font-weight: bold;
+}
+
+.category {
+    text-align: center;
+
 }

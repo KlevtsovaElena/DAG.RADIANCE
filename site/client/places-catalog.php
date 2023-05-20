@@ -38,8 +38,67 @@
                 </ul>
             </div>
 
+            <!-- Достопримечательности ГОРЫ -->
+            <div class="category"><h2>Горы</h2></div>
             <div class="catalog-container">
-            <?php $data = Place::getLinesApi();
+            <?php $data = Place::getLinesApiCategory("горы");
+            foreach ($data as $place) { ?>
+            <div class="card-container"></div>
+                <div class="d-flex card-item catalog-card catalog-card_effect" >
+                    <div class="card-item__img" style="background-image: url('./<?php echo $place['img-title'] ?>');"> </div>
+                    <div class="card-item__title">
+                        <h3><?php echo $place['title']; ?></h3>
+                    </div>
+                    <div class="card-item__desc">
+                        <?php echo $place['short-desc']; ?>
+                    </div>
+                    <a href="card-place.php?id=<?= $place['id'] ?> " class="block"><button class="card-item__btn catalog-btn btn-theme">Подробнее</button></a>
+                </div>
+                <?php } ?>
+            </div>
+
+            <!-- Достопримечательности МОРЕ, ВОДА -->
+            <div class="category"><h2>Море, реки, водохранилища</h2></div>
+            <div class="catalog-container">
+            <?php $data = Place::getLinesApiCategory("вода");
+            foreach ($data as $place) { ?>
+            <div class="card-container"></div>
+                <div class="d-flex card-item catalog-card catalog-card_effect" >
+                    <div class="card-item__img" style="background-image: url('./<?php echo $place['img-title'] ?>');"> </div>
+                    <div class="card-item__title">
+                        <h3><?php echo $place['title']; ?></h3>
+                    </div>
+                    <div class="card-item__desc">
+                        <?php echo $place['short-desc']; ?>
+                    </div>
+                    <a href="card-place.php?id=<?= $place['id'] ?> " class="block"><button class="card-item__btn catalog-btn btn-theme">Подробнее</button></a>
+                </div>
+                <?php } ?>
+            </div>
+
+            <!-- Достопримечательности Пустыня -->
+            <div class="category"><h2>Пустыня</h2></div>
+            <div class="catalog-container">
+            <?php $data = Place::getLinesApiCategory("песок");
+            foreach ($data as $place) { ?>
+            <div class="card-container"></div>
+                <div class="d-flex card-item catalog-card catalog-card_effect" >
+                    <div class="card-item__img" style="background-image: url('./<?php echo $place['img-title'] ?>');"> </div>
+                    <div class="card-item__title">
+                        <h3><?php echo $place['title']; ?></h3>
+                    </div>
+                    <div class="card-item__desc">
+                        <?php echo $place['short-desc']; ?>
+                    </div>
+                    <a href="card-place.php?id=<?= $place['id'] ?> " class="block"><button class="card-item__btn catalog-btn btn-theme">Подробнее</button></a>
+                </div>
+                <?php } ?>
+            </div>
+
+            <!-- Достопримечательности Иное -->
+            <div class="category"><h2>И ещё много всего интересного</h2></div>
+            <div class="catalog-container">
+            <?php $data = Place::getLinesApiCategory("иное");
             foreach ($data as $place) { ?>
             <div class="card-container"></div>
                 <div class="d-flex card-item catalog-card catalog-card_effect" >
@@ -57,7 +116,6 @@
 
             <a href="../index.php" class="card-btn block"><button class="card-item__btn btn-big btn-theme">На главную</button></a>
         
-    
     
         </main>
         
