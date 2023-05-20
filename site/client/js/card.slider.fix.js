@@ -7,9 +7,9 @@ let showImgSmall = 0;
 let showImgSmall1000 = 0;
 let showImgSmall650 = 0;
 
-
+console.log(countImgSmall)
 // по сколько показывать в минигалерее
-if (countImgSmall > 4) {
+if (countImgSmall >= 4) {
   showImgSmall = 3;
   showImgSmall1000 = 3;
   showImgSmall650 = 2;
