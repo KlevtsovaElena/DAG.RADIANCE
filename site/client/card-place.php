@@ -58,7 +58,14 @@ $data = Place::getLinesApiId($_GET['id']);
 
                     <?php $imgCarousel = json_decode($data[0]['img-carousel'], true); ?>
 
-                    
+                    <div class="one-img-gallery d-none">
+                        
+                        <?php for ($i = 0; $i < count($imgCarousel); $i++) { ?>
+                            <div class="gallery-item" data-index="<?= $i+1 ?>" img-src="<?= $imgCarousel[$i]; ?>" style="background-image: url('./<?= $imgCarousel[$i]; ?>');">
+                            </div>
+                            <?php }; ?>
+                          
+                    </div>
                     
                     <!-- Слайдер с нижней мини-галереей -->
                     <div class="double-slider_container">
@@ -72,7 +79,7 @@ $data = Place::getLinesApiId($_GET['id']);
                             </div>
                               
                         </div>
-                        
+                         
                         <!-- Нижняя мини-галерея слайдера -->
                         <div class="slider mini-slider">
                             <div class="card-carousel d-flex slider-wrapper slick-slide slider-nav">
@@ -84,7 +91,7 @@ $data = Place::getLinesApiId($_GET['id']);
                                    
                         </div>
                     </div>
-                
+                                        
                 
             </section>
 

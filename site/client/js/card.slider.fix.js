@@ -76,5 +76,7 @@ if (countImgSmall > 1) {
 
 } else {
   document.querySelector(".mini-slider").classList.add('d-none');
+  document.querySelector(".double-slider_container").classList.add('d-none');
+  document.querySelector(".one-img-gallery").classList.remove('d-none');
 }
     
