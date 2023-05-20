@@ -49,7 +49,7 @@ $data = Place::getLinesApiId($_GET['id']);
                 <div class="card-container">
                     <div class="card-container__text">
                         <div class="card-text__title">
-                            <h3><?= $data[0]['title'] ?></h3>
+                            <h1><?= $data[0]['title'] ?></h1>
                         </div>
                         <div class="card-text__desc">
                             <p> <?= $data[0]['full-desc'] ?> </p>

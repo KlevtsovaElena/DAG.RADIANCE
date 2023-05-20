@@ -52,10 +52,15 @@ p {
     max-width: 500px;
     font-style: normal;
     font-weight: 500;
-    font-size: 15px;
+    font-size: 1.1rem;
     line-height: 1.2;
 }
-
+.card-text__desc p{
+    margin: 1em;
+}
+.card-text__title h1, .card-text__desc h4{
+    color: #FFD1A0; 
+}
 .double-slider_container {
     flex-direction: column;
     flex: 1;
@@ -149,6 +154,13 @@ p {
     .mini-slider {
         width: 400px;
     }
+    .card-text__title h1{
+        font-size: 20px;
+    }
+    .card-text__desc p{
+        font-size: 14px;
+    }
+
 }
 @media(max-width: 520px) {
 

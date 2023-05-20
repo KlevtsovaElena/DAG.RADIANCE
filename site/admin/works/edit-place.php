@@ -7,7 +7,7 @@ require_once('../../classes/autoload.php');
 $title = $_POST['title'];
 $shortDesc = $_POST['short-desc'];
 $fullDesc = $_POST['full-desc'];
-$price = $_POST['price'];
+$category = $_POST['category'];
 
 if(isset($_POST['id'])){
     $imgTitle = $_POST['img-title'];
@@ -107,12 +107,12 @@ $pdo = \Connection::getConnection();
 // если редактируем карточку, то данные UPDATE
 // если создаём новую - то INSERT
 if (isset($_POST['id'])) {
-    $sqlText = "UPDATE `places` SET `title`='$title', `short-desc`='$shortDesc', `full-desc`='$fullDesc', `price`='$price', `img-title`='$imgTitle', `img-carousel`='$json' WHERE `id`=$id";
+    $sqlText = "UPDATE `places` SET `title`='$title', `short-desc`='$shortDesc', `full-desc`='$fullDesc', `img-title`='$imgTitle', `img-carousel`='$json', `category`='$category' WHERE `id`=$id";
     
     //запись в базу
     $query = $pdo->query($sqlText);
 } else {
-    $sqlText = "INSERT INTO `places` (`title`, `short-desc`, `full-desc`, `price`, `img-title`, `img-carousel`) VALUES('$title', '$shortDesc', '$fullDesc', '$price', '$imgTitle', '$json')";
+    $sqlText = "INSERT INTO `places` (`title`, `short-desc`, `full-desc`, `img-title`, `img-carousel`, `category`) VALUES('$title', '$shortDesc', '$fullDesc', '$imgTitle', '$json', '$category')";
     
     // запись в базу
     $query = $pdo->query($sqlText);

@@ -44,9 +44,6 @@
                         <div class="card-item__desc">
                             <?= $place['short-desc']; ?>
                         </div>
-                        <div class="card-item__desc catalog-price">
-                            Стоимость: <span><?= $place['price']; ?> руб.</span>
-                        </div>
                         <!-- ЗАМЕНИТЬ НА ПЕРЕХОД НА НУЖНУЮ КАРТОЧКУ -->
                         <a href="" class="d-block"><button class="card-item__btn catalog-btn btn-yellow">Подробнее</button></a>
 
