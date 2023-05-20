@@ -15,7 +15,7 @@ main {
     padding: 30px 0;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, p {
     margin: 0;
 }
 
@@ -336,7 +336,7 @@ a {
     justify-content: center;
     flex-wrap: wrap;
     gap: 30px;
-    margin: 50px 50px 0px 50px;
+    margin: 0 auto;
 }
 
 .triangle {
@@ -344,7 +344,7 @@ a {
     background-image: url('../img/menu/triangle-light.png');
     background-size: cover;
     height: 200px;
-    width: 275px;
+    width: 283px;
 }
 
 .triangle > a {
@@ -358,11 +358,12 @@ a {
     text-align: center;
     color: #FFFFFF;
     font-weight: 600;
+    z-index: 4;
     transition: all 0.4s ease-in-out;
 }
 
 .triangle > a:hover {
-    opacity: 0.8;
+    opacity: 0.6;
 }
 
 header .footer-links {
@@ -862,7 +863,7 @@ header .footer-links {
 @media(max-width: 1324px) {
     .triangle {
         height: 145px;
-        width: 200px;
+        width: 205px;
     }
     .triangle > a {
         bottom: 30px;
@@ -1127,9 +1128,6 @@ header .footer-links {
     }
     .header-index__title {
         font-size: 18px;
-    }
-    .triangles-wrap {
-        margin: 0;
     }
 }
 

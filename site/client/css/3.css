@@ -43,11 +43,9 @@
     height: 600px;
 }
 
-.right {
-    text-align: right;
-    margin-right: 15px;
-    font-style: italic !important;
-    font-weight: 500 !important;
+.center {
+    text-align: center;
+    padding-top: 20px;
 }
 
 .verse {
@@ -74,14 +72,17 @@
     margin-top: 30px;
 }
 
+.float-right-with-small > p {
+    margin-top: 15px;
+}
+
 .fests11 {
     background-image: url('../img/section3/11.jpg');
     background-size: cover; 
     margin-top: inherit;
-    margin-left: 40px;
 }
 
-.left {
+/* .left {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -90,11 +91,40 @@
 .img-left {
     float: left;
     margin: 20px 40px 40px 0px;
+} */
+.two-columns {
+    display: flex;
+    gap: 50px;
+}
+
+.column-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.m-top {
+    margin-top: 27px;
 }
 
 .fests12 {
     background-image: url('../img/section3/12.jpg');
     background-size: cover; 
+}
+
+@media(max-width: 1450px) {
+    .fests11, .fests12 {
+        width: 454px;
+        height: 300px;
+    }
+}
+
+@media(max-width: 1150px) {
+    .two-columns {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0;
+    }
 }
 
 @media(max-width: 1000px) {
@@ -128,8 +158,8 @@
         width: 95%;
         height: 200px;
     }
-    .verse {
-        padding: 15px 15px 0 0;
+    .center {
+        padding-top: 5px;
     }
     .fests12 {
         width: 350px;
@@ -142,10 +172,18 @@
     }
 }
 
+@media(max-width: 600px) {
+    .fests11, .fests12 {
+        width: 350px;
+        height: 200px;
+    }
+}
+
 @media(max-width: 550px) {
     .fests8 {
         width: 375px;
         height: 250px;
+        margin: 0 auto;
     }
     .fests9, .fests10 {
         width: 375px;
@@ -173,8 +211,8 @@
 }
 
 @media(max-width: 450px) {
-    .fests12 {
-        width: 300px;
+    .fests11, .fests12 {
+        width: 200px;
         height: 150px;
     }
 }

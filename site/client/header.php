@@ -6,7 +6,7 @@
                 <div class="nav-items">
                     <ul>
                         <li><a href="geography-and-climate.php">О регионе</a></li>
-                        <li><a href="#">Помощь в организации отдыха</a></li>
+                        <li><a href="route.php">Помощь в организации отдыха</a></li>
                         <li><a href="housing.php">Где остановиться</a></li>
                         <li><a href="tours-catalog.php">Как отдохнуть</a></li>
                         <!-- <li><a href="#">Отзывы</a></li> -->
@@ -20,7 +20,7 @@
             <ul>
                 <li><a href="../index.php">Главная</a></li>
                 <li><a href="geography-and-climate.php">О регионе</a></li>
-                <li><a href="#">Помощь в организации отдыха</a></li>
+                <li><a href="route.php">Помощь в организации отдыха</a></li>
                 <li><a href="housing.php">Где остановиться</a></li>
                 <li><a href="tours-catalog.php">Как отдохнуть</a></li>
                 <!-- <li><a href="#">Отзывы</a></li> -->

@@ -10,6 +10,55 @@ iframe {
     margin: 100px auto;
 }
 
+.img-plane {
+    background-image: url('../img/route/1.jpg');
+    background-size: cover;
+}
+
+.img-train {
+    background-image: url('../img/route/2.jpg');
+    background-size: cover;
+}
+
+.img-car {
+    background-image: url('../img/route/3.jpg');
+    background-size: cover;
+}
+
+.circle {
+    width: 50%;
+    height: 70%;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 30%;
+    border-radius: 50%;
+    opacity: 0;
+    text-align: center;
+    transition: all 0.5s ease-in-out;
+}
+
+.triangle:hover .circle {
+    opacity: 0.6;
+}
+
+.route > a:hover {
+    color: #FFD1A0 !important;
+    opacity: 1;
+}
+
+.bus1 {
+    background-image: url('../img/route/11.jpg');
+    background-size: cover;
+}
+
+.bus2 {
+    background-image: url('../img/route/7.jpg');
+    background-size: cover;
+}
+
 .auto1 {
     background-image: url('../img/route/9.jpg');
     background-size: cover;
@@ -25,6 +74,7 @@ iframe {
     width: 500px;
     margin: 0 auto;
 }
+
 
 @media(max-width: 1450px) {
     .bus, .rental {
@@ -89,12 +139,6 @@ iframe {
     .two {
         height: 150px;
         width: 250px;
-    }
-}
-
-@media(max-width: 400px) {
-    .article-text {
-        padding: 0 10px;
     }
 }
 

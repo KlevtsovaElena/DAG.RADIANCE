@@ -39,15 +39,21 @@
             </ul>
         </div>
 
-        <!-- <section class="article">
+        <section class="article">
             <div class="article-container inner_section">
-            <div class="triangles-wrap">
-                <div class="triangle"><a href="#about">Самолет</a></div>
-                <div class="triangle"><a href="/client/route.php">Поезд</a></div>
-                <div class="triangle"><a href="/client/housing.php">Авто</a></div>
+                <div class="triangles-wrap">
+                    <div class="triangle route"><a href="#plane">Самолет</a>
+                        <div class="circle img-plane"></div>
+                    </div>
+                    <div class="triangle route"><a href="#train">Поезд</a>
+                        <div class="circle img-train"></div>
+                    </div>
+                    <div class="triangle route"><a href="#car">Авто</a>
+                        <div class="circle img-car"></div>
+                    </div>
+                </div>
             </div>
-            </div>
-        </section> -->
+        </section>
 
         <section class="article">
             <div class="article-container inner_section">
@@ -111,14 +117,17 @@
     <section class="article">
         <div class="article-container">
             <div class="article-text">
-                <div class="section-first d-flex">
-                    <img class="bus" src="./img/route/7.jpg" alt="">
+                <div class="section-first d-flex">               
                     <div class="article-text gap">
                         <div class="article-text__title">На автобусе</div>
                         <p>
                             Добраться из Москвы в Махачкалу можно за 31 час и 4000 RUB, автобусы отправляются ежедневно с автостанции «Котельники». По понедельникам с автовокзала «Саларьево» уходят автобусы в Дербент, билеты стоят от 3200 RUB, поездка длится 41 час.
                             Дорога на автобусе из Питера в Махачкалу занимает 39–41 час, цена билетов — около 5000 RUB. Точки отправления — ТРК «Лондон Молл» и метро «Балтийская».
                         </p>
+                        <div class="row">
+                            <div class="bus1 img-section one-of"></div>
+                            <div class="bus2 img-section one-of"></div>
+                    </div>
                     </div>
                 </div>
             </div>
