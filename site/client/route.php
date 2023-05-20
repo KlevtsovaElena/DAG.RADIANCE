@@ -11,6 +11,7 @@
     <title>DAG.RADIANCE</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/1.css">
+    <link rel="stylesheet" href="css/2.css">
     <link rel="stylesheet" href="css/route.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -133,20 +134,38 @@
                         <div class="article-text__title">Прокат автомобилей</div>
                         <p>
                             В Махачкале есть пункты проката автомобилей. При необходимости вам доставят арендованное авто прямо в аэропорт. Планируя поездку по высокогорным районам республики, лучше взять напрокат хороший внедорожник.
-                            <br><br>
-                            Самая простая альтернатива – поездка в Дагестан с организованной экскурсионной группой. О транспорте позаботятся организаторы тура, а вы сможете расслабиться и наслаждаться видами из окна, а также колоритом дагестанских мест.
                         </p>
+                        <a href="https://prokatavto05.ru/" target="_blank" class="card-btn block"><button class="card-item__btn btn-big btn-theme">Арендовать</button></a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <section class="article">
+        <div class="article-container">
+            <div class="article-text">
+                <div class="section-first d-flex">
+                    <div class="article-text gap">
+                        <div class="article-text__title">Организованная поездка с экскурсионной группой</div>
+                        <p>
+                            Самая простая альтернатива – поездка в Дагестан с организованной экскурсионной группой. О транспорте позаботятся организаторы тура, а вы сможете расслабиться и наслаждаться видами из окна, а также колоритом дагестанских мест.
+                        </p>
+                        <div class="row">
+                            <div class="auto1 one-of two"></div>
+                            <div class="auto2 one-of two"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="two-buttons">
+                <a href="../index.php" class="card-btn"><button class="card-item__btn btn-big btn-theme">На главную</button></a>
+                <a href="housing.php" class="card-btn"><button class="card-item__btn btn-big btn-theme">Далее</button></a>
+            </div>
+    </section>
         
 
-    <div class="two-buttons">
-            <a href="../index.php" class="card-btn"><button class="card-item__btn btn-big btn-theme">На главную</button></a>
-            <a href="housing.php" class="card-btn"><button class="card-item__btn btn-big btn-theme">Далее</button></a>
-        </div>
     </main>
 
     <?php include "footer.php";?>

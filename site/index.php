@@ -24,6 +24,51 @@
     <!-- HEADER -->
     <header class="header index">
 
+        <nav class="nav">
+            <div class="nav-wrapper d-flex">
+                <button class="btn-burger"><span class="nav-burger"></span></button>
+            </div>            
+        </nav>
+        <div class="mobile-nav">
+            <ul>
+                <li><a href="index.php">Главная</a></li>
+                <li><a href="client/geography-and-climate.php">О регионе</a></li>
+                <li><a href="client/route.php">Помощь в организации отдыха</a></li>
+                <li><a href="client/housing.php">Где остановиться</a></li>
+                <li><a href="client/tours-catalog.php">Как отдохнуть</a></li>
+                <!-- <li><a href="#">Отзывы</a></li> -->
+                <li><a href="client/contacts.php">Контакты</a></li>
+                <div class="footer-links">
+                    <?php 
+                        $data2 = Contacts::getLinesApi(); 
+                        $contact = (object)$data2[0];
+                    ?>
+                    <a href="tel:+<?= $contact->phone;?>" class="linkPic" target="_blank"><img src="client/img/icons/tel.png" alt="Позвонить" class="linkPic"></a>  
+                    <a href="mailto:<?= $contact->mail;?>" class="linkPic" target="_blank"><img src="client/img/icons/mail.jpg" alt="Написать" class="linkPic"></a>
+                    <a href="https://vk.com/<?= $contact->vk;?>" target="_blank"><img src="client/img/icons/vk.jpg" alt="Написать в VK" class="linkPic"></a>  
+                    <a href="tg://resolve?domain=<?= $contact->telegram;?>" target="_blank"><img src="client/img/icons/tg.png" alt="Написать в телеграмм" class="linkPic"></a> 
+                    <a href="whatsapp://send?phone=<?= $contact->whatsapp;?>" target="_blank"><img src="client/img/icons/wtsp.png" alt="Написать в whatsapp" class="linkPic"></a>               
+                </div>
+            </ul>
+        </div>
+        <!-- <div class="wrap-with-social-icons">
+        <div class="footer-links">
+            <?php 
+                $data = Contacts::getLinesApi(); 
+                $contact = (object)$data[0];
+            ?>
+                <a href="tel:+<?= $contact->phone;?>" class="linkPic" target="_blank"><img src="client/img/icons/tel.png" alt="Позвонить" class="linkPic"></a>  
+                <a href="mailto:<?= $contact->mail;?>" class="linkPic" target="_blank"><img src="client/img/icons/mail.jpg" alt="Написать" class="linkPic"></a>
+                <a href="https://vk.com/<?= $contact->vk;?>" target="_blank"><img src="client/img/icons/vk.jpg" alt="Написать в VK" class="linkPic"></a>  
+                <a href="tg://resolve?domain=<?= $contact->telegram;?>" target="_blank"><img src="client/img/icons/tg.png" alt="Написать в телеграмм" class="linkPic"></a> 
+                <a href="whatsapp://send?phone=<?= $contact->whatsapp;?>" target="_blank"><img src="client/img/icons/wtsp.png" alt="Написать в whatsapp" class="linkPic"></a>               
+        </div> -->
+
+        <div class="header-index">
+            <p class="header-index__desc">DAG.RADIANCE</p>
+            <div class="header-index__title">welcome to Russia</div>
+
+        </div>
         <div class="right-menu d-flex">
             <div class="triangles-wrap">
                 <div class="triangle"><a href="#about">Про Дагестан</a></div>
@@ -70,51 +115,6 @@
                 </ul>
 
             </div>
-        </div>
-        <nav class="nav">
-            <div class="nav-wrapper d-flex">
-                <button class="btn-burger"><span class="nav-burger"></span></button>
-            </div>            
-        </nav>
-        <div class="mobile-nav">
-            <ul>
-                <li><a href="index.php">Главная</a></li>
-                <li><a href="client/geography-and-climate.php">О регионе</a></li>
-                <li><a href="client/route.php">Помощь в организации отдыха</a></li>
-                <li><a href="client/housing.php">Где остановиться</a></li>
-                <li><a href="client/tours-catalog.php">Как отдохнуть</a></li>
-                <!-- <li><a href="#">Отзывы</a></li> -->
-                <li><a href="client/contacts.php">Контакты</a></li>
-                <div class="footer-links">
-                <?php 
-                    $data2 = Contacts::getLinesApi(); 
-                    $contact = (object)$data2[0];
-                ?>
-                    <a href="tel:+<?= $contact->phone;?>" class="linkPic" target="_blank"><img src="client/img/icons/tel.png" alt="Позвонить" class="linkPic"></a>  
-                    <a href="mailto:<?= $contact->mail;?>" class="linkPic" target="_blank"><img src="client/img/icons/mail.jpg" alt="Написать" class="linkPic"></a>
-                    <a href="https://vk.com/<?= $contact->vk;?>" target="_blank"><img src="client/img/icons/vk.jpg" alt="Написать в VK" class="linkPic"></a>  
-                    <a href="tg://resolve?domain=<?= $contact->telegram;?>" target="_blank"><img src="client/img/icons/tg.png" alt="Написать в телеграмм" class="linkPic"></a> 
-                    <a href="whatsapp://send?phone=<?= $contact->whatsapp;?>" target="_blank"><img src="client/img/icons/wtsp.png" alt="Написать в whatsapp" class="linkPic"></a>               
-            </div>
-            </ul>
-        </div>
-        <div class="wrap-with-social-icons">
-        <div class="footer-links">
-            <?php 
-                $data = Contacts::getLinesApi(); 
-                $contact = (object)$data[0];
-            ?>
-                <a href="tel:+<?= $contact->phone;?>" class="linkPic" target="_blank"><img src="client/img/icons/tel.png" alt="Позвонить" class="linkPic"></a>  
-                <a href="mailto:<?= $contact->mail;?>" class="linkPic" target="_blank"><img src="client/img/icons/mail.jpg" alt="Написать" class="linkPic"></a>
-                <a href="https://vk.com/<?= $contact->vk;?>" target="_blank"><img src="client/img/icons/vk.jpg" alt="Написать в VK" class="linkPic"></a>  
-                <a href="tg://resolve?domain=<?= $contact->telegram;?>" target="_blank"><img src="client/img/icons/tg.png" alt="Написать в телеграмм" class="linkPic"></a> 
-                <a href="whatsapp://send?phone=<?= $contact->whatsapp;?>" target="_blank"><img src="client/img/icons/wtsp.png" alt="Написать в whatsapp" class="linkPic"></a>               
-        </div>
-
-        <div class="header-index">
-            <p class="header-index__desc">DAG.RADIANCE</p>
-            <div class="header-index__title">welcome to Russia</div>
-
         </div>
         <!-- </div> -->
         
