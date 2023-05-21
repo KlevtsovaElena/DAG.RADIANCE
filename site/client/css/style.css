@@ -276,7 +276,7 @@ a {
 }
 
 .mobile-nav a {
-    color: #F7CE9D;
+    font-weight: 600;
 }
 
 .mobile-nav ul{
@@ -327,6 +327,46 @@ a {
 .mobile-nav-close .nav-burger::before {
     transform: rotate(-45deg);
     top: 0;
+}
+
+
+/* HEADER */
+/* выпадающее мобильное меню */
+
+.mobile-nav > ul > li {
+    transition: all 0.4s ease-in-out;
+}
+
+.mobile-submenu {
+    display: none;
+    padding-left: 16px;
+    margin: 15px 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.mobile-submenu > li {
+    list-style-type: circle;
+    margin-bottom: 5px;
+    transition: all 0.4s ease-in-out;
+}
+
+.mobile-submenu > li > a {
+    color: #fff;
+}
+
+.mobile-submenu > li:hover {
+    opacity: 0.6;
+}
+
+.li-trigger {
+    transition: all 0.5s ease-in-out;
+}
+
+.li-trigger:focus > .mobile-submenu,
+.li-trigger:active > .mobile-submenu,
+.li-trigger:hover > .mobile-submenu,
+.mobile-submenu:hover {
+    display: block;
 }
 
 /* HEADER INDEX*/

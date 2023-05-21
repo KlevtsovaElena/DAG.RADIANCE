@@ -41,31 +41,30 @@
         </nav>
         <div class="mobile-nav">
             <ul>
-                <li><a href="../index.php">Главная</a></li>
-                <li><a href="geography-and-climate.php">О регионе</a>
-                    <ul>
-                        <li><a href="geography-and-climate.php#geography">География и климат</a></li>
+                <li class="li-trigger"><a href="#">О регионе</a>
+                    <ul class="mobile-submenu">
+                        <li><a href="geography-and-climate.php">География и климат</a></li>
                         <li><a href="national-pecularities.php">Особенности</a></li>
                         <li><a href="fests-and-traditions.php">Праздники и традиции</a></li>
                     </ul>
                 </li>
-                <li><a href="route.php">Помощь в организации отдыха</a>
-                    <ul>
+                <li class="li-trigger"><a href="#">Помощь в организации отдыха</a>
+                    <ul class="mobile-submenu">
                         <li><a href="route.php#plane">Авиаперелет</a></li>
                         <li><a href="route.php#train">Ж/д проезд</a></li>
                         <li><a href="route.php#car">Авто</a></li>
                     </ul>
                 </li>
-                <li><a href="housing.php">Где остановиться</a>
-                    <ul>
+                <li class="li-trigger"><a href="#">Где остановиться</a>
+                    <ul class="mobile-submenu">
                         <li><a href="housing.php#hotels">Отели</a></li>
                         <li><a href="housing.php#guesthouses">Гостевые домики</a></li>
                     </ul>
                 </li>
-                <li><a href="places-catalog.php">Как отдохнуть</a>
-                    <ul>
-                        <li><a href="tours-catalog.php">Туры</a></li>
+                <li class="li-trigger"><a href="#">Как отдохнуть</a>
+                    <ul class="mobile-submenu">
                         <li><a href="places-catalog.php">Достопримечательности</a></li>
+                        <li><a href="tours-catalog.php">Туры</a></li>
                         <li><a href="#">Рестораны</a></li>
                     </ul>
                 </li>

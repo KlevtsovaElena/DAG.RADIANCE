@@ -31,8 +31,35 @@
         </nav>
         <div class="mobile-nav">
             <ul>
-                <li><a href="index.php">Главная</a></li>
-                <li><a href="client/geography-and-climate.php">О регионе</a>
+                <li class="li-trigger"><a href="#">О регионе</a>
+                    <ul class="mobile-submenu">
+                        <li><a href="client/geography-and-climate.php">География и климат</a></li>
+                        <li><a href="client/national-pecularities.php">Особенности</a></li>
+                        <li><a href="client/fests-and-traditions.php">Праздники и традиции</a></li>
+                    </ul>
+                </li>
+                <li class="li-trigger"><a href="#">Помощь в организации отдыха</a>
+                    <ul class="mobile-submenu">
+                        <li><a href="client/route.php#plane">Авиаперелет</a></li>
+                        <li><a href="client/route.php#train">Ж/д проезд</a></li>
+                        <li><a href="client/route.php#car">Авто</a></li>
+                    </ul>
+                </li>
+                <li class="li-trigger"><a href="#">Где остановиться</a>
+                    <ul class="mobile-submenu">
+                        <li><a href="client/housing.php#hotels">Отели</a></li>
+                        <li><a href="client/housing.php#guesthouses">Гостевые домики</a></li>
+                    </ul>
+                </li>
+                <li class="li-trigger"><a href="#">Как отдохнуть</a>
+                    <ul class="mobile-submenu">
+                        <li><a href="client/places-catalog.php">Достопримечательности</a></li>
+                        <li><a href="client/tours-catalog.php">Туры</a></li>
+                        <li><a href="#">Рестораны</a></li>
+                    </ul>
+                </li>
+                <!-- Развернутая версия мобильного меню без выпадающих пунктов -->
+                <!-- <li><a href="client/geography-and-climate.php">О регионе</a>
                     <ul>
                         <li><a href="client/geography-and-climate.php#geography">География и климат</a></li>
                         <li><a href="client/national-pecularities.php">Особенности</a></li>
@@ -58,7 +85,7 @@
                         <li><a href="client/places-catalog.php">Достопримечательности</a></li>
                         <li><a href="#">Рестораны</a></li>
                     </ul>
-                </li>
+                </li> -->
                 <!-- <li><a href="#">Отзывы</a></li> -->
                 <li><a href="client/contacts.php">Контакты</a></li>
                 <div class="burger-links">
