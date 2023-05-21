@@ -78,13 +78,13 @@
             </div>
         </section>
     
-        <section class="article" id="train">
+        <section class="article">
             <div class="article-container">
                 <div class="article-text">
                     <div class="section-first d-flex">
                         <img class="train" src="./img/route/5.jpg" alt="">
                         <div class="article-text gap">
-                            <div class="article-text__title">На поезде</div>
+                            <div class="article-text__title" id="train">На поезде</div>
                             <p>
                                 Еще один вариант – поездка в Махачкалу по железной дороге. Добраться в столицу Республики Дагестан на поезде можно из Москвы, Санкт-Петербурга, Ростова-на-Дону, Тюмени. Из Москвы регулярно курсирует поезд в Дербент.
                                 Путешествовать по Дагестану можно на авто, рейсовых автобусах, микроавтобусах, такси, попутках. Из Махачкалы можно добраться на электричках в Дербент, Хасавюрт, Кизилюрт, Избербаш, Манас.
@@ -97,12 +97,12 @@
         </section>
 
     <div class="photo-back">
-        <section class="article" id="car">
+        <section class="article">
             <div class="article-container">
                 <div class="article-text">
                     <div class="section-first d-flex">
                         <div class="article-text">
-                            <div class="article-text__title">На автомобиле</div>
+                            <div class="article-text__title" id="car">На автомобиле</div>
                             <p>
                                 Москву и Махачкалу разделяют чуть больше 1800 км, самый короткий путь — по трассе P-22 «Каспий» через Тамбов, Волгоград и Элисту. Если ехать без остановок, поездка займет около суток, бензин обойдется в 6500–7000 RUB. Дорога до Дербента длиннее на 130 км и 1,5 часа. Чтобы доехать в Махачкалу из Петербурга, придется преодолеть 2500 км и потратить на дорогу около 30 часов.
                             </p>

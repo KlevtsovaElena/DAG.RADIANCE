@@ -16,4 +16,13 @@ btnBurger.addEventListener('click', function() {
 
 })
 
-/* **************** */
+/* ******** СКРЫТЬ/ПОКАЗАТЬ выпадающие пункты в Mobile Menu ******** */
+
+let triggers = document.querySelectorAll('.li-trigger');
+
+for (let i = 0; i < triggers.length; i++) {
+    triggers[i].addEventListener('click', function(){
+    document.querySelectorAll('.mobile-submenu')[i].classList.toggle('open');
+    document.querySelectorAll('.arrow')[i].classList.toggle('active');
+  });
+}
