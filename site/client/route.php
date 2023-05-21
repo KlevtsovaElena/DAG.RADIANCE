@@ -29,6 +29,7 @@
     <!-- /HEADER -->
 
     <main>
+        <div class="title-catalog-page">Как добраться</div>
         <div class="breadcrumbs-container">
             <ul class="breadcrumbs-list">
                 <li>
@@ -42,13 +43,13 @@
         <section class="article">
             <div class="article-container inner_section">
                 <div class="triangles-wrap">
-                    <div class="triangle route"><a href="#plane">Самолет</a>
+                    <div class="triangle with-img"><a href="#plane">Самолет</a>
                         <div class="circle img-plane"></div>
                     </div>
-                    <div class="triangle route"><a href="#train">Поезд</a>
+                    <div class="triangle with-img"><a href="#train">Поезд</a>
                         <div class="circle img-train"></div>
                     </div>
-                    <div class="triangle route"><a href="#car">Авто</a>
+                    <div class="triangle with-img"><a href="#car">Авто</a>
                         <div class="circle img-car"></div>
                     </div>
                 </div>

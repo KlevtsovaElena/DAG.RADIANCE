@@ -10,6 +10,7 @@
     <title>DAG.RADIANCE</title>
 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/1.css">
     <link rel="stylesheet" href="css/catalog.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -39,7 +40,69 @@
             </div>
 
             <!-- Достопримечательности ГОРЫ -->
-            <div class="category"><h2>Горы</h2></div>
+
+            <section class="article">
+                <div class="article-container inner_section">
+                    <div class="triangles-wrap">
+                        <div class="triangle with-img"><a href="#mountains">Горы</a>
+                            <div class="circle img-mountains"></div>
+                        </div>
+                        <div class="triangle with-img"><a href="#sea">Каспийское<br>море</a>
+                            <div class="circle img-sea"></div>
+                        </div>
+                        <div class="triangle with-img"><a href="#desert">Пустыня</a>
+                            <div class="circle img-desert"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="article">
+                <div class="article-container">
+                    <div class="article-text">
+                        <div class="section-first">
+                            <div class="text-left-img-right d-flex gap">
+                                <div class="title-text">
+                                    <div class="article-text__title">Горы</div>
+                                    <p>
+                                        <i>Да, горы прекрасные и опасные, снежные вершины, каменные великаны... Они чаруют и пугают своей холодной молчаливой неизвестностью. Что таят эти перевалы, пропасти и ледяные водопады?<br>Жизнь или смерть, счастье или разочарование...
+                                        Скорее жизнь и надежду!!! СВОБОДУ, мечту о бесконечном...</i>
+                                        <p class="text-right">Алексей Филатов</p>
+                                    </p>
+                                </div>
+                                <img class="mountains" src="./img/places-catalog/4.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="article">
+                <div class="article-container">
+                    <div class="article-text">
+                        <div class="section-first">
+                            <div class="article-text__title">Топ-10 самых высоких гор в Дагестане</div>
+                            <div class="text-left-img-right d-flex gap">
+                                <ul class="top-10_text">
+                                    <li>10. Ачигсырт, 4000 м</li>
+                                    <li>9. Балиал, 4007 м</li>
+                                    <li>8. Ярудага, 4016 м</li>
+                                    <li>7. Рагдан, 4020 м</li>
+                                    <li>6. Чарындаг, 4084 м</li>
+                                    <li>5. Деавгай, 4116 м</li>
+                                    <li>4. Шалбуздаг, 4142 м</li>
+                                    <li>3. Аддала-Шухгельмеэр, 4152 м</li>
+                                    <li>2. Диклосмта, 4285 м</li>
+                                    <li>1. Базардюзю, 4466 м</li>
+                                </ul>
+                                <img class="top-10_img" src="./img/places-catalog/top-10.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="category" id="mountains"><h2>Горы</h2></div>
             <div class="catalog-container">
             <?php $data = Place::getLinesApiCategory("горы");
             foreach ($data as $place) { ?>
@@ -58,7 +121,7 @@
             </div>
 
             <!-- Достопримечательности МОРЕ, ВОДА -->
-            <div class="category"><h2>Море, реки, водохранилища</h2></div>
+            <div class="category" id="sea"><h2>Море, реки, водохранилища</h2></div>
             <div class="catalog-container">
             <?php $data = Place::getLinesApiCategory("вода");
             foreach ($data as $place) { ?>
@@ -77,7 +140,7 @@
             </div>
 
             <!-- Достопримечательности Пустыня -->
-            <div class="category"><h2>Пустыня</h2></div>
+            <div class="category" id="desert"><h2>Пустыня</h2></div>
             <div class="catalog-container">
             <?php $data = Place::getLinesApiCategory("песок");
             foreach ($data as $place) { ?>

@@ -130,7 +130,7 @@
                     <div id="about" class="article-text__title">Уникальная природа</div>
                     <div class="article-text__desc">Горы, море и бархан!</div>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse iure, debitis repudiandae cum saepe corrupti facilis. Explicabo omnis fugit exercitationem rem, eligendi quo incidunt neque vitae corrupti amet sunt aliquid.</p>
-                    <a href="client/geography-and-climate.php" class="article-text__more"> подробнее</a>
+                    <a href="client/places-catalog.php" class="article-text__more"> подробнее</a>
                 </div>
                 <div class="article-img">
                     <a href="client/geography-and-climate.php">

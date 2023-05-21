@@ -5,6 +5,44 @@
     margin: 50px auto;
 }
 
+.img-mountains {
+    background-image: url('../img/places-catalog/1.jpg');
+    background-size: cover;
+}
+
+.img-sea {
+    background-image: url('../img/places-catalog/2.jpg');
+    background-size: cover;
+}
+
+.img-desert {
+    background-image: url('../img/places-catalog/3.jpg');
+    background-size: cover;
+}
+
+.text-left-img-right {
+    gap: 30px;
+    align-items: center;
+}
+
+.top-10_text {
+    display: block;
+}
+
+.mountains, .top-10_img {
+    width: 600px;
+    height: 100%;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.top-10_text > li {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
 .catalog-price {
     margin-top: 10px;
 }
@@ -15,5 +53,63 @@
 
 .category {
     text-align: center;
+}
 
+@media(max-width: 1450px) {
+    .text-left-img-right {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .top-10_text {
+        width: inherit;
+    }
+    .mountains, .top-10_img {
+        width: 1000px;
+    }
+}
+
+@media(max-width: 1250px) {
+    .mountains, .top-10_img {
+        width: 800px;
+    }
+}
+
+@media(max-width: 1100px) {
+    .mountains, .top-10_img {
+        width: 700px;
+    }
+}
+
+@media(max-width: 900px) {
+    .mountains, .top-10_img {
+        width: 600px;
+    }
+    .top-10_text {
+        font-size: 14px;
+    }
+}
+
+@media(max-width: 750px) {
+    .mountains, .top-10_img {
+        width: 500px;
+        margin: 0 auto;
+    }
+}
+
+@media(max-width: 650px) {
+    .mountains, .top-10_img {
+        width: 400px;
+    }
+}
+
+@media(max-width: 520px) {
+    .mountains, .top-10_img {
+        width: 100%;
+    }
+}
+
+@media(max-width: 450px) {
+    .top-10_text {
+        font-size: 12px;
+    }
 }

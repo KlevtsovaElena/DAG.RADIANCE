@@ -205,7 +205,6 @@
     }
 }
 
-
 @media(max-width: 400px) {
     .article-text {
         padding: 0 10px;
@@ -216,6 +215,10 @@
     .article-text {
         padding-right: 10px;
         padding-left: 10px;
+    }
+    .triangle {
+        height: 100px;
+        width: 150px;
     }
     .one {
         width: 200px !important;

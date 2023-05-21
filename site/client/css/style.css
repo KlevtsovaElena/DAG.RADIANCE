@@ -375,6 +375,30 @@ a {
     opacity: 0.6;
 }
 
+.circle {
+    width: 50%;
+    height: 70%;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 30%;
+    border-radius: 50%;
+    opacity: 0;
+    text-align: center;
+    transition: all 0.5s ease-in-out;
+}
+
+.triangle:hover .circle {
+    opacity: 0.6;
+}
+
+.with-img > a:hover {
+    color: #FFD1A0 !important;
+    opacity: 1;
+}
+
 header .footer-links {
     margin-left: 60px;
     /* margin-top: calc((0.5*100vw - 80px)/4); */
@@ -411,6 +435,7 @@ header .footer-links {
 
 .breadcrumbs-list {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     font-weight: 600;
 }
@@ -1243,6 +1268,7 @@ header .footer-links {
     }
     .title-catalog-page {
         display: block;
+        margin-bottom: 30px;
     }
 }
 
