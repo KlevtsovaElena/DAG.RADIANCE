@@ -61,7 +61,7 @@
                 </li>
                 <!-- <li><a href="#">Отзывы</a></li> -->
                 <li><a href="client/contacts.php">Контакты</a></li>
-                <div class="footer-links">
+                <div class="burger-links">
                     <?php 
                         $data2 = Contacts::getLinesApi(); 
                         $contact = (object)$data2[0];
