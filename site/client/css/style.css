@@ -271,6 +271,7 @@ a {
     background-color: rgb(41, 12, 8, 0.9);
     transition: all 0.5s ease-in-out;
     z-index: 9;
+    overflow: auto;
 }
 
 .mobile-nav a {
@@ -613,6 +614,9 @@ header .footer-links {
     background-color: #FFFFFF;
 }
 
+.btn-long {
+    font-size: 14px;
+}
 .card-carousel {
     width: 100%;
     column-gap: 10px;
@@ -1298,6 +1302,9 @@ header .footer-links {
     .title-catalog-page {
         display: block;
         margin-bottom: 30px;
+    }
+    .btn-long {
+        width: 200px;
     }
 }
 

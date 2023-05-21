@@ -42,30 +42,30 @@
         <div class="mobile-nav">
             <ul>
                 <li><a href="../index.php">Главная</a></li>
-                <li><a href="client/geography-and-climate.php">О регионе</a>
+                <li><a href="geography-and-climate.php">О регионе</a>
                     <ul>
-                        <li><a href="client/geography-and-climate.php#geography">География и климат</a></li>
-                        <li><a href="client/national-pecularities.php">Особенности</a></li>
-                        <li><a href="client/fests-and-traditions.php">Праздники и традиции</a></li>
+                        <li><a href="geography-and-climate.php#geography">География и климат</a></li>
+                        <li><a href="national-pecularities.php">Особенности</a></li>
+                        <li><a href="fests-and-traditions.php">Праздники и традиции</a></li>
                     </ul>
                 </li>
-                <li><a href="client/route.php">Помощь в организации отдыха</a>
+                <li><a href="route.php">Помощь в организации отдыха</a>
                     <ul>
-                        <li><a href="client/route.php#plane">Авиаперелет</a></li>
-                        <li><a href="client/route.php#train">Ж/д проезд</a></li>
-                        <li><a href="client/route.php#car">Авто</a></li>
+                        <li><a href="route.php#plane">Авиаперелет</a></li>
+                        <li><a href="route.php#train">Ж/д проезд</a></li>
+                        <li><a href="route.php#car">Авто</a></li>
                     </ul>
                 </li>
-                <li><a href="client/housing.php">Где остановиться</a>
+                <li><a href="housing.php">Где остановиться</a>
                     <ul>
-                        <li><a href="client/housing.php#hotels">Отели</a></li>
-                        <li><a href="client/housing.php#guesthouses">Гостевые домики</a></li>
+                        <li><a href="housing.php#hotels">Отели</a></li>
+                        <li><a href="housing.php#guesthouses">Гостевые домики</a></li>
                     </ul>
                 </li>
-                <li><a href="#tours">Как отдохнуть</a>
+                <li><a href="places-catalog.php">Как отдохнуть</a>
                     <ul>
-                        <li><a href="client/tours-catalog.php">Туры</a></li>
-                        <li><a href="client/places-catalog.php">Достопримечательности</a></li>
+                        <li><a href="tours-catalog.php">Туры</a></li>
+                        <li><a href="places-catalog.php">Достопримечательности</a></li>
                         <li><a href="#">Рестораны</a></li>
                     </ul>
                 </li>

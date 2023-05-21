@@ -21,6 +21,8 @@ if (countImgSmall >= 4) {
   showImgSmall = 1;
   showImgSmall1000 = 1;
   showImgSmall650 = 1;
+  document.querySelector(".mini-slider").classList.add("two-element");
+  document.querySelector(".mini-slider").classList.remove("mini-slider");
 }
 
 

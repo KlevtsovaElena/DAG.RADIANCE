@@ -85,7 +85,9 @@ p {
 .mini-slider {
     width: 650px;
 }
-
+.two-element {
+    width: 250px
+}
 .card-item {
     height: 450px;
 }
@@ -209,7 +211,7 @@ p {
     .card-item_small {
         height: 55px;
     }
-    .mini-slider {
+    .mini-slider, .two-element {
         width: 200px;
     }
     .one-img-gallery {
@@ -220,6 +222,9 @@ p {
 
 @media(max-width: 350px) {
     .mini-slider .slick-list {
+        display: none;
+    }
+    .two-element .slick-list {
         display: none;
     }
     .card-container {
