@@ -266,7 +266,7 @@ a {
     top:0;
     right: -320px;
     width: 290px;
-    height: 100%;
+    height: calc(100vh - 70px);
     padding: 70px 15px;
     background-color: rgb(41, 12, 8, 0.9);
     transition: all 0.5s ease-in-out;

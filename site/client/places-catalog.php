@@ -84,16 +84,16 @@
                             <div class="article-text__title">Топ-10 самых высоких гор в Дагестане</div>
                             <div class="text-left-img-right d-flex gap">
                                 <ul class="top-10_text">
-                                    <li>10. Ачигсырт, 4000 м</li>
-                                    <li>9. Балиал, 4007 м</li>
-                                    <li>8. Ярудага, 4016 м</li>
-                                    <li>7. Рагдан, 4020 м</li>
-                                    <li>6. Чарындаг, 4084 м</li>
-                                    <li>5. Деавгай, 4116 м</li>
-                                    <li>4. Шалбуздаг, 4142 м</li>
-                                    <li>3. Аддала-Шухгельмеэр, 4152 м</li>
-                                    <li>2. Диклосмта, 4285 м</li>
-                                    <li>1. Базардюзю, 4466 м</li>
+                                    <li><a href="https://top10a.ru/samye-vysokie-gory-v-dagestane.html#10_4000" target="_blank">10. Ачигсырт, 4000 м</a></li>
+                                    <li><a href="https://top10a.ru/samye-vysokie-gory-v-dagestane.html#9_4007" target="_blank">9. Балиал, 4007 м</a></li>
+                                    <li><a href="https://top10a.ru/samye-vysokie-gory-v-dagestane.html#8_4016" target="_blank">8. Ярудага, 4016 м</a></li>
+                                    <li><a href="https://top10a.ru/samye-vysokie-gory-v-dagestane.html#7_4020" target="_blank">7. Рагдан, 4020 м</a></li>
+                                    <li><a href="https://top10a.ru/samye-vysokie-gory-v-dagestane.html#6_4084" target="_blank">6. Чарындаг, 4084 м</a></li>
+                                    <li><a href="https://top10a.ru/samye-vysokie-gory-v-dagestane.html#5_4116" target="_blank">5. Деавгай, 4116 м</a></li>
+                                    <li><a href="https://top10a.ru/samye-vysokie-gory-v-dagestane.html#4_4142" target="_blank">4. Шалбуздаг, 4142 м</a></li>
+                                    <li><a href="https://top10a.ru/samye-vysokie-gory-v-dagestane.html#3_-_4152" target="_blank">3. Аддала-Шухгельмеэр, 4152 м</a></li>
+                                    <li><a href="https://top10a.ru/samye-vysokie-gory-v-dagestane.html#2_4285" target="_blank">2. Диклосмта, 4285 м</a></li>
+                                    <li><a href="https://top10a.ru/samye-vysokie-gory-v-dagestane.html#1_4466" target="_blank">1. Базардюзю, 4466 м</a></li>
                                 </ul>
                                 <img class="top-10_img" src="./img/places-catalog/top-10.jpg" alt="">
                             </div>
