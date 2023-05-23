@@ -64,6 +64,7 @@
                         <p>
                         <div class="img-carousel">ИЗОБРАЖЕНИЯ ДЛЯ КАРУСЕЛИ МЕСТА
                             <div>(Рекомендованное количество от 3 изображений)</div>
+                            <div>(Рекомендованные пропорции 1:2)</div>
                             <?php if ($data[0]['img-carousel'] !== "[]" && $data[0]['img-carousel'] !== NULL) {
                                 $imgCarousel = json_decode($data[0]['img-carousel'], true);
                                 for ($i = 0; $i < count($imgCarousel); $i++) { ?>
@@ -107,7 +108,7 @@
                         <p>Название места</p><input type="text" id="title" name="title" value="">
                         <p>Краткое описание</p><textarea id="short-desc" name="short-desc"></textarea>
                         <p>Полное описание</p><textarea id="full-desc" name="full-desc"></textarea>
-                        <p>Категория</p><input type="text" id="category" name="category" value="">                      
+                        <p>Категория</p><input type="text" id="category" name="category" value="нет">                      
 
                         <!-- картинка для маленькой карточки -->
                         <p>
@@ -121,6 +122,7 @@
                         <p>
                         <div class="img-carousel">ИЗОБРАЖЕНИЯ ДЛЯ КАРУСЕЛИ МЕСТА
                             <div>(Рекомендованное количество от 3 изображений)</div>
+                            <div>(Рекомендованные пропорции 1:2)</div>
                             <input type="file"  id="new-img-carousel" name="new-img-carousel[]" multiple accept="image/png, image/jpg, image/jpeg">  
                             <div class="img-carousel-prew"></div>        
                         </div>

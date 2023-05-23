@@ -63,13 +63,13 @@
                     </div>
                 </div></a>
                 <?php } ?>
-                <a href="bot.php"><div class="list-admin-panel" style="background-color: #709fba;">
+                <!-- <a href="bot.php"><div class="list-admin-panel" style="background-color: #709fba;">
                     <div class="list-ap-title">Мониторинг бота</div>
                     <div class="list-ap-img">
                         <img src="../client/img/icons/robot-svgrepo-com.svg" >
                         <div style="font-size: 18px">&#9993 Перейти к сообщениям</div>
                     </div>
-                </div></a>
+                </div></a> -->
 
 
             </div>

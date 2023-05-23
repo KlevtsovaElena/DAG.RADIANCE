@@ -142,7 +142,7 @@
             <!-- Достопримечательности Пустыня -->
             <div class="category" id="desert"><h2>Пустыня</h2></div>
             <div class="catalog-container">
-            <?php $data = Place::getLinesApiCategory("песок");
+            <?php $data = Place::getLinesApiCategory("пустыня");
             foreach ($data as $place) { ?>
             <div class="card-container"></div>
                 <div class="d-flex card-item catalog-card catalog-card_effect" >
@@ -161,7 +161,7 @@
             <!-- Достопримечательности Иное -->
             <div class="category"><h2>И ещё много всего интересного</h2></div>
             <div class="catalog-container">
-            <?php $data = Place::getLinesApiCategory("иное");
+            <?php $data = Place::getLinesApiCategory("нет");
             foreach ($data as $place) { ?>
             <div class="card-container"></div>
                 <div class="d-flex card-item catalog-card catalog-card_effect" >

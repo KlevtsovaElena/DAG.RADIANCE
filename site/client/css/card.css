@@ -1,6 +1,9 @@
 p {
     margin: 0;
 }
+.text-right {
+    text-align: right;
+}
 .card {
     max-width: 90%;
     margin: 0 auto;

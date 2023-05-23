@@ -28,8 +28,8 @@
                 <a href="contacts.php"><div>Контакты</div></a>
                 <a href="hotels.php"><div>Гостиницы</div></a>
             </div>
-            <div class="menu-left__list">
+            <!-- <div class="menu-left__list">
                 <a href="bot.php"><div>БОТ</div></a>
-            </div>  
+            </div>   -->
         </div> 
     </div>
