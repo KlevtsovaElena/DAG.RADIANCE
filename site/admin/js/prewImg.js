@@ -22,11 +22,10 @@ file_input.addEventListener('change', handle_file_preview);
 const handle_file_preview2 = (e) => {
     let files = e.target.files;
     let length = files.length;
+    image_carousel_preview.innerHTML="";
 
-  
-    for(let i = 0; i < length; i++) {
+      for(let i = 0; i < length; i++) {
         let image = document.createElement('img');
-        // use the DOMstring for source
         image.src = window.URL.createObjectURL(files[i]);
         image_carousel_preview.appendChild(image);
     }
