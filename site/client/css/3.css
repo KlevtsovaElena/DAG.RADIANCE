@@ -92,10 +92,6 @@
     float: left;
     margin: 20px 40px 40px 0px;
 } */
-.two-columns {
-    display: flex;
-    gap: 50px;
-}
 
 .column-row {
     display: flex;
@@ -116,14 +112,6 @@
     .fests11, .fests12 {
         width: 454px;
         height: 300px;
-    }
-}
-
-@media(max-width: 1150px) {
-    .two-columns {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0;
     }
 }
 

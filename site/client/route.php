@@ -128,7 +128,7 @@
                         <div class="row">
                             <div class="bus1 img-section one-of"></div>
                             <div class="bus2 img-section one-of"></div>
-                    </div>
+                        </div>
                     </div>
                 </div>
             </div>

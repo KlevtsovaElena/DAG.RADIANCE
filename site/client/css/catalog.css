@@ -32,10 +32,18 @@
 .mountains, .top-10_img {
     width: 600px;
     height: 100%;
+    margin: 0 auto;
 }
 
 .text-right {
     text-align: right;
+    align-self: flex-end;
+}
+
+.half-trans {
+    background-color: rgb(225 225 225 / 31%);
+    padding: 2%;
+    width: fit-content;
 }
 
 .top-10_text > li {
@@ -53,6 +61,36 @@
 
 .category {
     text-align: center;
+}
+
+.grape {
+    background-image: url('../img/places-catalog/grape.jpg');
+    background-size: cover;
+    height: 500px;
+    width: 400px;
+}
+
+.desert1 {
+    background-image: url('../img/places-catalog/sarykum2.jpg');
+    background-size: cover;
+}
+
+.desert2 {
+    background-image: url('../img/places-catalog/sarykum3.jpg');
+    background-size: cover;
+}
+
+.cognac {
+    background-image: url('../img/places-catalog/cognac.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 60%;
+    margin: 0 2%;
+}
+
+.img-one {
+    width: 1000px;
+    margin: 0 auto;
 }
 
 @media(max-width: 1450px) {
@@ -74,6 +112,17 @@
     }
 }
 
+@media(max-width: 1150px) {
+    .cognac {
+        width: 90%;
+        height: 450px;
+        margin: 0 auto;
+    }
+    .grape {
+        margin: 0 auto;
+    }
+}
+
 @media(max-width: 1100px) {
     .mountains, .top-10_img {
         width: 700px;
@@ -86,6 +135,13 @@
     }
     .top-10_text {
         font-size: 14px;
+    }
+    .grape {
+        height: 300px;
+    }
+    .cognac {
+        width: 70%;
+        height: 250px;
     }
 }
 
@@ -100,16 +156,41 @@
     .mountains, .top-10_img {
         width: 400px;
     }
+    .grape {
+       height: 400px;
+    }
+    .cognac {
+        width: 400px;
+    }
 }
 
 @media(max-width: 520px) {
     .mountains, .top-10_img {
         width: 100%;
     }
+    .grape {
+        width: 250px;
+    }
+    .cognac {
+        height: 250px;
+        width: 300px;
+        background-position-x: center;
+    }
 }
 
 @media(max-width: 450px) {
     .top-10_text {
         font-size: 12px;
+    }
+    .grape {
+        height: 300px;
+        width: 200px;
+    }
+    .cognac {
+        height: 150px;
+        width: 250px;
+    }
+    .category > h2 {
+        font-size: 18px;
     }
 }
