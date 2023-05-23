@@ -54,6 +54,13 @@
                         <div style="font-size: 18px">&#9998 К редактированию</div>
                     </div>
                 </div></a>
+                <a href="guides.php"><div class="list-admin-panel" style="background-color:  #709fba;">
+                    <div class="list-ap-title">Наши гиды</div>
+                    <div class="list-ap-img">
+                        <img src="../client/img/icons/guide-human-svgrepo-com.svg" >
+                        <div style="font-size: 18px">&#9998 К редактированию</div>
+                    </div>
+                </div></a>
                 <?php if($profile['role']=='admin') { ?>
                 <a href="add-account.php"><div class="list-admin-panel" style="background-color: #fd7e14;">
                     <div class="list-ap-title">Создать аккаунт</div>
