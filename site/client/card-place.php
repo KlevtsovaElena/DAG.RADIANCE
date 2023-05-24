@@ -99,7 +99,6 @@ $data = Place::getLinesApiId($_GET['id']);
                     <a href="places-catalog.php" class="card-btn"><button class="card-item__btn btn-big btn-theme">Смотреть все</button></a>
                     <a href="../index.php" class="card-btn"><button class="card-item__btn btn-big btn-theme">На главную</button></a>
                 </div>
-            </div>
     
         </main>
         

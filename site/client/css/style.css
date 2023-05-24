@@ -378,12 +378,12 @@ a {
 /* HEADER INDEX*/
 
 .index {
-    min-height: calc(0.5625*100vw);
     height: fit-content;
     position: relative;
     background-image: url('./../img/bg/bgPpt-shaded.jpg');
-    background-size: 100% auto;
+    background-size: cover;
     background-repeat: no-repeat;
+    background-position: bottom left;
     overflow-y: auto;
 }
 

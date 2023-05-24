@@ -102,6 +102,7 @@
                 </div>
             </section>
 
+            <!-- Карточки Горы -->
             <div class="category" id="mountains"><h2>Горы</h2></div>
             <div class="catalog-container">
             <?php $data = Place::getLinesApiCategory("горы");
@@ -121,7 +122,7 @@
             </div>
 
             <!-- Достопримечательности МОРЕ, ВОДА -->
-            <section class="article">
+            <section class="article"  id="sea">
                 <div class="article-container">
                     <div class="article-text">
                         <div class="section-first">
@@ -146,28 +147,16 @@
                                         Взлетаю в высь, и снова опускаюсь между волн.<br>
                                         Оно со мной играет, ласковое море.<br>
                                         Я в этой ласке как младенец опьянён</i>
-                                    </p>
-                                <img class="mountains img-one" src="./img/places-catalog/kaspiy-sea2.jpg" alt="">
-                                <p>
-                                    Мы рассказали вам про достопримечательности, ради которых стоит приехать в самый уникальный регион России - в Республику Дагестан, и чтобы поднять бокал вина и попробовать немного Италии, можно отправиться в Южный Дагестан в винный тур или так называемый этнотуризм. Ведь мы отправляемся в путешествия не только ради пейзажей, архитектурных достопримечательностей и исторических памятников, но и для того, чтобы познакомиться с гастрономическими традициями, национальной кухней и не только...
                                 </p>
-                                <img class="mountains img-one" src="./img/places-catalog/vineyard.jpg" alt="">
+                                <img class="mountains img-one" src="./img/places-catalog/kaspiy-sea2.jpg" alt="">
                             </div>
-                            <div class="two-columns adjustment">
-                                <div class="grape"></div>
-                                <div class="text-and-img d-flex">
-                                    <p>
-                                        Сегодня дагестанский коньяк – настоящий бренд. По некоторым оценкам, 80% всего продаваемого в России ароматного алкогольного напитка родом из Дагестана. А французы до сих пор спорят, чей коньяк древнее – их или дагестанский.
-                                    </p>
-                                    <div class="cognac"></div>
-                                </div>
-                            </div>    
                         </div>
                     </div>
                 </div>
             </section>
             
-            <div class="category" id="sea"><h2>Море, реки, водохранилища</h2></div>
+            <!-- Карточки вода -->
+            <div class="category"><h2>Море, реки, водохранилища</h2></div>
             <div class="catalog-container">
             <?php $data = Place::getLinesApiCategory("вода");
             foreach ($data as $place) { ?>
@@ -185,9 +174,11 @@
                 <?php } ?>
             </div>
 
+
+
             <!-- Достопримечательности Пустыня -->
 
-            <section class="article">
+            <section class="article"  id="desert">
                 <div class="article-container">
                     <div class="article-text">
                         <div class="section-first">
@@ -213,7 +204,8 @@
                 </div>
             </section>
 
-            <div class="category" id="desert"><h2>Пустыня</h2></div>
+            <!-- Карточки Пустыня -->
+            <div class="category"><h2>Пустыня</h2></div>
             <div class="catalog-container">
             <?php $data = Place::getLinesApiCategory("пустыня");
             foreach ($data as $place) { ?>
@@ -231,8 +223,41 @@
                 <?php } ?>
             </div>
 
+ 
+            
+
+            <section class="article">
+                <div class="article-container">
+                    <div class="article-text">
+                        <div class="section-first">
+                            <div class="article-text__title">И ещё много всего интересного</div>
+                            <div class="d-flex column">
+                                <p>
+                                    Мы рассказали вам про достопримечательности, ради которых стоит приехать в самый уникальный регион России - в Республику Дагестан, и чтобы поднять бокал вина и попробовать немного Италии, можно отправиться в Южный Дагестан в винный тур или так называемый этнотуризм. Ведь мы отправляемся в путешествия не только ради пейзажей, архитектурных достопримечательностей и исторических памятников, но и для того, чтобы познакомиться с гастрономическими традициями, национальной кухней и не только...
+                                </p>
+                                <img class="mountains img-one" src="./img/places-catalog/vineyard.jpg" alt="">
+                            </div>
+                            <div class="two-columns adjustment">
+                                <div class="grape"></div>
+                                <div class="text-and-img d-flex">
+                                    <p>
+                                        Сегодня дагестанский коньяк – настоящий бренд. По некоторым оценкам, 80% всего продаваемого в России ароматного алкогольного напитка родом из Дагестана. А французы до сих пор спорят, чей коньяк древнее – их или дагестанский.
+                                    </p>
+                                    <div class="cognac"></div>
+                                </div>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+
+
+
+
+
             <!-- Достопримечательности Иное -->
-            <div class="category"><h2>И ещё много всего интересного</h2></div>
+            <!-- <div class="category"><h2>И ещё много всего интересного</h2></div> -->
             <div class="catalog-container">
             <?php $data = Place::getLinesApiCategory("нет");
             foreach ($data as $place) { ?>
