@@ -38,6 +38,25 @@
                 </ul>
             </div>
 
+            <section class="article">
+                <div class="article-container">
+                    <div class="article-text">
+
+                            <div class="text-left-img-right d-flex align-start">
+                                <div class="title-text">
+                                    <p>
+                                    Вы ознакомились с разнообразием и уникальностью нашего края. 
+                                    <br>
+                                    Теперь давайте отправимся в туры - любой уголок замечательного места на земле 
+                                    </p>
+                                </div>
+                                <img class="mountains" src="./img/tour/car-mountain.jpg" alt="">
+                            </div>
+                    
+                    </div>
+                </div>
+            </section>
+    
             <div class="catalog-container">
             <?php $data = Tour::getLinesApi();
             foreach ($data as $tour) { ?>
