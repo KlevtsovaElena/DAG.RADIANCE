@@ -29,7 +29,6 @@
     <main>
 
         <section class="article">
-            <h2 class="welcome">Добро пожаловать на наш сайт и в наш уникальный, красивый и многонациональный край в составе Российской Федерации - в Республику Дагестан. Мы расскажем вам о самом главном: где это, как красиво и как здорово увидеть весь этот колорит своими глазами.</h2>
             <div class="article-container inner_section">
                 <div class="article-text">
                     <div class="section-header">

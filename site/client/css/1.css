@@ -2,6 +2,11 @@
     align-items: flex-start;
 }
 
+.inner_section .triangles-wrap {
+    margin-top: 30px;
+    justify-content: space-around;
+}
+
 .section-first p {
     margin-top: 30px;
     font-weight: 500;
@@ -81,13 +86,6 @@
     height: 350px;
     position: absolute;
     right: 25px;
-}
-
-.welcome {
-    text-align: center;
-    font-style: italic;
-    font-weight: 400;
-    margin-bottom: 50px;
 }
 
 .one {
@@ -224,12 +222,6 @@
     }
     .one {
         width: 100% !important;
-    }
-}
-
-@media(max-width: 550px) {
-    .welcome {
-        font-size: 14px;
     }
 }
 

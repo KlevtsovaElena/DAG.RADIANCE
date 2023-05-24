@@ -101,7 +101,7 @@
                 </div>
             </ul>
         </div>
-
+    <div class="article">
         <div class="header-index">
             <p class="header-index__desc">DAG.RADIANCE</p>
             <div class="header-index__title">welcome to Russia</div>
@@ -155,15 +155,15 @@
             </div>
         </div>
         <!-- </div> -->
-        
+        </div>
     </header>
     <!-- /HEADER -->
 
     <main>
-
+        <h2 class="welcome">Добро пожаловать на наш сайт и в наш уникальный, красивый и многонациональный край в составе Российской Федерации - в Республику Дагестан. Мы расскажем вам о самом главном: где это, как красиво и как здорово увидеть весь этот колорит своими глазами.</h2>
          <!-- 3 заглавных темы -->
-        <section class="article">
-            <div id="geography-and-climate" class="article-container">
+        <section class="article main-sections">
+            <div id="geography-and-climate" class="article-container main-page">
                 <div class="article-text">
                     <div id="about" class="article-text__title">Уникальная природа</div>
                     <div class="article-text__desc">Горы, море и бархан!</div>
@@ -178,7 +178,7 @@
                 </div>
             </div>
 
-            <div class="article-container">
+            <div class="article-container main-page">
                 <div class="article-text">
                     <div class="article-text__title">Кавказский Вавилон</div>
                     <div class="article-text__desc">Самый колоритный регион России!</div>
@@ -193,7 +193,7 @@
                 </div>
             </div>
 
-            <div class="article-container">
+            <div class="article-container main-page">
                 <div class="article-text">
                     <div class="article-text__title">Чтение традиций</div>
                     <div class="article-text__desc">Гостеприимство, праздники и танцы!</div>

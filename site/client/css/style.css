@@ -25,14 +25,6 @@ a {
     cursor: pointer;
 }
 
-.body-index {
-    /* max-width: 1520px; */
-    background-image: url('./../img/bg/bgPpt-shaded.jpg');
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-    overflow-y: auto;
-}
-
 .container-page {
     min-height: 100vh;
     flex-direction: column;
@@ -119,14 +111,15 @@ a {
 /* Меню на главной */
 
 .right-menu {
-    position: absolute;
-    align-items: end;
+    /* position: absolute; */
+    align-items: flex-end;
     justify-content: space-between;
-    width:90%;
-    top: 15%;
-    right: 20px;
+    /* width:90%; */
+    /* top: 15%;
+    right: 20px; */
     background-color: transparent;
-    z-index: 2;
+    padding-bottom: 5%;
+    /* z-index: 2; */
 }
 
 .nav-items-right {
@@ -385,8 +378,13 @@ a {
 /* HEADER INDEX*/
 
 .index {
-    height: calc(0.5625*100vw);
+    min-height: calc(0.5625*100vw);
+    height: fit-content;
     position: relative;
+    background-image: url('./../img/bg/bgPpt-shaded.jpg');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    overflow-y: auto;
 }
 
 .header-index {
@@ -431,10 +429,15 @@ a {
 .triangles-wrap {
     display: flex;
     flex:1;
-    justify-content: center;
+    /* justify-content: center; */
+    justify-content: space-between;
     flex-wrap: wrap;
     gap: 30px;
     margin: 0 auto;
+}
+
+.right-menu .triangles-wrap {
+    margin-right: 5%;
 }
 
 .triangle {
@@ -554,6 +557,17 @@ a {
     margin: 0 auto;
 }
 
+.welcome {
+    color: #FFD1A0;
+    background-color: rgb(225 225 225 / 31%);
+    /* padding: 30px 0; */
+    padding: 30px;
+    text-align: center;
+    /* font-style: italic; */
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+
 .article-container {
     display: flex;
     margin-bottom: 100px;
@@ -563,6 +577,10 @@ a {
 
 .article-container:nth-child(even){
     flex-direction: row-reverse;
+}
+
+.main-sections .article-container {
+    gap: 50px;
 }
 
 .article-text {
@@ -638,6 +656,10 @@ a {
 .article-img img {
 
     max-width: 450px;
+}
+
+.main-page .article-text {
+    padding: 0;
 }
 
 
@@ -1048,9 +1070,15 @@ a {
     }
 
     .right-menu {
-        bottom: 30%;
+        padding: 10% 0;
+        /* bottom: 30%; */
         width: 100%;
-        right: 0;
+        /* right: 0; */
+    }
+
+    .right-menu .triangles-wrap {
+        /* justify-content: space-evenly; */
+        margin-right: unset;
     }
 
     .article-text {
@@ -1211,6 +1239,11 @@ a {
     .logo {
         font-size: 16px;
     }
+
+    .triangles-wrap {
+        justify-content: space-evenly;
+    }
+
     .triangle {
         height: 125px;
         width: 175px;
@@ -1225,6 +1258,10 @@ a {
         margin-bottom: 50px;
     }
 
+    .main-page .article-container {
+        gap: 15px;
+    }
+
     .article-container:nth-child(even){
         flex-direction: column-reverse;
     }
@@ -1236,7 +1273,7 @@ a {
     .article-img img {
         max-width: 600px;
         margin-bottom: 15px;
-    } 
+    }
 
     .article-img .big-img {
         display: block;
@@ -1254,6 +1291,9 @@ a {
     }
 }
 @media(max-width: 700px) {
+    .triangles-wrap {
+        justify-content: space-between;
+    }
     .triangle {
         height: 100px;
         width: 150px;
@@ -1288,6 +1328,10 @@ a {
     .logo {
         font-size: 14px;
     }
+    .triangles-wrap {
+        justify-content: center;
+        gap: 15px;
+    }
     .article-img img {
         max-width: 400px;
     } 
@@ -1311,14 +1355,17 @@ a {
 }
 
 @media(max-width: 550px) {
-    .triangles-wrap {
+    /* .triangles-wrap {
         gap: 20px;
-    }
+    } */
     .right-menu {
         bottom: 15%;
     }
     .breadcrumbs-list {
         flex-wrap: wrap;
+    }
+    .welcome {
+        font-size: 14px;
     }
     .height-card-item {
         margin-left: 50px;
@@ -1376,9 +1423,9 @@ a {
 }
 
 @media(max-width: 490px) {
-    .index {
+    /* .index {
         height: 375px;
-    }
+    } */
     .right-menu {
         bottom: 5%;
     }
@@ -1430,9 +1477,9 @@ a {
 
 }
 @media(max-width: 350px) {
-    .index {
+    /* .index {
         height: 350px;
-    }
+    } */
     .mobile-nav {
         text-align: center;
         padding: 55px 0;
