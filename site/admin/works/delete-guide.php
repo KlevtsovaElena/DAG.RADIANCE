@@ -8,12 +8,12 @@ require_once('../../classes/autoload.php');
     // запись в базу
     $pdo = \Connection::getConnection();
     // подготовим запрос
-    $query = $pdo->prepare("DELETE FROM `hotels` WHERE `id`=:id");
+    $query = $pdo->prepare("DELETE FROM `guides` WHERE `id`=:id");
     // выполним запрос
     $query->execute(['id'=>$id]);
     
-    // возврат на страницу редактирования
-    header('Location: ../hotels.php')
+    // возврат на страницу редактирования 
+    header('Location: ../guides.php')
 
 ?>
 

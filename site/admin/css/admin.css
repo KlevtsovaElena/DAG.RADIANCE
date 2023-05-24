@@ -57,7 +57,7 @@ form {
 
 
 #containerPage{
-    height: 100vh;
+    /* height: 100vh; */
     background-color: #F6f6f6;
     color: #969ba0; 
     margin-left: 280px;
@@ -256,6 +256,10 @@ form {
     width: 300px; 
     height: 180px;
 }
+.img-title-prew-guide img{
+    width: 200px; 
+    height: 300px;
+}
 .img-carousel-prew img {
     width: 100px;
     display: block;
@@ -352,22 +356,27 @@ a:hover {
 }
 
 .list-admin-panel {
-    color: white;
     width: 400px;
     height: 200px;
-    background-color: #b48dd3;
     margin: 30px;
     border-radius: 30px;
-    padding: 30px 20px;
     font-size: 30px;
     text-align: center;
-    cursor: pointer;
     transition: all 0.3s;
 }
 
 .list-admin-panel:hover {
    transform: scale(1.1);
 }
+
+.list-admin-panel > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: white;
+    padding: 30px 20px;
+}
+
 
 .list-ap-img img{
     width: 50px;
@@ -376,4 +385,17 @@ a:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+.guide-item {
+    margin-bottom: 15px;
+}
+.photo-guide {
+    width:300px;
+    height: 180px;
+    text-align: center;
+}
+.photo-guide img {
+    height: 100%;
+    width: auto;
 }

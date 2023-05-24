@@ -26,57 +26,57 @@
         <div class="work-area">
             <h1>Admin panel</h1> 
             <div class="d-flex-list">
-                <a href="tours.php"><div class="list-admin-panel" style="background-color: #b48dd3;">
+                <div class="list-admin-panel" style="background-color: #b48dd3;"><a href="tours.php">
                     <div class="list-ap-title">Туры</div>
                     <div class="list-ap-img">
                         <img src="../client/img/icons/adventure-backpack-svgrepo-com.svg" >
                         <div style="font-size: 18px">&#9998 К редактированию</div>
                     </div>
-                </div></a>
-                <a href="places.php"><div class="list-admin-panel" style="background-color: #68e365;">
+                </a></div>
+                <div class="list-admin-panel" style="background-color: #68e365;"><a href="places.php">
                     <div class="list-ap-title">Достопримечательности</div>
                     <div class="list-ap-img">
                         <img src="../client/img/icons/binoculars-svgrepo-com.svg" >
                         <div style="font-size: 18px">&#9998 К редактированию</div>
                     </div>
-                </div></a>
-                <a href="contacts.php"><div class="list-admin-panel" style="background-color: #5bcfc5;">
+                </a></div>
+                <div class="list-admin-panel" style="background-color: #5bcfc5;"><a href="contacts.php">
                     <div class="list-ap-title">Контакты</div>
                     <div class="list-ap-img">
                         <img src="../client/img/icons/contacts-svgrepo-com.svg" >
                         <div style="font-size: 18px">&#9998 К редактированию</div>
                     </div>
-                </div></a>
-                <a href="hotels.php"><div class="list-admin-panel" style="background-color: #ff9871;">
+                </a></div>
+                <div class="list-admin-panel" style="background-color: #ff9871;"><a href="hotels.php">
                     <div class="list-ap-title">Гостиницы и домики</div>
                     <div class="list-ap-img">
                         <img src="../client/img/icons/hotel-svgrepo-com.svg" >
                         <div style="font-size: 18px">&#9998 К редактированию</div>
                     </div>
-                </div></a>
-                <a href="guides.php"><div class="list-admin-panel" style="background-color:  #709fba;">
+                </a></div>
+                <div class="list-admin-panel" style="background-color:  #709fba;"><a href="guides.php">
                     <div class="list-ap-title">Наши гиды</div>
                     <div class="list-ap-img">
                         <img src="../client/img/icons/guide-human-svgrepo-com.svg" >
                         <div style="font-size: 18px">&#9998 К редактированию</div>
                     </div>
-                </div></a>
+                </a></div>
                 <?php if($profile['role']=='admin') { ?>
-                <a href="add-account.php"><div class="list-admin-panel" style="background-color: #fd7e14;">
+                <div class="list-admin-panel" style="background-color: #fd7e14;"><a href="add-account.php">
                     <div class="list-ap-title">Создать аккаунт</div>
                     <div class="list-ap-img">
                         <img src="../client/img/icons/account-avatar-person-svgrepo-com.svg" >
                         <div style="font-size: 18px">&#9998 К редактированию</div>
                     </div>
-                </div></a>
+                </a></div>
                 <?php } ?>
-                <!-- <a href="bot.php"><div class="list-admin-panel" style="background-color: #709fba;">
+                <!-- <div class="list-admin-panel" style="background-color: #709fba;"><a href="bot.php">
                     <div class="list-ap-title">Мониторинг бота</div>
                     <div class="list-ap-img">
                         <img src="../client/img/icons/robot-svgrepo-com.svg" >
                         <div style="font-size: 18px">&#9993 Перейти к сообщениям</div>
                     </div>
-                </div></a> -->
+                </a></div> -->
 
 
             </div>

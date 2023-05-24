@@ -31,37 +31,35 @@
 
             <div class="work-area">
                 <div class="work-area__title">
-                    <h1>РЕДАКТИРОВАТЬ ГОСТИНИЦУ</h1>
+                    <h1>РЕДАКТИРОВАТЬ ГИДА</h1>
                 </div>
 
                 <div class="edit-place">
 
                 <?php 
-                    $hotels = Hotels::getLinesApiId($_GET['id']);
-                    $hotel = (object)$hotels[0];
+                    $guides = Guide::getLinesApiId($_GET['id']);
+                    $guide = (object)$guides[0];
                 ?>
 
-                    <!-- Собираем данные одного элемента для таблицы гостиниц -->
-                    <form action="works/edit-hotel.php" method="post" class="edit-place__form" enctype="multipart/form-data">
+                    <!-- Собираем данные одного элемента для таблицы гидов -->
+                    <form action="works/edit-guide.php" method="post" class="edit-place__form" enctype="multipart/form-data">
 
-                        <input type="hidden" name="id" value="<?= $hotel->id;?>"> 
-                        <p>Название гостиницы</p><input type="text" id="name" name="name" value="<?= $hotel->name;?>">
-                        <p>Краткое описание</p><textarea id="short-desc" name="short-desc"><?= $hotel->{'short-desc'};?></textarea>
-                        <p>Месторасположение</p><input type="text" id="location" name="location" value="<?= $hotel->location;?>">                    
-                        <p>Ссылка на сайт</p><input type="text" id="link" name="link" value="<?= $hotel->link;?>">                    
+                        <input type="hidden" name="id" value="<?= $guide->id;?>"> 
+                        <p>Имя гида</p><input type="text" id="name" name="name" value="<?= $guide->name;?>">
+                        <p>Описание</p><textarea id="guide-desc" name="guide-desc"><?= $guide->{'guide-desc'};?></textarea>                   
 
                         <!-- картинка для карточки -->
                         <p>
-                        <div class="img-title-form">Изображениe для карточки гостиницы
-                            <div class="img-title-prew img-title-prew-hotel"><img src="<?= '../client/' . $hotel->image;?>" /></div>
-                            <input type="hidden" name="image" value="<?= $hotel->image;?>">  
+                        <div class="img-title-form">Фото гида
+                            <div class="img-title-prew photo-guide"><img src="<?= '../client/' . $guide->photo;?>" /></div>
+                            <input type="hidden" name="photo" value="<?= $guide->photo;?>">  
                             <input type="file"  id="new-img-title" name="new-img-title" accept="image/png, image/jpg, image/jpeg">                               
                         </div> 
                         </p>
                             
 
                         <div>
-                            <a href="card-hotel.php?id=<?= $hotel->id;?>"><div class="btn-admin btn-reset">Сбросить изменения</div></a>
+                            <a href="card-guide.php?id=<?= $guide->id;?>"><div class="btn-admin btn-reset">Сбросить изменения</div></a>
                             <button class="btn-admin" type="submit">Сохранить</button>
                         </div>
 
@@ -72,33 +70,28 @@
                 <?php } else { ?> 
             <div class="work-area">
                 <div class="work-area__title">
-                    <h1>ДОБАВИТЬ ГОСТИНИЦУ</h1>
+                    <h1>ДОБАВИТЬ ГИДА</h1>
                 </div>
 
                 <div class="edit-place">
 
                     <!-- Собираем данные одного элемента для таблицы гостиниц -->
-                    <form action="works/edit-hotel.php" method="post" class="edit-place__form" enctype="multipart/form-data">
-
-                        <p>Название гостиницы</p><input type="text" id="name" name="name" value="">
-                        <p>Краткое описание</p><textarea id="short-desc" name="short-desc"></textarea>
-                        <p>Месторасположение</p><input type="text" id="location" name="location" value="">                    
-                        <p>Ссылка на сайт</p><input type="text" id="link" name="link" value="">                    
-
+                    <form action="works/edit-guide.php" method="post" class="edit-place__form" enctype="multipart/form-data">
+                        <p>Имя гида</p><input type="text" id="name" name="name" value="">
+                        <p>Описание</p><textarea id="guide-desc" name="guide-desc"></textarea>
+                        
                         <!-- картинка для карточки -->
                         <p>
-                        <div class="img-title-form">Изображениe для карточки гостиницы
-                            <div class="img-title-prew img-title-prew-hotel"><img></div>
+                        <div class="img-title-form">Фото гида
+                            <div class="img-title-prew photo-guide"><img></div>
                             <input type="file"  id="new-img-title" name="new-img-title" accept="image/png, image/jpg, image/jpeg">                               
                         </div> 
                         </p>
-                            
-
+                        
                         <div>
-                            <a href="card-hotel.php"><div class="btn-admin btn-reset">Сбросить изменения</div></a>
+                            <a href="card-guide.php"><div class="btn-admin btn-reset">Сбросить изменения</div></a>
                             <button class="btn-admin" type="submit">Сохранить</button>
                         </div>
-
 
                     </form>
                 </div>

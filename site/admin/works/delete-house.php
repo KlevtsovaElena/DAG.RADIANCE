@@ -12,7 +12,7 @@ require_once('../../classes/autoload.php');
     // выполним запрос
     $query->execute(['id'=>$id]);
     
-    // возврат на страницу редактирования туров
+    // возврат на страницу редактирования
     header('Location: ../hotels.php')
 
 ?>

@@ -27,40 +27,39 @@
 
             <div class="work-area">
                 <div class="work-area__title">
-                    <h1>Гостиницы</h1>
-                    <a href="card-hotel.php"><button class="btn-admin">+ Добавить гостиницу/отель</button></a>
+                    <h1>Гиды</h1>
+                    <a href="card-guide.php"><button class="btn-admin">+ Добавить гида</button></a>
                 </div>
 
                 <div class="work-area__contaner">
 
-                    <div class="hotels-container d-flex">
+                    <div class="catalog-container">
                         
                         <?php 
-                            $hotels = Hotels::getLinesApi(); 
-                            foreach ($hotels as $hotel) {
+                            $guides = Guide::getLinesApi(); 
+                            foreach ($guides as $guide) {
                         ?>
 
-                            <div class="hotel-item catalog-card_effect" >
-                                <div class="hotel-item__img-container">
-                                    <div class="hotel-item__img" style="background-image: url('../client/<?= $hotel['image'] ?>');"> </div>
+                            <div class="card-item guide-item catalog-card_effect">
+                                <div class="guide-item__img-container">
+                                    <div class="guide-item__img" style="background-image: url('../client/<?= $guide['photo'];?>');"> </div>
                                 </div>
-                                <div class="hotel-item__title">
-                                    <h3><?= $hotel['name']; ?></h3>
+                                <div class="guide-item__title">
+                                    <h3><?= $guide['name']; ?></h3>
                                 </div>
-                                <div class="hotel-item__location">
-                                    <?= $hotel['location']; ?>
+                                <div class="guide-item__desc">
+                                    <?= $guide['guide-desc']; ?>
                                 </div>
-                                <a href="<?= $hotel['link'] ?> " class="block"><button class="card-item__btn hotel-btn">На сайт</button></a>
                             
+
                                 <div class="edit-card">
-                                    <a href="card-hotel.php?id=<?= $hotel['id']; ?>" class="d-block"><button class="btn-black">&#9998 Изменить</button></a>
+                                    <a href="card-guide.php?id=<?= $guide['id']; ?>" class="d-block"><button class="btn-black">&#9998 Изменить</button></a>
                                     <button class="btn-delete btn-black" onclick="deleteCard()">X Удалить</button>
                                 </div>
                                 <div class="delete-card d-none">
-                                    <a href="../admin/works/delete-hotel.php?id=<?= $hotel['id']; ?>"><div onclick="hiddenDeleteBlock()" class="btn-admin btn-delete">Удалить</div></a>
+                                    <a href="../admin/works/delete-guide.php?id=<?= $guide['id']; ?>"><div onclick="hiddenDeleteBlock()" class="btn-admin btn-delete">Удалить</div></a>
                                     <div  onclick="hiddenDeleteBlock2()" class="btn-admin btn-reset">Отмена</div>
                                 </div>
-
                             </div>
                         <?php } ?>
 
@@ -68,48 +67,6 @@
                 </div> 
             </div>
 
-            <div class="work-area">
-                <div class="work-area__title">
-                    <h1>Гостевые домики</h1>
-                    <a href="card-house.php"><button class="btn-admin">+ Добавить домик</button></a>
-                </div>
-
-                <div class="work-area__contaner">
-
-                    <div class="hotels-container d-flex">
-                        
-                        <?php 
-                            $houses = Guesthouses::getLinesApi(); 
-                            foreach ($houses as $house) {
-                        ?>
-
-                            <div class="hotel-item catalog-card_effect" >
-                                <div class="hotel-item__img-container">
-                                    <div class="hotel-item__img" style="background-image: url('../client/<?= $house['image'] ?>');"> </div>
-                                </div>
-                                <div class="hotel-item__title">
-                                    <h3><?= $house['name']; ?></h3>
-                                </div>
-                                <div class="hotel-item__location">
-                                    <?= $house['location']; ?>
-                                </div>
-                                <a href="<?= $house['link'] ?> " class="block"><button class="card-item__btn hotel-btn">На сайт</button></a>
-                            
-                                <div class="edit-card">
-                                    <a href="card-house.php?id=<?= $house['id']; ?>" class="d-block"><button class="btn-black">&#9998 Изменить</button></a>
-                                    <button class="btn-delete btn-black" onclick="deleteCard()">X Удалить</button>
-                                </div>
-                                <div class="delete-card d-none">
-                                    <a href="../admin/works/delete-house.php?id=<?= $house['id']; ?>"><div onclick="hiddenDeleteBlock()" class="btn-admin btn-delete">Удалить</div></a>
-                                    <div  onclick="hiddenDeleteBlock2()" class="btn-admin btn-reset">Отмена</div>
-                                </div>
-
-                            </div>
-                        <?php } ?>
-
-                    </div>
-                </div> 
-            </div>
 
         </div>
     </div>
