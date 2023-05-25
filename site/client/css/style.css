@@ -627,6 +627,10 @@ a {
     color: #FFD1A0;
 }
 
+.main-page .article-text .article-text__title {
+    text-align: left;
+}
+
 /* .article-text__title::before {
     position: absolute;
     display: block; 
