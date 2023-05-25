@@ -37,8 +37,8 @@
                 <div class="catalog-container">
                 <?php $data = Tour::getLinesApi();
                     foreach ($data as $tour) { ?>
-                    <div class="d-flex card-item catalog-card catalog-card_effect" style="background-image: url('../client/<?= $tour['img-title'] ?>');">
-
+                    <div class="d-flex card-item catalog-card tour-item tour-card catalog-card_effect" style="background-image: url('../client/<?= $tour['img-title'] ?>');">
+                    
                         <div class="edit-card">
                             <a href="card-tour.php?id=<?= $tour['id']; ?>" class="d-block"><button class="btn-black">&#9998 Изменить</button></a>
 

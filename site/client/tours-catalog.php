@@ -57,24 +57,47 @@
                 </div>
             </section>
     
-            <div class="catalog-container">
-            <?php $data = Tour::getLinesApi();
-            foreach ($data as $tour) { ?>
-                <div class="d-flex card-item catalog-card catalog-card_effect">
-                    <div class="card-item__img" style="background-image: url('./<?php echo $tour['img-title'] ?>');"> </div>
-                    <div class="card-item__title">
-                        <h3><?php echo $tour['title']; ?></h3>
-                    </div>
-                    <div class="card-item__desc">
-                        <?php echo $tour['short-desc']; ?>
-                    </div>
-                    <div class="card-item__desc catalog-price">
-                        Стоимость: <span><?php echo $tour['price']; ?> руб.</span>
-                    </div>
-                    <a href="card-tour.php?id=<?= $tour['id'] ?> " class="block"><button class="card-item__btn catalog-btn btn-theme">Подробнее</button></a>
+            <section>
+                <div class="catalog-container">
+                <?php $data = Tour::getLinesApi();
+                foreach ($data as $tour) { ?>
+
+                        <div class="d-flex card-item catalog-card tour-item tour-card">
+                            <div class="tour-item__img-container">
+                                <div class="tour-item__img" style="background-image: url('<?= $tour['img-title'];?>');"> </div>
+                            </div>
+                            <div class="tour-item__hover">
+                                <a href="<?= $tour['link'] ?> " class="block" target="_blank"><button class="card-item__btn tour-btn">На сайт</button></a>
+                            </div> 
+                        </div>
+                <?php };?>
                 </div>
-                <?php } ?>
-            </div>
+            </section>
+
+            <section class="guides">
+                <p>Также предлагаем вам подборку ссылок, где лучшие гиды Дагестана</p>
+                <div class="catalog-container">
+                    <div class="guide">
+                        <div class="guide-img"></div>
+                        <div class="guide-link"><a href="#"><button class="card-item__btn guide-btn ">Гиды</button></a></div>
+                    </button>
+                </div>
+            </section>
+<style>
+    .guide {
+        width: 300px;
+        height: 150px;
+        background-color: #ffffff;
+        
+    }
+    .guide-img {
+        width: 300px;
+        height: 90px;
+        background-color: red;
+    }
+    </style>
+
+
 
             <div class="two-buttons">
                 <a href="../index.php" class="card-btn"><button class="card-item__btn btn-big btn-theme">На главную</button></a>
