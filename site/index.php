@@ -302,41 +302,6 @@
         </section>
         <!-- БЛОК ТУРЫ -->
 
-        <!-- БЛОК ГИДЫ -->
-        <section class="guides card-container">
-
-            <!-- Заголовок -->
-            <div class="card-text"><h2>Лучшие гиды</h2></div>
-
-            <!-- Слайдер -->
-            <div class="slider ">
-                <div class="slider-container">
-                    <div class="card-carousel d-flex slider-wrapper slick-slide">
-
-                    <?php 
-
-                    $guides = Guide::getLinesApi();
-
-                    foreach ($guides as $guide) { ?>
-
-                        <div class="d-flex card-item slide catalog-card guide-item height-card-item">
-                            <div class="guide-item__img-container">
-                                <div class="guide-item__img" style="background-image: url('client/<?= $guide['photo'];?>');"> </div>
-                            </div>
-                            <div class="guide-item__title">
-                                <h3><?= $guide['name']; ?></h3>
-                            </div>
-                            <div class="guide-item__desc">
-                                <?= $guide['guide-desc']; ?>
-                            </div>
-                        </div>
-                    <?php };?>
-
-                    </div>
-                </div>
-            </div>
-        </section>
-
     </main>
 
     <iframe id="videovisit" class="video-card" width="100%" height="400" src="https://www.youtube.com/embed/M10qSqWxsgU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

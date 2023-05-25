@@ -31,7 +31,7 @@
 
             <div class="work-area">
                 <div class="work-area__title">
-                    <h1>РЕДАКТИРОВАТЬ ГИДА</h1>
+                    <h1>РЕДАКТИРОВАТЬ</h1>
                 </div>
 
                 <div class="edit-place">
@@ -41,22 +41,21 @@
                     $guide = (object)$guides[0];
                 ?>
 
-                    <!-- Собираем данные одного элемента для таблицы гидов -->
-                    <form action="works/edit-guide.php" method="post" class="edit-place__form" enctype="multipart/form-data">
+                    <!-- Собираем данные одного элемента для таблицы  -->
+                    <form action="works/edit-guide.php" method="post" class="edit-tour__form" enctype="multipart/form-data">
 
                         <input type="hidden" name="id" value="<?= $guide->id;?>"> 
-                        <p>Имя гида</p><input type="text" id="name" name="name" value="<?= $guide->name;?>">
-                        <p>Описание</p><textarea id="guide-desc" name="guide-desc"><?= $guide->{'guide-desc'};?></textarea>                   
-
-                        <!-- картинка для карточки -->
+                        <p>Название сайта</p><input type="text" id="title" name="title" value="<?= $guide->title;?>">
+                        <p>Ссылка</p><input type="text" id="link" name="link" value="<?= $guide->link;?>">
+                        <!-- картинка для маленькой карточки -->
                         <p>
-                        <div class="img-title-form">Фото гида
-                            <div class="img-title-prew photo-guide"><img src="<?= '../client/' . $guide->photo;?>" /></div>
-                            <input type="hidden" name="photo" value="<?= $guide->photo;?>">  
+                        <div class="img-title-form">Изображениe для карточки тура
+                            <div>(Рекомендованные параметры 320X90)</div>
+                            <div class="img-title-prew img-guide"><img src="<?= '../client/' . $guide->{'img-title'};?>" /></div>
+                            <input type="hidden" name="img-title" value="<?= $guide->{'img-title'};?>">  
                             <input type="file"  id="new-img-title" name="new-img-title" accept="image/png, image/jpg, image/jpeg">                               
                         </div> 
                         </p>
-                            
 
                         <div>
                             <a href="card-guide.php?id=<?= $guide->id;?>"><div class="btn-admin btn-reset">Сбросить изменения</div></a>
@@ -70,30 +69,32 @@
                 <?php } else { ?> 
             <div class="work-area">
                 <div class="work-area__title">
-                    <h1>ДОБАВИТЬ ГИДА</h1>
+                    <h1>ДОБАВИТЬ</h1>
                 </div>
 
                 <div class="edit-place">
 
-                    <!-- Собираем данные одного элемента для таблицы гостиниц -->
-                    <form action="works/edit-guide.php" method="post" class="edit-place__form" enctype="multipart/form-data">
-                        <p>Имя гида</p><input type="text" id="name" name="name" value="">
-                        <p>Описание</p><textarea id="guide-desc" name="guide-desc"></textarea>
-                        
-                        <!-- картинка для карточки -->
+                    <!-- Собираем данные одного элемента для таблицы  -->
+
+                    <form action="works/edit-guide.php" method="post" class="edit-tour__form" enctype="multipart/form-data">
+
+                        <p>Название сайта</p><input type="text" id="title" name="title" value="">
+                        <p>Ссылка</p><input type="text" id="link" name="link" value="">
+                        <!-- картинка для маленькой карточки -->
                         <p>
-                        <div class="img-title-form">Фото гида
-                            <div class="img-title-prew photo-guide"><img></div>
+                        <div class="img-title-form">Изображениe для карточки 
+                            <div>(Рекомендованные параметры 320X90)</div>
+                            <div class="img-title-prew img-guide"><img></div>
                             <input type="file"  id="new-img-title" name="new-img-title" accept="image/png, image/jpg, image/jpeg">                               
                         </div> 
                         </p>
-                        
+
                         <div>
                             <a href="card-guide.php"><div class="btn-admin btn-reset">Сбросить изменения</div></a>
                             <button class="btn-admin" type="submit">Сохранить</button>
                         </div>
-
                     </form>
+
                 </div>
                 
                 <?php } ?>  

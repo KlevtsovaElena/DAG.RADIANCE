@@ -62,7 +62,7 @@
                 <?php $data = Tour::getLinesApi();
                 foreach ($data as $tour) { ?>
 
-                        <div class="d-flex card-item catalog-card tour-item tour-card">
+                        <div class="d-flex catalog-card tour-item tour-card-catalog tour-card">
                             <div class="tour-item__img-container">
                                 <div class="tour-item__img" style="background-image: url('<?= $tour['img-title'];?>');"> </div>
                             </div>
@@ -77,25 +77,17 @@
             <section class="guides">
                 <p>Также предлагаем вам подборку ссылок, где лучшие гиды Дагестана</p>
                 <div class="catalog-container">
+                    <?php $guides = Guide::getLinesApi();
+                    foreach ($guides as $guide) { ?>
+
                     <div class="guide">
-                        <div class="guide-img"></div>
-                        <div class="guide-link"><a href="#"><button class="card-item__btn guide-btn ">Гиды</button></a></div>
-                    </button>
+                        <div class="guide-img" style="background-image: url('<?=$guide['img-title'];?>');"></div>
+                        <div class="guide-link"><a href="<?=$guide['link'];?>"><button class="card-item__btn guide-btn ">Гиды</button></a></div>
+                    </div>
+
+                    <?php } ?>
                 </div>
             </section>
-<style>
-    .guide {
-        width: 300px;
-        height: 150px;
-        background-color: #ffffff;
-        
-    }
-    .guide-img {
-        width: 300px;
-        height: 90px;
-        background-color: red;
-    }
-    </style>
 
 
 

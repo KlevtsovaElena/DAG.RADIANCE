@@ -1,28 +1,30 @@
 <?php
 require_once('../../classes/autoload.php');
 
-// РЕДАКТИРОВАНИЕ ИЛИ СОЗДАНИЕ ЗАПИСИ В ТАБЛИЦЕ
+// РЕДАКТИРОВАНИЕ ИЛИ СОЗДАНИЕ ЗАПИСИ ТУРА В ТАБЛИЦЕ
 
 // разнесём данные по переменным из массива $POST
-$name = $_POST['name'];
-$guideDesc = $_POST['guide-desc'];
+$title = $_POST['title'];
+$link = $_POST['link'];
 
 if(isset($_POST['id'])){
-    $photo = $_POST['photo'];
+    $imgTitle = $_POST['img-title'];
     $id = $_POST['id'];  
 } else {
-    $photo = "";
+    $imgTitle = "";
 }
 
-// Проверим передали ли картинку в $_FILES 
-// Если да, то загрузим изображение в папку 
-// И возьмём ссылку
+
+// Проверим передали ли картинки в $_FILES 
+// Если да, то загрузим изображения в папки 
+// И соберём ссылки на них
+
 if ($_FILES['new-img-title']['name'] !== "") {
     // загружаем только файлы с указанным расширением
     $typeFile = $_FILES['new-img-title']['type'];
     if ($typeFile == "image/jpeg" || $typeFile == "image/jpg" || $typeFile == "image/png") {
         // Дирректория для загрузки файлов
-        $uploadDir = "img/guides/";
+        $uploadDir = "img/guide";
 
         // Временное имя файла во временной дирректории
         $tmpName = $_FILES['new-img-title']['tmp_name'];
@@ -33,8 +35,8 @@ if ($_FILES['new-img-title']['name'] !== "") {
         $fileNameNew = $fileNameParts[0] . '_' . time() . '.' . $fileNameParts[1];
         $path = '../../client/' . $uploadDir . '/' . $fileNameNew;
 
-        // Перезапишем адрес картинки на новое значение
-        $photo = $uploadDir . '/' . $fileNameNew;
+        // Перезапишем адрес титульной картинки на новое значение
+        $imgTitle = $uploadDir . '/' . $fileNameNew;
 
         // Сохраняем файл в дирректорию
         move_uploaded_file($tmpName, $path);
@@ -48,12 +50,12 @@ $pdo = \Connection::getConnection();
 // если редактируем карточку, то данные UPDATE
 // если создаём новую - то INSERT
 if (isset($_POST['id'])) {
-    $sqlText = "UPDATE `guides` SET `name`='$name', `guide-desc`='$guideDesc', `photo`='$photo' WHERE `id`=$id";
+    $sqlText = "UPDATE `guides` SET `title`='$title', `img-title`='$imgTitle', `link`='$link' WHERE `id`=$id";
     
     //запись в базу
     $query = $pdo->query($sqlText);
 } else {
-    $sqlText = "INSERT INTO `guides` (`name`, `guide-desc`, `photo`) VALUES('$name', '$guideDesc', '$photo')";
+    $sqlText = "INSERT INTO `guides` (`title`, `img-title`, `link`) VALUES('$title', '$imgTitle', '$link')";
     
     // запись в базу
     $query = $pdo->query($sqlText);

@@ -28,38 +28,32 @@
             <div class="work-area">
                 <div class="work-area__title">
                     <h1>Гиды</h1>
-                    <a href="card-guide.php"><button class="btn-admin">+ Добавить гида</button></a>
+                    <a href="card-guide.php"><button class="btn-admin">+ Добавить сайт с гидами</button></a>
                 </div>
 
                 <div class="work-area__contaner">
 
                     <div class="catalog-container">
-                        
+               
                         <?php 
                             $guides = Guide::getLinesApi(); 
                             foreach ($guides as $guide) {
                         ?>
 
-                            <div class="card-item guide-item catalog-card_effect">
-                                <div class="guide-item__img-container">
-                                    <div class="guide-item__img" style="background-image: url('../client/<?= $guide['photo'];?>');"> </div>
-                                </div>
-                                <div class="guide-item__title">
-                                    <h3><?= $guide['name']; ?></h3>
-                                </div>
-                                <div class="guide-item__desc">
-                                    <?= $guide['guide-desc']; ?>
-                                </div>
+                            <div class="guide catalog-card_effect">
+                    
+                                <div class="guide-img" style="background-image: url('../client/<?=$guide['img-title'];?>')"></div>
+                                <div class="guide-link"><a href="#"><button class="card-item__btn guide-btn ">Гиды</button></a></div>
                             
-
                                 <div class="edit-card">
                                     <a href="card-guide.php?id=<?= $guide['id']; ?>" class="d-block"><button class="btn-black">&#9998 Изменить</button></a>
                                     <button class="btn-delete btn-black" onclick="deleteCard()">X Удалить</button>
                                 </div>
-                                <div class="delete-card d-none">
+                                <div class="delete-card delete-card-guide d-none">
                                     <a href="../admin/works/delete-guide.php?id=<?= $guide['id']; ?>"><div onclick="hiddenDeleteBlock()" class="btn-admin btn-delete">Удалить</div></a>
                                     <div  onclick="hiddenDeleteBlock2()" class="btn-admin btn-reset">Отмена</div>
                                 </div>
+
                             </div>
                         <?php } ?>
 

@@ -57,13 +57,29 @@ INSERT INTO `guest-houses` (`id`, `name`, `short-desc`, `image`, `location`, `li
 DROP TABLE IF EXISTS `guides`;
 CREATE TABLE `guides` (
   `id` int NOT NULL AUTO_INCREMENT,
+  `title` varchar(255) DEFAULT NULL,
+  `img-title` varchar(1000) DEFAULT NULL,
+  `link` varchar(1000) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb3;
+
+INSERT INTO `guides` (`id`, `title`, `img-title`, `link`) VALUES
+(2,	'tropki',	'img/guide/guide-tropki_1685040682.jpg',	'https://tropki.ru/rossiya/dagestan/ekskursii/gidy'),
+(3,	'needguide',	'img/guide/guide-needguide_1685041461.jpg',	'https://needguide.ru/view_city.php?city=%D0%94%D0%B0%D0%B3%D0%B5%D1%81%D1%82%D0%B0%D0%BD'),
+(4,	'sputnik8',	'img/guide/guide-sputnik_1685041487.jpg',	'https://www.sputnik8.com/ru/makhachkala/private-guides'),
+(5,	'personalguide',	'img/guide/guide-personal_1685041556.jpg',	'https://www.personalguide.ru/rossiya/mahachkala/guide'),
+(6,	'travel-or-die',	'img/guide/guide-travelordie_1685041599.jpg',	'https://travel-or-die.ru/russia/dagestan/gidy-v-dagestane/');
+
+DROP TABLE IF EXISTS `guides-archive`;
+CREATE TABLE `guides-archive` (
+  `id` int NOT NULL AUTO_INCREMENT,
   `name` varchar(255) NOT NULL,
   `guide-desc` varchar(1000) NOT NULL,
   `photo` varchar(1000) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb3;
 
-INSERT INTO `guides` (`id`, `name`, `guide-desc`, `photo`) VALUES
+INSERT INTO `guides-archive` (`id`, `name`, `guide-desc`, `photo`) VALUES
 (1,	'Дмитрий',	'Историк. Самый общительный гид. Стаж 10 лет',	'img/guides/guid.jpg'),
 (2,	'Дмитрий',	'Историк. Самый общительный гид. Стаж 10 лет',	'img/guides/guid.jpg'),
 (3,	'Дмитрий',	'Историк. Самый общительный гид. Стаж 10 лет',	'img/guides/guid.jpg'),
@@ -130,6 +146,29 @@ INSERT INTO `places` (`id`, `title`, `short-desc`, `full-desc`, `img-title`, `im
 DROP TABLE IF EXISTS `tours`;
 CREATE TABLE `tours` (
   `id` int NOT NULL AUTO_INCREMENT,
+  `title` varchar(255) DEFAULT NULL,
+  `img-title` varchar(1000) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci DEFAULT NULL,
+  `link` varchar(1000) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8mb3;
+
+INSERT INTO `tours` (`id`, `title`, `img-title`, `link`) VALUES
+(1,	'dag-tour',	'img/tour/title/dag-tour_1685011052.jpg',	'https://dag-tour.ru/'),
+(2,	'sulakcanyon.com',	'img/tour/title/sulakcanyon_1685011149.jpg',	'https://sulakcanyon.com/'),
+(3,	'etnomirkavkaza',	'img/tour/title/etnomirkavkaza_1685011177.jpg',	'https://etnomirkavkaza.ru/'),
+(4,	'basirtour',	'img/tour/title/basirtour_1685011202.jpg',	'https://basirtour.ru/'),
+(5,	'etalontravel',	'img/tour/title/etalontravel_1685011235.jpg',	'https://etalontravel.com/ru/'),
+(6,	'your-dagestan',	'img/tour/title/your-dagestan_1685011265.jpg',	'https://your-dagestan.ru/'),
+(7,	'dag-excurse',	'img/tour/title/dag-excurse_1685011301.jpg',	'http://dag-excurse.ru/'),
+(8,	'caspian.travel',	'img/tour/title/caspian-travel_1685011337.jpg',	'https://caspian.travel/'),
+(9,	'ethnotour05',	'img/tour/title/ethnotour05_1685011362.jpg',	'https://ethnotour05.ru/'),
+(10,	'dagestanturist',	'img/tour/title/dagestanturist_1685011397.jpg',	'https://dagestanturist.ru/'),
+(11,	'anextour',	'img/tour/title/anextour_1685011419.jpg',	'https://www.anextour.com/'),
+(12,	'indigid',	'img/tour/title/indigid_1685011451.jpg',	'https://indigid.ru/');
+
+DROP TABLE IF EXISTS `tours-archive`;
+CREATE TABLE `tours-archive` (
+  `id` int NOT NULL AUTO_INCREMENT,
   `title` varchar(100) NOT NULL,
   `short-desc` varchar(250) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
   `full-desc` varchar(3000) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
@@ -140,7 +179,7 @@ CREATE TABLE `tours` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
-INSERT INTO `tours` (`id`, `title`, `short-desc`, `full-desc`, `img-title`, `img-carousel`, `price`, `link`) VALUES
+INSERT INTO `tours-archive` (`id`, `title`, `short-desc`, `full-desc`, `img-title`, `img-carousel`, `price`, `link`) VALUES
 (1,	'ТУР 1',	'описание для нашего тура 1',	'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse iure, debitis repudiandae cum saepe corrupti facilis. Explicabo omnis fugit exercitationem rem, eligendi quo incidunt neque vitae corrupti amet sunt aliquid.',	'img/place/sea01.jpg',	'[\"img/place/sea01.jpg\", \"img/card/plain.jpg\", \"img/card/reserve.jpg\", \"img/card/hills.jpg\", \"img/card/nature.jpeg\"]',	500,	''),
 (2,	'ТУР 2',	'описание для нашего тура 2',	'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse iure, debitis repudiandae cum saepe corrupti facilis. Explicabo omnis fugit exercitationem rem, eligendi quo incidunt neque vitae corrupti amet sunt aliquid.',	'img/tours-catalog/gamsutl.jpg',	'[\"img/tours-catalog/gamsutl.jpg\", \"img/card/plain.jpg\", \"img/card/reserve.jpg\", \"img/card/hills.jpg\", \"img/card/nature.jpeg\"]',	600,	''),
 (3,	'ТУР 3',	'описание для нашего тура 3',	'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse iure, debitis repudiandae cum saepe corrupti facilis. Explicabo omnis fugit exercitationem rem, eligendi quo incidunt neque vitae corrupti amet sunt aliquid.',	'img/tours-catalog/goor-towers.jpg',	'[\"img/tours-catalog/goor-towers.jpg\", \"img/card/plain.jpg\", \"img/card/reserve.jpg\", \"img/card/hills.jpg\", \"img/card/nature.jpeg\"]',	600,	''),
@@ -154,4 +193,4 @@ INSERT INTO `tours` (`id`, `title`, `short-desc`, `full-desc`, `img-title`, `img
 (11,	'ТУР 11',	'описание для нашего тура 11',	'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse iure, debitis repudiandae cum saepe corrupti facilis. Explicabo omnis fugit exercitationem rem, eligendi quo incidunt neque vitae corrupti amet sunt aliquid.',	'img/tours-catalog/tarki-tau.jpg',	'[\"img/tours-catalog/tarki-tau.jpg\", \"img/card/plain.jpg\", \"img/card/reserve.jpg\", \"img/card/hills.jpg\", \"img/card/nature.jpeg\"]',	700,	''),
 (12,	'ТУР12',	'описание для нашего тура 12',	'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse iure, debitis repudiandae cum saepe corrupti facilis. Explicabo omnis fugit exercitationem rem, eligendi quo incidunt neque vitae corrupti amet sunt aliquid.',	'img/tours-catalog/sulak.jpg',	'[\"img/tours-catalog/sulak.jpg\", \"img/card/plain.jpg\", \"img/card/reserve.jpg\", \"img/card/hills.jpg\", \"img/card/nature.jpeg\"]',	700,	'');
 
--- 2023-05-24 06:36:14
+-- 2023-05-25 19:53:34

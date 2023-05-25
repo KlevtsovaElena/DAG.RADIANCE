@@ -198,6 +198,22 @@ form {
     border-radius: 10px;
 
 }
+.delete-card-guide{
+    position: absolute;
+    top: 10%;
+    left: 20%;
+    z-index: 9;
+    width: 60%;
+    height: 80%;
+    background-color: #ffffff;
+    color: black;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+}
 .delete-card a {
     color: red;
 }
@@ -394,6 +410,10 @@ a:hover {
     width:300px;
     height: 180px;
     text-align: center;
+}
+.img-guide img{
+    width: 300px;
+    height: 90px;
 }
 .photo-guide img {
     height: 100%;

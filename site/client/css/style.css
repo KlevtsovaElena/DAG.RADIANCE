@@ -733,7 +733,18 @@ a {
     cursor:pointer;
     overflow: hidden;
 }
-
+.tour-card-catalog {
+    position: relative;
+    width:250px;
+    height: 325px; 
+    margin: 0 15px;
+    text-align: center;
+    background-position: center center;
+    background-size: cover;
+    cursor:pointer;
+    overflow: hidden;
+    box-sizing: border-box;  
+}
 .card-item__title > h3 {
     background-color: rgba(255, 255, 255, 0.774);
     padding: 5px 15px;
@@ -828,10 +839,12 @@ a {
     cursor: pointer;
     transition: all 0.3s;
 }
-.hotel-btn:hover,
-.tour-btn:hover, 
+.hotel-btn:hover, 
 .guide-btn:hover {
     background-color: gainsboro;
+}
+.tour-btn:hover{
+    background-color: white;
 }
 .hotels-container {
     display: flex;
@@ -872,7 +885,7 @@ a {
     align-items: center;
     width: 100%;
     height: 100%;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(0, 0, 0, 0.5);
     transition: all 0.4s;
 }
 .hotel-item__img {
@@ -916,6 +929,21 @@ a {
 .guide-item {
     background-color: #ffffff;
     cursor:default;
+}
+.guide {
+    position: relative;
+    width: 250px;
+    height: 120px;
+    background-color: #ffffff;
+    margin: 30px;
+    
+}
+.guide-img {
+    width: 250px;
+    height: 65px;
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
 }
 .tour-item {
     background-color: #ffffff;
@@ -1091,7 +1119,8 @@ a {
     height: 60px;
 }
 @media(max-width: 1540px) {
-    .tour-card {
+    .tour-card,
+    .guide {
         margin: 20px;
     }
 }
@@ -1100,7 +1129,8 @@ a {
         height: 175px;
         width: 250px;
     }
-    .tour-card {
+    .tour-card,
+    .guide {
         margin: 10px;
     }
 }
@@ -1601,6 +1631,11 @@ a {
     .card-item {
         width: 250px;
         height: 360px;
+    }
+
+    .guide,
+    .guide-img {
+        width: 250px; 
     }
     .bg-img {
         height: calc(100vw/1.5);
