@@ -276,25 +276,21 @@
                 <div class="slider-container">
                     <div class="card-carousel d-flex slider-wrapper slick-slide">
 
-                        <?php 
+                    <?php 
 
-                        $data = Tour::getLinesApi(); 
+                    $toures = Tour::getLinesApi();
 
-                        foreach ($data as $tour) { ?>
+                    foreach ($toures as $tour) { ?>
 
-                            <div class="d-flex card-item  catalog-card slide height-card-item">
-                                <div class="card-item__img" style="background-image: url('client/<?= $tour['img-title'];?>');"> </div>
-                                <div class="card-item__title height-card-item_title">
-                                        <h3><?= $tour['title'];?> </h3>
-                                    </div>
-                                    <div class="card-item__desc height-card-item_title">
-                                        <?= $tour['short-desc'];?>
-                                    </div>
-                                    <a href="client/card-tour.php?id=<?=$tour['id']; ?>"><button class="card-btn card-item__btn catalog-btn btn-theme height-card-item_btn">Подробнее</button></a>
-                                
-                                </div>
-
-                        <?php };?>
+                        <div class="d-flex card-item slide catalog-card tour-item height-card-item">
+                            <div class="tour-item__img-container">
+                                <div class="tour-item__img" style="background-image: url('client/<?= $tour['img-title'];?>');"> </div>
+                            </div>
+                            <div class="tour-item__hover">
+                                <a href="<?= $tour['link'] ?> " class="block" target="_blank"><button class="card-item__btn tour-btn">На сайт</button></a>
+                            </div> 
+                        </div>
+                    <?php };?>
 
                     </div>
                 </div>

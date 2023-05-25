@@ -795,6 +795,15 @@ a {
     right: 0;
 }
 
+.tour-btn {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    cursor: pointer;
+    transition: all 0.3s;
+}
 /* Карточки гостиниц */
 
 .hotel-btn {
@@ -805,8 +814,10 @@ a {
     left: 0;
     right: 0;
     cursor: pointer;
+    transition: all 0.3s;
 }
-.hotel-btn:hover {
+.hotel-btn:hover,
+.tour-btn:hover {
     background-color: gainsboro;
 }
 .hotels-container {
@@ -833,6 +844,24 @@ a {
     height: 60%; 
     overflow: hidden;
 }
+.tour-item__img-container {
+    width: 100%;
+    height: 100%; 
+    overflow: hidden;
+}
+.tour-item__hover {
+    position: absolute;
+    top:0;
+    left:0;
+    display: flex;
+    opacity: 0;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    transition: all 0.4s;
+}
 .hotel-item__img {
     width: 100%;
     height: 100%;
@@ -840,7 +869,8 @@ a {
     background-size: cover;
     transition: all 0.5s;
 }
-.guide-item__img {
+.guide-item__img,
+.tour-item__img {
     width: 100%;
     height: 100%;
     background-position: center center;
@@ -870,9 +900,13 @@ a {
     padding: 0 15px;
     text-align: center;
 }
-.guide-item {
+.guide-item,
+.tour-item {
     background-color: #ffffff;
     cursor:default;
+}
+.tour-item:hover .tour-item__hover {
+    opacity: 1;
 }
 /* SLIDER */
 .slider {

@@ -38,17 +38,6 @@
                 <?php $data = Tour::getLinesApi();
                     foreach ($data as $tour) { ?>
                     <div class="d-flex card-item catalog-card catalog-card_effect" style="background-image: url('../client/<?= $tour['img-title'] ?>');">
-                        <div class="card-item__title">
-                            <h3><?= $tour['title']; ?></h3>
-                        </div>
-                        <div class="card-item__desc">
-                            <?= $tour['short-desc']; ?>
-                        </div>
-                        <div class="card-item__desc catalog-price">
-                            Стоимость: <span><?= $tour['price']; ?> руб.</span>
-                        </div>
-                        <!-- ЗАМЕНИТЬ НА ПЕРЕХОД НА НУЖНУЮ КАРТОЧКУ -->
-                        <a href="" class="d-block"><button class="card-item__btn catalog-btn btn-yellow">Подробнее</button></a>
 
                         <div class="edit-card">
                             <a href="card-tour.php?id=<?= $tour['id']; ?>" class="d-block"><button class="btn-black">&#9998 Изменить</button></a>

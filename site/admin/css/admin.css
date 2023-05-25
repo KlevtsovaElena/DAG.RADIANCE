@@ -3,7 +3,7 @@ body {
     padding: 0;
     background-color: #F6f6f6;
     color: #6e6e6e;
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
 }
 input, textarea {
     box-sizing: border-box;
