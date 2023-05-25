@@ -70,7 +70,7 @@
     position: relative;
 }
 
-.img-smaller {
+/* .img-smaller {
     margin: 0;
     width: 441px;
     height: 275px;
@@ -86,7 +86,7 @@
     height: 350px;
     position: absolute;
     right: 25px;
-}
+} */
 
 .one {
     width: 100%;
@@ -111,6 +111,11 @@
 .caption {
     display: inline;
     margin-top: 15px;
+}
+
+
+.float-right {
+    float: right;
 }
 
 .geography {
@@ -150,8 +155,14 @@
     }
 }
 
+@media(max-width: 1200px) {
+    .float-right {
+        margin: 0 auto;
+    }
+}
+
 @media(max-width: 1155px) {
-    .img-smaller {
+    /* .img-smaller {
         margin: 15px auto;
         position: relative;
         top: unset;
@@ -161,7 +172,7 @@
         margin: 0 auto;
         position: relative;
         right: unset;
-    }
+    } */
     .img-double {
         height: auto;
         display: flex;
@@ -205,9 +216,9 @@
 }
 
 @media(max-width: 670px) {
-    .img-smaller {
+    /* .img-smaller {
         width: 100%;
-    }
+    } */
 
     .img-section {
         height: 150px;

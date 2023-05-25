@@ -1,3 +1,6 @@
+.section-first p {
+    margin-top: 0;
+}
 
 .catalog-container {
     display: flex;
@@ -26,31 +29,65 @@
     align-items: center;
 }
 
+.text-left {
+    width: 280px;
+    box-sizing: border-box;
+}
+
+.img-mountains-big1 {
+    background-image: url('../img/places-catalog/4.jpg');
+    background-size: cover;
+}
+
+.img-mountains-big2 {
+    background-image: url('../img/places-catalog/5.jpg');
+    background-size: cover;
+}
+
+.mountains-big {
+    width: 900px;
+    height: 500px;
+}
+
 .top-10_text {
     display: block;
 }
 
-.mountains, .top-10_img {
-    width: 600px;
-    height: 100%;
-    margin: 0 auto;
+.sea2 {
+    background-image: url('../img/places-catalog/kaspiy-sea2.jpg');
+    background-size: cover;
+    width: 864px;
+    height: 522px;
+    margin-left: 50px;
 }
 
-.text-right {
-    text-align: right;
-    align-self: flex-end;
+.relative {
+    position: relative;
+}
+
+.text-left-verse {
+    text-align: left;
+    line-height: 1.5rem !important;
 }
 
 .half-trans {
-    background-color: rgb(225 225 225 / 31%);
+    /* background-color: rgb(225 225 225 / 31%); */
+    background-color: rgb(151 151 151 / 55%);
     padding: 2%;
     width: fit-content;
+}
+
+.covers {
+    position: absolute;
+    top: 30px;
+    right: -251px;
 }
 
 .top-10_text > li {
     font-weight: 600;
     margin-bottom: 10px;
 }
+
 
 .catalog-price {
     margin-top: 10px;
@@ -85,9 +122,9 @@
     background-image: url('../img/places-catalog/cognac.jpg');
     background-size: cover;
     background-position: center center;
-    width: 100%;
-    height: 65%;
-    margin: 0 2%;
+    width: 75%;
+    height: 55%;
+    margin: 0 auto;
 }
 
 .img-one {
@@ -95,72 +132,203 @@
     margin: 0 auto;
 }
 
+.img-big {
+    width: 100%;
+}
+
+.img-bigger {
+    width: 780px;
+    height: 450px;
+}
+
+.img-smaller {
+    width: 250px;
+    height: 175px;
+    align-self: flex-end;
+    margin-bottom: 118px;
+}
+
+.two-unequal {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
 .align-start {
     align-items: start;
 }
 
 @media(max-width: 1450px) {
-    .text-left-img-right {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    .top-10_text {
-        width: inherit;
-    }
-    .mountains, .top-10_img {
-        width: 1000px;
-    }
-}
-
-@media(max-width: 1250px) {
-    .mountains, .top-10_img {
+    .mountains-big {
         width: 800px;
     }
-}
-
-@media(max-width: 1150px) {
-    .cognac {
-        width: 90%;
-        height: 450px;
-        margin: 0 auto;
-    }
-    .grape {
-        margin: 0 auto;
+    .sea {
+        width: 60%;
     }
 }
 
-@media(max-width: 1100px) {
-    .mountains, .top-10_img {
+@media(max-width: 1400px) {
+    .mountains-big {
+        width: 800px;
+    }
+    .sea {
+        width: 60%;
+    }
+    .sea2 {
+        width: 750px;
+    }
+}
+
+@media(max-width: 1350px) {
+    .mountains-big {
         width: 700px;
     }
 }
 
-@media(max-width: 900px) {
-    .mountains, .top-10_img {
-        width: 600px;
+@media(max-width: 1300px) {
+    .img-bigger {
+        width: 80%;
     }
+    .img-smaller {
+        width: 30%;
+    }
+}
+
+@media(max-width: 1250px) {
+    .mountains-big {
+        width: 650px;
+    }
+    .float-right {
+        margin: 0 0 20px 20px;
+    }
+    .sea2 {
+        width: 650px;
+    }
+    .text-left-verse {
+        font-size: 14px !important;
+        line-height: 1.2rem !important;
+    }
+    .covers {
+        right: -203px;
+    }
+}
+
+@media(max-width: 1150px) {
+    .article-text {
+        width: 100%;
+    }
+    .top-10_text {
+        align-self: flex-start;
+    }
+    .text-left-img-right {
+        flex-direction: column;
+    }
+    .text-left {
+        width: auto;
+    }
+    .mountains-big {
+        width: 100%;
+    }
+    .cognac {
+        width: 55%;
+        height: 250px;
+        margin: 0 auto;
+    }
+    .grape {
+        margin: 0 auto;
+    }
+}
+
+@media(max-width: 1050px) {
+    .sea2 {
+        width: 575px;
+        height: 350px;
+        margin-left: 0;
+    }
+    .text-left-verse {
+        font-size: 12px !important;
+        line-height: 1rem !important;
+    }
+    .covers {
+        right: -174px;
+    }
+    .img-bigger {
+        height: 350px;
+    }
+    .img-smaller {
+        height: 100px;
+        width: 25%;
+    }
+}
+
+@media(max-width: 900px) {
     .top-10_text {
         font-size: 14px;
     }
-    .grape {
-        height: 300px;
+    .covers {
+        right: -123px;
     }
-    .cognac {
-        width: 70%;
-        height: 250px;
+    .grape {
+        height: 375px;
+    }
+}
+
+@media(max-width: 850px) {
+    .article-container {
+        align-items: center !important;
+    }
+    .sea {
+        width: 600px;
+        margin-bottom: 20px;
+    }
+    .float-right {
+        float: unset;
+        margin: 0 auto 20px auto;
+    }
+}
+
+@media(max-width: 800px) {
+    .no-reverse .article-container {
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+    .article-text {
+        width: unset;
+    }
+    .mountains-big {
+        height: 400px;
+    }
+    .sea2 {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .covers {
+        right: unset;
+        left: 15px;
+        width: 163px;
     }
 }
 
 @media(max-width: 750px) {
-    .mountains, .top-10_img {
+    .sea {
         width: 500px;
         margin: 0 auto;
     }
 }
 
 @media(max-width: 650px) {
-    .mountains, .top-10_img {
+    .sea {
         width: 400px;
+    }
+    .mountains-big {
+        height: 300px;
+    }
+    .img-bigger {
+        height: 300px;
+    }
+    .img-smaller {
+        height: 88px;
+        margin-bottom: 94px;
     }
     .grape {
        height: 400px;
@@ -171,8 +339,23 @@
 }
 
 @media(max-width: 520px) {
-    .mountains, .top-10_img {
-        width: 100%;
+    .mountains-big {
+        height: 250px;
+    }
+    .sea {
+        width: 90%;
+    }
+    .sea2 {
+        height: 275px;
+    }
+    .two-unequal {
+        flex-direction: column;
+    }
+    .img-bigger {
+        height: 200px;
+    }
+    .img-smaller {
+        width: 100px;
     }
     .grape {
         width: 250px;

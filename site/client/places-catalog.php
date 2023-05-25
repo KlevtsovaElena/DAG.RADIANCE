@@ -57,33 +57,33 @@
                 </div>
             </section>
 
-            <section class="article">
+            <section class="article no-reverse">
                 <div class="article-container">
                     <div class="article-text">
                         <div class="section-first">
                             <div class="text-left-img-right d-flex gap">
                                 <div class="title-text">
                                     <div class="article-text__title">Горы</div>
-                                    <p>
+                                    <p class="text-left">
                                         <i>Да, горы прекрасные и опасные, снежные вершины, каменные великаны... Они чаруют и пугают своей холодной молчаливой неизвестностью. Что таят эти перевалы, пропасти и ледяные водопады?<br>Жизнь или смерть, счастье или разочарование...
                                         Скорее жизнь и надежду!!! СВОБОДУ, мечту о бесконечном...</i>
                                         <p class="text-right">Алексей Филатов</p>
                                     </p>
                                 </div>
-                                <img class="mountains" src="./img/places-catalog/4.jpg" alt="">
+                                <div class="img-mountains-big1 mountains-big"></div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section class="article">
+            <section class="article no-reverse">
                 <div class="article-container">
                     <div class="article-text">
                         <div class="section-first">
                             <div class="article-text__title">Топ-10 самых высоких гор в Дагестане</div>
                             <div class="text-left-img-right d-flex gap">
-                                <ul class="top-10_text">
+                                <ul class="top-10_text text-left">
                                     <li><a href="https://top10a.ru/samye-vysokie-gory-v-dagestane.html#10_4000" target="_blank">10. Ачигсырт, 4000 м</a></li>
                                     <li><a href="https://top10a.ru/samye-vysokie-gory-v-dagestane.html#9_4007" target="_blank">9. Балиал, 4007 м</a></li>
                                     <li><a href="https://top10a.ru/samye-vysokie-gory-v-dagestane.html#8_4016" target="_blank">8. Ярудага, 4016 м</a></li>
@@ -95,7 +95,7 @@
                                     <li><a href="https://top10a.ru/samye-vysokie-gory-v-dagestane.html#2_4285" target="_blank">2. Диклосмта, 4285 м</a></li>
                                     <li><a href="https://top10a.ru/samye-vysokie-gory-v-dagestane.html#1_4466" target="_blank">1. Базардюзю, 4466 м</a></li>
                                 </ul>
-                                <img class="top-10_img" src="./img/places-catalog/top-10.jpg" alt="">
+                                <div class="img-mountains-big2 mountains-big"></div>
                             </div>
                         </div>
                     </div>
@@ -132,23 +132,24 @@
                                     <p>
                                         Море или озеро? Каспий — это озеро, потому что является замкнутым водоемом, не соединенным с Мировым океаном. Но называть его морем — не ошибка. По размеру (около 390 тыс. кв. км), глубине (до 1025 м), солености и геологической структуре дна это в общем-то море. Кроме того, в прошлом Каспий через Кумо-Манычскую впадину соединялся с Азовским морем (и некоторые ученые-практики, кстати, предлагают прорыть по линии бывшей впадины судоходный канал с системой шлюзов). А еще раньше, миллионы лет назад, на этом месте был океан Тетис. Каспийское, Черное, Азовское и Аральское моря, а также озеро Балатон в Венгрии — это все остатки древнего Тетиса.
                                     </p>
+                                    <img class="sea img-margin float-right" src="./img/places-catalog/kaspiy-sea.jpg" alt="">
                                     <p>
                                         Дагестан — не только красивая республика славящаяся величественными горами, прекрасными водопадами и богатым историческим наследием. Впрочем, пляжный отдых здесь тоже можно устроить замечательный – на Каспийском море, его обеспечивают лучшие курорты Республики, которые мы сегодня и опишем.
                                     </p>
                                 </div>
-                                <img class="mountains" src="./img/places-catalog/kaspiy-sea.jpg" alt="">
                             </div>
                             <div class="d-flex column">
                                 <p>
                                     Жемчужиной уникальной красоты и самобытности является Каспийское море. Это уникальный, единственный в мире замкнутый водоем с хрупкой и бесценной экосистемой. Его уникальность привлекает к себе мировое внимание. Каспий считается самым большим внутренним водоемом в мире, располагается на стыке Азии и Европы. Удивительному природному творению уделили много своих трудов поэты, философы, историки, географы. Среди них: Гомер, Геродот, Аристотель.
                                 </p>
-                                <p class="text-right half-trans">
-                                        <i>Тихонько затаюсь, качаясь на просторах.<br>
+                                <div class="sea2 relative" src="./img/places-catalog/kaspiy-sea2.jpg" alt="">
+                                    <p class="text-left-verse half-trans covers">
+                                        Тихонько затаюсь, качаясь на просторах.<br>
                                         Взлетаю в высь, и снова опускаюсь между волн.<br>
                                         Оно со мной играет, ласковое море.<br>
-                                        Я в этой ласке как младенец опьянён</i>
-                                </p>
-                                <img class="mountains img-one" src="./img/places-catalog/kaspiy-sea2.jpg" alt="">
+                                        Я в этой ласке как младенец опьянён
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -185,16 +186,16 @@
                             <div class="text-left-img-right d-flex gap">
                                 <div class="title-text">
                                     <div class="article-text__title">Песчаная гора Сарыкум в Дагестане</div>
-                                    <img class="mountains img-one" src="./img/places-catalog/sarykum.jpg" alt="">
+                                    <img class="img-big img-one" src="./img/places-catalog/sarykum.jpg" alt="">
                                     <p>
                                         Творение природы совершеннее шедевров искусства...
                                     </p>
                                     <p>
                                         Бархан Сарыкум в Дагестане – удивительный природный феномен. Эта дюна признана крупнейшей в Европе, по высоте она равна 90-этажному небоскребу. Здесь царит собственный микроклимат, сложилась уникальная экосистема. По склону песчаного холма проложен оснащенный поручнями трап с металлической и деревянной поверхностью. На крутых участках устроены лестницы. С вершины открываются живописные панорамы скалистых предгорий Кавказа, вид на обширную степную долину и побережье Каспийского моря.
                                     </p>
-                                    <div class="row">
-                                        <div class="desert1 img-section one-of"></div>
-                                        <div class="desert2 img-section one-of"></div>
+                                    <div class="two-unequal">
+                                        <div class="desert1 img-section img-bigger"></div>
+                                        <div class="desert2 img-section img-smaller"></div>
                                     </div>
                                 </div>
                                 
@@ -205,7 +206,7 @@
             </section>
 
             <!-- Карточки Пустыня -->
-            <div class="category"><h2>Пустыня</h2></div>
+            <!-- <div class="category"><h2>Пустыня</h2></div>
             <div class="catalog-container">
             <?php $data = Place::getLinesApiCategory("пустыня");
             foreach ($data as $place) { ?>
@@ -221,7 +222,7 @@
                     <a href="card-place.php?id=<?= $place['id'] ?> " class="block"><button class="card-item__btn catalog-btn btn-theme">Подробнее</button></a>
                 </div>
                 <?php } ?>
-            </div>
+            </div> -->
 
  
             
@@ -235,7 +236,7 @@
                                 <p>
                                     Мы рассказали вам про достопримечательности, ради которых стоит приехать в самый уникальный регион России - в Республику Дагестан, и чтобы поднять бокал вина и попробовать немного Италии, можно отправиться в Южный Дагестан в винный тур или так называемый этнотуризм. Ведь мы отправляемся в путешествия не только ради пейзажей, архитектурных достопримечательностей и исторических памятников, но и для того, чтобы познакомиться с гастрономическими традициями, национальной кухней и не только...
                                 </p>
-                                <img class="mountains img-one" src="./img/places-catalog/vineyard.jpg" alt="">
+                                <img class="img-big img-one" src="./img/places-catalog/vineyard.jpg" alt="">
                             </div>
                             <div class="two-columns adjustment">
                                 <div class="grape"></div>
