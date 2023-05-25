@@ -224,7 +224,7 @@
 
                     <?php 
 
-                    $data = Place::getLinesApiShort(6);
+                    $data = Place::getLinesApi();
 
                     foreach ($data as $place) { ?>
 
@@ -278,7 +278,7 @@
 
                         <?php 
 
-                        $data = Tour::getLinesApiShort(6); 
+                        $data = Tour::getLinesApi(); 
 
                         foreach ($data as $tour) { ?>
 
