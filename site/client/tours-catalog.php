@@ -38,31 +38,32 @@
                 </ul>
             </div>
 
-            <section class="article">
-                <div class="article-container">
-                    <div class="article-text">
+            <div class="article">
+        
+              
+  
 
-                            <div class="text-left-img-right d-flex align-start">
-                                <div class="title-text">
+                            <section class="tours-main">
+                                <div class="text-tours-main">
                                     <p>
                                     Вы ознакомились с разнообразием и уникальностью нашего края. 
-                                    <br>
+                                    
                                     Теперь давайте отправимся в туры - любой уголок замечательного места на земле 
                                     </p>
                                 </div>
-                                <img class="mountains" src="./img/tour/car-mountain.jpg" alt="">
-                            </div>
+                                <div class="img-tours-main"><img class="car-mountains" src="./img/tour/car-mountain.jpg" alt=""></div>
+                            </section>
                     
-                    </div>
-                </div>
-            </section>
+                  
+                
+            
     
             <section>
                 <div class="catalog-container">
                 <?php $data = Tour::getLinesApi();
                 foreach ($data as $tour) { ?>
 
-                        <div class="d-flex catalog-card tour-item tour-card-catalog tour-card">
+                        <div class="d-flex catalog-card tour-item tour-card-catalog tour-card m-10">
                             <div class="tour-item__img-container">
                                 <div class="tour-item__img" style="background-image: url('<?= $tour['img-title'];?>');"> </div>
                             </div>
@@ -75,12 +76,12 @@
             </section>
 
             <section class="guides">
-                <p>Также предлагаем вам подборку ссылок, где лучшие гиды Дагестана</p>
+                <p class="ta-center fs-18">Также предлагаем вам подборку ссылок, где лучшие гиды Дагестана</p>
                 <div class="catalog-container">
                     <?php $guides = Guide::getLinesApi();
                     foreach ($guides as $guide) { ?>
 
-                    <div class="guide">
+                    <div class="guide m-10">
                         <div class="guide-img" style="background-image: url('<?=$guide['img-title'];?>');"></div>
                         <div class="guide-link"><a href="<?=$guide['link'];?>"><button class="card-item__btn guide-btn ">Гиды</button></a></div>
                     </div>
@@ -89,7 +90,7 @@
                 </div>
             </section>
 
-
+            </div>
 
             <div class="two-buttons">
                 <a href="../index.php" class="card-btn"><button class="card-item__btn btn-big btn-theme">На главную</button></a>

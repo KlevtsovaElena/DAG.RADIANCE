@@ -38,7 +38,13 @@ a {
     text-decoration: none;
     cursor: pointer;
 }
-
+.ta-center {
+    text-align: center;
+}
+.fs-18 {
+    font-size: 18px;
+    font-weight: 600;
+}
 .container-page {
     min-height: 100vh;
     flex-direction: column;
@@ -941,7 +947,7 @@ a {
     width: 250px;
     height: 120px;
     background-color: #ffffff;
-    margin: 30px;
+    margin: 10px;
     
 }
 .guide-img {
