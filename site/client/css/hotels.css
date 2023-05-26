@@ -1,9 +1,10 @@
+.w-100 {
+    width: 100%;
+    max-width: unset;
+}
 .view-img {
-    background-image: url(../img/hotels/great-views.jpg);
-    background-size: cover;
-    background-position: center center;
-    width: 60%;
-    height: calc(100vw/4.5);
+    width: 100%;
+    height: auto;
     margin: 30px 100px;
 }
 .hotels {
@@ -17,6 +18,8 @@
 .hotels-section, .booking-section {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+
 }
 .booking {
     margin-top: 30px;
@@ -45,22 +48,14 @@
     margin-top: 50px;
     margin-bottom: 30px;
 }
+.article-text {
+    padding-left: 0;
+    padding-right: 0;
+}
 @media (max-width: 1200px)  {
-    .view-img {
-        margin-left: 50px;
-    }
     .hotel {
         padding-right: 0; 
     }
-}
-@media (max-width: 900px)  {
-    .view-img {
-        margin-left: 40px;
-        width: 70%;
-        height: calc(100vw/3.5);
-    }  
-
-
 }
 
 @media (max-width: 850px) {
@@ -70,9 +65,6 @@
     }
 }
 
-@media {
-
-}
 @media (max-width: 720px) {
     .booking-icons {
         width: 190px;
@@ -83,29 +75,8 @@
         flex-direction: column;
     }
 }
-@media (max-width: 600px)  {
-    .view-img {
-        margin: 30px 20px;
-        width: 80%;
-        height: calc(100vw/3);
-    }   
-    .article-text {
-        padding-left: 20px;
-    }
-}
+
 @media (max-width: 450px)  {
-    .view-img {
-        margin: 30px 10px;
-        width: 90%;
-        height: calc(100vw/3);
-    }   
-    .article-text {
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-    .article-text__desc {
-        max-width: unset;
-    }
     .booking-icons {
         width: 150px;
         height: 35px;

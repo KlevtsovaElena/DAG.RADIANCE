@@ -46,13 +46,14 @@
                 <div class="inner_section">
                     <div class="article-text">
                         <div class="section-header">
-                            <div class="article-text__desc">Где остановиться</div>
+                            <div class="article-text__desc w-100">Где остановиться</div>
                         </div>
 
                         <div class="hotels-section">
-                            <div class="view-img"></div>
+
+                            <img class="view-img" src="img/hotels/great-views.jpg" alt="great-views"/>
                             
-                            <div class="article-text">
+                            <div class="w-100">
                                 <div class="booking">
                                     <div class="article-text__title">Системы бронирования</div>
                                     <p>Вы можете воспользоваться следующими системами бронирования:</p>
@@ -70,7 +71,7 @@
                                 </div>
                             </div>
 
-                            <div class="article-text">
+                            <div class="">
                                 <div class="article-text__title">Лучшие видовые отели в Дагестане</div>
                                 <p>Потрясающий вид из номера, с террасы или балкона - это то, чем может похвастаться далеко не каждый отель.</p>
                                 <p>Видовые отели и апартаменты высоко ценятся у путешественников. Забронировав номер с видом, можно насладиться панорамными видами на город или красоты окружающей природы.  Гостиницы с панорамными окнами или видовой террасой отлично подойдут для проведения романтического вечера или свадебной фотосессии.</p>

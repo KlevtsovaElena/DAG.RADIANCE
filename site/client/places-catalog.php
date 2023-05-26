@@ -336,27 +336,6 @@
                     </div>
                 </div>
             </section>
-            
-            <!-- Карточки вода -->
-            <div class="category"><h2>Море, реки, водохранилища</h2></div>
-            <div class="catalog-container">
-            <?php $data = Place::getLinesApiCategory("вода");
-            foreach ($data as $place) { ?>
-            <div class="card-container"></div>
-                <div class="d-flex card-item catalog-card catalog-card_effect" >
-                    <div class="card-item__img" style="background-image: url('./<?php echo $place['img-title'] ?>');"> </div>
-                    <div class="card-item__title">
-                        <h3><?php echo $place['title']; ?></h3>
-                    </div>
-                    <div class="card-item__desc">
-                        <?php echo $place['short-desc']; ?>
-                    </div>
-                    <a href="card-place.php?id=<?= $place['id'] ?> " class="block"><button class="card-item__btn catalog-btn btn-theme">Подробнее</button></a>
-                </div>
-                <?php } ?>
-            </div>
-
-
 
             <!-- Достопримечательности Пустыня -->
 
@@ -384,35 +363,12 @@
                         </div>
                     </div>
                 </div>
-            </section>
-
-            <!-- Карточки Пустыня -->
-            <!-- <div class="category"><h2>Пустыня</h2></div>
-            <div class="catalog-container">
-            <?php $data = Place::getLinesApiCategory("пустыня");
-            foreach ($data as $place) { ?>
-            <div class="card-container"></div>
-                <div class="d-flex card-item catalog-card catalog-card_effect" >
-                    <div class="card-item__img" style="background-image: url('./<?php echo $place['img-title'] ?>');"> </div>
-                    <div class="card-item__title">
-                        <h3><?php echo $place['title']; ?></h3>
-                    </div>
-                    <div class="card-item__desc">
-                        <?php echo $place['short-desc']; ?>
-                    </div>
-                    <a href="card-place.php?id=<?= $place['id'] ?> " class="block"><button class="card-item__btn catalog-btn btn-theme">Подробнее</button></a>
-                </div>
-                <?php } ?>
-            </div> -->
-
- 
-            
+            </section>          
 
             <section class="article">
                 <div class="article-container">
                     <div class="article-text">
                         <div class="section-first">
-                            <div class="article-text__title">И ещё много всего интересного</div>
                             <div class="d-flex column">
                                 <p>
                                     Мы рассказали вам про достопримечательности, ради которых стоит приехать в самый уникальный регион России - в Республику Дагестан, и чтобы поднять бокал вина и попробовать немного Италии, можно отправиться в Южный Дагестан в винный тур или так называемый этнотуризм. Ведь мы отправляемся в путешествия не только ради пейзажей, архитектурных достопримечательностей и исторических памятников, но и для того, чтобы познакомиться с гастрономическими традициями, национальной кухней и не только...
@@ -433,29 +389,6 @@
                 </div>
             </section>
             
-
-
-
-
-
-            <!-- Достопримечательности Иное -->
-            <!-- <div class="category"><h2>И ещё много всего интересного</h2></div> -->
-            <div class="catalog-container">
-            <?php $data = Place::getLinesApiCategory("нет");
-            foreach ($data as $place) { ?>
-            <div class="card-container"></div>
-                <div class="d-flex card-item catalog-card catalog-card_effect" >
-                    <div class="card-item__img" style="background-image: url('./<?php echo $place['img-title'] ?>');"> </div>
-                    <div class="card-item__title">
-                        <h3><?php echo $place['title']; ?></h3>
-                    </div>
-                    <div class="card-item__desc">
-                        <?php echo $place['short-desc']; ?>
-                    </div>
-                    <a href="card-place.php?id=<?= $place['id'] ?> " class="block"><button class="card-item__btn catalog-btn btn-theme">Подробнее</button></a>
-                </div>
-                <?php } ?>
-            </div>
 
             <div class="two-buttons">
                 <a href="../index.php" class="card-btn"><button class="card-item__btn btn-big btn-theme">На главную</button></a>
