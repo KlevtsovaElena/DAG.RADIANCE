@@ -1125,8 +1125,7 @@ a {
     height: 60px;
 }
 @media(max-width: 1540px) {
-    .tour-card,
-    .guide {
+    .tour-card-margin {
         margin: 20px;
     }
 }
@@ -1135,8 +1134,7 @@ a {
         height: 175px;
         width: 250px;
     }
-    .tour-card,
-    .guide {
+    .tour-card-margin {
         margin: 10px;
     }
 }
@@ -1155,6 +1153,9 @@ a {
 @media(max-width: 1300px) {
     .height-card-item {
         height: calc(100vw/3.05); 
+    }
+    .tour-card-margin {
+        margin: 25px;
     }
 }
 
@@ -1238,6 +1239,10 @@ a {
         margin-left: 25px;
         margin-right: 25px;
         height: calc(100vw/2.2); 
+    }
+    .tour-card-margin {
+        margin-left: 40px;
+        margin-right: 40px;
     }
     .article-text__desc {
         font-size: 34px;
@@ -1465,6 +1470,10 @@ a {
     }
     .bg-img {
         height: calc(100vw/2.4);
+    }
+    .tour-card-margin {
+        margin-left: 40px;
+        margin-right: 40px;
     }
 }
 

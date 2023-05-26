@@ -282,7 +282,7 @@
 
                     foreach ($toures as $tour) { ?>
 
-                        <div class="d-flex card-item slide catalog-card tour-item height-card-item tour-card">
+                        <div class="d-flex card-item slide catalog-card tour-item height-card-item tour-card tour-card-margin">
                             <div class="tour-item__img-container">
                                 <div class="tour-item__img" style="background-image: url('client/<?= $tour['img-title'];?>');"> </div>
                             </div>
