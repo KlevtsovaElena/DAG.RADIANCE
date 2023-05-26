@@ -3,9 +3,8 @@
     max-width: unset;
 }
 .view-img {
-    width: 100%;
+    width: 80%;
     height: auto;
-    margin: 30px 100px;
 }
 .hotels {
     max-width: 90%;
@@ -62,6 +61,9 @@
     .booking-icons {
         width: 150px;
         height: 35px;
+    }
+    .view-img {
+        width: 100%;
     }
 }
 
