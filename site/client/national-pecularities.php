@@ -41,12 +41,9 @@
                             С древнейших времен человек облюбовал территорию Дагестана. Первые стоянки появились здесь еще 2,2—2,3 млн лет назад. Археологи нашли множество следов присутствия представителей многих культур: Сиони-Цопи-Гинчи, Куро-аракской, Гинчийской, Месопотамской.
                             В IV веке до н. э. - III веке н. э. территория Дагестана входила в Кавказскую Албанию. Это была страна, в составе которой находилось множество княжеств, говорящих на различных языках. Уже тогда греко-римские авторы под словом «Албания» понимали одновременно и «страну гор» и «гору языков».
                         </p>
-                        <!-- <div class="img-column"> -->
                         <div class="img-with-caption">
                             <div class="pecularities2 img-section one-of"></div>
                             <p class="caption">с. Гамсутль</p>
-                            <!-- <div class="pecularities3 img-section one-of"></div>
-                            <div class="pecularities4 img-section img-right one-of"></div> -->
                         </div>
                         <div class="img-with-caption img-margin float-right">
                             <div class="pecularities21 img-section"></div>

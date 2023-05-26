@@ -9,6 +9,11 @@
     margin: 50px auto;
 }
 
+.title-text {
+    display: flex;
+    flex-direction: column;
+}
+
 .img-mountains {
     background-image: url('../img/places-catalog/1.jpg');
     background-size: cover;
@@ -27,6 +32,11 @@
 .text-left-img-right {
     gap: 30px;
     align-items: center;
+}
+
+.text-align-right {
+    text-align: right;
+    align-self: flex-end;
 }
 
 .text-left {
@@ -51,6 +61,64 @@
 
 .top-10_text {
     display: block;
+}
+
+.saltin1 {
+    background-image: url('../img/places-catalog/saltin1.jpg');
+    background-size: cover;
+    float: left;
+    margin: 0 0 30px 0;
+}
+
+.saltin2 {
+    background-image: url('../img/places-catalog/saltin2.jpg');
+    background-size: cover;
+}
+
+.saltin3 {
+    background-image: url('../img/places-catalog/saltin3.jpg');
+    background-size: cover;
+}
+
+.old-goor1 {
+    background-image: url('../img/places-catalog/old-goor1.jpg');
+    background-size: cover;
+    background-position: center center;
+    min-width: 500px;
+    height: unset;
+}
+
+.old-goor2 {
+    background-image: url('../img/places-catalog/old-goor2.jpg');
+    background-size: cover;
+    width: 200px;
+    height: 225px;
+}
+
+.small-img-below {
+    background-position: center center;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.karadakh1 {
+    background-image: url('../img/places-catalog/karadakh1.jpg');
+    background-size: cover;
+}
+
+.karadakh2 {
+    background-image: url('../img/places-catalog/karadakh2.jpg');
+    background-size: cover;
+}
+
+.naryn-kala2 {
+    background-image: url('../img/places-catalog/naryn-kala2.jpg');
+    background-size: cover;
+}
+
+.naryn-kala3 {
+    background-image: url('../img/places-catalog/naryn-kala3.jpg');
+    background-size: cover;
 }
 
 .sea2 {
@@ -158,6 +226,28 @@
     align-items: start;
 }
 
+.caption {
+    margin-top: 30px !important;
+}
+
+.diagonal {
+    position: relative;
+    height: 500px;
+    margin-top: 30px;
+}
+
+.top-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.bottom-right {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
 @media(max-width: 1450px) {
     .mountains-big {
         width: 800px;
@@ -186,6 +276,15 @@
 }
 
 @media(max-width: 1300px) {
+    .two-columns {
+        gap: 20px;
+    }
+    .small-img-below {
+        width: 300px;
+    }
+    .old-goor1 {
+        height: 500px;
+    }
     .img-bigger {
         width: 80%;
     }
@@ -240,6 +339,13 @@
 }
 
 @media(max-width: 1050px) {
+    .diagonal {
+        height: 450px;
+    }
+    .one-of {
+        width: 400px;
+        height: 250px;
+    }
     .sea2 {
         width: 575px;
         height: 350px;
@@ -277,6 +383,20 @@
     .article-container {
         align-items: center !important;
     }
+    .old-goor1 {
+        width: 100%;
+    }
+    .diagonal {
+        height: fit-content;
+    }
+    .top-left {
+        position: inherit;
+    }
+    .bottom-right {
+        position: inherit;
+        display: block;
+        margin: 0 auto;
+    }
     .sea {
         width: 600px;
         margin-bottom: 20px;
@@ -312,7 +432,7 @@
 @media(max-width: 750px) {
     .sea {
         width: 500px;
-        margin: 0 auto;
+        margin: 0 auto 20px auto;
     }
 }
 
@@ -322,6 +442,10 @@
     }
     .mountains-big {
         height: 300px;
+    }
+
+    .old-goor1 {
+        min-width: unset;
     }
     .img-bigger {
         height: 300px;
@@ -341,6 +465,16 @@
 @media(max-width: 520px) {
     .mountains-big {
         height: 250px;
+    }
+    .old-goor1 {
+        height: 400px;
+    }
+    .old-goor2 {
+        width: 60%;
+    }
+    .one-of {
+        width: 300px;
+        height: 200px;
     }
     .sea {
         width: 90%;
