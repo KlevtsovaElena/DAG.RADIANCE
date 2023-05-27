@@ -184,8 +184,8 @@
                 </div>
             </div>
 
-            <div class="article-container main-page">
-                <div class="article-text">
+            <div class="article-container main-page short-article">
+                <div class="article-text short-text">
                     <div class="article-text__title">Самый колоритный регион России!</div>
                     <div class="article-text__desc"></div>
                     <p class="fs-22">

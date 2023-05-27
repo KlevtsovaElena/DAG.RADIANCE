@@ -692,7 +692,12 @@ a {
 .main-page .article-text {
     padding: 0;
 }
-
+.short-article {
+    gap: 300px;
+}
+.short-text {
+    flex: 1;
+}
 
 /* КОНТЕЙНЕР С КАРТОЧКАМИ НА ГЛАВНОЙ */
 
@@ -1146,6 +1151,7 @@ a {
         font-size:18px;
     }
 }
+
 @media(max-width: 1407px) {
     .triangle {
         height: 175px;
@@ -1153,6 +1159,9 @@ a {
     }
     .tour-card-margin {
         margin: 10px;
+    }
+    .short-article {
+        gap: 200px;
     }
 }
 
@@ -1173,6 +1182,9 @@ a {
     }
     .tour-card-margin {
         margin: 25px;
+    }
+    .short-article {
+        gap: 110px;
     }
 }
 
@@ -1251,6 +1263,12 @@ a {
     .main-sections .article-container {
         gap: 30px;
     }  
+    .short-article {
+        gap: unset;
+    }
+    .short-text {
+        flex: unset;
+    }
 
 }
 @media(max-width: 1025px) {
