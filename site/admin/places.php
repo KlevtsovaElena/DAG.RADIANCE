@@ -31,7 +31,7 @@
                     <h1>ДОСТОПРИМЕЧАТЕЛЬНОСТИ</h1>
                 </div>
 
-                <a href="card-place.php"><button class="btn-admin">+ ДОБАВИТЬ НОВОЕ МЕСТО</button></a>
+                <a href="card-place.php" class="btn-admin">+ ДОБАВИТЬ НОВОЕ МЕСТО</a>
 
                 <div class="work-area__contaner">
                 <div class="catalog-container">
@@ -45,10 +45,10 @@
                             <?= $place['short-desc']; ?>
                         </div>
                         <!-- ЗАМЕНИТЬ НА ПЕРЕХОД НА НУЖНУЮ КАРТОЧКУ -->
-                        <a href="" class="d-block"><button class="card-item__btn catalog-btn btn-yellow">Подробнее</button></a>
+                        <a href="" class="d-block card-item__btn catalog-btn btn-yellow">Подробнее</a>
 
                         <div class="edit-card">
-                            <a href="card-place.php?id=<?= $place['id']; ?>" class="d-block"><button class="btn-black">&#9998 Изменить</button></a>
+                            <a href="card-place.php?id=<?= $place['id']; ?>" class="d-block  btn-admin  btn-black">&#9998 Изменить</a>
 
                             <button class="btn-delete btn-black" onclick="deleteCard()">X Удалить</button>
                         

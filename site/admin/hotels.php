@@ -28,7 +28,7 @@
             <div class="work-area">
                 <div class="work-area__title">
                     <h1>Гостиницы</h1>
-                    <a href="card-hotel.php"><button class="btn-admin">+ Добавить гостиницу/отель</button></a>
+                    <a href="card-hotel.php" class="btn-admin">+ Добавить гостиницу/отель</a>
                 </div>
 
                 <div class="work-area__contaner">
@@ -50,10 +50,10 @@
                                 <div class="hotel-item__location">
                                     <?= $hotel['location']; ?>
                                 </div>
-                                <a href="<?= $hotel['link'] ?> " class="block"><button class="card-item__btn hotel-btn">На сайт</button></a>
+                                <a href="<?= $hotel['link'] ?> " class="block card-item__btn hotel-btn">На сайт</a>
                             
                                 <div class="edit-card">
-                                    <a href="card-hotel.php?id=<?= $hotel['id']; ?>" class="d-block"><button class="btn-black">&#9998 Изменить</button></a>
+                                    <a href="card-hotel.php?id=<?= $hotel['id']; ?>" class="d-block  btn-admin  btn-black">&#9998 Изменить</a>
                                     <button class="btn-delete btn-black" onclick="deleteCard()">X Удалить</button>
                                 </div>
                                 <div class="delete-card d-none">
@@ -71,7 +71,7 @@
             <div class="work-area">
                 <div class="work-area__title">
                     <h1>Гостевые домики</h1>
-                    <a href="card-house.php"><button class="btn-admin">+ Добавить домик</button></a>
+                    <a href="card-house.php" class="btn-admin">+ Добавить домик</a>
                 </div>
 
                 <div class="work-area__contaner">
@@ -93,10 +93,10 @@
                                 <div class="hotel-item__location">
                                     <?= $house['location']; ?>
                                 </div>
-                                <a href="<?= $house['link'] ?> " class="block"><button class="card-item__btn hotel-btn">На сайт</button></a>
+                                <a href="<?= $house['link'] ?> " class="block card-item__btn hotel-btn">На сайт</a>
                             
                                 <div class="edit-card">
-                                    <a href="card-house.php?id=<?= $house['id']; ?>" class="d-block"><button class="btn-black">&#9998 Изменить</button></a>
+                                    <a href="card-house.php?id=<?= $house['id']; ?>" class="d-block btn-black">&#9998 Изменить</a>
                                     <button class="btn-delete btn-black" onclick="deleteCard()">X Удалить</button>
                                 </div>
                                 <div class="delete-card d-none">

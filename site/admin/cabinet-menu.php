@@ -10,14 +10,14 @@
                 <h3><?= $profile['login']?></h3>
                 <h3><?= $profile['role']?></h3>
             </div>
-            <a href="index.php"><button class="btn-admin" onclick="logOut()">Выйти</button></a>
+            <a href="index.php" class="btn-admin" onclick="logOut()">Выйти</a>
         </div>
     </div>
     <div class="menu-left">
         <div class="menu-left__items">
         
             <div class="menu-left__list">
-                <a href="cabinet.php"><div><img src="../client/img/icons/house-svgrepo-com.svg"></div></a>  
+                <a href="cabinet.php"><div><img src="../client/img/icons/house-svgrepo-com.svg" alt="house-icon"></div></a>  
             </div> 
             <div class="menu-left__list">
                 <?php if($profile['role']=='admin') { ?>

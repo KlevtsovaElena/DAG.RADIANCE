@@ -1,9 +1,18 @@
+@font-face {
+	font-family: 'CascadiaExtraLight';
+	src: url('../../client/fonts/cascadia_mono_extralight.eot'); /* IE 9 Compatibility Mode */
+	src: url('../../client/fonts/cascadia_mono_extralight.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../../client/fonts/cascadia_mono_extralight.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../../client/fonts/cascadia_mono_extralight.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../../client/fonts/cascadia_mono_extralight.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('.../../client/fonts/cascadia_mono_extralight.svg#cascadia_mono_extralight') format('svg'); /* Chrome < 4, Legacy iOS */
+}
 body {
     margin: 0;
     padding: 0;
     background-color: #F6f6f6;
     color: #6e6e6e;
-    /* font-family: 'Roboto', sans-serif; */
+    font-family: 'CascadiaExtraLight', sans-serif; 
 }
 input, textarea {
     box-sizing: border-box;

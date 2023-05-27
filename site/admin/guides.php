@@ -28,7 +28,7 @@
             <div class="work-area">
                 <div class="work-area__title">
                     <h1>Гиды</h1>
-                    <a href="card-guide.php"><button class="btn-admin">+ Добавить сайт с гидами</button></a>
+                    <a href="card-guide.php" class="btn-admin">+ Добавить сайт с гидами</a>
                 </div>
 
                 <div class="work-area__contaner">
@@ -43,10 +43,10 @@
                             <div class="guide catalog-card_effect">
                     
                                 <div class="guide-img" style="background-image: url('../client/<?=$guide['img-title'];?>')"></div>
-                                <div class="guide-link"><a href="#"><button class="card-item__btn guide-btn ">Гиды</button></a></div>
+                                <div class="guide-link"><a href="#" class="card-item__btn guide-btn ">Гиды</a></div>
                             
                                 <div class="edit-card">
-                                    <a href="card-guide.php?id=<?= $guide['id']; ?>" class="d-block"><button class="btn-black">&#9998 Изменить</button></a>
+                                    <a href="card-guide.php?id=<?= $guide['id']; ?>" class="d-block  btn-admin  btn-black">&#9998 Изменить</a>
                                     <button class="btn-delete btn-black" onclick="deleteCard()">X Удалить</button>
                                 </div>
                                 <div class="delete-card delete-card-guide d-none">

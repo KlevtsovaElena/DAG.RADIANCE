@@ -28,7 +28,7 @@
             <div class="work-area">
                 <div class="work-area__title">
                     <h1>ТУРЫ</h1>
-                    <a href="card-tour.php"><button class="btn-admin">+ Добавить новый тур</button></a>
+                    <a href="card-tour.php" class="btn-admin">+ Добавить новый тур</a>
                 </div>
 
 
@@ -40,7 +40,7 @@
                     <div class="d-flex card-item catalog-card tour-item tour-card catalog-card_effect" style="background-image: url('../client/<?= $tour['img-title'] ?>');">
                     
                         <div class="edit-card">
-                            <a href="card-tour.php?id=<?= $tour['id']; ?>" class="d-block"><button class="btn-black">&#9998 Изменить</button></a>
+                            <a href="card-tour.php?id=<?= $tour['id']; ?>" class="d-block btn-admin btn-black">&#9998 Изменить</a>
 
                             <button class="btn-delete btn-black" onclick="deleteCard()">X Удалить</button>
                         
