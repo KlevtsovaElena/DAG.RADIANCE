@@ -261,7 +261,7 @@
                             <div class="card-item__desc height-card-item__desc">
                                 <?= $place['short-desc'];?>
                             </div>
-                            <a href="client/card-place.php?id=<?= $place['id']; ?>"><button class="card-btn card-item__btn catalog-btn btn-theme height-card-item_btn">Подробнее</button></a>
+                            <a href="client/card-place.php?id=<?= $place['id']; ?>" class="card-btn card-item__btn catalog-btn btn-theme height-card-item_btn">Подробнее</a>
                         </div>
 
                     <?php };?>
@@ -271,7 +271,7 @@
 
                 <!-- Кнопка Смотреть всё -->
 
-                <a href="client/places-catalog.php" class="card-btn block"><button class="card-item__btn btn-big btn-theme">Смотреть все</button></a>
+                <a href="client/places-catalog.php" class="card-btn block card-item__btn btn-big btn-theme m-center">Смотреть все</a>
             </div>
                 
 
@@ -283,7 +283,7 @@
 
                 <div class="bg-img">
                 <div class="bg-gost-white">
-                    <a href="#videovisit"><button class="card-item__btn btn-panorama btn-theme">Смотреть видео</button></a>
+                    <a href="#videovisit" class="card-item__btn btn-panorama btn-theme">Смотреть видео</a>
                 </div> 
                 </div>
       
@@ -312,7 +312,7 @@
                                 <div class="tour-item__img" style="background-image: url('client/<?= $tour['img-title'];?>');"> </div>
                             </div>
                             <div class="tour-item__hover">
-                                <a href="<?= $tour['link'] ?> " class="block" target="_blank"><button class="card-item__btn tour-btn">На сайт</button></a>
+                                <a href="<?= $tour['link'] ?> " class="block card-item__btn tour-btn" target="_blank">На сайт</a>
                             </div> 
                         </div>
                     <?php };?>
@@ -322,7 +322,7 @@
             </div>
 
             <!-- Кнопка Смотреть всё -->
-            <a href="client/tours-catalog.php" class="card-btn block"><button class="card-item__btn btn-big btn-theme">Смотреть все</button></a>
+            <a href="client/tours-catalog.php" class="card-btn block card-item__btn btn-big btn-theme m-center">Смотреть все</a>
 
         </section>
         <!-- БЛОК ТУРЫ -->

@@ -38,6 +38,9 @@ a {
     text-decoration: none;
     cursor: pointer;
 }
+.m-center {
+    margin: 0 auto;
+}
 .ta-center {
     text-align: center;
 }
@@ -707,6 +710,8 @@ a {
 .card-item__btn {
     width: 150px;
     height: 40px;
+    box-sizing: border-box;
+    text-align: center;
     color: #253421;
     font-size: 18px;
     line-height: 1.18;
@@ -815,10 +820,12 @@ a {
 .btn-big {
     width: 200px;
     height: 60px;
-    margin: 20px auto 30px auto;
+    padding-top: 17px;
 }
 
 .catalog-btn {
+    box-sizing: border-box;
+    padding-top: 7px;
     position: absolute;
     bottom: 20px;
     margin-left: auto;
@@ -828,6 +835,8 @@ a {
 }
 
 .tour-btn {
+    box-sizing: border-box;
+    padding-top: 7px;
     position: absolute;
     margin-left: auto;
     margin-right: auto;
@@ -837,6 +846,8 @@ a {
     transition: all 0.3s;
 }
 .guide-btn {
+    box-sizing: border-box;
+    padding-top: 7px;
     margin-left: auto;
     margin-right: auto;
     cursor: pointer;
@@ -855,6 +866,8 @@ a {
     bottom: 20px;
     margin-left: auto;
     margin-right: auto;
+    box-sizing: border-box;
+    padding-top: 7px;
     left: 0;
     right: 0;
     cursor: pointer;
@@ -1114,6 +1127,7 @@ a {
     max-width: 100vw;
     height: calc(100vw/3.24);
     max-height: 500px;
+    margin-top: 20px;
     background-image: url('../img/bg/panorama1.jpg');
     background-position: center center;
     background-size: cover;
@@ -1136,6 +1150,8 @@ a {
 }
 
 .btn-panorama {
+    box-sizing: border-box;
+    padding-top: 17px;
     width: 200px;
     height: 60px;
 }
@@ -1303,6 +1319,7 @@ a {
             width: 150px;
             height: 40px;
             margin: 0;
+            padding-top: 6px;
     }
 
 }
@@ -1577,8 +1594,8 @@ a {
     .btn-big {
         width: 150px;
         height: 40px;
-        margin: 0;
         margin-bottom: 30px;
+        padding-top: 6px;
     }
     .breadcrumbs-container {
         display: none;

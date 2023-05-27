@@ -283,26 +283,6 @@
                 </div>
             </section>
 
-
-            <!-- Карточки Горы -->
-            <!-- <div class="category" id="mountains"><h2>Горы</h2></div>
-            <div class="catalog-container">
-            <?php $data = Place::getLinesApiCategory("горы");
-            foreach ($data as $place) { ?>
-            <div class="card-container"></div>
-                <div class="d-flex card-item catalog-card catalog-card_effect" >
-                    <div class="card-item__img" style="background-image: url('./<?php echo $place['img-title'] ?>');"> </div>
-                    <div class="card-item__title">
-                        <h3><?php echo $place['title']; ?></h3>
-                    </div>
-                    <div class="card-item__desc">
-                        <?php echo $place['short-desc']; ?>
-                    </div>
-                    <a href="card-place.php?id=<?= $place['id'] ?> " class="block"><button class="card-item__btn catalog-btn btn-theme">Подробнее</button></a>
-                </div>
-                <?php } ?>
-            </div> -->
-
             <section class="article no-reverse">
                 <div class="article-container">
                     <div class="article-text">
@@ -483,7 +463,7 @@
             </section>
 
 
-            <!-- Достопримечательности МОРЕ, ВОДА -->
+            <!-- Достопримечательности МОРЕ -->
             <section class="article"  id="sea">
                 <div class="article-container">
                     <div class="article-text">
@@ -681,8 +661,8 @@
             
 
             <div class="two-buttons">
-                <a href="../index.php" class="card-btn"><button class="card-item__btn btn-big btn-theme">На главную</button></a>
-                <a href="tours-catalog.php" class="card-btn"><button class="card-item__btn btn-big btn-theme">К Турам</button></a>
+                <a href="../index.php" class="card-btn card-item__btn btn-big btn-theme">На главную</a>
+                <a href="tours-catalog.php" class="card-btn card-item__btn btn-big btn-theme">К Турам</a>
             </div>
         
     

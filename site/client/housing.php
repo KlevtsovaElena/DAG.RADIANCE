@@ -106,13 +106,13 @@
                                 <div class="hotel-item__location">
                                     <?= $hotel['location']; ?>
                                 </div>
-                                <a href="<?= $hotel['link'] ?> " class="block" target="_blank"><button class="card-item__btn hotel-btn">На сайт</button></a>
+                                <a href="<?= $hotel['link'] ?>" class="block card-item__btn hotel-btn" target="_blank">На сайт</a>
                             </div>
                             <?php } ?>
                     </div>
                     <div class="hotels-all-btn">
-                        <a href="https://ex-terior.ru/land/rossiya/dagestan/feature/view-hotel/" target="_blank">
-                            <button class="card-item__btn btn-big btn-theme">Смотреть ещё</button>
+                        <a href="https://ex-terior.ru/land/rossiya/dagestan/feature/view-hotel/" class="block card-item__btn btn-big btn-theme hotel-big-btn" target="_blank">
+                            Смотреть ещё
                         </a>
                     </div>
 
@@ -135,14 +135,14 @@
                                 <div class="hotel-item__location">
                                     <?= $house['location']; ?>
                                 </div>
-                                <a href="<?= $house['link'] ?> " class="block" target="_blank"><button class="card-item__btn hotel-btn">На сайт</button></a>
+                                <a href="<?= $house['link'] ?> " class="block card-item__btn hotel-btn" target="_blank">На сайт</a>
                             </div>
                             <?php } ?>
                             
                     </div>
                     <div class="hotels-all-btn">
-                        <a href="https://ex-terior.ru/land/rossiya/dagestan/feature/view-hotel/" target="_blank">
-                            <button class="card-item__btn btn-big btn-theme">Смотреть ещё</button>
+                        <a href="https://ex-terior.ru/land/rossiya/dagestan/feature/view-hotel/" class="block card-item__btn btn-big btn-theme hotel-big-btn" target="_blank">
+                            Смотреть ещё
                         </a>
                     </div>
                 </div>

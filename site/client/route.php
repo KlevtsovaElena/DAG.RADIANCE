@@ -71,7 +71,7 @@
                                 Международный аэропорт Махачкалы принимает рейсы из Москвы (Внуково, Шереметьево, Домодедово), Санкт-Петербурга, Ростова-на-Дону, Сургута, Сочи, Казани, Новосибирска, Екатеринбурга. Имейте в виду: некоторые рейсы выполняются с пересадками. Например, во время перелета из Екатеринбурга и Новосибирска вам придется сделать не менее одной пересадки. При желании сюда можно прилететь даже из Стамбула, правда, такие полеты выполняются не ежедневно. Перелет из Москвы займет от 2 часов, из Санкт-Петербурга – 3 часа 30 минут, из Новосибирска – около 9 часов (с учетом пересадок).<br>
                                 Аэропорт Махачкалы расположен в 20 км от города, доехать в центр можно за полчаса, но на общественном транспорте добираться неудобно: маршрутка № 105 ходит редко, автобус — 4 раза в день (в 10:30, 12:15, 14:10 и 15:00) и только до ТРЦ «Пирамида», расположенного на южной окраине Махачкалы.
                             </p>
-                            <a href="https://www.aeroflot.ru/ru-ru" target="_blank" class="card-btn block"><button class="card-item__btn btn-big btn-theme">Авиабилеты</button></a>
+                            <a href="https://www.aeroflot.ru/ru-ru" target="_blank" class="card-btn block card-item__btn btn-big btn-theme m-center">Авиабилеты</a>
                         </div>
                     </div>
                 </div>
@@ -89,7 +89,7 @@
                                 Еще один вариант – поездка в Махачкалу по железной дороге. Добраться в столицу Республики Дагестан на поезде можно из Москвы, Санкт-Петербурга, Ростова-на-Дону, Тюмени. Из Москвы регулярно курсирует поезд в Дербент.
                                 Путешествовать по Дагестану можно на авто, рейсовых автобусах, микроавтобусах, такси, попутках. Из Махачкалы можно добраться на электричках в Дербент, Хасавюрт, Кизилюрт, Избербаш, Манас.
                             </p>
-                            <a href="https://www.rzd.ru/" target="_blank" class="card-btn block"><button class="card-item__btn btn-big btn-theme">Ж/д билеты</button></a>
+                            <a href="https://www.rzd.ru/" target="_blank" class="card-btn block card-item__btn btn-big btn-theme m-center">Ж/д билеты</a>
                         </div>
                     </div>
                 </div>
@@ -145,7 +145,7 @@
                         <p>
                             В Махачкале есть пункты проката автомобилей. При необходимости вам доставят арендованное авто прямо в аэропорт. Планируя поездку по высокогорным районам республики, лучше взять напрокат хороший внедорожник.
                         </p>
-                        <a href="https://prokatavto05.ru/" target="_blank" class="card-btn block"><button class="card-item__btn btn-big btn-theme">Арендовать</button></a>
+                        <a href="https://prokatavto05.ru/" target="_blank" class="card-btn block card-item__btn btn-big btn-theme m-center">Арендовать</a>
                     </div>
                 </div>
             </div>
@@ -170,8 +170,8 @@
             </div>
         </div>
             <div class="two-buttons">
-                <a href="../index.php" class="card-btn"><button class="card-item__btn btn-big btn-theme">На главную</button></a>
-                <a href="housing.php" class="card-btn"><button class="card-item__btn btn-big btn-theme">Далее</button></a>
+                <a href="../index.php" class="card-btn card-item__btn btn-big btn-theme">На главную</a>
+                <a href="housing.php" class="card-btn card-item__btn btn-big btn-theme">Далее</a>
             </div>
     </section>
         

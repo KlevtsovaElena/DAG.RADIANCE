@@ -114,6 +114,7 @@ p {
     .card-container {
         flex-direction: column-reverse;
         align-items: center;
+        margin-bottom: 20px;
     }
 
     .card-text__title {
@@ -229,9 +230,6 @@ p {
     }
     .two-element .slick-list {
         display: none;
-    }
-    .card-container {
-        margin-bottom: 50px;
     }
     .mini-slider .slick-dots {
         bottom: -20px;

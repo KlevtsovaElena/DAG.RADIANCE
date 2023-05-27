@@ -68,7 +68,7 @@
                                 <div class="tour-item__img" style="background-image: url('<?= $tour['img-title'];?>');"> </div>
                             </div>
                             <div class="tour-item__hover">
-                                <a href="<?= $tour['link'] ?> " class="block" target="_blank"><button class="card-item__btn tour-btn">На сайт</button></a>
+                                <a href="<?= $tour['link'] ?> " class="block card-item__btn tour-btn" target="_blank">На сайт</a>
                             </div> 
                         </div>
                 <?php };?>
@@ -83,7 +83,7 @@
 
                     <div class="guide m-10">
                         <div class="guide-img" style="background-image: url('<?=$guide['img-title'];?>');"></div>
-                        <div class="guide-link"><a href="<?=$guide['link'];?>"><button class="card-item__btn guide-btn ">Гиды</button></a></div>
+                        <div class="guide-link"><a href="<?=$guide['link'];?>" class="card-item__btn guide-btn " target="_blank">Гиды</a></div>
                     </div>
 
                     <?php } ?>
@@ -93,8 +93,8 @@
             </div>
 
             <div class="two-buttons">
-                <a href="../index.php" class="card-btn"><button class="card-item__btn btn-big btn-theme">На главную</button></a>
-                <a href="places-catalog.php" class="card-btn"><button class="card-item__btn btn-big btn-theme btn-long">Достопримечательности</button></a>
+                <a href="../index.php" class="card-btn card-item__btn btn-big btn-theme">На главную</a>
+                <a href="places-catalog.php" class="card-btn card-item__btn btn-big btn-theme btn-long">Достопримечательности</a>
             </div>
             
     

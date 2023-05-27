@@ -76,8 +76,8 @@
             </div>
 
             <div class="two-buttons">
-                <a href="../index.php" class="card-btn"><button class="card-item__btn btn-big btn-theme">На главную</button></a>
-                <a href="national-pecularities.php" class="card-btn"><button class="card-item__btn btn-big btn-theme">Далее</button></a>
+                <a href="../index.php" class="card-btn card-item__btn btn-big btn-theme">На главную</a>
+                <a href="national-pecularities.php" class="card-btn card-item__btn btn-big btn-theme">Далее</a>
             </div>
 
         </section>
