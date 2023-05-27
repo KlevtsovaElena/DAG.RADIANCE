@@ -59,6 +59,10 @@ a {
     text-align: center;
 }
 
+.relative {
+    position: relative;
+}
+
 .d-flex {
     display: flex;
 }

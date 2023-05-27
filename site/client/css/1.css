@@ -98,6 +98,10 @@
     gap: 50px;
 }
 
+.one-column {
+    flex: 1 0;
+}
+
 .adjustment {
     justify-content: center;
 }
