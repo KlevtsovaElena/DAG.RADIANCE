@@ -45,6 +45,7 @@ a {
     font-size: 18px;
     font-weight: 600;
 }
+
 .container-page {
     min-height: 100vh;
     flex-direction: column;
@@ -605,9 +606,9 @@ a {
     flex-direction: row-reverse;
 }
 
-.main-sections .article-container {
+/* .main-sections .article-container {
     gap: 50px;
-}
+} */
 
 .article-text {
     position: relative;
@@ -685,7 +686,6 @@ a {
 }
 
 .article-img img {
-
     max-width: 450px;
 }
 
@@ -1134,9 +1134,16 @@ a {
     width: 200px;
     height: 60px;
 }
+
+.article-text .fs-22 {
+    font-size: 22px;
+}
 @media(max-width: 1540px) {
     .tour-card-margin {
         margin: 20px;
+    }
+    .article-text .fs-22 {
+        font-size:18px;
     }
 }
 @media(max-width: 1407px) {
@@ -1211,7 +1218,8 @@ a {
         padding-right: 30px;
     }
 
-    .article-text p{
+    .article-text p,
+    .article-text .fs-22 {
         font-size: 16px;
     } 
 
@@ -1239,10 +1247,17 @@ a {
     }
     .article-img img {
         max-width: 400px;
-    }   
+    }  
+    .main-sections .article-container {
+        gap: 30px;
+    }  
 
 }
-
+@media(max-width: 1025px) {
+    .article-text .fs-22  {
+        font-size: 14px;
+    }
+}
 @media(max-width: 1000px) {
 
     .height-card-item {
@@ -1520,6 +1535,10 @@ a {
     .bg-img {
         height: calc(100vw/2);
     }
+    .tour-card-margin {
+        margin-left: 60px;
+        margin-right: 60px;
+    }
 }
 
 @media(max-width: 520px) {
@@ -1568,7 +1587,8 @@ a {
     .article-img img {
         max-width: 300px;
     } 
-    .article-text p{
+    .article-text p,
+    .article-text .fs-22 {
         font-size: 12px;
     } 
 
@@ -1607,7 +1627,10 @@ a {
         margin-left: 20px;
         margin-right: 20px;
     }
-
+    .tour-card-margin {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
 }
 @media(max-width: 350px) {
     /* .index {
@@ -1666,6 +1689,7 @@ a {
         height: calc(100vw/1.5);
     }
 }
+
 @media (max-width: 320px) {
     .mobile-nav {
         width: 100%;

@@ -167,43 +167,68 @@
                 <div class="article-text">
                     <div id="about" class="article-text__title">Уникальная природа</div>
                     <div class="article-text__desc">Горы, море и бархан!</div>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse iure, debitis repudiandae cum saepe corrupti facilis. Explicabo omnis fugit exercitationem rem, eligendi quo incidunt neque vitae corrupti amet sunt aliquid.</p>
+                    <p class="fs-22">
+                    Мой Дагестан, расти, цвети. Всегда двукрылый и двуногий!<br>
+                    Пусть в сказках будут три пути, Три молодца и три дороги…<br>
+                    Не три струны и не одна На двух, пандур мой, пой, играя:<br>
+                    Любовь — одна моя струна, А Дагестан — струна вторая.
+                    </p>
+                    <p align="right" class="fs-22">Расул Гамзатов</p>
                     <a href="client/places-catalog.php" class="article-text__more"> подробнее</a>
                 </div>
                 <div class="article-img">
                     <a href="client/geography-and-climate.php">
-                        <img class="small-img" src="client/img/place/Горы-small.jpg" alt="">
-                        <img class="big-img d-none" src="client/img/place/Горы2.jpg" alt="">
+                        <img class="small-img" src="client/img/section1/1-small.png" alt="geography-and-climate">
+                        <img class="big-img d-none" src="client/img/section1/1-big.jpg" alt="geography-and-climate">
                     </a>
                 </div>
             </div>
 
             <div class="article-container main-page">
                 <div class="article-text">
-                    <div class="article-text__title">Кавказский Вавилон</div>
-                    <div class="article-text__desc">Самый колоритный регион России!</div>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse iure, debitis repudiandae cum saepe corrupti facilis. Explicabo omnis fugit exercitationem rem, eligendi quo incidunt neque vitae corrupti amet sunt aliquid.</p>
+                    <div class="article-text__title">Самый колоритный регион России!</div>
+                    <div class="article-text__desc"></div>
+                    <p class="fs-22">
+                    Лезгин, Рутулец, Табасаранец, Агулец,<br>
+                    Даргинец брат, плечом к плечу стоят.<br>
+                    Цахурец, Лакец, Кумык, Аварец,<br>
+                    В лезгинском танце как орлы парят.<br>
+                    В единстве духа множество народов,<br>
+                    Крепка их дружба, твердостью скалы.<br>
+                    В сердечном братстве сила Дагестанцев,<br>
+                    В бесстрашии воинов душа Нарын Калы.
+                    </p>
                     <a href="client/national-pecularities.php" class="article-text__more"> подробнее</a>
                 </div>
                 <div class="article-img">
                     <a href="client/national-pecularities.php">
-                        <img class="small-img" src="client/img/place/кавказский-вавилон2-small.jpg" alt="">
-                        <img class="big-img d-none" src="client/img/place/кавказский-вавилон.jpeg" alt="">
+                        <img class="small-img" src="client/img/section2/2-small-450.jpg" alt="national-pecularities">
+                        <img class="big-img d-none" src="client/img/section2/2-big.jpg" alt="national-pecularities">
                     </a>
                 </div>
             </div>
 
             <div class="article-container main-page">
                 <div class="article-text">
-                    <div class="article-text__title">Чтение традиций</div>
-                    <div class="article-text__desc">Гостеприимство, праздники и танцы!</div>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse iure, debitis repudiandae cum saepe corrupti facilis. Explicabo omnis fugit exercitationem rem, eligendi quo incidunt neque vitae corrupti amet sunt aliquid.</p>
+                    <div class="article-text__title">Гостеприимство, праздники и танцы!</div>
+                    <div class="article-text__desc"></div>
+                    <p class=" fs-22">
+                    Кто побывал один лишь только раз.<br>
+                    Увидев красоту земную,<br>
+                    оставит память в сердце тот Кавказ,<br>
+                    который манит, радует, чарует.<br>
+                    Здесь говорят на разных языках,<br>
+                    но понимают друга с полуслова.<br>
+                    Шумит как эхо в сказочных горах,<br>
+                    хорошее лишь повторяя снова.
+
+                    </p>
                     <a href="client/fests-and-traditions.php" class="article-text__more"> подробнее</a>
                 </div>
                 <div class="article-img">
                     <a href="client/fests-and-traditions.php">
-                        <img class="small-img" src="client/img/place/Танец-small.jpg" alt="">
-                        <img class="big-img d-none" src="client/img/place/Танец.jpg" alt="">
+                        <img class="small-img" src="client/img/section3/3-small.jpg" alt="fests-and-traditions">
+                        <img class="big-img d-none" src="client/img/section3/12.jpg" alt="fests-and-traditions">
                     </a>
                 </div>
             </div>
