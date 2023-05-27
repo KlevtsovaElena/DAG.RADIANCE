@@ -55,7 +55,7 @@
                     <ul class="mobile-submenu">
                         <li><a href="client/places-catalog.php">Достопримечательности</a></li>
                         <li><a href="client/tours-catalog.php">Туры</a></li>
-                        <li><a href="#">Рестораны</a></li>
+                        <li><a href="client/food.php">Рестораны</a></li>
                     </ul>
                 </li>
                 <!-- Развернутая версия мобильного меню без выпадающих пунктов -->
@@ -83,7 +83,7 @@
                     <ul>
                         <li><a href="client/tours-catalog.php">Туры</a></li>
                         <li><a href="client/places-catalog.php">Достопримечательности</a></li>
-                        <li><a href="#">Рестораны</a></li>
+                        <li><a href="client/food.php">Рестораны</a></li>
                     </ul>
                 </li> -->
                 <!-- <li><a href="#">Отзывы</a></li> -->
@@ -137,11 +137,11 @@
                         <ul>
                             <li><a href="client/tours-catalog.php">Туры</a></li>
                             <li><a href="client/places-catalog.php">Достопримечательности</a></li>
-                            <li><a href="#">Рестораны</a></li>
+                            <li><a href="client/food.php">Рестораны</a></li>
                         </ul>
                     <!-- <li><a href="#">Где поесть</a></li>
                         <ul>
-                            <li><a href="#">Рестораны</a></li>
+                            <li><a href="client/food.php">Рестораны</a></li>
                         </ul>
                         <ul>
                             <li><a href="#">Кафе</a></li>
@@ -344,6 +344,7 @@
                             <a href="client/housing.php">Где остановиться</a>
                             <a href="client/places-catalog.php">Достопримечательности</a>
                             <a href="client/tours-catalog.php">Туры</a>
+                            <a href="client/food.php">Где поесть</a>
                             <a href="client/contacts.php">Контакты</a>
                         </div>
                     </div>

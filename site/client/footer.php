@@ -12,6 +12,7 @@
                             <a href="housing.php">Где остановиться</a>
                             <a href="places-catalog.php">Достопримечательности</a>
                             <a href="tours-catalog.php">Туры</a>
+                            <a href="food.php">Где поесть</a>
                             <a href="contacts.php">Контакты</a>
                         </div>
                     </div>

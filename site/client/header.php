@@ -29,7 +29,7 @@
                             <ul class="submenu">
                                 <li><a href="places-catalog.php">Достопримечательности</a></li>
                                 <li><a href="tours-catalog.php">Туры</a></li>
-                                <li><a href="#">Рестораны</a></li>
+                                <li><a href="food.php">Рестораны</a></li>
                             </ul>
                         </li>
                         <!-- <li><a href="#">Отзывы</a></li> -->
@@ -65,7 +65,7 @@
                     <ul class="mobile-submenu">
                         <li><a href="places-catalog.php">Достопримечательности</a></li>
                         <li><a href="tours-catalog.php">Туры</a></li>
-                        <li><a href="#">Рестораны</a></li>
+                        <li><a href="food.php">Рестораны</a></li>
                     </ul>
                 </li>
                 <!-- <li><a href="#">Отзывы</a></li> -->
