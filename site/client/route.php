@@ -64,7 +64,7 @@
                     </div>
                     <div class="section-first d-flex">
                         <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac7c22167edfd43cec42a80d170f306d7025dfc6eb9cc582e4da27a05022880ab&amp;source=constructor" width="450" height="450" frameborder="0"></iframe>
-                        <!-- <img src="./img/route/4.jpg" alt=""> -->
+                        <!-- <img src="./img/route/4.jpg" alt="Карта"> -->
                         <div class="article-text gap">
                             <div class="article-text__title">На самолете</div>
                             <p>
@@ -82,7 +82,7 @@
             <div class="article-container">
                 <div class="article-text">
                     <div class="section-first d-flex">
-                        <img class="train" src="./img/route/5.jpg" alt="">
+                        <img class="train" src="./img/route/5.jpg" alt="Поезд">
                         <div class="article-text gap">
                             <div class="article-text__title" id="train">На поезде</div>
                             <p>
@@ -139,7 +139,7 @@
         <div class="article-container">
             <div class="article-text">
                 <div class="section-first d-flex">
-                    <img class="rental" src="./img/route/8.jpg" alt="" style="max-height: 500px">
+                    <img class="rental" src="./img/route/8.jpg" alt="Прокат авто" style="max-height: 500px">
                     <div class="article-text gap">
                         <div class="article-text__title">Прокат автомобилей</div>
                         <p>

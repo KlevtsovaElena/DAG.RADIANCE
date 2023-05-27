@@ -113,7 +113,7 @@
                                     Первое, что стоит отметить, рассматривая достопримечательности Кавказа, это самую высокую точку или гору Базардюзю.  Ее вершина располагается на высоте 4466 метров. Гора находится непосредственно на границе. Буквально одна часть ее принадлежит России, а вторая часть Азербайджану
                                     </p>
                                     <div class="img-with-caption img-margin float-right bazardyuzo">
-                                        <img class="bazardyuzo" src="./img/places-catalog/bazardyuzo.jpg" alt="">
+                                        <img class="bazardyuzo" src="./img/places-catalog/bazardyuzo.jpg" alt="Гора Базардюзо">
                                         <p class="caption caption-margin">Гора Базардюзо</p>
                                     </div>
                                     <p>
@@ -199,7 +199,7 @@
                     <div class="article-text">
                         <div class="section-first">
                             <div class="article-text__title">Деавгай</div>
-                            <img class="img-big img-one" src="./img/places-catalog/deavgay.jpg" alt="">
+                            <img class="img-big img-one" src="./img/places-catalog/deavgay.jpg" alt="Гора Деавгай">
                             <p class="caption-margin">
                                 Гора Деавгай находится на Большом Кавказе. Это самая высокая из точек Гельмец-Ахтынского хребта. Сама вершина немного имеет вогнутую форму. На ней вечно присутствуют снега.
                                 Склоны гор довольно скалистые. Северная часть горы образует отвесную сланцевую стену черного цвета с большими объемами снегов. А с южной стороны — крутые склоны с ледово-снежным карнизом.
@@ -217,7 +217,7 @@
                             <p class="caption-margin">
                                 Это естественная граница между Грузией, Дагестаном и Чечней. Хребет покрыт шапками снега, имеются ледники и горные речки, питающие их. В горном районе имеется смотровая площадка
                             </p>
-                            <img class="img-big img-one" src="./img/places-catalog/diklosmta.jpg" alt="">
+                            <img class="img-big img-one" src="./img/places-catalog/diklosmta.jpg" alt="Гора Диклосмта">
                         </div>
                     </div>
                 </div>
@@ -277,7 +277,7 @@
                                     <div class="gunib-fortress mountains-big"></div>
                                 </div>
                             </div>
-                            <img class="green-steps img-big img-one" src="./img/places-catalog/green-steps.jpg" alt="">
+                            <img class="green-steps img-big img-one" src="./img/places-catalog/green-steps.jpg" alt="Зеленые холмы">
                         </div>
                     </div>
                 </div>
@@ -315,7 +315,7 @@
                                 <p>
                                     Урбанизация — это неотъемлемая часть современной жизни, поэтому многие поселки со временем оказываются заброшены. То же случилось и с аулом Гамсутль, в котором ещё 50 лет назад бурлила жизнь, работали магазины, больницы и т. д. Однако со временем жители стали покидать родные дома и переезжать в более крупные населенные пункты, а в 2015 году умер последний житель Гамсутля. С тех пор село одиноко стоит посреди гор, ожидая того момента, когда навсегда исчезнет с лица Земли. Важно упомянуть, что примерный возраст Гамсутля составляет 2 тыс. лет, а на территории села были сделаны многочисленные археологические находки.
                                 </p>
-                                <img class="img-big img-one" src="./img/places-catalog/gamsutl.jpg" alt="">
+                                <img class="img-big img-one" src="./img/places-catalog/gamsutl.jpg" alt="Вид на Гамсутль">
                             </div>   
                         </div>
                     </div>
@@ -352,22 +352,22 @@
                                     Миллионы лет природа создавала один из своих самых уникальных шедевров – Сулакский каньон. Глубиной он превосходит своего знаменитого заокеанского брата – Большой каньон в США. Это поистине масштабное творение природы притягивает путешественников и ученых со всего мира. Сулакский каньон по праву считают геологической энциклопедией, по которой можно изучать минувшие эпохи. Этот грандиозный памятник природы был очевидцем событий ледникового периода, о чем свидетельствуют следы, оставленные в камне. Он видел исторические вехи цивилизации, был местом эпических сражений, его необъятная красота и сила вдохновляла великих поэтов, писателей и художников. Своей глубиной каньон обязан реке Сулак, поражающей красотой бирюзовых вод, чьи бурные потоки сдерживают действующие плотины. Самой мощной считается Чиркейская ГЭС, благодаря которой образовалось знаменитое водохранилище
                                 </p>
                                 <div class="img-with-caption">
-                                    <img class="img-big img-one sulak" src="./img/places-catalog/sulak1.jpg" alt="">
+                                    <img class="img-big img-one sulak" src="./img/places-catalog/sulak1.jpg" alt="Панорама Сулакского каньона">
                                     <p class="caption caption-margin">Сулакский каньон</p>
                                 </div>
                                 <div class="diagonal">
                                     <div class="img-with-caption top-left">
-                                        <img class="one-of" src="./img/places-catalog/sulak2.jpg" alt="">
+                                        <img class="one-of" src="./img/places-catalog/sulak2.jpg" alt="Берег Сулакского каньона">
                                         <p class="caption caption-margin">Сулакский каньон</p>
                                     </div>
-                                    <img class="bottom-right one-of" src="./img/places-catalog/sulak3.jpg" alt="">
+                                    <img class="bottom-right one-of" src="./img/places-catalog/sulak3.jpg" alt="Катер в Сулакском каньоне">
                                 </div>
                                 <div class="diagonal">
                                     <div class="img-with-caption top-left">
-                                        <img class="one-of" src="./img/places-catalog/chirkey1.jpg" alt="">
+                                        <img class="one-of" src="./img/places-catalog/chirkey1.jpg" alt="Чиркейская ГЭС сверху">
                                         <p class="caption caption-margin">Чиркейская ГЭС</p>
                                     </div>
-                                    <img class="bottom-right one-of" src="./img/places-catalog/chirkey2.jpg" alt="">
+                                    <img class="bottom-right one-of" src="./img/places-catalog/chirkey2.jpg" alt="Катер в Чиркейском водохранилище">
                                 </div>
                             </div>  
                         </div>
@@ -384,13 +384,13 @@
                                 <p>
                                     Живописное водохранилище в Унцукульском районе Дагестана. Пусть это творение человека, а не природы, но выглядит место потрясающе: можно бесконечно любоваться отражением гор в изумрудном зеркале бассейна. Двадцатикилометровое Ирганайское водохранилище, зажатое между каменных стен, сравнивают с норвежским фьордом — извилистым узким морским заливом со скалистыми берегами, врезающимся в сушу. Вдоль водохранилища петляет хорошая асфальтированная дорога с четырехкилометровым Гимринским тоннелем.
                                 </p>
-                                <img class="img-big img-one" src="./img/places-catalog/irganay1.jpg" alt="">
+                                <img class="img-big img-one" src="./img/places-catalog/irganay1.jpg" alt="Панорама Ирганайского водохранилища">
                                 <div class="diagonal">
                                     <div class="img-with-caption top-left">
-                                        <img class="one-of" src="./img/places-catalog/irganay2.jpg" alt="">
+                                        <img class="one-of" src="./img/places-catalog/irganay2.jpg" alt="Ирганайское водохранилище">
                                         <p class="caption caption-margin">Ирганайское водохранилище</p>
                                     </div>
-                                    <img class="bottom-right one-of" src="./img/places-catalog/irganay3.jpg" alt="">
+                                    <img class="bottom-right one-of" src="./img/places-catalog/irganay3.jpg" alt="Вид на Ирганайское водохранилище">
                                 </div>
                             </div>  
                         </div>
@@ -412,7 +412,7 @@
                                     <div class="karadakh1 img-section one-of"></div>
                                     <div class="karadakh2 img-section one-of"></div>
                                 </div>
-                                <img class="img-big img-one" src="./img/places-catalog/karadakh3.jpg" alt="">
+                                <img class="img-big img-one" src="./img/places-catalog/karadakh3.jpg" alt="Карадахская теснина">
                             </div>  
                         </div>
                     </div>
@@ -428,7 +428,7 @@
                                 <p>
                                     Нары́н-кала́ — персидская цитадель, часть Дербентской крепости, соединённая с Каспийским морем двойными стенами, призванными перекрывать так называемые Каспийские ворота в Персидскую державу. Входит в список всемирного наследия ЮНЕСКО. В переводе со среднеперсидского название означает «солнечная крепость». Со Средних веков Дербентская крепостная стена также называлась стеной Александра Македонского из-за предания, что её построил великий завоеватель.
                                 </p>
-                                <img class="img-big img-one" src="./img/places-catalog/naryn-kala1.jpg" alt="">
+                                <img class="img-big img-one" src="./img/places-catalog/naryn-kala1.jpg" alt="Панорама крепости Нарыкн-Кала">
                             </div> 
                             <div class="row">
                                 <div class="naryn-kala2 img-section one-of"></div>
@@ -445,7 +445,7 @@
                         <div class="section-first">
                             <div class="d-flex column gap">
                                 <div class="article-text__title">Забытое наследие могущественной цивилизации. Экраноплан-ракетоносец проекта 903 “Лунь”</div>
-                                <img class="img-big img-one" src="./img/places-catalog/lun.jpg" alt="">
+                                <img class="img-big img-one" src="./img/places-catalog/lun.jpg" alt="Экраноплан “Лунь”">
                                 <div class="article-text__title">«Творение, превзошедшее время»</div>
                                 <p>
                                     В 20-е годы XX века ученые открыли экранный эффект — резкое увеличение подъемной силы летательного аппарата во время движения над ровной поверхностью. Это может быть море, лед, земля без перепадов высот. Используя эффект «воздушной подушки» между поверхностью и аппаратом, в 1961 году советский кораблестроитель Ростислав Алексеев сконструировал машину, не имевшую аналогов в мире, — экраноплан, скоростное судно, способное и передвигаться по воде, и лететь над поверхностью земли.
@@ -474,7 +474,7 @@
                                     <p>
                                         Море или озеро? Каспий — это озеро, потому что является замкнутым водоемом, не соединенным с Мировым океаном. Но называть его морем — не ошибка. По размеру (около 390 тыс. кв. км), глубине (до 1025 м), солености и геологической структуре дна это в общем-то море. Кроме того, в прошлом Каспий через Кумо-Манычскую впадину соединялся с Азовским морем (и некоторые ученые-практики, кстати, предлагают прорыть по линии бывшей впадины судоходный канал с системой шлюзов). А еще раньше, миллионы лет назад, на этом месте был океан Тетис. Каспийское, Черное, Азовское и Аральское моря, а также озеро Балатон в Венгрии — это все остатки древнего Тетиса.
                                     </p>
-                                    <img class="sea img-margin float-right" src="./img/places-catalog/kaspiy-sea.jpg" alt="">
+                                    <img class="sea img-margin float-right" src="./img/places-catalog/kaspiy-sea.jpg" alt="Город на берегу Каспия">
                                     <p>
                                         Дагестан — не только красивая республика славящаяся величественными горами, прекрасными водопадами и богатым историческим наследием. Впрочем, пляжный отдых здесь тоже можно устроить замечательный – на Каспийском море, его обеспечивают лучшие курорты Республики, которые мы сегодня и опишем.
                                     </p>
@@ -484,7 +484,7 @@
                                 <p>
                                     Жемчужиной уникальной красоты и самобытности является Каспийское море. Это уникальный, единственный в мире замкнутый водоем с хрупкой и бесценной экосистемой. Его уникальность привлекает к себе мировое внимание. Каспий считается самым большим внутренним водоемом в мире, располагается на стыке Азии и Европы. Удивительному природному творению уделили много своих трудов поэты, философы, историки, географы. Среди них: Гомер, Геродот, Аристотель.
                                 </p>
-                                <div class="sea2 relative" src="./img/places-catalog/kaspiy-sea2.jpg" alt="">
+                                <div class="sea2 relative" src="./img/places-catalog/kaspiy-sea2.jpg" alt="Каспийское море">
                                     <p class="text-left-verse half-trans covers">
                                         Тихонько затаюсь, качаясь на просторах.<br>
                                         Взлетаю в высь, и снова опускаюсь между волн.<br>
@@ -565,10 +565,10 @@
                             </div>
                             <div class="diagonal">
                                 <div class="img-with-caption top-left">
-                                    <img class="one-of gestinkil1" src="./img/places-catalog/gestinkil1.jpg" alt="">
+                                    <img class="one-of gestinkil1" src="./img/places-catalog/gestinkil1.jpg" alt="Вершина горы Гестинкиль">
                                     <p class="caption caption-margin">Гора Гестинкиль</p>
                                 </div>
-                                    <img class="one-of bottom-right gestinkil2" src="./img/places-catalog/gestinkil2.jpg" alt="">
+                                    <img class="one-of bottom-right gestinkil2" src="./img/places-catalog/gestinkil2.jpg" alt="Заснеженные вершины на горизонте">
                                 </div>
                             </div>
                         </div>
@@ -617,7 +617,7 @@
                             <div class="text-left-img-right d-flex gap">
                                 <div class="title-text">
                                     <div class="article-text__title">Песчаная гора Сарыкум в Дагестане</div>
-                                    <img class="img-big img-one" src="./img/places-catalog/sarykum.jpg" alt="">
+                                    <img class="img-big img-one" src="./img/places-catalog/sarykum.jpg" alt="Панорама пустыни">
                                     <p class="caption-margin">
                                         Творение природы совершеннее шедевров искусства...
                                     </p>
@@ -643,7 +643,7 @@
                                 <p>
                                     Мы рассказали вам про достопримечательности, ради которых стоит приехать в самый уникальный регион России - в Республику Дагестан, и чтобы поднять бокал вина и попробовать немного Италии, можно отправиться в Южный Дагестан в винный тур или так называемый этнотуризм. Ведь мы отправляемся в путешествия не только ради пейзажей, архитектурных достопримечательностей и исторических памятников, но и для того, чтобы познакомиться с гастрономическими традициями, национальной кухней и не только...
                                 </p>
-                                <img class="img-big img-one" src="./img/places-catalog/vineyard.jpg" alt="">
+                                <img class="img-big img-one" src="./img/places-catalog/vineyard.jpg" alt="Панорама виноградника">
                             </div>
                             <div class="two-columns adjustment">
                                 <div class="grape"></div>

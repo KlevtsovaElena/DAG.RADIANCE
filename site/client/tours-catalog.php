@@ -51,7 +51,7 @@
                                     Теперь давайте отправимся в туры - любой уголок замечательного места на земле 
                                     </p>
                                 </div>
-                                <div class="img-tours-main"><img class="car-mountains" src="./img/tour/car-mountain.jpg" alt=""></div>
+                                <div class="img-tours-main"><img class="car-mountains" src="./img/tour/car-mountain.jpg" alt="Автотур"></div>
                             </section>
                     
                   

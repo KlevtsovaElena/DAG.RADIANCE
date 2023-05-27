@@ -46,7 +46,7 @@
                 <div class="article-text">
                     <div class="section-first d-flex column">
                         <div class="article-text__desc ta-center">Где поесть? Идеи подарков</div>
-                        <img class="img-big img-one" src="./img/food/1.jpg" alt="">
+                        <img class="img-big img-one" src="./img/food/1.jpg" alt="Еда на фоне гор">
                     </div>
                 </div>
             </div>
