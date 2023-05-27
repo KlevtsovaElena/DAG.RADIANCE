@@ -29,6 +29,12 @@ iframe {
     background-size: cover;
 }
 
+.train {
+    width: 100%;
+    height: 100%;
+    margin: auto 0;
+}
+
 .bus1 {
     background-image: url('../img/route/11.jpg');
     background-size: cover;
@@ -37,6 +43,12 @@ iframe {
 .bus2 {
     background-image: url('../img/route/7.jpg');
     background-size: cover;
+}
+
+.rental {
+    width: 100%;
+    height: 100%;
+    margin: auto 0;
 }
 
 .auto1 {

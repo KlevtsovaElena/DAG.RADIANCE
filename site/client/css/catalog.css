@@ -39,6 +39,7 @@
 .text-left-img-right {
     gap: 30px;
     align-items: center;
+    justify-content: space-between;
 }
 
 .text-align-right {
@@ -47,7 +48,8 @@
 }
 
 .text-left {
-    width: 280px;
+    /* width: 280px; */
+    width: 30%;
     box-sizing: border-box;
 }
 

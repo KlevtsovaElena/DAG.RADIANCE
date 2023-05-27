@@ -61,10 +61,11 @@
                     <div class="article-container">
                         <div class="article-text">
                             <div class="section-first">
+                                <div class="full-width"></div>
                                 <div class="text-left-img-right d-flex gap">
-                                    <div class="title-text">
+                                    <div class="title-text text-left">
                                         <div class="article-text__title">Горы</div>
-                                        <p class="text-left">
+                                        <p>
                                             <i>Да, горы прекрасные и опасные, снежные вершины, каменные великаны... Они чаруют и пугают своей холодной молчаливой неизвестностью. Что таят эти перевалы, пропасти и ледяные водопады?<br>Жизнь или смерть, счастье или разочарование...
                                             Скорее жизнь и надежду!!! СВОБОДУ, мечту о бесконечном...</i>
                                             <p class="text-align-right">Алексей Филатов</p>
@@ -226,13 +227,13 @@
                     <div class="article-container inner_section">
                         <div class="article-text">
                             <div class="section-first two-columns">
-                                <div class="img-with-caption">
+                                <div class="img-with-caption one-column">
                                     <p class="caption">
                                         Гора Маяк Гуниб
                                     </p>
                                     <div class="one-of gunib-beacon"></div> 
                                 </div>
-                                <div class="img-with-caption">
+                                <div class="img-with-caption one-column">
                                     <p class="caption">
                                         Гунибское плато
                                     </p>
@@ -244,13 +245,6 @@
                                 Одним из красивейших мест в Дагестане по праву можно назвать село Гуниб. Оно простирается на одноименном плато, расположенном на высоте 1500 метров над уровнем моря.
                                 Гуниб находится в 150 километрах от столицы Дагестана Махачкалы. Поселение возникло во второй половине 19 столетия в ходе строительства русского укрепленного пункта.
                             </p>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="article">
-                    <div class="article-container inner_section">
-                        <div class="article-text">
                             <div class="section-first two-columns aul">
                                 <p>
                                     Аул Гуниб, который имеет огромное историческое значение для всего Дагестана. Именно в отношении него говорят: «Кто не побывал в Гунибе, тот не видел сам Дагестан». Гуниб считают точкой отсчета путешествия по Дагестану. Село Гуниб расположено на вершине плосковидной горы — на Гунибском плато.<br>
@@ -258,13 +252,6 @@
                                 </p>
                                 <div class="gunib-aul img-section"></div>
                             </div>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="article no-reverse">
-                    <div class="article-container">
-                        <div class="article-text">
                             <div class="section-first">
                                 <div class="text-left-img-right d-flex gap">
                                     <p class="text-left">

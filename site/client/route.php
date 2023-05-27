@@ -91,7 +91,7 @@
                             </p>
                             <a href="https://www.rzd.ru/" target="_blank" class="card-btn block card-item__btn btn-big btn-theme m-center">Ж/д билеты</a>
                         </div>
-                    </div>
+                    </img>
                 </div>
             </div>
         </section>

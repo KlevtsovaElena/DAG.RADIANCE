@@ -38,12 +38,15 @@ a {
     text-decoration: none;
     cursor: pointer;
 }
+
 .m-center {
     margin: 0 auto;
 }
+
 .ta-center {
     text-align: center;
 }
+
 .fs-18 {
     font-size: 18px;
 }
@@ -76,6 +79,10 @@ a {
 
 .d-none {
     display: none;
+}
+
+.full-width {
+    width: 100%;
 }
 
 /* HEADER */
@@ -658,7 +665,7 @@ a {
 
 .article-text__desc {
     margin-bottom: 27px;
-    max-width: 500px;
+    /* max-width: 500px; */
     font-style: normal;
     font-weight: 500;
     font-size: 54px;
