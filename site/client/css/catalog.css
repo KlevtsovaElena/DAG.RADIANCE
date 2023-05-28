@@ -84,8 +84,8 @@
     background-repeat: no-repeat;
 }
 
-.addala-shukhgelmer {
-    background-image: url('../img/places-catalog/addala-shukhgelmer.jpg');
+.addala-shukhgelmeer {
+    background-image: url('../img/places-catalog/addala-shukhgelmeer.jpg');
     background-size: cover;
     width: 100%;
 }
@@ -460,7 +460,7 @@
     .mountains-big {
         width: 800px;
     }
-    .bazardyuzo {
+    .bazardyuzyu {
         width: 600px;
     }
     .kurakh-dere_block .two-columns {
@@ -581,7 +581,7 @@
 }
 
 @media(max-width: 1100px) {
-    .bazardyuzo {
+    .bazardyuzyu {
         width: 100%;
     }
 }
@@ -621,7 +621,7 @@
 }
 
 @media(max-width: 1000px) {
-    .addala-shukhgelmer {
+    .addala-shukhgelmeer {
         display: block;
         margin: 0 auto;
     }

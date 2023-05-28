@@ -63,7 +63,7 @@
                         <div class="article-text__desc">Как добраться в Дагестан</div>
                     </div>
                     <div class="section-first d-flex">
-                        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac7c22167edfd43cec42a80d170f306d7025dfc6eb9cc582e4da27a05022880ab&amp;source=constructor" width="450" height="450" frameborder="0"></iframe>
+                        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac7c22167edfd43cec42a80d170f306d7025dfc6eb9cc582e4da27a05022880ab&amp;source=constructor" width="100%" height="300" frameborder="0"></iframe>
                         <!-- <img src="./img/route/4.jpg" alt="Карта"> -->
                         <div class="article-text gap">
                             <div class="article-text__title">На самолете</div>
