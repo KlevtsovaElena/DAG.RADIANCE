@@ -49,7 +49,7 @@
                         <p>Краткое описание</p><textarea id="short-desc" name="short-desc"><?= $place->{'short-desc'};?></textarea>
                         <p>Полное описание</p><textarea id="full-desc" name="full-desc"><?= $place->{'full-desc'};?></textarea>
                         <p>Категория</p><input type="text" id="category" name="category" value="<?= $place->category;?>">
-                
+                        <p>Карта</p><textarea id="code-map" name="code-map" rows="4"><?= $place->{'code-map'};?></textarea>
 
                         <!-- картинка для маленькой карточки -->
                         <p>
@@ -108,7 +108,8 @@
                         <p>Название места</p><input type="text" id="title" name="title" value="">
                         <p>Краткое описание</p><textarea id="short-desc" name="short-desc"></textarea>
                         <p>Полное описание</p><textarea id="full-desc" name="full-desc"></textarea>
-                        <p>Категория</p><input type="text" id="category" name="category" value="нет">                      
+                        <p>Категория</p><input type="text" id="category" name="category" value="нет">
+                        <p>Карта</p><textarea id="code-map" name="code-map" rows="4"></textarea>                      
 
                         <!-- картинка для маленькой карточки -->
                         <p>

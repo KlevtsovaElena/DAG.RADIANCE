@@ -8,6 +8,7 @@ $title = $_POST['title'];
 $shortDesc = $_POST['short-desc'];
 $fullDesc = $_POST['full-desc'];
 $category = $_POST['category'];
+$codeMap = $_POST['code-map'];
 
 if(isset($_POST['id'])){
     $imgTitle = $_POST['img-title'];
@@ -107,12 +108,12 @@ $pdo = \Connection::getConnection();
 // если редактируем карточку, то данные UPDATE
 // если создаём новую - то INSERT
 if (isset($_POST['id'])) {
-    $sqlText = "UPDATE `places` SET `title`='$title', `short-desc`='$shortDesc', `full-desc`='$fullDesc', `img-title`='$imgTitle', `img-carousel`='$json', `category`='$category' WHERE `id`=$id";
+    $sqlText = "UPDATE `places` SET `title`='$title', `short-desc`='$shortDesc', `full-desc`='$fullDesc', `img-title`='$imgTitle', `img-carousel`='$json', `category`='$category', `code-map`='$codeMap'  WHERE `id`=$id";
     
     //запись в базу
     $query = $pdo->query($sqlText);
 } else {
-    $sqlText = "INSERT INTO `places` (`title`, `short-desc`, `full-desc`, `img-title`, `img-carousel`, `category`) VALUES('$title', '$shortDesc', '$fullDesc', '$imgTitle', '$json', '$category')";
+    $sqlText = "INSERT INTO `places` (`title`, `short-desc`, `full-desc`, `img-title`, `img-carousel`, `category`, `code-map`) VALUES('$title', '$shortDesc', '$fullDesc', '$imgTitle', '$json', '$category', '$codeMap')";
     
     // запись в базу
     $query = $pdo->query($sqlText);
