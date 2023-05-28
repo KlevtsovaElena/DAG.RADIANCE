@@ -95,11 +95,12 @@ $data = Place::getLinesApiId($_GET['id']);
                 
             </section>
 
+             <?php if($data[0]['code-map'] !== '' && $data[0]['code-map'] !== null){ ?>
             <section class="map-place">
                 <div>Как добраться</div>
-                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac7c22167edfd43cec42a80d170f306d7025dfc6eb9cc582e4da27a05022880ab&amp;source=constructor" class="map-container" frameborder="0"></iframe>               
+                <iframe src="<?= $data[0]['code-map']; ?>" class="map-container" frameborder="0"></iframe>               
             </section>
-
+            <?php } ?>
                 <div class="two-buttons">
                     <a href="places-catalog.php" class="card-btn card-item__btn btn-big btn-theme">Смотреть все</a>
                     <a href="../index.php" class="card-btn card-item__btn btn-big btn-theme">На главную</a>
