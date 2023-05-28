@@ -25,7 +25,6 @@ p {
     flex-direction: row-reverse;
 }
 
-
 .card-text {
     padding-left: 100px;
     padding-right: 50px;
@@ -84,7 +83,9 @@ p {
     background-size: cover;
     background-position: center center;
 }
+
 /* Мини-галерея под слайдером */
+
 .mini-slider {
     width: 650px;
 }
@@ -110,6 +111,9 @@ p {
 .btn-slider-next {
     top: 35%;
 }
+
+/* Контейнер для карт */
+
 .map-place {
     display: flex;
     flex-direction: column;
@@ -119,6 +123,7 @@ p {
     padding-left: 30px;
     padding-right: 30px;
 }
+
 .map-container {
     width: 780px;
     height: 250px;
@@ -162,7 +167,6 @@ p {
         width: 100%;
     }    
 }
-
 
 @media(max-width: 700px) {
     .big-slider {
@@ -221,7 +225,7 @@ p {
         height: 200px;
     }
     .map-container {
-        height: 150px;
+        height: 200px;
     }
 }
 @media(max-width: 450px) {

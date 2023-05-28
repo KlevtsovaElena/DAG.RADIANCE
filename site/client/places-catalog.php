@@ -123,6 +123,7 @@
                                         </p>
                                     </div>
                                 </div>
+                                <div class="ta-center m-bottom map-margin_big">Как добраться:</div>
                                 <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A1145ebc3df6e959b6ae06e7c9b245ef3855b95a36239a8530088c7d2d96d7cd4&amp;source=constructor" width="100%" height="240" frameborder="0"></iframe>
                             </div>
                         </div>
@@ -143,6 +144,7 @@
                                         <p class="caption caption-margin">Шалбуздаг</p>
                                     </div>
                                 </div>
+                                <div class="ta-center m-bottom map-margin">Как добраться:</div>
                                 <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A2d6e1e2f7899979c283bfb2de6597683d1baca608813b9948c4aca0a9358552b&amp;source=constructor" width="100%" height="240" frameborder="0"></iframe>
                             </div>
                         </div>
@@ -165,14 +167,16 @@
                                                 Вид с горы Тарки-тау рассвет над Махачкалой
                                             </p>
                                         </div>
+                                        <div class="ta-center m-bottom gap-1000">Как добраться:</div>
                                         <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Acfdd81cec7d0a86b5a42d81c59f62b7edf81a15746c16d76c8aa7866d9db06ae&amp;source=constructor" width="100%" height="240" frameborder="0"></iframe>
                                     </div>
                                     <div class="one-column">
-                                        <div class="article-text__title">Аддала-Шухгельмэр</div>
+                                        <div class="article-text__title">Аддала-Шухгельмеэр</div>
                                         <div class="one-of addala-shukhgelmeer"></div>
                                         <p  class="caption-margin">
                                             Гора известна под двумя названиями: официальным — Аддала-Шухгельмеэр и местным — Кабалла. С высоты птичьего полета по форме она похожа на звезду, относится к системе Кавказского Богосского хребта. Её абсолютная высота составляет 4 км 151 м. над уровнем моря.
                                         </p>
+                                        <div class="ta-center m-bottom">Как добраться:</div>
                                         <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A27f025dab6a25943d7a5ee8e133ee4c1c89f860cbc7b6c2f49d2e51ea65c00fe&amp;source=constructor" width="100%" height="240" frameborder="0"></iframe>
                                     </div>
                                 </div>
@@ -193,6 +197,7 @@
                                     <div class="izberg-tau1 img-section one-of"></div>
                                     <div class="izberg-tau2 img-section one-of"></div>
                                 </div>
+                                <div class="ta-center m-bottom map-margin_big">Как добраться:</div>
                                 <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Aef94dc747ce63daa7e974bddb152865c138c5f4b09ef26271617ebfc84402cf6&amp;source=constructor" width="100%" height="240" frameborder="0"></iframe>
                             </div>
                         </div>
@@ -209,6 +214,7 @@
                                     Гора Деавгай находится на Большом Кавказе. Это самая высокая из точек Гельмец-Ахтынского хребта. Сама вершина немного имеет вогнутую форму. На ней вечно присутствуют снега.
                                     Склоны гор довольно скалистые. Северная часть горы образует отвесную сланцевую стену черного цвета с большими объемами снегов. А с южной стороны — крутые склоны с ледово-снежным карнизом.
                                 </p>
+                                <div class="ta-center m-bottom map-margin_big">Как добраться:</div>
                                 <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A57393b4466130d1c9782e2f933b320859b0af6cf01d235a81a99be63ea7d09b4&amp;source=constructor" width="100%" height="240" frameborder="0"></iframe>
                             </div>
                         </div>
@@ -224,6 +230,7 @@
                                     Это естественная граница между Грузией, Дагестаном и Чечней. Хребет покрыт шапками снега, имеются ледники и горные речки, питающие их. В горном районе имеется смотровая площадка
                                 </p>
                                 <img class="img-big img-one" src="./img/places-catalog/diklosmta.jpg" alt="Гора Диклосмта">
+                                <div class="ta-center m-bottom map-margin_big">Как добраться:</div>
                                 <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ada27c3ecee41ca74997641264ed72222ce8e4421639e6c2bb7733d6f57e8963b&amp;source=constructor" width="100%" height="240" frameborder="0"></iframe>
                             </div>
                         </div>
@@ -239,6 +246,7 @@
                                         Гора Маяк Гуниб
                                     </p>
                                     <div class="one-of gunib-beacon"></div>
+                                    <div class="ta-center m-bottom map-margin_big">Как добраться:</div>
                                     <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A53e794ad7d203d6f769a669b33393e46286e08d18864ef987e729a36ad3d3d8c&amp;source=constructor" width="100%" height="240" frameborder="0"></iframe>
                                 </div>
                                 <div class="img-with-caption one-column">
@@ -246,10 +254,11 @@
                                         Гунибское плато
                                     </p>
                                     <div class="one-of gunib-plateau"></div>
+                                    <div class="ta-center m-bottom map-margin_big">Как добраться:</div>
                                     <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A2a2ccd2c3841471dc4571a8a9fe25b30d4454aee173093be7d6ef3e0c75c67c3&amp;source=constructor" width="100%" height="240" frameborder="0"></iframe>
                                 </div>
                             </div>
-                            <div class="article-text__title">Гуниб — село, парящее в небесах</div>
+                            <div class="article-text__title map-margin">Гуниб — село, парящее в небесах</div>
                             <p>
                                 Одним из красивейших мест в Дагестане по праву можно назвать село Гуниб. Оно простирается на одноименном плато, расположенном на высоте 1500 метров над уровнем моря.
                                 Гуниб находится в 150 километрах от столицы Дагестана Махачкалы. Поселение возникло во второй половине 19 столетия в ходе строительства русского укрепленного пункта.
@@ -261,7 +270,8 @@
                                 </p>
                                 <div class="gunib-aul img-section"></div>
                             </div>
-                            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A165d56b41f5d7739aee54cb9305358ca868ad3001a347b583e4bae54027afc41&amp;source=constructor" width="100%" height="240" frameborder="0"></iframe>
+                            <div class="ta-center m-bottom map-margin_big">Как добраться:</div>
+                            <iframe class="m-bottom" src="https://yandex.ru/map-widget/v1/?um=constructor%3A165d56b41f5d7739aee54cb9305358ca868ad3001a347b583e4bae54027afc41&amp;source=constructor" width="100%" height="240" frameborder="0"></iframe>
                             <div class="section-first">
                                 <div class="text-left-img-right d-flex gap">
                                     <p class="text-left">
@@ -274,6 +284,7 @@
                                     </div>
                                 </div>
                                 <img class="green-steps img-big img-one" src="./img/places-catalog/green-steps.jpg" alt="Зеленые холмы">
+                                <div class="ta-center m-bottom map-margin_big">Как добраться:</div>
                                 <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Af9f5a103b8d6d05f97af6ad8562e25294da891ac91b75509f39acb4f52551e14&amp;source=constructor" width="100%" height="240" frameborder="0"></iframe>
                             </div>
                         </div>
@@ -298,6 +309,7 @@
                                     <div class="saltin2 img-section one-of"></div>
                                     <div class="saltin3 img-section one-of"></div>
                                 </div>
+                                <div class="ta-center m-bottom map-margin_big">Как добраться:</div>
                                 <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac9801ca7adfc21ad5a13f5be7d09d65785894be5f0b86eab023a795ade0adfec&amp;source=constructor" width="100%" height="240" frameborder="0"></iframe>
                             </div>
                         </div>
@@ -315,6 +327,7 @@
                                     </p>
                                     <img class="img-big img-one" src="./img/places-catalog/gamsutl.jpg" alt="Вид на Гамсутль">
                                 </div>
+                                <div class="ta-center m-bottom map-margin_big">Как добраться:</div>
                                 <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A8c18b68c38118b79e02b2923a99b73b90cb84c9e3051d65bca903568069d0888&amp;source=constructor" width="100%" height="240" frameborder="0"></iframe>   
                             </div>
                         </div>
@@ -335,6 +348,7 @@
                                 <div class="old-goor1 img-section"></div>
                             </div>
                             <div class="section-first">
+                            <div class="ta-center m-bottom map-margin_big">Как добраться:</div>
                             <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Aa5c33b0e1e8a9d24ae65abb203c5edf654844daa3cb02819e8e011669a892559&amp;source=constructor" width="100%" height="240" frameborder="0"></iframe>
                             </div>
                         </div>
@@ -364,6 +378,7 @@
                                         </div>
                                         <img class="bottom-right one-of" src="./img/places-catalog/sulak3.jpg" alt="Катер в Сулакском каньоне">
                                     </div>
+                                    <div class="ta-center m-bottom map-margin_big">Как добраться:</div>
                                     <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A383e7f45a004122fa68bcdc4a5bb1fcd4422d5823ae10a29dab50dfa436900e1&amp;source=constructor" width="100%" height="240" frameborder="0"></iframe>
                                     <div class="diagonal">
                                         <div class="img-with-caption top-left">
@@ -372,6 +387,7 @@
                                         </div>
                                         <img class="bottom-right one-of" src="./img/places-catalog/chirkey2.jpg" alt="Катер в Чиркейском водохранилище">
                                     </div>
+                                    <div class="ta-center m-bottom map-margin_big">Как добраться:</div>
                                     <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ae67d761455618f7a24411645e59535c4980ee425acb4dc39ca2e4e99adc14474&amp;source=constructor" width="100%" height="240" frameborder="0"></iframe>
                                 </div>  
                             </div>
@@ -397,6 +413,7 @@
                                         <img class="bottom-right one-of" src="./img/places-catalog/irganay3.jpg" alt="Вид на Ирганайское водохранилище">
                                     </div>
                                 </div>
+                                <div class="ta-center m-bottom map-margin_big">Как добраться:</div>
                                 <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A7988733f6cade8ba2601a9d6e32a93123dfe46665f3a0e8693639b8c6d43cffb&amp;source=constructor" width="100%" height="240" frameborder="0"></iframe>  
                             </div>
                         </div>
@@ -419,6 +436,7 @@
                                     </div>
                                     <img class="img-big img-one" src="./img/places-catalog/karadakh3.jpg" alt="Карадахская теснина">
                                 </div>
+                                <div class="ta-center m-bottom map-margin_big">Как добраться:</div>
                                 <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac64f5fa78ffcec79ac9fabac9a72fb314ed48f20a22738f7dd030d6f469f770b&amp;source=constructor" width="100%" height="240" frameborder="0"></iframe>  
                             </div>
                         </div>
@@ -440,6 +458,7 @@
                                     <div class="naryn-kala2 img-section one-of"></div>
                                     <div class="naryn-kala3 img-section one-of"></div>
                                 </div>
+                                <div class="ta-center m-bottom map-margin_big">Как добраться:</div>
                                 <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A18cfbc2bd50ab47c294d1de65ce96b79b00c96b26f3d2a5046b288d2d5d49b58&amp;source=constructor" width="100%" height="240" frameborder="0"></iframe> 
                             </div>
                         </div>
@@ -464,6 +483,7 @@
                                         Самый мощный в мире летательный аппарат советские разработчики начали строить в 60-е годы. Длина 92 метра, размах 37 и взлетная масса 544 тонны. Аппарат должен был парить над водой за счет эффекта экрана. Назывался он официально КМ, что значило корабль-макет. Но американские спецслужбы расшифровали это как "Каспийский монстр", потому что испытания экраноплана проводили в Каспийском море, недалеко от города Каспийска.
                                     </p>
                                 </div>
+                                <div class="ta-center m-bottom map-margin_big">Как добраться:</div>
                                 <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A141575de2ee5a546479f545b24ce1a268b7cc631f3cef22212eb92307bbe1a58&amp;source=constructor" width="100%" height="240" frameborder="0"></iframe> 
                             </div>
                         </div>
@@ -542,6 +562,7 @@
                                     <div class="samur1 img-section one-of"></div>
                                     <div class="samur2 img-section one-of"></div>
                                 </div>
+                                <div class="ta-center m-bottom map-margin_big">Как добраться:</div>
                                 <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A37c3071d811ceb8d6d8260cc83c8f346bd58972d3bf9cf3c097165410ff2fa01&amp;source=constructor" width="100%" height="240" frameborder="0"></iframe>
                             </div>
                         </div>
@@ -566,7 +587,8 @@
                                     </div>
                                     <div class="one-of kurush2 img-in-column2"></div>
                                 </div>
-                                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A68e7d995d2c3a609367e48f5464f9cb1d3c1140dbb623609c12ccb1127866ed7&amp;source=constructor" width="100%" height="240" frameborder="0"></iframe>
+                                <div class="ta-center m-bottom map-margin_big">Как добраться:</div>
+                                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A68e7d995d2c3a609367e48f5464f9cb1d3c1140dbb623609c12ccb1127866ed7&amp;source=constructor" width="100%" height="240" frameborder="0"></iframe>               
                             </div>
                         </div>
                     </div>
@@ -588,7 +610,8 @@
                                         <p class="caption caption-margin">Село Кабир</p>
                                     </div>    
                                 </div>
-                                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A7f508ee0759f4c4c5e726c6903e0ff89867e0aefd3a8fb25b677d89d0562fe34&amp;source=constructor" width="100%" height="240" frameborder="0"></iframe>
+                                <div class="ta-center m-bottom map-margin">Как добраться:</div>
+                                <iframe class="m-bottom" src="https://yandex.ru/map-widget/v1/?um=constructor%3A7f508ee0759f4c4c5e726c6903e0ff89867e0aefd3a8fb25b677d89d0562fe34&amp;source=constructor" width="100%" height="240" frameborder="0"></iframe>
                                 <div class="text-left-img-right d-flex gap">
                                     <div class="img-with-caption">
                                         <div class="one-of merki"></div>
@@ -598,6 +621,7 @@
                                         Одно из особенных мест Курахского района - Каньон Мерки. Вам нужно добраться до села Кабир и идти вниз по течению реки Курах - она приведёт Вас к каньону, ибо по его дну и течет река.
                                     </p>    
                                 </div>
+                                <div class="ta-center m-bottom map-margin_big">Как добраться:</div>
                                 <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A8d54f8d9827f29b9d7839f80af784f18856cb2d57cec62019506a64c16e19e08&amp;source=constructor" width="100%" height="240" frameborder="0"></iframe>
                                 <div class="diagonal">
                                     <div class="img-with-caption top-left">
@@ -606,6 +630,7 @@
                                     </div>
                                     <img class="one-of bottom-right gestinkil2" src="./img/places-catalog/gestinkil2.jpg" alt="Заснеженные вершины на горизонте">
                                 </div>
+                                <div class="ta-center m-bottom map-margin_big">Как добраться:</div>
                                 <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Aa304aadd0b83efac49f5c677525d976d81f7a5576c6ef5353f45ad7705daed4d&amp;source=constructor" width="100%" height="240" frameborder="0"></iframe>
                             </div>
                         </div>
@@ -620,7 +645,7 @@
                                     <div class="img-with-caption">
                                         <div class="kurakh-dere"></div>
                                         <p  class="caption caption-margin">
-                                            Курах-дере – одна из красивейших частей центрального горного Дагестана, расположенная в бассейне реки Курахвац, между Самурским и Калухдагским хребтами. Большая часть территории занята горами – неприступные заснеженные вершины, головокружительные горные кручи перемежаются живописными склонами и лугами. 
+                                            Курах-дере – одна из красивейших частей центрального горного Дагестана, расположенная в бассейне реки КурахвацI, между Самурским и Калухдагским хребтами. Большая часть территории занята горами – неприступные заснеженные вершины, головокружительные горные кручи перемежаются живописными склонами и лугами. 
                                         </p>
                                     </div>
                                     <div class="flex-wrapper relative">
@@ -639,8 +664,12 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="ta-center m-bottom map-margin_big">Как добраться:</div>
+                                <div class="two-maps">
                                 <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab83cb45f2ae947ac8ac5aeea3534ea3b097114c9fc5cb73167495233681b9458&amp;source=constructor" width="100%" height="240" frameborder="0"></iframe>
                                 <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A4c02f4c38df6acf022102c201bbbe34a19a19524fcab4e4b8032fafd0ee60ddc&amp;source=constructor" width="100%" height="240" frameborder="0"></iframe>
+                                </div>
+                                
                             </div>
                         </div>
                     </div>
@@ -668,6 +697,7 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="ta-center m-bottom map-margin_big">Как добраться:</div>
                                 <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A1c0cd6f4abfdb4880b36360d94f0060881b2710eb1c605c9a05a5cb91ebb18ba&amp;source=constructor" width="100%" height="240" frameborder="0"></iframe>
                             </div>
                         </div>

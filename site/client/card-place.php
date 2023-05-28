@@ -97,7 +97,7 @@ $data = Place::getLinesApiId($_GET['id']);
 
              <?php if($data[0]['code-map'] !== '' && $data[0]['code-map'] !== null){ ?>
             <section class="map-place">
-                <div>Как добраться</div>
+                <div>Как добраться:</div>
                 <iframe src="<?= $data[0]['code-map']; ?>" class="map-container" frameborder="0"></iframe>               
             </section>
             <?php } ?>

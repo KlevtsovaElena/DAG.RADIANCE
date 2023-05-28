@@ -5,6 +5,7 @@
 .m-10 {
     margin: 10px;
 }
+
 .section-first p {
     margin-top: 0;
 }
@@ -48,7 +49,6 @@
 }
 
 .text-left {
-    /* width: 280px; */
     width: 30%;
     box-sizing: border-box;
 }
@@ -108,7 +108,6 @@
 .gunib-plateau {
     background-image: url('../img/places-catalog/gunib-plateau.jpg');
     background-size: cover;
-    margin-bottom: 30px;
 }
 
 .gunib-aul {
@@ -259,12 +258,6 @@
     margin-bottom: 30px;
 }
 
-/* .kurush2 {
-    display: block;
-    align-self: flex-end;
-    margin-bottom: 30px;
-} */
-
 .catalog-price {
     margin-top: 10px;
 }
@@ -338,6 +331,14 @@
     margin-top: 2% !important;
 }
 
+.map-margin {
+    margin-top: 30px;
+}
+
+.map-margin_big {
+    margin-top: 50px;
+}
+
 .diagonal {
     position: relative;
     height: 500px;
@@ -349,24 +350,12 @@
     top: 0;
     left: 0;
 }
-/* 
-.top-right {
-    position: absolute;
-    top: 0;
-    right: 0;
-} */
 
 .bottom-right {
     position: absolute;
     bottom: 0;
     right: 0;
 }
-/* 
-.bottom-left {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-} */
 
 .tours-main {
     display: flex;
@@ -438,6 +427,12 @@
     left: 100px;
 }
 
+.two-maps {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
 .car-mountains {
     width: 100%;
 }
@@ -472,7 +467,6 @@
     }
     .flex-wrapper {
         flex-direction: row;
-        flex-wrap: wrap;
         align-items: flex-end;
         justify-content: center;
         margin: 0 auto;
@@ -562,10 +556,21 @@
     .mountains-big {
         width: 100%;
     }
+    .two-columns {
+        flex-direction: column;
+        gap: 50px;
+    }
     .img-in-column2 {
         width: 100%;
         height: 500px;
         margin: 0 auto;
+    }
+    .two-maps {
+        flex-direction: column;
+    }
+    .flex-wrapper {
+        flex-direction: column;
+        align-items: center;
     }
     .cognac {
         width: 55%;
@@ -621,6 +626,9 @@
 }
 
 @media(max-width: 1000px) {
+    .gap-1000 {
+        margin-top: 50px;
+    }
     .addala-shukhgelmeer {
         display: block;
         margin: 0 auto;
@@ -781,6 +789,9 @@
         width: 300px;
         height: 200px;
     }
+    .gap-1000 {
+        margin-top: 30px;
+    }
     .kurakh-dere {
         height: 250px;
     }
@@ -801,6 +812,7 @@
     }
     .img-smaller {
         width: 100px;
+        margin-bottom: 0;
     }
     .grape {
         width: 250px;
