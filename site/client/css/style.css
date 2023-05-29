@@ -588,7 +588,7 @@ a {
     padding: 22px;
     width: 280px;
     min-height: 300px;
-    margin: calc(100vh/2 - 150px) auto;
+    margin: calc(100vh/2 - 200px) auto;
     background-color: white;
     color: black;
 }
