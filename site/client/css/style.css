@@ -9,7 +9,7 @@
 		url('../fonts/cascadia_mono_extralight.svg#cascadia_mono_extralight') format('svg'); /* Chrome < 4, Legacy iOS */
 }
 
-a, button {
+a, button, input {
     font-family: 'CascadiaExtraLight', sans-serif;
 }
 body {
@@ -144,9 +144,21 @@ a {
     font-weight: 700;
     font-size: 28px;
 }
-.account {
-    text-align: right;
-    
+.call-container {
+    display: flex;
+    justify-content: flex-end;
+}
+.call {
+    text-align: center;
+    width: 253px;
+    padding: 10px 20px;
+    background-color: rgb(225 225 225 / 31%);
+    font-weight: 600;
+    cursor: pointer; 
+    transition: all 0.3s;
+}
+.call:hover {
+    opacity:0.8;
 }
 /* Меню на главной */
 
@@ -446,7 +458,7 @@ a {
     height: calc(0.5*100vw - 80px);
 }
 .header-index__desc {
-    font-size: 72px;
+    font-size: 68px;
     letter-spacing: 4px;
     margin: 0 auto;
     text-align: center;
@@ -556,8 +568,8 @@ a {
 }
 .modal-form {
     box-sizing: border-box;
-    padding: 15px;
-    width: 320px;
+    padding: 22px;
+    width: 280px;
     min-height: 300px;
     margin: calc(100vh/2 - 150px) auto;
     background-color: white;
@@ -566,17 +578,59 @@ a {
 /* .modal-form p {
     margin-bottom: 0;
 } */
-
+.close-icon-flex {
+    display: flex;
+    justify-content: flex-end;
+}
+.close-icon {
+    width: 15px;
+    height: 25px;
+    font-weight: 700;
+    text-align: right;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0.5;
+}
 .modal-form__btn {
     border: none;
     background-color: black;
     color: white;
     padding: 10px;
     font-size: 14px;
+    width: 100%;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-weight: 700;
 }
-
+.modal-form__btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
 .modal-form__div {
     text-align: center;
+}
+.modal-form > input {
+    box-sizing: border-box;
+    margin-bottom: 8px;
+    padding: 0 10px;
+    height: 40px;
+    outline: 0;
+    width: 100%;
+    border: solid #eae9e9 1.5px;
+    font-size: 16px;
+}
+.modal-form > input::placeholder {
+    opacity: 0.5;
+    font-size: 14px;
+}
+.feedback-title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom:10px;
+}
+.feedback-subtitle {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom:8px;
 }
 
 /* MAIN ARTICLE */
@@ -1232,7 +1286,7 @@ a {
     .logo {
         font-size: 24px;
     }
-    .nav-items, .account {
+    .nav-items, .call {
         display: none;
     }
     .nav-items-right {

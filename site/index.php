@@ -102,7 +102,7 @@
             </ul>
         </div>
     <div class="article">
-        <div class="account" onclick="showFeedback()">Заказать звонок</div>
+        <div class="call-container"><div class="call" onclick="showFeedback()">Заказать звонок</div></div>
 
         <div class="header-index">
             <p class="header-index__desc">DAG.RADIANCE</p>
@@ -161,12 +161,13 @@
 
         <div class="modalbox d-none" >
             <form class="modal-form">
-                <h2>Остались вопросы?</h2>
-                <h3>Оставь заявку, мы перезвоним!</h3>
-                <p>Имя*</p><input type="text" id="name" name="name" placeholder="Имя" value="" required>
-                <p>Телефон</p><input type="text" id="phone" name="phone" placeholder="+79999999999" value="">
-                <p>Mail</p><input type="text" id="mail" name="mail"  placeholder="mail@mail.com" value="">
-                <button class="modal-form__div modal-form__btn" onclick="sendExample()">ОТПРАВИТЬ</button>
+                <div class="close-icon-flex"><div class="close-icon" onclick="closeFeedbackIcon()">x</div></div>
+                <p class="feedback-title">Хочешь с нами,  но остались вопросы?</p>
+                <p class="feedback-subtitle">Оставь заявку, мы перезвоним!</p>
+                <input type="text" id="name" name="name" placeholder="Имя" value="" required>
+                <input type="text" id="phone" name="phone" placeholder="Телефон" value="">
+                <input type="text" id="mail" name="mail"  placeholder="Mail" value="">
+                <div class="ta-center"><button class="modal-form__div modal-form__btn" onclick="sendExample()">ОТПРАВИТЬ</button></div>
             </form>
         </div>
     </header>

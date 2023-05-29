@@ -42,6 +42,10 @@ function closeFeedback() {
     }
 }
 
+function closeFeedbackIcon() {
+      modalFeedbackForm.classList.add('d-none');
+}
+
 modalFeedbackForm.addEventListener("click", closeFeedback);
 
 
