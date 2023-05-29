@@ -116,3 +116,30 @@ function deleteImgCarousel() {
     const deleteImg = event.target.closest('.img-carousel-item');
     deleteImg.remove();
 }
+
+function showHiddenReviews() {
+    const hiddenReviews = document.querySelector('.hidden-reviews__container');
+
+    hiddenReviews.classList.toggle('d-none');
+
+    let titleAttribute = event.target.getAttribute('title');
+    if (titleAttribute=="показать") {
+        event.target.setAttribute('title', 'скрыть');
+    } else {
+        event.target.setAttribute('title', 'показать');
+    }
+}
+
+function showViewReviews() {
+    const viewReviews = document.querySelector('.view-reviews__container');
+
+    viewReviews.classList.toggle('d-none');
+
+    let titleAttribute = event.target.getAttribute('title');
+    if (titleAttribute=="показать") {
+        event.target.setAttribute('title', 'скрыть');
+    } else {
+        event.target.setAttribute('title', 'показать');
+    }
+}
+

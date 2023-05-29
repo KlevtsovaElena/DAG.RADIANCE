@@ -13,10 +13,6 @@
     <link rel="stylesheet" href="../client/css/catalog.css">
     <link rel="stylesheet" href="css/admin.css">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
     
@@ -50,7 +46,6 @@
                                 <div class="hotel-item__location">
                                     <?= $hotel['location']; ?>
                                 </div>
-                                <a href="<?= $hotel['link'] ?> " class="block card-item__btn hotel-btn">На сайт</a>
                             
                                 <div class="edit-card">
                                     <a href="card-hotel.php?id=<?= $hotel['id']; ?>" class="d-block  btn-admin  btn-black">&#9998 Изменить</a>
@@ -93,10 +88,10 @@
                                 <div class="hotel-item__location">
                                     <?= $house['location']; ?>
                                 </div>
-                                <a href="<?= $house['link'] ?> " class="block card-item__btn hotel-btn">На сайт</a>
+
                             
                                 <div class="edit-card">
-                                    <a href="card-house.php?id=<?= $house['id']; ?>" class="d-block btn-black">&#9998 Изменить</a>
+                                    <a href="card-house.php?id=<?= $house['id']; ?>" class="d-block btn-admin btn-black">&#9998 Изменить</a>
                                     <button class="btn-delete btn-black" onclick="deleteCard()">X Удалить</button>
                                 </div>
                                 <div class="delete-card d-none">

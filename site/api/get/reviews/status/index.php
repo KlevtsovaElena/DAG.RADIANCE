@@ -3,8 +3,8 @@
 header('Access-Control-Allow-Origin: *');
 
 require_once('../../../../classes/autoload.php');
-
-$sqlText = 'SELECT * FROM `' . Reviews::TABLE . '` WHERE status=1';
+$status = $_GET['status'];
+$sqlText = 'SELECT * FROM `' . Reviews::TABLE . '` WHERE status= ' . $status;
 
 //создание объекта для подключения к БД
 $pdo = Connection::getConnection();

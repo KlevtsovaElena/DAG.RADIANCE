@@ -431,3 +431,35 @@ a:hover {
 .tour-card {
     border-radius: unset;
 }
+.guide-btn {
+    background-color: gainsboro;
+    color: white;
+}
+.reviews-category {
+    display: inline-block;
+    font-size: 22px;
+    font-weight: 700;
+}
+.show-reviews {
+    font-size: 30px;
+    cursor: pointer;
+}
+.new-reviews {
+    margin-bottom: 30px;
+    width: 700px;
+    text-align: center;
+}
+.view-reviews,
+.hidden-reviews {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 700px;
+    text-align: center;
+}
+.new-reviews__container,
+.view-reviews__container,
+.hidden-reviews__container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}

@@ -63,7 +63,7 @@
 
                 <button class="reviews-btn " onclick="showReviewForm()">Оставить отзыв</button>
 
-                <form action="../api/post/reviews/index.php" method="post" enctype="multipart/form-data" class="form-reviews">
+                <form action="../api/post/reviews/index.php" method="post" enctype="multipart/form-data" class="form-reviews d-none">
                     <p class="form-reviews__text">Оставьте свой отзыв</p>
                     <input type="text" id="name" name="name" placeholder="Имя*" value="" required>
                     <div class="form-reviews__photo">
@@ -112,6 +112,7 @@
 
     <script src="js/main.js"></script>
     <script src="js/prewImg.js"></script>
+    <script src="js/review.js"></script>
 
 </body>
 

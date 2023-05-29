@@ -12,11 +12,6 @@
     <link rel="stylesheet" href="../client/css/catalog.css">
     <link rel="stylesheet" href="css/admin.css">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-
 </head>
 <body>
     
@@ -61,6 +56,13 @@
                         <div style="font-size: 18px">&#9998 К редактированию</div>
                     </div>
                 </a></div>
+                <div class="list-admin-panel" style="background-color:  #ffdb58;"><a href="reviews.php">
+                    <div class="list-ap-title">Отзывы</div>
+                    <div class="list-ap-img">
+                        <img src="../client/img/icons/comment-svgrepo-com.svg" alt="guide-icon">
+                        <div style="font-size: 18px">&#9998 К отзывам</div>
+                    </div>
+                </a></div>
                 <?php if($profile['role']=='admin') { ?>
                 <div class="list-admin-panel" style="background-color: #fd7e14;"><a href="add-account.php">
                     <div class="list-ap-title">Создать аккаунт</div>
@@ -70,13 +72,6 @@
                     </div>
                 </a></div>
                 <?php } ?>
-                <!-- <div class="list-admin-panel" style="background-color: #709fba;"><a href="bot.php">
-                    <div class="list-ap-title">Мониторинг бота</div>
-                    <div class="list-ap-img">
-                        <img src="../client/img/icons/robot-svgrepo-com.svg" alt="bot-icon">
-                        <div style="font-size: 18px">&#9993 Перейти к сообщениям</div>
-                    </div>
-                </a></div> -->
 
 
             </div>
