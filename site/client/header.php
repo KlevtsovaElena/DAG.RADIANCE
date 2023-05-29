@@ -32,7 +32,7 @@
                                 <li><a href="food.php">Рестораны</a></li>
                             </ul>
                         </li>
-                        <!-- <li><a href="#">Отзывы</a></li> -->
+                        <li><a href="reviews.php">Отзывы</a></li>
                         <li><a href="contacts.php">Контакты</a></li>
                         <li><div class="call-nav-header" onclick="showFeedback()">Заказать звонок</div></li>
                     </ul>
@@ -69,7 +69,7 @@
                         <li><a href="food.php">Рестораны</a></li>
                     </ul>
                 </li>
-                <!-- <li><a href="#">Отзывы</a></li> -->
+                <li><a href="reviews.php">Отзывы</a></li>
                 <li><a href="contacts.php">Контакты</a></li>
                 <li><div class="call-nav-burger" onclick="showFeedback()">Заказать звонок</div></li>
                 <div class="burger-links">

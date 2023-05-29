@@ -29,6 +29,7 @@
                 <button class="btn-burger"><span class="nav-burger"></span></button>
             </div>            
         </nav>
+        <!-- Бургер-меню -->
         <div class="mobile-nav">
             <ul>
                 <li class="li-trigger"><a href="#"><span class="arrow"></span>О регионе</a>
@@ -58,35 +59,8 @@
                         <li><a href="client/food.php">Рестораны</a></li>
                     </ul>
                 </li>
-                <!-- Развернутая версия мобильного меню без выпадающих пунктов -->
-                <!-- <li><a href="client/geography-and-climate.php">О регионе</a>
-                    <ul>
-                        <li><a href="client/geography-and-climate.php#geography">География и климат</a></li>
-                        <li><a href="client/national-pecularities.php">Особенности</a></li>
-                        <li><a href="client/fests-and-traditions.php">Праздники и традиции</a></li>
-                    </ul>
-                </li>
-                <li><a href="client/route.php">Помощь в организации отдыха</a>
-                    <ul>
-                        <li><a href="client/route.php#plane">Авиаперелет</a></li>
-                        <li><a href="client/route.php#train">Ж/д проезд</a></li>
-                        <li><a href="client/route.php#car">Авто</a></li>
-                    </ul>
-                </li>
-                <li><a href="client/housing.php">Где остановиться</a>
-                    <ul>
-                        <li><a href="client/housing.php#hotels">Отели</a></li>
-                        <li><a href="client/housing.php#guesthouses">Гостевые домики</a></li>
-                    </ul>
-                </li>
-                <li><a href="client/places-catalog.php">Как отдохнуть</a>
-                    <ul>
-                        <li><a href="client/tours-catalog.php">Туры</a></li>
-                        <li><a href="client/places-catalog.php">Достопримечательности</a></li>
-                        <li><a href="client/food.php">Рестораны</a></li>
-                    </ul>
-                </li> -->
-                <!-- <li><a href="#">Отзывы</a></li> -->
+
+                <li><a href="client/reviews.php">Отзывы</a></li>
                 <li><a href="client/contacts.php">Контакты</a></li>
                 <li><div class="call-nav-burger" onclick="showFeedback()">Заказать звонок</div></li>
                 <div class="burger-links">
@@ -142,16 +116,7 @@
                             <li><a href="client/places-catalog.php">Достопримечательности</a></li>
                             <li><a href="client/food.php">Рестораны</a></li>
                         </ul>
-                    <!-- <li><a href="#">Где поесть</a></li>
-                        <ul>
-                            <li><a href="client/food.php">Рестораны</a></li>
-                        </ul>
-                        <ul>
-                            <li><a href="#">Кафе</a></li>
-                        </ul>
-                        <ul>
-                            <li><a href="#">Отзывы</a></li>
-                        </ul> -->
+                    <li><a href="client/reviews.php">Отзывы</a></li>
                     <li><a href="client/contacts.php">Контакты</a></li>
                 </ul>
 
@@ -360,6 +325,7 @@
                             <a href="client/places-catalog.php">Достопримечательности</a>
                             <a href="client/tours-catalog.php">Туры</a>
                             <a href="client/food.php">Где поесть</a>
+                            <a href="client/reviews.php">Отзывы</a>
                             <a href="client/contacts.php">Контакты</a>
                             <div class="call-nav-footer" onclick="showFeedback()">Заказать звонок</div>
                         </div>

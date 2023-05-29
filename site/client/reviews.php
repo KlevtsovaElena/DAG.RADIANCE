@@ -10,9 +10,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DAG.RADIANCE</title>
-    <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/contacts.css">
 
 </head>
 
@@ -26,23 +24,24 @@
 
         <main>
 
-                <div class="breadcrumbs-container">
-                            <ul class="breadcrumbs-list">
-                                <li>
-                                    <a href="../index.php">Главная</a>
-                                </li>
-                                    <p>Контакты</p>
-                                </li>
-                            </ul>
-                        </div>
-                <div class="contacts-container">  
-                <div class="contacts">  
+            <div class="breadcrumbs-container">
+                <ul class="breadcrumbs-list">
+                    <li>
+                        <a href="../index.php">Главная</a>
+                    </li>
+                        <p>Отзывы</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="reviews-container">  
+                <div class="reviews">  
                         
                 <?php 
                     $data = Contacts::getLinesApi(); 
                     $contact = (object)$data[0];
                 ?>
-                    <h2>Наши контакты:</h2>
+                    <h2>Отзывы наших посетителей:</h2>
                     <div class="line"><p>Телефон:</p><a href="tel:+<?= $contact->phone;?>" target="_blank">+<?= $contact->phone;?></a></div>  
                     <div class="line"><p>Электронная почта:</p><a href="mailto:<?= $contact->mail;?>" target="_blank"><?= $contact->mail;?></a></div>
                     <div class="line"><p>Вконтакте:</p><a href="https://vk.com/<?= $contact->vk;?>" target="_blank">vk.com</a></div>

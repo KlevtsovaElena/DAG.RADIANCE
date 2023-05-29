@@ -13,6 +13,7 @@
                             <a href="places-catalog.php">Достопримечательности</a>
                             <a href="tours-catalog.php">Туры</a>
                             <a href="food.php">Где поесть</a>
+                            <a href="reviews.php">Отзывы</a>
                             <a href="contacts.php">Контакты</a>
                             <div class="call-nav-footer" onclick="showFeedback()">Заказать звонок</div>
                         </div>
