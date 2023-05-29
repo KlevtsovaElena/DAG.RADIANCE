@@ -26,3 +26,33 @@ for (let i = 0; i < triggers.length; i++) {
     document.querySelectorAll('.arrow')[i].classList.toggle('active');
   });
 }
+
+
+/* ******** СКРЫТЬ/ПОКАЗАТЬ форму обратной связи ******** */
+const modalFeedbackForm = document.querySelector(".modalbox");
+
+function showFeedback() {
+    console.log("jjhhjgjhg");
+    modalFeedbackForm.classList.remove('d-none');
+}
+
+function closeFeedback() {
+    if (this === event.target) {
+        modalFeedbackForm.classList.add('d-none');
+    }
+}
+
+modalFeedbackForm.addEventListener("click", closeFeedback);
+
+
+/* ******** Отправка в телеграмм-бота ******** */
+function sendExample() {
+
+    //предотвратить дефолтные действия, отмена отправки формы
+    event.preventDefault(); 
+
+    alert("сообщение отправлено");
+
+    //скрыть форму
+    modalFeedbackForm.classList.add('d-none');
+}

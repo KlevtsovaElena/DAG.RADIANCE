@@ -102,6 +102,8 @@
             </ul>
         </div>
     <div class="article">
+        <div class="account" onclick="showFeedback()">Заказать звонок</div>
+
         <div class="header-index">
             <p class="header-index__desc">DAG.RADIANCE</p>
             <div class="header-index__title">welcome to Russia</div>
@@ -155,6 +157,17 @@
             </div>
         </div>
         <!-- </div> -->
+        </div>
+
+        <div class="modalbox d-none" >
+            <form class="modal-form">
+                <h2>Остались вопросы?</h2>
+                <h3>Оставь заявку, мы перезвоним!</h3>
+                <p>Имя*</p><input type="text" id="name" name="name" placeholder="Имя" value="" required>
+                <p>Телефон</p><input type="text" id="phone" name="phone" placeholder="+79999999999" value="">
+                <p>Mail</p><input type="text" id="mail" name="mail"  placeholder="mail@mail.com" value="">
+                <button class="modal-form__div modal-form__btn" onclick="sendExample()">ОТПРАВИТЬ</button>
+            </form>
         </div>
     </header>
     <!-- /HEADER -->
