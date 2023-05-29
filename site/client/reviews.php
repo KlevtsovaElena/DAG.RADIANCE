@@ -11,6 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DAG.RADIANCE</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reviews.css">
 
 </head>
 
@@ -35,19 +36,27 @@
             </div>
 
             <div class="reviews-container">  
-                <div class="reviews">  
-                        
+                 
+
+    <!-- Здесь будет отрисовка самих отзывов, поля ниже -->
+
+                <h2>Отзывы наших посетителей:</h2>    
                 <?php 
-                    $data = Contacts::getLinesApi(); 
-                    $contact = (object)$data[0];
+                    $reviews = Reviews::getLinesApi(); 
+                    foreach ($reviews as $review) {
                 ?>
-                    <h2>Отзывы наших посетителей:</h2>
-                    <div class="line"><p>Телефон:</p><a href="tel:+<?= $contact->phone;?>" target="_blank">+<?= $contact->phone;?></a></div>  
-                    <div class="line"><p>Электронная почта:</p><a href="mailto:<?= $contact->mail;?>" target="_blank"><?= $contact->mail;?></a></div>
-                    <div class="line"><p>Вконтакте:</p><a href="https://vk.com/<?= $contact->vk;?>" target="_blank">vk.com</a></div>
-                    <div class="line"><p>Телеграм:</p><a href="tg://resolve?domain=<?= $contact->telegram;?>" target="_blank">telegram.me</a></div> 
-                    <div class="line"><p>Whatsapp:</p><a href="whatsapp://send?phone=<?= $contact->whatsapp;?>" target="_blank">whatsapp.me</a></div>
+                <div class="reviews"> 
+                    <p>Имя:</p><div><?= $review['name'];?></div> 
+                    <p>Фото:</p><div><?= $review['photo'];?></div> 
+                    <p>Заголовок:</p><div><?= $review['title'];?></div> 
+                    <p>Описание:</p><div><?= $review['description'];?></div>  
+                    <p>Рейтинг:</p><div><?= $review['rating'];?></div> 
+                    <p>Дата:</p><div><?= $review['date-time'];?></div> 
                 </div>
+                <?php } ?>
+
+    <!-- Здесь будет отрисовка самих отзывов, поля ниже -->
+
             </div>
 
         </main>
