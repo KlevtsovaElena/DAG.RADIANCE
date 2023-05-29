@@ -59,6 +59,9 @@
     border: solid #eae9e9 1.5px;
     font-size: 16px;
 }
+.form-reviews .star {
+    width:20px;
+}
 .form-reviews > input:focus,
 .form-reviews > textarea:focus {
     border-color: #ade7e2;

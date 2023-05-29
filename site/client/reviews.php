@@ -63,7 +63,7 @@
 
                 <button class="reviews-btn " onclick="showReviewForm()">Оставить отзыв</button>
 
-                <form class="form-reviews">
+                <form action="../api/post/reviews/index.php" method="post" enctype="multipart/form-data" class="form-reviews">
                     <p class="form-reviews__text">Оставьте свой отзыв</p>
                     <input type="text" id="name" name="name" placeholder="Имя*" value="" required>
                     <div class="form-reviews__photo">
@@ -74,7 +74,11 @@
                     </div>
                     <textarea id="title" name="title" placeholder="Заголовок" rows="2" value=""></textarea>
                     <textarea id="description" name="description"  placeholder="Текст отзыва*" rows="5" value="" required></textarea>
-                    <input type="text" id="rating" name="rating" placeholder="Оценка*" value="" required>
+                    <input type="radio" class="star" name="rating" value="1">
+                    <input type="radio" class="star" name="rating" value="2">
+                    <input type="radio" class="star" name="rating" value="3">
+                    <input type="radio" class="star" name="rating" value="4">
+                    <input type="radio" class="star" name="rating" value="5" checked>
                     <input  type="text" id="connection" name="connection" placeholder="Способ связи" value="">
 
                     <button class="form-reviews__btn" type="submit">ОТПРАВИТЬ</button>
