@@ -14,10 +14,6 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/contacts.css">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
-
 </head>
 
 <body>
@@ -61,8 +57,6 @@
         <?php include "footer.php";?>
     </div>
 
-    <script src="./js/jquery-3.6.4.min.js"></script>
-    <script src="./js/slick.min.js"></script>
     <script src="js/main.js"></script>
 
 </body>

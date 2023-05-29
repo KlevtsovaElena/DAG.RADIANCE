@@ -143,6 +143,25 @@ INSERT INTO `places` (`id`, `title`, `short-desc`, `full-desc`, `img-title`, `im
 (37,	'Село Куруш',	'Самое высокогорное село Европы и России.',	'<p><b>Село Куруш</b> — не только самое южное в России, но и самое высокогорное в Европе. Здесь, в зоне альпийских лугов, уже не растут деревья, а облака находятся не вверху, а внизу. Панорама села, слева гора Ерыдак (3925 м.), справа Базардюзю (4466 м.), и Шалбуздаг ( 4150 м.). </p><p><i>У меня же незабываемое впечатление от нахождения в Куруше оставило звездное небо. Никогда я не видел столько звезд, ярко светящих на протяжение всей ночи. Не было ни одной ночи, когда бы я не выходил фотографировать небосвод.</i></p><p class=\"text-right\">Алексей Данилкин</p>',	'img/place/title/kurush_1684843842.jpg',	'[\"img/place/carousel/kurush_1684841377.jpg\", \"img/place/carousel/kurush2_1684841377.jpg\"]',	'нет',	'https://yandex.ru/map-widget/v1/?um=constructor%3A68e7d995d2c3a609367e48f5464f9cb1d3c1140dbb623609c12ccb1127866ed7&amp;source=constructor'),
 (38,	'Курахский район',	'Каньон Мерки, село Кабир, река Курах, гора Гестинкиль, Курах-дере',	'<p>Курахский район является одним из южных районов Республики Дагестан.</p><p>Одно из особенных мест Курахского района - Каньон Мерки. Вам нужно добраться до села Кабир и идти вниз по течению реки Курах - она приведёт Вас к каньону, ибо по его дну и течет река. </p><p>Гестинкиль - одна из живописных вершин Южного Дагестана.Высота горы - 2788 метров.</p><p>Курах-дере – одна из красивейших частей центрального горного Дагестана, расположенная в бассейне реки КурахвацI, между Самурским и Калухдагским хребтами. Большая часть территории занята горами – неприступные заснеженные вершины, головокружительные горные кручи перемежаются живописными склонами и лугами. </p>',	'img/place/title/merki-kanion_1684841546.jpg',	'[\"img/place/carousel/kabir-selo_1684841546.jpg\", \"img/place/carousel/merki-kanion_1684841546.jpg\", \"img/place/carousel/gestinkil_1684841838.jpg\", \"img/place/carousel/gestinkil2_1684841838.jpg\", \"img/place/carousel/kurah-dere_1684842233.jpg\", \"img/place/carousel/kurah-dere-ashar_1684842233.jpg\", \"img/place/carousel/kurah-dere-chehivir_1684842233.jpg\"]',	'нет',	'https://yandex.ru/map-widget/v1/?um=constructor%3A8d54f8d9827f29b9d7839f80af784f18856cb2d57cec62019506a64c16e19e08&amp;source=constructor');
 
+DROP TABLE IF EXISTS `reviews`;
+CREATE TABLE `reviews` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `date-time` datetime NOT NULL,
+  `photo` varchar(1000) DEFAULT NULL,
+  `name` varchar(100) NOT NULL,
+  `title` varchar(1000) DEFAULT NULL,
+  `description` varchar(3000) NOT NULL,
+  `rating` tinyint NOT NULL,
+  `connection` varchar(200) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb3;
+
+INSERT INTO `reviews` (`id`, `date-time`, `photo`, `name`, `title`, `description`, `rating`, `connection`) VALUES
+(1,	'2023-05-29 11:58:13',	'img\\place\\sulakskiy-kanion-big.jpg',	'Елена',	'Всё супер',	'Всё отлично!',	5,	'почта'),
+(2,	'2023-05-29 11:58:13',	'img\\place\\sulakskiy-kanion-big.jpg',	'Елена',	'Всё супер',	'Всё отлично!',	4,	'почта'),
+(3,	'2023-05-29 11:58:13',	'img\\place\\sulakskiy-kanion-big.jpg',	'Елена',	'Всё супер',	'Всё отлично!',	3,	'почта'),
+(4,	'2023-05-29 11:58:13',	'img\\place\\sulakskiy-kanion-big.jpg',	'Елена',	'Всё супер',	'Всё отлично!',	2,	'почта');
+
 DROP TABLE IF EXISTS `tours`;
 CREATE TABLE `tours` (
   `id` int NOT NULL AUTO_INCREMENT,
@@ -193,4 +212,4 @@ INSERT INTO `tours-archive` (`id`, `title`, `short-desc`, `full-desc`, `img-titl
 (11,	'ТУР 11',	'описание для нашего тура 11',	'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse iure, debitis repudiandae cum saepe corrupti facilis. Explicabo omnis fugit exercitationem rem, eligendi quo incidunt neque vitae corrupti amet sunt aliquid.',	'img/tours-catalog/tarki-tau.jpg',	'[\"img/tours-catalog/tarki-tau.jpg\", \"img/card/plain.jpg\", \"img/card/reserve.jpg\", \"img/card/hills.jpg\", \"img/card/nature.jpeg\"]',	700,	''),
 (12,	'ТУР12',	'описание для нашего тура 12',	'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse iure, debitis repudiandae cum saepe corrupti facilis. Explicabo omnis fugit exercitationem rem, eligendi quo incidunt neque vitae corrupti amet sunt aliquid.',	'img/tours-catalog/sulak.jpg',	'[\"img/tours-catalog/sulak.jpg\", \"img/card/plain.jpg\", \"img/card/reserve.jpg\", \"img/card/hills.jpg\", \"img/card/nature.jpeg\"]',	700,	'');
 
--- 2023-05-28 18:05:50
+-- 2023-05-29 12:14:52

@@ -9,7 +9,7 @@
 		url('../fonts/cascadia_mono_extralight.svg#cascadia_mono_extralight') format('svg'); /* Chrome < 4, Legacy iOS */
 }
 
-a, button, input {
+a, button, input, textarea {
     font-family: 'CascadiaExtraLight', sans-serif;
 }
 body {
@@ -133,7 +133,7 @@ a {
 }
 
 .nav-wrapper {
-    padding: 0 60px;
+    padding: 0 50px;
     justify-content: space-between;
     align-items: center;
 }
@@ -162,6 +162,9 @@ a {
 }
 .call-nav-footer {
     cursor: pointer;
+}
+.call-nav-footer:hover {
+    color: #ffffffc4;
 }
 .call-nav-burger {
     cursor: pointer;
@@ -1278,6 +1281,9 @@ a {
     .article-text .fs-22 {
         font-size:18px;
     }
+    .nav li + li { 
+        margin-left: 20px;
+    }
 }
 
 @media(max-width: 1407px) {
@@ -1291,9 +1297,7 @@ a {
     .short-article {
         gap: 200px;
     }
-    .nav li + li { 
-        margin-left: 20px;
-    }
+
 }
 
 @media(max-width: 1324px) {
@@ -1304,6 +1308,9 @@ a {
     .triangle > a {
         bottom: 30px;
         width: 100px;
+    }
+    .nav-items {
+        font-size: 14px;
     }
 }
 
@@ -1317,9 +1324,7 @@ a {
     .short-article {
         gap: 110px;
     }
-    .nav-items {
-        font-size: 14px;
-    }
+
 }
 
 @media(max-width: 1200px) {

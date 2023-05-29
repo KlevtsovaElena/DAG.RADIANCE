@@ -12,9 +12,6 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/catalog.css">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 </head>
 
@@ -40,55 +37,48 @@
 
             <div class="article">
         
-              
-  
-
-                            <section class="tours-main">
-                                <div class="text-tours-main">
-                                    <p>
-                                    Вы ознакомились с разнообразием и уникальностью нашего края. 
-                                    
-                                    Теперь давайте отправимся в туры - любой уголок замечательного места на земле 
-                                    </p>
-                                </div>
-                                <div class="img-tours-main"><img class="car-mountains" src="./img/tour/car-mountain.jpg" alt="Автотур"></div>
-                            </section>
-                    
-                  
-                
-            
-    
-            <section>
-                <div class="catalog-container">
-                <?php $data = Tour::getLinesApi();
-                foreach ($data as $tour) { ?>
-
-                        <div class="d-flex catalog-card tour-item tour-card-catalog tour-card m-10">
-                            <div class="tour-item__img-container">
-                                <div class="tour-item__img" style="background-image: url('<?= $tour['img-title'];?>');"> </div>
-                            </div>
-                            <div class="tour-item__hover">
-                                <a href="<?= $tour['link'] ?> " class="block card-item__btn tour-btn" target="_blank">На сайт</a>
-                            </div> 
-                        </div>
-                <?php };?>
-                </div>
-            </section>
-
-            <section class="guides">
-                <p class="ta-center fs-18">Также предлагаем вам подборку ссылок, где лучшие гиды Дагестана</p>
-                <div class="catalog-container">
-                    <?php $guides = Guide::getLinesApi();
-                    foreach ($guides as $guide) { ?>
-
-                    <div class="guide m-10">
-                        <div class="guide-img" style="background-image: url('<?=$guide['img-title'];?>');"></div>
-                        <div class="guide-link"><a href="<?=$guide['link'];?>" class="card-item__btn guide-btn " target="_blank">Гиды</a></div>
+                <section class="tours-main">
+                    <div class="text-tours-main">
+                        <p>
+                        Вы ознакомились с разнообразием и уникальностью нашего края. 
+                        
+                        Теперь давайте отправимся в туры - любой уголок замечательного места на земле 
+                        </p>
                     </div>
+                    <div class="img-tours-main"><img class="car-mountains" src="./img/tour/car-mountain.jpg" alt="Автотур"></div>
+                </section>
+                        
+                <section>
+                    <div class="catalog-container">
+                    <?php $data = Tour::getLinesApi();
+                    foreach ($data as $tour) { ?>
 
-                    <?php } ?>
-                </div>
-            </section>
+                            <div class="d-flex catalog-card tour-item tour-card-catalog tour-card m-10">
+                                <div class="tour-item__img-container">
+                                    <div class="tour-item__img" style="background-image: url('<?= $tour['img-title'];?>');"> </div>
+                                </div>
+                                <div class="tour-item__hover">
+                                    <a href="<?= $tour['link'] ?> " class="block card-item__btn tour-btn" target="_blank">На сайт</a>
+                                </div> 
+                            </div>
+                    <?php };?>
+                    </div>
+                </section>
+
+                <section class="guides">
+                    <p class="ta-center fs-18">Также предлагаем вам подборку ссылок, где лучшие гиды Дагестана</p>
+                    <div class="catalog-container">
+                        <?php $guides = Guide::getLinesApi();
+                        foreach ($guides as $guide) { ?>
+
+                        <div class="guide m-10">
+                            <div class="guide-img" style="background-image: url('<?=$guide['img-title'];?>');"></div>
+                            <div class="guide-link"><a href="<?=$guide['link'];?>" class="card-item__btn guide-btn " target="_blank">Гиды</a></div>
+                        </div>
+
+                        <?php } ?>
+                    </div>
+                </section>
 
             </div>
 

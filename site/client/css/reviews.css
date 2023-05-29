@@ -1,0 +1,94 @@
+.reviews-container {
+    width: 90%;
+    margin: 20px auto;
+}
+.reviews-btn {
+    width: 300px;
+    height: 40px;
+    box-sizing: border-box;
+    text-align: center;
+    color: black;
+    font-size: 18px;
+    line-height: 1.18;
+    font-weight: 600;
+    border-width: 3px;
+    border-radius: 40px;
+    background-color: #2dffe2;
+    background-position: center center;
+    border-color: transparent;
+    border-style: solid;
+    cursor:pointer;
+    transition: all 0.3s;
+}
+.reviews-btn:hover {
+    background-color: white;
+}
+.form-reviews__btn {
+    width: 100%;
+    max-width: 300px;
+    cursor: pointer;
+    border: none;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    font-weight: 700;
+    transition: all 0.3s;
+}
+.form-reviews__btn:hover{
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.review-send {
+    margin: 20px auto;
+}
+.form-reviews {
+    box-sizing: border-box;
+    padding: 15px;
+    max-width: 800px;
+    margin-top: 20px;
+    text-align: center;
+    background-color: white;
+}
+.form-reviews > input,
+.form-reviews > textarea {
+    box-sizing: border-box;
+    margin-bottom: 8px;
+    padding: 0 10px;
+    min-height: 40px;
+    outline: 0;
+    width: 100%;
+    border: solid #eae9e9 1.5px;
+    font-size: 16px;
+}
+.form-reviews > input:focus,
+.form-reviews > textarea:focus {
+    border-color: #ade7e2;
+}
+.form-reviews > input::placeholder,
+.form-reviews > textarea::placeholder {
+    opacity: 0.5;
+    font-size: 14px;
+}
+.form-reviews__text {
+    color: black;
+    margin: 10px 0;
+    font-weight: 700;
+    font-size: 22px;
+}
+.photo-prew {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 1px solid #eae9e9;
+    overflow: hidden;
+
+}
+.form-reviews__photo {
+    color: black;
+    text-align: left;
+    margin-bottom: 8px;
+}
+.photo-prew img {
+    width: 100%
+}
+
