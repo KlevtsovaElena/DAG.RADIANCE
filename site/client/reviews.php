@@ -39,7 +39,7 @@
                  
 
     <!-- Здесь будет отрисовка самих отзывов, поля ниже -->
-
+    <div>
                 <h2>Отзывы наших посетителей:</h2>    
                 <?php 
                     $reviews = Reviews::getLinesApi(); 
@@ -54,10 +54,33 @@
                     <p>Дата:</p><div><?= $review['date-time'];?></div> 
                 </div>
                 <?php } ?>
-
+    </div>
     <!-- Здесь будет отрисовка самих отзывов, поля ниже -->
 
-            </div>
+
+    <!-- Форма для отправки отзыва -->
+            <section class="review-send">
+
+                <button class="reviews-btn " onclick="showReviewForm()">Оставить отзыв</button>
+
+                <form class="form-reviews">
+                    <p class="form-reviews__text">Оставьте свой отзыв</p>
+                    <input type="text" id="name" name="name" placeholder="Имя*" value="" required>
+                    <div class="form-reviews__photo">
+                        <p>Выберите фото</p>
+                        <div class="photo-prew"><img src="img/icons/avatar.jpg"></div>
+                        <input type="hidden" id="photo-default" name="photo-default" value="img/icons/avatar.jpg">
+                        <input type="file"  id="photo" name="photo" accept="image/png, image/jpg, image/jpeg">                               
+                    </div>
+                    <textarea id="title" name="title" placeholder="Заголовок" rows="2" value=""></textarea>
+                    <textarea id="description" name="description"  placeholder="Текст отзыва*" rows="5" value="" required></textarea>
+                    <input type="text" id="rating" name="rating" placeholder="Оценка*" value="" required>
+                    <input  type="text" id="connection" name="connection" placeholder="Способ связи" value="">
+
+                    <button class="form-reviews__btn" type="submit">ОТПРАВИТЬ</button>
+                </form>
+
+            </section>
 
         </main>
         
@@ -66,6 +89,7 @@
     </div>
 
     <script src="js/main.js"></script>
+    <script src="js/prewImg.js"></script>
 
 </body>
 

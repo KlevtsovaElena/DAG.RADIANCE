@@ -9,7 +9,7 @@
 		url('../fonts/cascadia_mono_extralight.svg#cascadia_mono_extralight') format('svg'); /* Chrome < 4, Legacy iOS */
 }
 
-a, button, input {
+a, button, input, textarea {
     font-family: 'CascadiaExtraLight', sans-serif;
 }
 body {
