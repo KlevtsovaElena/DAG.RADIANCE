@@ -74,13 +74,31 @@
                     </div>
                     <textarea id="title" name="title" placeholder="Заголовок" rows="2" value=""></textarea>
                     <textarea id="description" name="description"  placeholder="Текст отзыва*" rows="5" value="" required></textarea>
-                    <input type="radio" class="star" name="rating" value="1">
-                    <input type="radio" class="star" name="rating" value="2">
-                    <input type="radio" class="star" name="rating" value="3">
-                    <input type="radio" class="star" name="rating" value="4">
-                    <input type="radio" class="star" name="rating" value="5" checked>
-                    <input  type="text" id="connection" name="connection" placeholder="Способ связи" value="">
-
+                    <div class="star-container">
+                        <span>Ваша оценка</span>
+                        <div class="radio-box">
+                            <label for="radio1">1</label>
+                            <input id="radio1" type="radio" class="star" name="rating" value="1">
+                        </div>
+                        <div class="radio-box">
+                            <label for="radio2">2</label>
+                            <input id="radio2" type="radio" class="star" name="rating" value="2">
+                        </div>
+                        <div class="radio-box">
+                            <label for="radio3">3</label>
+                            <input id="radio3" type="radio" class="star" name="rating" value="3">
+                        </div>
+                        <div class="radio-box">
+                            <label for="radio4">4</label>
+                            <input id="radio4" type="radio" class="star" name="rating" value="4">
+                        </div>
+                        <div class="radio-box">
+                            <label for="radio5">5</label>
+                            <input id="radio5" type="radio" class="star" name="rating" value="5" checked>
+                        </div>
+                    </div>
+                        <input type="text" id="connection" name="connection" placeholder="Способ связи" value="">
+                    
                     <button class="form-reviews__btn" type="submit">ОТПРАВИТЬ</button>
                 </form>
 
