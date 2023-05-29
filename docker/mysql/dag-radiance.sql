@@ -154,13 +154,13 @@ CREATE TABLE `reviews` (
   `rating` tinyint NOT NULL,
   `connection` varchar(200) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb3;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb3;
 
 INSERT INTO `reviews` (`id`, `date-time`, `photo`, `name`, `title`, `description`, `rating`, `connection`) VALUES
-(1,	'2023-05-29 11:58:13',	'img\\place\\sulakskiy-kanion-big.jpg',	'Елена',	'Всё супер',	'Всё отлично!',	5,	'почта'),
-(2,	'2023-05-29 11:58:13',	'img\\place\\sulakskiy-kanion-big.jpg',	'Елена',	'Всё супер',	'Всё отлично!',	4,	'почта'),
-(3,	'2023-05-29 11:58:13',	'img\\place\\sulakskiy-kanion-big.jpg',	'Елена',	'Всё супер',	'Всё отлично!',	3,	'почта'),
-(4,	'2023-05-29 11:58:13',	'img\\place\\sulakskiy-kanion-big.jpg',	'Елена',	'Всё супер',	'Всё отлично!',	2,	'почта');
+(1,	'2023-05-29 11:58:13',	'img/place/sulakskiy-kanion-big.jpg',	'Елена',	'Всё супер',	'Всё отлично!',	5,	'почта'),
+(2,	'2023-05-29 11:58:13',	'img/icons/avatar.jpg',	'Елена',	'Всё супер',	'Всё отлично!',	4,	'почта'),
+(3,	'2023-05-29 11:58:13',	'img/place/sulakskiy-kanion-big.jpg',	'Елена',	'Всё супер',	'Всё отлично!',	3,	'почта'),
+(4,	'2023-05-29 11:58:13',	'img/icons/avatar.jpg',	'Елена',	'Всё супер',	'Всё отлично!',	2,	'почта');
 
 DROP TABLE IF EXISTS `tours`;
 CREATE TABLE `tours` (
@@ -212,4 +212,4 @@ INSERT INTO `tours-archive` (`id`, `title`, `short-desc`, `full-desc`, `img-titl
 (11,	'ТУР 11',	'описание для нашего тура 11',	'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse iure, debitis repudiandae cum saepe corrupti facilis. Explicabo omnis fugit exercitationem rem, eligendi quo incidunt neque vitae corrupti amet sunt aliquid.',	'img/tours-catalog/tarki-tau.jpg',	'[\"img/tours-catalog/tarki-tau.jpg\", \"img/card/plain.jpg\", \"img/card/reserve.jpg\", \"img/card/hills.jpg\", \"img/card/nature.jpeg\"]',	700,	''),
 (12,	'ТУР12',	'описание для нашего тура 12',	'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse iure, debitis repudiandae cum saepe corrupti facilis. Explicabo omnis fugit exercitationem rem, eligendi quo incidunt neque vitae corrupti amet sunt aliquid.',	'img/tours-catalog/sulak.jpg',	'[\"img/tours-catalog/sulak.jpg\", \"img/card/plain.jpg\", \"img/card/reserve.jpg\", \"img/card/hills.jpg\", \"img/card/nature.jpeg\"]',	700,	'');
 
--- 2023-05-29 12:14:52
+-- 2023-05-29 18:16:39
