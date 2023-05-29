@@ -34,6 +34,7 @@
                         </li>
                         <!-- <li><a href="#">Отзывы</a></li> -->
                         <li><a href="contacts.php">Контакты</a></li>
+                        <li><div class="call-nav-header" onclick="showFeedback()">Заказать звонок</div></li>
                     </ul>
                 </div>
                 <button class="btn-burger"><span class="nav-burger"></span></button>
@@ -70,6 +71,7 @@
                 </li>
                 <!-- <li><a href="#">Отзывы</a></li> -->
                 <li><a href="contacts.php">Контакты</a></li>
+                <li><div class="call-nav-burger" onclick="showFeedback()">Заказать звонок</div></li>
                 <div class="burger-links">
                 <?php 
                     $data2 = Contacts::getLinesApi(); 
@@ -82,5 +84,17 @@
                     <a href="whatsapp://send?phone=<?= $contact->whatsapp;?>" target="_blank"><img src="img/icons/wtsp.png" alt="Написать в whatsapp" class="linkPic"></a>               
             </div>
             </ul>
+        </div>
+
+        <div class="modalbox d-none" >
+            <form class="modal-form">
+                <div class="close-icon-flex"><div class="close-icon" onclick="closeFeedbackIcon()">x</div></div>
+                <p class="feedback-title">Хочешь с нами,  но остались вопросы?</p>
+                <p class="feedback-subtitle">Оставь заявку, мы перезвоним!</p>
+                <input type="text" id="name" name="name" placeholder="Имя" value="" required>
+                <input type="text" id="phone" name="phone" placeholder="Телефон" value="">
+                <input type="text" id="mail" name="mail"  placeholder="Mail" value="">
+                <div class="ta-center"><button class="modal-form__div modal-form__btn" onclick="sendExample()">ОТПРАВИТЬ</button></div>
+            </form>
         </div>
     <!-- /HEADER -->

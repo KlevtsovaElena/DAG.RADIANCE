@@ -160,6 +160,23 @@ a {
 .call:hover {
     opacity:0.8;
 }
+.call-nav-footer {
+    cursor: pointer;
+}
+.call-nav-burger {
+    cursor: pointer;
+    color: #FFD1A0;
+}
+.call-nav-header {
+    cursor: pointer;
+    color: black;
+}
+.call-nav-header:hover {
+    opacity: 0.6;
+}
+
+
+
 /* Меню на главной */
 
 .right-menu {
@@ -1257,6 +1274,9 @@ a {
     .short-article {
         gap: 200px;
     }
+    .nav li + li { 
+        margin-left: 20px;
+    }
 }
 
 @media(max-width: 1324px) {
@@ -1279,6 +1299,9 @@ a {
     }
     .short-article {
         gap: 110px;
+    }
+    .nav-items {
+        font-size: 14px;
     }
 }
 

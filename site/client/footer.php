@@ -14,6 +14,7 @@
                             <a href="tours-catalog.php">Туры</a>
                             <a href="food.php">Где поесть</a>
                             <a href="contacts.php">Контакты</a>
+                            <div class="call-nav-footer" onclick="showFeedback()">Заказать звонок</div>
                         </div>
                     </div>
                     <div class="footer-nav__item">

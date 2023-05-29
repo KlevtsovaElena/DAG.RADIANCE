@@ -88,6 +88,7 @@
                 </li> -->
                 <!-- <li><a href="#">Отзывы</a></li> -->
                 <li><a href="client/contacts.php">Контакты</a></li>
+                <li><div class="call-nav-burger" onclick="showFeedback()">Заказать звонок</div></li>
                 <div class="burger-links">
                     <?php 
                         $data2 = Contacts::getLinesApi(); 
@@ -360,6 +361,7 @@
                             <a href="client/tours-catalog.php">Туры</a>
                             <a href="client/food.php">Где поесть</a>
                             <a href="client/contacts.php">Контакты</a>
+                            <div class="call-nav-footer" onclick="showFeedback()">Заказать звонок</div>
                         </div>
                     </div>
                     <div class="footer-nav__item">
