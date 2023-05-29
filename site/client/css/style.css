@@ -176,7 +176,6 @@ a {
 }
 
 
-
 /* Меню на главной */
 
 .right-menu {
@@ -584,13 +583,21 @@ a {
     z-index: 11;
 }
 .modal-form {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     box-sizing: border-box;
     padding: 22px;
     width: 280px;
     min-height: 300px;
-    margin: calc(100vh/2 - 200px) auto;
+    /* margin: calc(100vh/2 - 200px) auto; */
     background-color: white;
     color: black;
+}
+
+.yes {
+    min-height: unset;
 }
 /* .modal-form p {
     margin-bottom: 0;
@@ -648,6 +655,16 @@ a {
     font-size: 16px;
     font-weight: 700;
     margin-bottom:8px;
+}
+
+.result {
+    font-size: 12px;
+    padding-top: 10px;
+    color: rgb(255, 0, 0);
+}
+
+.success {
+    text-align: center;
 }
 
 /* MAIN ARTICLE */
