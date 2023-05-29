@@ -46,14 +46,14 @@ function closeFeedbackIcon() {
 
 modalFeedbackForm.addEventListener("click", closeFeedback);
 
-/* ******** ПОКАЗАТЬ поп-ап об успешно отправленной заявке ******** */
+/* ******** СКРЫТЬ поп-ап об успешно отправленной заявке по крестику или скликиванием ******** */
 const modalFeedbackFormSuccess = document.getElementById("success");
 
 function closeFeedbackIconSuccess() {
     modalFeedbackFormSuccess.classList.add('d-none');
 }
 
-function closeFeedback() {
+function closeFeedbackSuccess() {
     if (this === event.target) {
         modalFeedbackFormSuccess.classList.add('d-none');
     }
@@ -109,7 +109,7 @@ function sendForm() {
             //скрыть форму
             modalFeedbackForm.classList.add('d-none');
 
-            //открыть поп-ап об успешной отправки заявки
+            //открыть поп-ап об успешной отправке заявки
             modalFeedbackFormSuccess.classList.remove('d-none');
 
             //автоматически закрыть поп-ап через 3 сек
