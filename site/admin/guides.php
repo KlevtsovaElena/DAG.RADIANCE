@@ -24,9 +24,9 @@
             <div class="work-area">
                 <div class="work-area__title">
                     <h1>Гиды</h1>
-                    <a href="card-guide.php" class="btn-admin">+ Добавить сайт с гидами</a>
+                    
                 </div>
-
+                <a href="card-guide.php" class="btn-admin">+ Добавить сайт с гидами</a>
                 <div class="work-area__contaner">
 
                     <div class="catalog-container">

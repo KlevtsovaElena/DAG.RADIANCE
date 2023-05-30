@@ -90,6 +90,8 @@
                                 <?php
                                     $reviews = Reviews::getLinesApiStatus(1); 
                                     foreach ($reviews as $review) {
+                                        $date = new DateTime($review['date-time'], new DateTimeZone('Etc/GMT'));
+                                        $date->setTimeZone(new DateTimeZone('Europe/Moscow'));
                                 ?>
 
                                 <div class="reviews"> 
@@ -112,7 +114,7 @@
                                                 <div class="photo-avatar" style="background-image: url('../client/<?=$review['photo'];?>');"></div>
                                             </div>
                                             <div class="section1__2">
-                                                <div class="name-guest"><?=$review['name'];?> </div> <span>от <?=$review['date-time'];?></span><br>
+                                                <div class="name-guest"><?=$review['name'];?> </div> <span>от <?=$date->format('d.m.Y H:i');?></span><br>
                                                 <span>Рейтинг:</span><div class="rating"><?=$review['rating'];?></div>
                                             </div>
                                         </div>
@@ -139,6 +141,8 @@
                                 <?php
                                     $reviews = Reviews::getLinesApiStatus(0); 
                                     foreach ($reviews as $review) {
+                                        $date = new DateTime($review['date-time'], new DateTimeZone('Etc/GMT'));
+                                        $date->setTimeZone(new DateTimeZone('Europe/Moscow'));
                                 ?>
 
                                 <div class="reviews"> 
@@ -161,7 +165,7 @@
                                             <div class="photo-avatar" style="background-image: url('../client/<?=$review['photo'];?>');"></div>
                                             </div>
                                             <div class="section1__2">
-                                                <div class="name-guest"><?=$review['name'];?> </div> <span>от <?=$review['date-time'];?></span><br>
+                                                <div class="name-guest"><?=$review['name'];?> </div> <span>от <?=$date->format('d.m.Y H:i');?></span><br>
                                                 <span>Рейтинг:</span><div class="rating"><?=$review['rating'];?></div>
                                             </div>
                                         </div>
