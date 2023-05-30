@@ -24,9 +24,9 @@
             <div class="work-area">
                 <div class="work-area__title">
                     <h1>Гостиницы</h1>
-                    <a href="card-hotel.php" class="btn-admin">+ Добавить гостиницу/отель</a>
+                   
                 </div>
-
+                <a href="card-hotel.php" class="btn-admin">+ Добавить гостиницу/отель</a>
                 <div class="work-area__contaner">
 
                     <div class="hotels-container d-flex">
@@ -66,9 +66,9 @@
             <div class="work-area">
                 <div class="work-area__title">
                     <h1>Гостевые домики</h1>
-                    <a href="card-house.php" class="btn-admin">+ Добавить домик</a>
+                    
                 </div>
-
+                <a href="card-house.php" class="btn-admin">+ Добавить домик</a>
                 <div class="work-area__contaner">
 
                     <div class="hotels-container d-flex">

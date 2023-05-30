@@ -439,22 +439,22 @@ a:hover {
     display: inline-block;
     font-size: 22px;
     font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+
 }
 .show-reviews {
     font-size: 30px;
     cursor: pointer;
 }
-.new-reviews {
-    margin-bottom: 30px;
-    width: 700px;
-    text-align: center;
-}
+
+.new-reviews,
 .view-reviews,
 .hidden-reviews {
     margin-top: 30px;
     margin-bottom: 30px;
-    width: 700px;
-    text-align: center;
+    width: 800px;
+
 }
 .new-reviews__container,
 .view-reviews__container,
@@ -462,4 +462,48 @@ a:hover {
     display: flex;
     width: 100%;
     flex-direction: column;
+    gap:10px;
+}
+.reviews {
+    width: 100%;
+    background-color: white;
+}
+.photo-avatar {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 1px solid #eae9e9;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+.rating {
+    text-align: center;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 2px solid;
+    margin-left: 5px;
+}
+.name-guest {
+    display: inline-block;
+    font-weight: 700;
+}
+.section1 {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.section1__2 {
+    text-align: left;
+}
+.title-review {
+    font-weight: 700;
+}
+.connection-guest {
+    margin-top: 10px;
 }

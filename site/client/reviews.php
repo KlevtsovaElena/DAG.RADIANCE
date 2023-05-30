@@ -51,7 +51,11 @@
                             <div class="photo" style="background-image: url('<?= $review['photo'];?>');"></div>
                             <div class="inside-wrapper">
                                 <!-- <p>Дата:</p> -->
-                                <div class="date"><?= $review['date-time'];?></div>
+                                <div class="date"><?php
+                                    $date = new DateTime($review['date-time'], new DateTimeZone('Etc/GMT'));
+                                    $date->setTimeZone(new DateTimeZone('Europe/Moscow'));
+                                    echo($date->format('d.m.Y H:i'));
+                                ?></div>
                                 <!-- <p>Имя:</p> -->
                                 <div class="name"><?= $review['name'];?></div>
                             </div>

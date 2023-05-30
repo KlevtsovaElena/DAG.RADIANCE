@@ -143,3 +143,15 @@ function showViewReviews() {
     }
 }
 
+
+const itemsRating = document.querySelectorAll('.rating');
+
+itemsRating.forEach(element => {
+    let rating = element.innerText;
+    if(rating !== "5" && rating !== "4") {
+        element.style.borderColor = "red";
+    }
+    
+});
+
+

@@ -36,21 +36,50 @@
                                 <?php
                                     $reviews = Reviews::getLinesApiStatus(2); 
                                     foreach ($reviews as $review) {
+                                        $date = new DateTime($review['date-time'], new DateTimeZone('Etc/GMT'));
+                                        $date->setTimeZone(new DateTimeZone('Europe/Moscow'));
+                                        
                                 ?>
 
-                                    <div class="reviews"> 
-                                        <p>Имя:</p><div><?= $review['name'];?></div> 
-                                        <p>Фото:</p><div><?= $review['photo'];?></div> 
-                                        <p>Заголовок:</p><div><?= $review['title'];?></div> 
-                                        <p>Описание:</p><div><?= $review['description'];?></div>  
-                                        <p>Рейтинг:</p><div><?= $review['rating'];?></div> 
-                                        <p>Дата:</p><div><?= $review['date-time'];?></div> 
-                                        <p>Способ связи:</p><div><?= $review['connection'];?></div> 
-                                    </div>
+                                <div class="reviews"> 
+                                    <form class="form-feedback-new" method="post">
+                                        <input type="hidden" name="id" value="<?=$review['id'];?>">
+                                        <input type="hidden" id="photo" name="photo" value="<?=$review['photo'];?>">
+                                        <input type="hidden" id="name" name="name" value="<?=$review['name'];?>" readonly>
+                                        <input type="hidden" id="date-reg" name="date-time" value="<?=$review['date-time'];?>" readonly>
+                                        <input type="hidden" id="rating" name="rating" value="<?=$review['rating'];?>" readonly>
+                                        <input type="hidden" id="title" name="title"  value="<?=$review['title'];?>" readonly>
+                                        <input type="hidden" id="description" name="description" value="<?=$review['description'];?>" readonly>
+                                        <input type="hidden" id="connection" name="connection" value="<?=$review['connection'];?>" readonly>
+                                        
 
+
+                                        <div class="ta-center">
+                                            <input class="btn-admin" type="submit" formaction="works/edit-review.php?status=1" formmethod="post" value="ОПУБЛИКОВАТЬ" />
+                                            <input class="btn-admin btn-delete" type="submit" formaction="works/edit-review.php?status=0" formmethod="post" value="НЕ ПУБЛИКОВАТЬ" />
+                                        </div>
+
+                                        <div class="section1">
+                                            <div class="avatar">
+                                                <div class="photo-avatar" style="background-image: url('../client/<?=$review['photo'];?>');"></div>
+                                            </div>
+                                            <div class="section1__2">
+                                                <div class="name-guest"><?=$review['name'];?> </div> <span>от <?=$date->format('d.m.Y H:i');?></span><br>
+                                                <span>Рейтинг:</span><div class="rating"><?=$review['rating'];?></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="title-review"><?=$review['title'];?></div>
+                                        <div class="text-review"><?=$review['description'];?></div>
+                                        <div class="connection-guest">Способ связи: 
+                                            <div><?=$review['connection'];?></div>
+                                        </div>
+                                        
+                                    </form>
+                                    
+                                </div>
                                 <?php } ?>
                             </div>
-
                         </div>
 
                         <!-- ОПУБЛИКОВАННЫЕ ОТЗЫВЫ -->
@@ -63,15 +92,40 @@
                                     foreach ($reviews as $review) {
                                 ?>
 
-                                    <div class="reviews"> 
-                                        <p>Имя:</p><div><?= $review['name'];?></div> 
-                                        <p>Фото:</p><div><?= $review['photo'];?></div> 
-                                        <p>Заголовок:</p><div><?= $review['title'];?></div> 
-                                        <p>Описание:</p><div><?= $review['description'];?></div>  
-                                        <p>Рейтинг:</p><div><?= $review['rating'];?></div> 
-                                        <p>Дата:</p><div><?= $review['date-time'];?></div> 
-                                        <p>Способ связи:</p><div><?= $review['connection'];?></div> 
-                                    </div>
+                                <div class="reviews"> 
+                                    <form class="form-feedback-new" method="post">
+                                        <input type="hidden" name="id" value="<?=$review['id'];?>">
+                                        <input type="hidden" id="photo" name="photo" value="<?=$review['photo'];?>">
+                                        <input type="hidden" id="name" name="name" value="<?=$review['name'];?>" readonly>
+                                        <input type="hidden" id="date-reg" name="date-time" value="<?=$review['date-time'];?>" readonly>
+                                        <input type="hidden" id="rating" name="rating" value="<?=$review['rating'];?>" readonly>
+                                        <input type="hidden" id="title" name="title"  value="<?=$review['title'];?>" readonly>
+                                        <input type="hidden" id="description" name="description" value="<?=$review['description'];?>" readonly>
+                                        <input type="hidden" id="connection" name="connection" value="<?=$review['connection'];?>" readonly>
+                                        
+                                        <div class="ta-center">
+                                            <input class="btn-admin btn-delete" type="submit" formaction="works/edit-review.php?status=0" formmethod="post" value="СНЯТЬ С ПУБЛИКАЦИИ" />
+                                        </div>
+
+                                        <div class="section1">
+                                            <div class="avatar">
+                                                <div class="photo-avatar" style="background-image: url('../client/<?=$review['photo'];?>');"></div>
+                                            </div>
+                                            <div class="section1__2">
+                                                <div class="name-guest"><?=$review['name'];?> </div> <span>от <?=$review['date-time'];?></span><br>
+                                                <span>Рейтинг:</span><div class="rating"><?=$review['rating'];?></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="title-review"><?=$review['title'];?></div>
+                                        <div class="text-review"><?=$review['description'];?></div>
+                                        <div class="connection-guest">Способ связи: 
+                                            <div><?=$review['connection'];?></div>
+                                        </div>
+                                        
+                                    </form>
+                                    
+                                </div>
 
                                 <?php } ?>
                             </div>
@@ -87,15 +141,40 @@
                                     foreach ($reviews as $review) {
                                 ?>
 
-                                    <div class="reviews"> 
-                                        <p>Имя:</p><div><?= $review['name'];?></div> 
-                                        <p>Фото:</p><div><?= $review['photo'];?></div> 
-                                        <p>Заголовок:</p><div><?= $review['title'];?></div> 
-                                        <p>Описание:</p><div><?= $review['description'];?></div>  
-                                        <p>Рейтинг:</p><div><?= $review['rating'];?></div> 
-                                        <p>Дата:</p><div><?= $review['date-time'];?></div> 
-                                        <p>Способ связи:</p><div><?= $review['connection'];?></div> 
-                                    </div>
+                                <div class="reviews"> 
+                                    <form class="form-feedback-new" method="post">
+                                        <input type="hidden" name="id" value="<?=$review['id'];?>">
+                                        <input type="hidden" id="photo" name="photo" value="<?=$review['photo'];?>">
+                                        <input type="hidden" id="name" name="name" value="<?=$review['name'];?>" readonly>
+                                        <input type="hidden" id="date-reg" name="date-time" value="<?=$review['date-time'];?>" readonly>
+                                        <input type="hidden" id="rating" name="rating" value="<?=$review['rating'];?>" readonly>
+                                        <input type="hidden" id="title" name="title"  value="<?=$review['title'];?>" readonly>
+                                        <input type="hidden" id="description" name="description" value="<?=$review['description'];?>" readonly>
+                                        <input type="hidden" id="connection" name="connection" value="<?=$review['connection'];?>" readonly>
+                                        
+                                        <div class="ta-center">
+                                            <input class="btn-admin" type="submit" formaction="works/edit-review.php?status=1" formmethod="post" value="ОПУБЛИКОВАТЬ" />
+                                        </div>
+
+                                        <div class="section1">
+                                            <div class="avatar">
+                                            <div class="photo-avatar" style="background-image: url('../client/<?=$review['photo'];?>');"></div>
+                                            </div>
+                                            <div class="section1__2">
+                                                <div class="name-guest"><?=$review['name'];?> </div> <span>от <?=$review['date-time'];?></span><br>
+                                                <span>Рейтинг:</span><div class="rating"><?=$review['rating'];?></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="title-review"><?=$review['title'];?></div>
+                                        <div class="text-review"><?=$review['description'];?></div>
+                                        <div class="connection-guest">Способ связи: 
+                                            <div><?=$review['connection'];?></div>
+                                        </div>
+                                        
+                                    </form>
+                                    
+                                </div>
 
                                 <?php } ?>
                             </div>
