@@ -70,22 +70,6 @@ INSERT INTO `guides` (`id`, `title`, `img-title`, `link`) VALUES
 (5,	'personalguide',	'img/guide/guide-personal_1685041556.jpg',	'https://www.personalguide.ru/rossiya/mahachkala/guide'),
 (6,	'travel-or-die',	'img/guide/guide-travelordie_1685041599.jpg',	'https://travel-or-die.ru/russia/dagestan/gidy-v-dagestane/');
 
-DROP TABLE IF EXISTS `guides-archive`;
-CREATE TABLE `guides-archive` (
-  `id` int NOT NULL AUTO_INCREMENT,
-  `name` varchar(255) NOT NULL,
-  `guide-desc` varchar(1000) NOT NULL,
-  `photo` varchar(1000) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb3;
-
-INSERT INTO `guides-archive` (`id`, `name`, `guide-desc`, `photo`) VALUES
-(1,	'Дмитрий',	'Историк. Самый общительный гид. Стаж 10 лет',	'img/guides/guid.jpg'),
-(2,	'Дмитрий',	'Историк. Самый общительный гид. Стаж 10 лет',	'img/guides/guid.jpg'),
-(3,	'Дмитрий',	'Историк. Самый общительный гид. Стаж 10 лет',	'img/guides/guid.jpg'),
-(4,	'Дмитрий',	'Историк. Самый общительный гид. Стаж 10 лет',	'img/guides/guid.jpg'),
-(6,	'Дмитрий',	'Историк. Самый общительный гид. Стаж 10 лет',	'img/guides/guid.jpg');
-
 DROP TABLE IF EXISTS `hotels`;
 CREATE TABLE `hotels` (
   `id` int NOT NULL AUTO_INCREMENT,
@@ -158,10 +142,10 @@ CREATE TABLE `reviews` (
 ) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8mb3;
 
 INSERT INTO `reviews` (`id`, `date-time`, `photo`, `name`, `title`, `description`, `rating`, `connection`, `status`) VALUES
-(1,	'2023-05-29 11:58:13',	'img/place/sulakskiy-kanion-big.jpg',	'Елена',	'Всё супер',	'Всё отлично!',	5,	'почта',	1),
-(2,	'2023-05-29 11:58:13',	'img/icons/avatar.jpg',	'Елена',	'Всё супер',	'Всё отлично!',	4,	'почта',	0),
-(3,	'2023-05-29 11:58:13',	'img/place/sulakskiy-kanion-big.jpg',	'Елена',	'Всё супер',	'Всё отлично!',	3,	'почта',	1),
-(4,	'2023-05-29 11:58:13',	'img/icons/avatar.jpg',	'Елена',	'Всё супер',	'Всё отлично!',	2,	'почта',	2);
+(1,	'2023-05-29 11:58:13',	'img/icons/avatar.jpg',	'Екатерина',	'Всё супер',	'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam dignissimos mollitia ea adipisci, placeat sint laboriosam dolor animi eaque fugiat nemo. Aspernatur ducimus quaerat nemo quod nobis deleniti corporis harum.',	5,	'мой телефон: 124354513',	1),
+(2,	'2023-05-29 18:58:13',	'img/icons/avatar.jpg',	'Игорь',	'Yhjhjhsdsghsgs',	'Перезвоните мне',	2,	'',	0),
+(3,	'2023-05-29 21:58:13',	'img/icons/avatar.jpg',	'Екатерина',	'Всё супер',	'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam dignissimos mollitia ea adipisci, placeat sint laboriosam dolor animi eaque fugiat nemo. Aspernatur ducimus quaerat nemo quod nobis deleniti corporis harum.',	5,	'почта: mail@mail.ru',	1),
+(4,	'2023-05-30 04:58:13',	'img/icons/avatar.jpg',	'Игорь',	'Всё супер',	'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam dignissimos mollitia ea adipisci, placeat sint laboriosam dolor animi eaque fugiat nemo. Aspernatur ducimus quaerat nemo quod nobis deleniti corporis harum.',	5,	'почта',	2);
 
 DROP TABLE IF EXISTS `tours`;
 CREATE TABLE `tours` (
@@ -186,31 +170,4 @@ INSERT INTO `tours` (`id`, `title`, `img-title`, `link`) VALUES
 (11,	'anextour',	'img/tour/title/anextour_1685011419.jpg',	'https://www.anextour.com/'),
 (12,	'indigid',	'img/tour/title/indigid_1685011451.jpg',	'https://indigid.ru/');
 
-DROP TABLE IF EXISTS `tours-archive`;
-CREATE TABLE `tours-archive` (
-  `id` int NOT NULL AUTO_INCREMENT,
-  `title` varchar(100) NOT NULL,
-  `short-desc` varchar(250) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
-  `full-desc` varchar(3000) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
-  `img-title` varchar(500) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
-  `img-carousel` json DEFAULT NULL,
-  `price` int DEFAULT NULL,
-  `link` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-
-INSERT INTO `tours-archive` (`id`, `title`, `short-desc`, `full-desc`, `img-title`, `img-carousel`, `price`, `link`) VALUES
-(1,	'ТУР 1',	'описание для нашего тура 1',	'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse iure, debitis repudiandae cum saepe corrupti facilis. Explicabo omnis fugit exercitationem rem, eligendi quo incidunt neque vitae corrupti amet sunt aliquid.',	'img/place/sea01.jpg',	'[\"img/place/sea01.jpg\", \"img/card/plain.jpg\", \"img/card/reserve.jpg\", \"img/card/hills.jpg\", \"img/card/nature.jpeg\"]',	500,	''),
-(2,	'ТУР 2',	'описание для нашего тура 2',	'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse iure, debitis repudiandae cum saepe corrupti facilis. Explicabo omnis fugit exercitationem rem, eligendi quo incidunt neque vitae corrupti amet sunt aliquid.',	'img/tours-catalog/gamsutl.jpg',	'[\"img/tours-catalog/gamsutl.jpg\", \"img/card/plain.jpg\", \"img/card/reserve.jpg\", \"img/card/hills.jpg\", \"img/card/nature.jpeg\"]',	600,	''),
-(3,	'ТУР 3',	'описание для нашего тура 3',	'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse iure, debitis repudiandae cum saepe corrupti facilis. Explicabo omnis fugit exercitationem rem, eligendi quo incidunt neque vitae corrupti amet sunt aliquid.',	'img/tours-catalog/goor-towers.jpg',	'[\"img/tours-catalog/goor-towers.jpg\", \"img/card/plain.jpg\", \"img/card/reserve.jpg\", \"img/card/hills.jpg\", \"img/card/nature.jpeg\"]',	600,	''),
-(4,	'ТУР 4',	'описание для нашего тура 4',	'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse iure, debitis repudiandae cum saepe corrupti facilis. Explicabo omnis fugit exercitationem rem, eligendi quo incidunt neque vitae corrupti amet sunt aliquid.',	'img/tours-catalog/karadakh.jpg',	'[\"img/tours-catalog/karadakh.jpg\", \"img/card/plain.jpg\", \"img/card/reserve.jpg\", \"img/card/hills.jpg\", \"img/card/nature.jpeg\"]',	600,	''),
-(5,	'ТУР 5',	'описание для нашего тура 5',	'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse iure, debitis repudiandae cum saepe corrupti facilis. Explicabo omnis fugit exercitationem rem, eligendi quo incidunt neque vitae corrupti amet sunt aliquid.',	'img/tours-catalog/naryn-kala-green.jpg',	'[\"img/tours-catalog/naryn-kala-green.jpg\", \"img/card/plain.jpg\", \"img/card/reserve.jpg\", \"img/card/hills.jpg\", \"img/card/nature.jpeg\"]',	600,	''),
-(6,	'ТУР 6',	'описание для нашего тура 6',	'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse iure, debitis repudiandae cum saepe corrupti facilis. Explicabo omnis fugit exercitationem rem, eligendi quo incidunt neque vitae corrupti amet sunt aliquid.',	'img/tours-catalog/shalbuzdag.jpg',	'[\"img/tours-catalog/shalbuzdag.jpg\", \"img/card/plain.jpg\", \"img/card/reserve.jpg\", \"img/card/hills.jpg\", \"img/card/nature.jpeg\"]',	600,	''),
-(7,	'ТУР 7',	'описание для нашего тура 7',	'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse iure, debitis repudiandae cum saepe corrupti facilis. Explicabo omnis fugit exercitationem rem, eligendi quo incidunt neque vitae corrupti amet sunt aliquid.',	'img/tours-catalog/gunib.jpg',	'[\"img/tours-catalog/gunib.jpg\", \"img/card/plain.jpg\", \"img/card/reserve.jpg\", \"img/card/hills.jpg\", \"img/card/nature.jpeg\"]',	700,	''),
-(8,	'ТУР 8',	'описание для нашего тура 8',	'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse iure, debitis repudiandae cum saepe corrupti facilis. Explicabo omnis fugit exercitationem rem, eligendi quo incidunt neque vitae corrupti amet sunt aliquid.',	'img/tours-catalog/old-kakhib.jpg',	'[\"img/tours-catalog/old-kakhib.jpg\", \"img/card/plain.jpg\", \"img/card/reserve.jpg\", \"img/card/hills.jpg\", \"img/card/nature.jpeg\"]',	700,	''),
-(9,	'ТУР 9',	'описание для нашего тура 9',	'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse iure, debitis repudiandae cum saepe corrupti facilis. Explicabo omnis fugit exercitationem rem, eligendi quo incidunt neque vitae corrupti amet sunt aliquid.',	'img/tours-catalog/saltin.jpeg',	'[\"img/tours-catalog/saltin.jpeg\", \"img/card/plain.jpg\", \"img/card/reserve.jpg\", \"img/card/hills.jpg\", \"img/card/nature.jpeg\"]',	700,	''),
-(10,	'ТУР 10',	'описание для нашего тура 10',	'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse iure, debitis repudiandae cum saepe corrupti facilis. Explicabo omnis fugit exercitationem rem, eligendi quo incidunt neque vitae corrupti amet sunt aliquid.',	'img/tours-catalog/sarykum.jpg',	'[\"img/tours-catalog/sarykum.jpg\", \"img/card/plain.jpg\", \"img/card/reserve.jpg\", \"img/card/hills.jpg\", \"img/card/nature.jpeg\"]',	700,	''),
-(11,	'ТУР 11',	'описание для нашего тура 11',	'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse iure, debitis repudiandae cum saepe corrupti facilis. Explicabo omnis fugit exercitationem rem, eligendi quo incidunt neque vitae corrupti amet sunt aliquid.',	'img/tours-catalog/tarki-tau.jpg',	'[\"img/tours-catalog/tarki-tau.jpg\", \"img/card/plain.jpg\", \"img/card/reserve.jpg\", \"img/card/hills.jpg\", \"img/card/nature.jpeg\"]',	700,	''),
-(12,	'ТУР12',	'описание для нашего тура 12',	'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse iure, debitis repudiandae cum saepe corrupti facilis. Explicabo omnis fugit exercitationem rem, eligendi quo incidunt neque vitae corrupti amet sunt aliquid.',	'img/tours-catalog/sulak.jpg',	'[\"img/tours-catalog/sulak.jpg\", \"img/card/plain.jpg\", \"img/card/reserve.jpg\", \"img/card/hills.jpg\", \"img/card/nature.jpeg\"]',	700,	'');
-
--- 2023-05-29 20:46:04
+-- 2023-05-30 06:33:38

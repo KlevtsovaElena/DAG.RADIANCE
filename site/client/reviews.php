@@ -134,29 +134,7 @@
 
     <script src="js/main.js"></script>
     <script src="js/prewImg.js"></script>
-    <script src="js/review.js"></script>
 
 </body>
 
 </html>
-
-                    <!-- <div class="radio-box">
-                            <label for="radio1">1</label>
-                            <input id="radio1" type="radio" class="star" name="rating" value="1">
-                        </div>
-                        <div class="radio-box">
-                            <label for="radio2">2</label>
-                            <input id="radio2" type="radio" class="star" name="rating" value="2">
-                        </div>
-                        <div class="radio-box">
-                            <label for="radio3">3</label>
-                            <input id="radio3" type="radio" class="star" name="rating" value="3">
-                        </div>
-                        <div class="radio-box">
-                            <label for="radio4">4</label>
-                            <input id="radio4" type="radio" class="star" name="rating" value="4">
-                        </div>
-                        <div class="radio-box">
-                            <label for="radio5">5</label>
-                            <input id="radio5" type="radio" class="star" name="rating" value="5" checked>
-                        </div>
