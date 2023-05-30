@@ -47,7 +47,7 @@ if ($_FILES['photo']['name'] !== "") {
 $pdo = \Connection::getConnection();
 
 // формируем текст запроса
-$sqlText = "INSERT INTO `reviews` (`name`, `description`, `title`, `rating`, `connection`, `photo`, `date-time`) VALUES('$name', '$description', '$title', '$rating', '$connection', '$photo', '$dateTime')";
+$sqlText = "INSERT INTO `reviews` (`name`, `description`, `title`, `rating`, `connection`, `photo`, `date-time`, `status`) VALUES('$name', '$description', '$title', '$rating', '$connection', '$photo', '$dateTime', 2)";
 
 // запись в базу
 $query = $pdo->query($sqlText);

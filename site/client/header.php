@@ -91,10 +91,11 @@
                 <div class="close-icon-flex"><div class="close-icon" onclick="closeFeedbackIcon()">x</div></div>
                 <p class="feedback-title">Хочешь с нами,  но остались вопросы?</p>
                 <p class="feedback-subtitle">Оставь заявку, мы перезвоним!</p>
-                <input type="text" id="name" name="name" placeholder="Имя" value="" required>
-                <input type="text" id="phone" name="phone" placeholder="Телефон" value="">
-                <input type="text" id="mail" name="mail"  placeholder="Mail" value="">
-                <div class="ta-center"><button class="modal-form__div modal-form__btn" onclick="sendExample()">ОТПРАВИТЬ</button></div>
+                <input type="text" id="name" name="name" placeholder="Имя" value="">
+                <input type="tel" id="phone" name="phone" placeholder="Номер телефона" value="" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+                <input type="text" id="mail" name="mail"  placeholder="email@mail.ru" value="">
+                <div class="ta-center"><button class="modal-form__div modal-form__btn"onclick="sendForm()">ОТПРАВИТЬ</button></div>
+                <div id="result" class="result"></div>
             </form>
         </div>
     <!-- /HEADER -->
