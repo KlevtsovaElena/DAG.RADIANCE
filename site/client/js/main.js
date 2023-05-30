@@ -59,7 +59,7 @@ function closeFeedbackSuccess() {
     }
 }
 
-modalFeedbackFormSuccess.addEventListener("click", closeFeedback);
+// modalFeedbackFormSuccess.addEventListener("click", closeFeedback);
 
 
 /* ******** Отправка заявки в телеграмм-бота ******** */

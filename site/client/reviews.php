@@ -38,32 +38,57 @@
             <div class="reviews-container">  
                  
 
-    <!-- Здесь будет отрисовка самих отзывов, поля ниже -->
-    <div>
-                <h2>Отзывы наших посетителей:</h2>    
-                <?php 
-                    $reviews = Reviews::getLinesApi(); 
-                    foreach ($reviews as $review) {
-                ?>
-                <div class="reviews"> 
-                    <p>Имя:</p><div><?= $review['name'];?></div> 
-                    <p>Фото:</p><div><?= $review['photo'];?></div> 
-                    <p>Заголовок:</p><div><?= $review['title'];?></div> 
-                    <p>Описание:</p><div><?= $review['description'];?></div>  
-                    <p>Рейтинг:</p><div><?= $review['rating'];?></div> 
-                    <p>Дата:</p><div><?= $review['date-time'];?></div> 
+            <!-- Здесь будет отрисовка самих отзывов, поля ниже -->
+                <div>
+                    <h2>Отзывы наших посетителей:</h2>    
+                    <?php 
+                        $reviews = Reviews::getLinesApi(); 
+                        foreach ($reviews as $review) {
+                    ?>
+                    <div class="reviews">
+                        <div class="wrapper">
+                            <!-- <p>Фото:</p> -->
+                            <div class="photo" style="background-image: url('<?= $review['photo'];?>');"></div>
+                            <div class="inside-wrapper">
+                                <!-- <p>Дата:</p> -->
+                                <div class="date"><?= $review['date-time'];?></div>
+                                <!-- <p>Имя:</p> -->
+                                <div class="name"><?= $review['name'];?></div>
+                            </div>
+                        </div>
+                        
+                        <!-- <p>Заголовок:</p> -->
+                        <div class="title"><?= $review['title'];?></div> 
+                        <!-- <p>Описание:</p> -->
+                        <div class="description"><?= $review['description'];?></div>  
+                        <!-- <p>Рейтинг:</p> -->
+                        <!-- <div class="rating"><?= $review['rating'];?></div> -->
+                        <div class="star-container d-flex rating">
+						<div class="rating-body">
+							<!-- полоса, которая заполняется в % соотношении в зависимости от оценки -->
+							<div class="rating-active"></div>
+							<div class="rating-items d-flex">
+								<input type="radio" class="rating-item" value="1" name="rating">
+								<input type="radio" class="rating-item" value="2" name="rating">
+								<input type="radio" class="rating-item" value="3" name="rating">
+								<input type="radio" class="rating-item" value="4" name="rating">
+								<input type="radio" class="rating-item" value="5" name="rating">
+							</div>
+						</div>
+						<div class="rating-value d-none"><?= $review['rating'];?></div>
+                    </div>  
+                    </div>
+                    <?php } ?>
                 </div>
-                <?php } ?>
-    </div>
-    <!-- Здесь будет отрисовка самих отзывов, поля ниже -->
+            <!-- Здесь будет отрисовка самих отзывов, поля ниже -->
 
 
     <!-- Форма для отправки отзыва -->
             <section class="review-send">
+                <a id="btn-leave-review" onclick="showReviewsForm()" href="#reviews-form" class="card-btn block card-item__btn btn-big btn-theme m-center">Оставить отзыв</a>
+                <!-- <button class="reviews-btn " onclick="showReviewForm()">Оставить отзыв</button> -->
 
-                <button class="reviews-btn " onclick="showReviewForm()">Оставить отзыв</button>
-
-                <form action="../api/post/reviews/index.php" method="post" enctype="multipart/form-data" class="form-reviews">
+                <form id="reviews-form" action="../api/post/reviews/index.php" method="post" enctype="multipart/form-data" class="form-reviews d-none">
                     <p class="form-reviews__text">Оставьте свой отзыв</p>
                     <input type="text" id="name" name="name" placeholder="Имя*" value="" required>
                     <div class="form-reviews__photo">
@@ -74,9 +99,43 @@
                     </div>
                     <textarea id="title" name="title" placeholder="Заголовок" rows="2" value=""></textarea>
                     <textarea id="description" name="description"  placeholder="Текст отзыва*" rows="5" value="" required></textarea>
-                    <div class="star-container">
-                        <span>Ваша оценка</span>
-                        <div class="radio-box">
+                    <span class="rating-title">Ваша оценка</span>
+                    <div class="star-container d-flex rating rating_set">
+						<div class="rating-body">
+							<!-- полоса, которая заполняется в % соотношении в зависимости от оценки -->
+							<div class="rating-active"></div>
+							<div class="rating-items d-flex c-pointer">
+								<input id="radio1" type="radio" class="rating-item" value="1" name="rating">
+								<input id="radio2" type="radio" class="rating-item" value="2" name="rating">
+								<input id="radio3" type="radio" class="rating-item" value="3" name="rating">
+								<input id="radio4" type="radio" class="rating-item" value="4" name="rating">
+								<input id="radio5" type="radio" class="rating-item" value="5" name="rating">
+							</div>
+						</div>
+						<div class="rating-value d-none">0</div>
+                    </div>
+                        <input type="text" id="connection" name="connection" placeholder="Способ связи" value="">
+                    
+                        
+                    <button class="form-reviews__btn" type="submit" onclick="hideReviewsForm()">ОТПРАВИТЬ</button>
+                </form>
+
+            </section>
+
+        </main>
+        
+        
+        <?php include "footer.php";?>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/prewImg.js"></script>
+
+</body>
+
+</html>
+
+                    <!-- <div class="radio-box">
                             <label for="radio1">1</label>
                             <input id="radio1" type="radio" class="star" name="rating" value="1">
                         </div>
@@ -95,24 +154,4 @@
                         <div class="radio-box">
                             <label for="radio5">5</label>
                             <input id="radio5" type="radio" class="star" name="rating" value="5" checked>
-                        </div>
-                    </div>
-                        <input type="text" id="connection" name="connection" placeholder="Способ связи" value="">
-                    
-                    <button class="form-reviews__btn" type="submit">ОТПРАВИТЬ</button>
-                </form>
-
-            </section>
-
-        </main>
-        
-        
-        <?php include "footer.php";?>
-    </div>
-
-    <script src="js/main.js"></script>
-    <script src="js/prewImg.js"></script>
-
-</body>
-
-</html>
+                        </div> -->
