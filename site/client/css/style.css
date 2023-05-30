@@ -832,7 +832,9 @@ a {
     font-weight: 600;
     border-width: 3px;
     border-radius: 40px;
-    background-color: #2dffe2;
+    /* background-color: #2dffe2; */
+    /* background-color: rgb(255 255 255 / 58%); */
+    background-color: #FFFFFF;
     background-position: center center;
     border-color: transparent;
     border-style: solid;
@@ -841,11 +843,16 @@ a {
 /* общая кнопка с ховер-эффектом */
 .btn-theme {
     cursor: pointer;
+    /* color: #FFFFFF; */
+    color: #000;
     transition: all 0.3s ease-in-out;
 }
 
 .btn-theme:hover {
-    background-color: #FFFFFF;
+    /* background-color: #FFFFFF; */
+    background-color: rgb(255 255 255 / 58%);
+    /* color: #000000; */
+    color: #FFFFFF;
 }
 
 .btn-long {
@@ -992,7 +999,9 @@ a {
     background-color: gainsboro;
 }
 .tour-btn:hover{
-    background-color: white;
+    /* background-color: white; */
+    background-color: rgb(255 255 255 / 58%);
+    color: #FFFFFF;
 }
 .hotels-container {
     display: flex;
@@ -1179,6 +1188,7 @@ a {
     align-items: center;
     color:#FFFFFF;
     box-shadow: 0px 0px 1px 1px white;
+    background-color: rgb(255 255 255 / 58%);
 }
 
 .footer-nav {
@@ -1190,7 +1200,8 @@ a {
 
 .footer-nav .logo {
     font-size: 20px;
-    color: #FFD1A0;
+    /* color: #FFD1A0; */
+    color: white;
 }
 
 .footer-menu_container {
@@ -1203,7 +1214,8 @@ a {
 
 .footer-nav__title {
     margin: 0;
-    color: #FFD1A0;
+    /* color: #FFD1A0; */
+    color: white;
 }
 
 .footer-nav__links {
@@ -1223,7 +1235,8 @@ a {
 
 .credits {
     font-size: 14px;
-    color: #FFD1A0;
+    /* color: #FFD1A0; */
+    color: #FFFFFF;
     font-weight: 600;
 }
 
@@ -1327,6 +1340,15 @@ a {
 
 }
 
+@media(max-width: 1250px) {
+    .call-nav-header {
+        font-size: 12px;
+    }
+    .main-sections .article-container {
+        gap: 30px;
+    } 
+}
+
 @media(max-width: 1200px) {
     .logo {
         font-size: 24px;
@@ -1390,10 +1412,7 @@ a {
     }
     .article-img img {
         max-width: 400px;
-    }  
-    .main-sections .article-container {
-        gap: 30px;
-    }  
+    }   
     .short-article {
         gap: unset;
     }

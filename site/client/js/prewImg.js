@@ -43,35 +43,11 @@ if(document.querySelectorAll('.rating')) {
   showRatings();
 }
 
-//функция для конкретного рейтинга
-function showRating(rating) {
-  initRatingInfo(rating);
-  setRatingActiveWidth();
-
-  if (rating.classList.contains('rating_set')) {
-      setRating(rating);
-  }
-}
-
-//функция присваивания рейтингу переменных с данными самого рейтинга (из активной полосы и из value)
-function initRatingInfo(rating) {
-  ratingActive = rating.querySelector('.rating-active');
-  ratingValue = rating.querySelector('.rating-value');
-
-}
-
 //функция изменения ширины активных звезд
 function setRatingActiveWidth(i = ratingValue.innerHTML) {
   const ratingActiveWidth = i / 0.05;
   ratingActive.style.width = `${ratingActiveWidth}%`;
 }
-
-if(document.querySelectorAll('.rating')) {
-  const ratings = document.querySelectorAll('.rating');
-
-  showRatings();
-}
-  
 
 //основная функция по рейтингам
 function showRatings() {

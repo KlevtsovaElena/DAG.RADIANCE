@@ -130,6 +130,7 @@
 
     <script src="js/main.js"></script>
     <script src="js/prewImg.js"></script>
+    <script src="js/review.js"></script>
 
 </body>
 
@@ -155,24 +156,3 @@
                             <label for="radio5">5</label>
                             <input id="radio5" type="radio" class="star" name="rating" value="5" checked>
                         </div>
-                    </div>
-                        <input type="text" id="connection" name="connection" placeholder="Способ связи" value="">
-                    
-                    <button class="form-reviews__btn" type="submit">ОТПРАВИТЬ</button>
-                </form>
-
-            </section>
-
-        </main>
-        
-        
-        <?php include "footer.php";?>
-    </div>
-
-    <script src="js/main.js"></script>
-    <script src="js/prewImg.js"></script>
-    <script src="js/review.js"></script>
-
-</body>
-
-</html>
