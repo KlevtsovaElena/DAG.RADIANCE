@@ -125,25 +125,8 @@
         <!-- </div> -->
         </div>
 
-        <div class="modalbox d-none" >
-            <form class="modal-form">
-                <div class="close-icon-flex"><div class="close-icon" onclick="closeFeedbackIcon()">x</div></div>
-                <p class="feedback-title">Хочешь с нами,  но остались вопросы?</p>
-                <p class="feedback-subtitle">Оставь заявку, мы перезвоним!</p>
-                <input type="text" id="name" name="name" placeholder="Имя" value="">
-                <input type="tel" id="phone" name="phone" placeholder="Номер телефона" value="" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
-                <input type="text" id="mail" name="mail"  placeholder="email@mail.ru" value="">
-                <div class="ta-center"><button class="modal-form__div modal-form__btn"onclick="sendForm()">ОТПРАВИТЬ</button></div>
-                <div id="result" class="result"></div>
-            </form>
-        </div>
+        <?php include('client/feedback.php'); ?>
 
-        <div id="success" class="modalbox d-none">
-            <form class="modal-form yes">
-                <div class="close-icon-flex"><div class="close-icon" onclick="closeFeedbackIconSuccess()">x</div></div>
-                <p class="feedback-subtitle success">Заявка отправлена</p>
-            </form>
-        </div>
     </header>
     <!-- /HEADER -->
 
