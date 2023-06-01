@@ -24,7 +24,7 @@ $mail->IsHTML(true);
 
 //настройки smtp
 $mail->isSMTP();
-$mail->Host = 'smpt.mail.ru';
+$mail->Host = 'smtp.mail.ru';
 $mail->SMTPAuth = true;
 
 //здесь можно поменять адрес и пароль эл почты, с которой уходят сообщения
